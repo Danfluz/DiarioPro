@@ -8,63 +8,25 @@
 <!-- Firebase SDK -->
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-  import { getDatabase, ref, set, get, onValue } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
+  import { getDatabase, ref, set, get } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
 
-  // ============================================================
-  // CONFIGURAÇÃO DO FIREBASE — substitua pelos seus dados
-  // ============================================================
   const firebaseConfig = {
-    apiKey: "SUA_API_KEY",
-    authDomain: "SEU_PROJETO.firebaseapp.com",
-    databaseURL: "https://SEU_PROJETO-default-rtdb.firebaseio.com",
-    projectId: "SEU_PROJETO",
-    storageBucket: "SEU_PROJETO.appspot.com",
-    messagingSenderId: "SEU_SENDER_ID",
-    appId: "SEU_APP_ID"
+    apiKey: "AIzaSyA3uY2vMyD84-8WZDxcpKeXf0Vx4DGwGYY",
+    authDomain: "gazearam-hoje.firebaseapp.com",
+    databaseURL: "https://gazearam-hoje-default-rtdb.firebaseio.com",
+    projectId: "gazearam-hoje",
+    storageBucket: "gazearam-hoje.firebasestorage.app",
+    messagingSenderId: "922475289526",
+    appId: "1:922475289526:web:d112cd3787d6af72cb3f17"
   };
-  // ============================================================
 
   const app = initializeApp(firebaseConfig);
-  const db = getDatabase(app);
+  const db  = getDatabase(app);
 
-  // ============================================================
-  // DADOS DAS TURMAS E ALUNOS — edite conforme sua escola
-  // ============================================================
-  const dados = {
-    "1º Ano A": {
-      disciplinas: ["Matemática", "Português", "História", "Geografia", "Ciências"],
-      alunos: ["Ana Silva", "Bruno Costa", "Carla Mendes", "Diego Souza", "Elena Ferreira",
-               "Felipe Lima", "Gabriela Rocha", "Henrique Alves", "Isabela Nunes", "João Pedro"]
-    },
-    "1º Ano B": {
-      disciplinas: ["Matemática", "Português", "História", "Geografia", "Ciências"],
-      alunos: ["Amanda Oliveira", "Carlos Eduardo", "Daniela Pires", "Eduardo Santos", "Fernanda Cruz",
-               "Gabriel Moura", "Helena Vieira", "Igor Teixeira", "Juliana Barros", "Leonardo Carmo"]
-    },
-    "2º Ano A": {
-      disciplinas: ["Matemática", "Português", "Física", "Química", "Biologia", "História", "Geografia"],
-      alunos: ["Alice Martins", "Bernardo Lima", "Camila Ribeiro", "Daniel Azevedo", "Eduarda Campos",
-               "Fabio Nascimento", "Giovanna Pereira", "Hugo Cardoso", "Iara Lopes", "José Ricardo"]
-    },
-    "2º Ano B": {
-      disciplinas: ["Matemática", "Português", "Física", "Química", "Biologia", "História", "Geografia"],
-      alunos: ["Adriana Fonseca", "Breno Castro", "Clara Duarte", "Davi Monteiro", "Elisa Correia",
-               "Francisco Moreira", "Graziela Cunha", "Heitor Pinto", "Ingrid Tavares", "Joana Rezende"]
-    },
-    "3º Ano A": {
-      disciplinas: ["Matemática", "Português", "Física", "Química", "Biologia", "Filosofia", "Sociologia"],
-      alunos: ["Alessandra Brito", "Benedito Freitas", "Cecília Andrade", "Denis Cavalcanti", "Emanuele Dias",
-               "Flavio Ramos", "Gisele Nogueira", "Humberto Vasconcelos", "Iris Melo", "Jonatas Araújo"]
-    }
-  };
-  // ============================================================
-
-  window.db = db;
+  window.db  = db;
   window.ref = ref;
   window.set = set;
   window.get = get;
-  window.onValue = onValue;
-  window.dados = dados;
   window.firebaseReady = true;
   document.dispatchEvent(new Event("firebaseReady"));
 </script>
@@ -160,10 +122,8 @@
     padding-right: 32px;
   }
 
-  select:focus {
-    outline: none;
-    border-color: var(--accent);
-  }
+  select:focus { outline: none; border-color: var(--accent); }
+  select:disabled { opacity: 0.4; cursor: default; }
 
   .status-bar {
     display: flex;
@@ -185,12 +145,12 @@
     transition: background 0.3s;
   }
   .status-dot.saving { background: var(--accent); animation: pulse 0.8s infinite; }
-  .status-dot.saved { background: var(--green); }
-  .status-dot.error { background: var(--red); }
+  .status-dot.saved  { background: var(--green); }
+  .status-dot.error  { background: var(--red); }
 
   @keyframes pulse {
     0%, 100% { opacity: 1; }
-    50% { opacity: 0.3; }
+    50%       { opacity: 0.3; }
   }
 
   .ausentes-count {
@@ -198,17 +158,9 @@
     font-size: 0.75rem;
     color: var(--text-muted);
   }
+  .ausentes-count span { color: var(--red); font-weight: 600; }
 
-  .ausentes-count span {
-    color: var(--red);
-    font-weight: 600;
-  }
-
-  .aluno-list {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
+  .aluno-list { display: flex; flex-direction: column; gap: 8px; }
 
   .aluno-item {
     display: flex;
@@ -253,12 +205,7 @@
   .checkbox svg { display: none; }
   .aluno-item.ausente .checkbox svg { display: block; }
 
-  .aluno-nome {
-    font-size: 0.9rem;
-    font-weight: 500;
-    flex: 1;
-    transition: color 0.15s;
-  }
+  .aluno-nome { font-size: 0.9rem; font-weight: 500; flex: 1; transition: color 0.15s; }
 
   .tag-ausente {
     font-family: 'DM Mono', monospace;
@@ -269,7 +216,6 @@
     opacity: 0;
     transition: opacity 0.15s;
   }
-
   .aluno-item.ausente .tag-ausente { opacity: 1; }
 
   .empty-state {
@@ -277,23 +223,9 @@
     padding: 60px 20px;
     color: var(--text-muted);
   }
-
   .empty-state .icon { font-size: 2.5rem; margin-bottom: 12px; }
   .empty-state p { font-size: 0.85rem; line-height: 1.6; }
 
-  .bottom-bar {
-    position: fixed;
-    bottom: 0; left: 0; right: 0;
-    background: var(--surface);
-    border-top: 1.5px solid var(--border);
-    padding: 12px 20px;
-    display: flex;
-    gap: 10px;
-    max-width: 640px;
-    margin: 0 auto;
-  }
-
-  /* centralizar bottom-bar */
   .bottom-bar-wrapper {
     position: fixed;
     bottom: 0; left: 0; right: 0;
@@ -303,12 +235,7 @@
     z-index: 100;
   }
 
-  .bottom-inner {
-    display: flex;
-    gap: 10px;
-    max-width: 640px;
-    margin: 0 auto;
-  }
+  .bottom-inner { display: flex; gap: 10px; max-width: 640px; margin: 0 auto; }
 
   .btn {
     flex: 1;
@@ -322,14 +249,9 @@
     transition: all 0.15s;
     letter-spacing: 0.02em;
   }
-
   .btn:active { transform: scale(0.97); }
 
-  .btn-salvar {
-    background: var(--accent);
-    color: #0f0f0f;
-  }
-
+  .btn-salvar { background: var(--accent); color: #0f0f0f; }
   .btn-salvar:hover { background: var(--accent-dim); }
   .btn-salvar:disabled { background: var(--border); color: var(--text-muted); cursor: default; }
 
@@ -340,7 +262,6 @@
     flex: 0 0 auto;
     padding: 13px 16px;
   }
-
   .btn-txt:hover { border-color: var(--text-muted); }
 
   .loading-overlay {
@@ -359,13 +280,8 @@
     border-radius: 50%;
     animation: spin 0.7s linear infinite;
   }
-
   @keyframes spin { to { transform: rotate(360deg); } }
-
-  .loading-overlay p {
-    font-size: 0.85rem;
-    color: var(--text-muted);
-  }
+  .loading-overlay p { font-size: 0.85rem; color: var(--text-muted); }
 
   .toast {
     position: fixed;
@@ -379,14 +295,13 @@
     animation: fadeInOut 2.5s forwards;
     white-space: nowrap;
   }
-
-  .toast.ok { border-color: var(--green); color: var(--green); }
-  .toast.err { border-color: var(--red); color: var(--red); }
+  .toast.ok  { border-color: var(--green); color: var(--green); }
+  .toast.err { border-color: var(--red);   color: var(--red);   }
 
   @keyframes fadeInOut {
-    0% { opacity: 0; top: 90px; }
-    15% { opacity: 1; top: 80px; }
-    75% { opacity: 1; }
+    0%   { opacity: 0; top: 90px; }
+    15%  { opacity: 1; top: 80px; }
+    75%  { opacity: 1; }
     100% { opacity: 0; }
   }
 </style>
@@ -443,38 +358,50 @@
 </div>
 
 <script>
-// Estado local
-let estadoAtual = {}; // { nomeAluno: true/false }
-let turmaAtual = "";
-let disciplinaAtual = "";
-let firebaseOk = false;
+// ── Disciplinas disponíveis (ordem fixa, igual ao DiarioPRO) ─────────
+const DISCIPLINAS = [
+  "Artes", "Biologia", "Educação Física", "Filosofia", "Física",
+  "História", "Inglês", "Itinerário", "Língua Portuguesa",
+  "Matemática", "Química", "Sociologia"
+];
 
-// Data de hoje como chave
+// ── Estado local ─────────────────────────────────────────────────────
+let estadoAtual    = {};   // { nomeAluno: true/false }
+let alunosDaTurma  = [];   // lista de nomes carregados do Firebase
+let turmaAtual     = "";   // label exibido, ex: "1º Ano A"
+let turmaKey       = "";   // chave Firebase, ex: "1A"
+let disciplinaAtual = "";
+let firebaseOk     = false;
+
+// ── Data ─────────────────────────────────────────────────────────────
+const agora = new Date();
+document.getElementById("dataHoje").textContent =
+  agora.toLocaleDateString("pt-BR", { weekday: "long", year: "numeric", month: "long", day: "numeric" });
+
 function chaveData() {
-  const d = new Date();
-  return d.toISOString().slice(0, 10); // "2025-06-10"
+  return agora.toISOString().slice(0, 10);  // "2025-06-10"
+}
+
+// ── Normalização de turma ─────────────────────────────────────────────
+// O DiarioPRO grava as chaves como "1A", "1B", "2C" etc.
+// O select usará o código direto como value (ex: "1A"), e o label formatado.
+function codigoParaLabel(cod) {
+  // "1A" → "1º Ano A",  "2B" → "2º Ano B"
+  return `${cod[0]}º Ano ${cod[1]}`;
 }
 
 function chaveFirebase() {
-  // Ex: "2025-06-10/1ºAnoA/Matemática"
-  const t = turmaAtual.replace(/\s+/g, "_").replace(/º/g, "").replace(/ª/g, "");
   const disc = disciplinaAtual.replace(/\s+/g, "_");
-  return `faltas/${chaveData()}/${t}/${disc}`;
+  return `faltas/${chaveData()}/${turmaKey}/${disc}`;
 }
 
-// Mostra data no header
-const dataEl = document.getElementById("dataHoje");
-const agora = new Date();
-dataEl.textContent = agora.toLocaleDateString("pt-BR", { weekday: "long", year: "numeric", month: "long", day: "numeric" });
-
-// Aguarda Firebase
+// ── Aguarda Firebase ─────────────────────────────────────────────────
 document.addEventListener("firebaseReady", () => {
   firebaseOk = true;
   document.getElementById("loadingOverlay").style.display = "none";
-  popularTurmas();
+  carregarTurmas();
 });
 
-// Timeout se Firebase não conectar
 setTimeout(() => {
   if (!firebaseOk) {
     document.getElementById("loadingOverlay").innerHTML = `
@@ -485,37 +412,69 @@ setTimeout(() => {
   }
 }, 8000);
 
-function popularTurmas() {
+// ── Carrega turmas disponíveis do Firebase ───────────────────────────
+// Lê turmas/{cod} — populado pelo DiarioPRO via "Atualizar listagem do WebApp"
+async function carregarTurmas() {
   const sel = document.getElementById("selTurma");
-  Object.keys(window.dados).forEach(t => {
-    const opt = document.createElement("option");
-    opt.value = t;
-    opt.textContent = t;
-    sel.appendChild(opt);
-  });
+  try {
+    const snap = await window.get(window.ref(window.db, "turmas"));
+    if (!snap.exists()) {
+      mostrarToast("Nenhuma turma encontrada. Atualize a listagem no DiarioPRO.", "err");
+      return;
+    }
+    const turmas = Object.keys(snap.val()).sort();
+    turmas.forEach(cod => {
+      const opt = document.createElement("option");
+      opt.value = cod;
+      opt.textContent = codigoParaLabel(cod);
+      sel.appendChild(opt);
+    });
+  } catch(e) {
+    mostrarToast("Erro ao carregar turmas.", "err");
+  }
 }
 
-document.getElementById("selTurma").addEventListener("change", function() {
-  turmaAtual = this.value;
+// ── Troca de turma ───────────────────────────────────────────────────
+document.getElementById("selTurma").addEventListener("change", async function() {
+  turmaKey    = this.value;
+  turmaAtual  = this.options[this.selectedIndex].text;
   disciplinaAtual = "";
+
   const selDisc = document.getElementById("selDisciplina");
   selDisc.innerHTML = '<option value="">— selecione —</option>';
-  selDisc.disabled = !turmaAtual;
+  selDisc.disabled  = !turmaKey;
+  alunosDaTurma     = [];
+  resetLista();
 
-  if (turmaAtual) {
-    window.dados[turmaAtual].disciplinas.forEach(d => {
-      const opt = document.createElement("option");
-      opt.value = d; opt.textContent = d;
-      selDisc.appendChild(opt);
-    });
+  if (!turmaKey) return;
+
+  // Carrega alunos da turma do Firebase
+  try {
+    const snap = await window.get(window.ref(window.db, `turmas/${turmaKey}/alunos`));
+    if (snap.exists()) {
+      // Chaves são NOME_COM_UNDERSCORE — converte de volta para exibição
+      alunosDaTurma = Object.keys(snap.val())
+        .map(k => k.replace(/_/g, " "))
+        .sort();
+    } else {
+      mostrarToast("Turma sem alunos. Atualize a listagem no DiarioPRO.", "err");
+    }
+  } catch(e) {
+    mostrarToast("Erro ao carregar alunos.", "err");
   }
 
-  resetLista();
+  // Popula disciplinas (lista fixa)
+  DISCIPLINAS.forEach(d => {
+    const opt = document.createElement("option");
+    opt.value = d; opt.textContent = d;
+    selDisc.appendChild(opt);
+  });
 });
 
+// ── Troca de disciplina ──────────────────────────────────────────────
 document.getElementById("selDisciplina").addEventListener("change", function() {
   disciplinaAtual = this.value;
-  if (disciplinaAtual) carregarLista();
+  if (disciplinaAtual && alunosDaTurma.length > 0) carregarLista();
   else resetLista();
 });
 
@@ -530,24 +489,24 @@ function resetLista() {
   document.getElementById("bottomBar").style.display = "none";
 }
 
+// ── Carrega lista de presenças do Firebase ───────────────────────────
 async function carregarLista() {
   mostrarStatus("carregando");
 
-  const alunos = window.dados[turmaAtual].alunos;
-  // Inicializa estado com false
-  alunos.forEach(a => estadoAtual[a] = false);
+  // Inicializa todos como presentes
+  alunosDaTurma.forEach(nome => estadoAtual[nome] = false);
 
-  // Tenta carregar do Firebase
   try {
     const snap = await window.get(window.ref(window.db, chaveFirebase()));
     if (snap.exists()) {
       const salvo = snap.val();
-      alunos.forEach(a => {
-        if (salvo[a.replace(/\s/g, "_")] === true) estadoAtual[a] = true;
+      alunosDaTurma.forEach(nome => {
+        const chave = nome.replace(/\s/g, "_");
+        if (salvo[chave] === true) estadoAtual[nome] = true;
       });
     }
   } catch(e) {
-    mostrarToast("Erro ao carregar dados", "err");
+    mostrarToast("Erro ao carregar registros.", "err");
   }
 
   renderizarLista();
@@ -556,26 +515,26 @@ async function carregarLista() {
   mostrarStatus("pronto");
 }
 
+// ── Renderiza lista de alunos ────────────────────────────────────────
 function renderizarLista() {
-  const alunos = window.dados[turmaAtual].alunos;
   const container = document.getElementById("listaAlunos");
   container.innerHTML = "";
 
   const ul = document.createElement("div");
   ul.className = "aluno-list";
 
-  alunos.forEach(nome => {
+  alunosDaTurma.forEach(nome => {
     const item = document.createElement("div");
     item.className = "aluno-item" + (estadoAtual[nome] ? " ausente" : "");
     item.innerHTML = `
       <div class="checkbox">
         <svg width="12" height="9" viewBox="0 0 12 9" fill="none">
-          <path d="M1 4l3.5 3.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M1 4l3.5 3.5L11 1" stroke="white" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </div>
       <span class="aluno-nome">${nome}</span>
       <span class="tag-ausente">ausente</span>`;
-
     item.addEventListener("click", () => toggleAluno(nome, item));
     ul.appendChild(item);
   });
@@ -595,29 +554,29 @@ function atualizarContador() {
   document.getElementById("countAusentes").textContent = count;
 }
 
+// ── Status visual ────────────────────────────────────────────────────
 function mostrarStatus(tipo) {
   const dot = document.getElementById("statusDot");
   const txt = document.getElementById("statusText");
   dot.className = "status-dot";
-  if (tipo === "carregando") { dot.classList.add("saving"); txt.textContent = "Carregando..."; }
-  else if (tipo === "salvando") { dot.classList.add("saving"); txt.textContent = "Salvando..."; }
-  else if (tipo === "salvo") { dot.classList.add("saved"); txt.textContent = "Salvo ✓"; }
-  else if (tipo === "erro") { dot.classList.add("error"); txt.textContent = "Erro ao salvar"; }
-  else { txt.textContent = "Pronto"; }
+  if      (tipo === "carregando") { dot.classList.add("saving"); txt.textContent = "Carregando..."; }
+  else if (tipo === "salvando")   { dot.classList.add("saving"); txt.textContent = "Salvando..."; }
+  else if (tipo === "salvo")      { dot.classList.add("saved");  txt.textContent = "Salvo ✓"; }
+  else if (tipo === "erro")       { dot.classList.add("error");  txt.textContent = "Erro ao salvar"; }
+  else                            {                              txt.textContent = "Pronto"; }
 }
 
+// ── Salvar no Firebase ───────────────────────────────────────────────
 async function salvarDados() {
-  if (!turmaAtual || !disciplinaAtual) return;
+  if (!turmaKey || !disciplinaAtual) return;
   mostrarStatus("salvando");
   document.getElementById("btnSalvar").disabled = true;
 
   try {
-    // Converte nomes para chaves Firebase-safe
     const payload = {};
     Object.entries(estadoAtual).forEach(([nome, val]) => {
       payload[nome.replace(/\s/g, "_")] = val;
     });
-
     await window.set(window.ref(window.db, chaveFirebase()), payload);
     mostrarStatus("salvo");
     mostrarToast("Salvo com sucesso!", "ok");
@@ -629,41 +588,41 @@ async function salvarDados() {
   }
 }
 
+// ── Baixar .txt ──────────────────────────────────────────────────────
 function baixarTxt() {
-  if (!turmaAtual || !disciplinaAtual) return;
+  if (!turmaKey || !disciplinaAtual) return;
 
   const ausentes = Object.entries(estadoAtual)
     .filter(([_, v]) => v)
     .map(([nome]) => nome);
 
   const data = agora.toLocaleDateString("pt-BR");
-  let txt = `REGISTRO DE AUSÊNCIAS\n`;
-  txt += `Data: ${data}\n`;
-  txt += `Turma: ${turmaAtual}\n`;
-  txt += `Disciplina: ${disciplinaAtual}\n`;
-  txt += `${"─".repeat(40)}\n\n`;
+  let txt  = `REGISTRO DE AUSÊNCIAS\n`;
+  txt     += `Data: ${data}\n`;
+  txt     += `Turma: ${turmaAtual}\n`;
+  txt     += `Disciplina: ${disciplinaAtual}\n`;
+  txt     += `${"─".repeat(40)}\n\n`;
 
   if (ausentes.length === 0) {
     txt += "Nenhum aluno ausente registrado.\n";
   } else {
     txt += `Alunos ausentes (${ausentes.length}):\n\n`;
-    ausentes.forEach((nome, i) => {
-      txt += `  ${i + 1}. ${nome}\n`;
-    });
+    ausentes.forEach((nome, i) => { txt += `  ${i + 1}. ${nome}\n`; });
   }
 
   txt += `\n${"─".repeat(40)}\n`;
   txt += `Gerado em: ${agora.toLocaleString("pt-BR")}\n`;
 
   const blob = new Blob([txt], { type: "text/plain;charset=utf-8" });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = `ausencias_${turmaAtual.replace(/\s/g,"_")}_${disciplinaAtual}_${chaveData()}.txt`;
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement("a");
+  a.href     = url;
+  a.download = `ausencias_${turmaKey}_${disciplinaAtual.replace(/\s/g,"_")}_${chaveData()}.txt`;
   a.click();
   URL.revokeObjectURL(url);
 }
 
+// ── Toast ────────────────────────────────────────────────────────────
 function mostrarToast(msg, tipo) {
   const t = document.createElement("div");
   t.className = `toast ${tipo}`;

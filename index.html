@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Registro de Ausências</title>
+<title>Alunos fora de sala</title>
 
 <!-- Firebase SDK -->
 <script type="module">
@@ -61,22 +61,41 @@
   header {
     background: var(--surface);
     border-bottom: 2px solid var(--accent);
-    padding: 18px 20px 14px;
+    padding: 14px 20px;
     position: sticky;
     top: 0;
     z-index: 100;
   }
 
+  .header-inner {
+    max-width: 640px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .header-logo {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    flex-shrink: 0;
+    opacity: 0.9;
+  }
+
+  .header-titles { flex: 1; }
+
   header h1 {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     font-weight: 700;
     letter-spacing: 0.03em;
     color: var(--accent);
+    line-height: 1.2;
   }
 
   header .data {
     font-family: 'DM Mono', monospace;
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     color: var(--text-muted);
     margin-top: 2px;
   }
@@ -90,11 +109,7 @@
     margin-bottom: 20px;
   }
 
-  .select-wrap {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-  }
+  .select-wrap { display: flex; flex-direction: column; gap: 6px; }
 
   .select-wrap label {
     font-size: 0.7rem;
@@ -122,7 +137,7 @@
     padding-right: 32px;
   }
 
-  select:focus { outline: none; border-color: var(--accent); }
+  select:focus   { outline: none; border-color: var(--accent); }
   select:disabled { opacity: 0.4; cursor: default; }
 
   .status-bar {
@@ -148,17 +163,14 @@
   .status-dot.saved  { background: var(--green); }
   .status-dot.error  { background: var(--red); }
 
-  @keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50%       { opacity: 0.3; }
-  }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
 
-  .ausentes-count {
+  .fora-count {
     font-family: 'DM Mono', monospace;
     font-size: 0.75rem;
     color: var(--text-muted);
   }
-  .ausentes-count span { color: var(--red); font-weight: 600; }
+  .fora-count span { color: var(--red); font-weight: 600; }
 
   .aluno-list { display: flex; flex-direction: column; gap: 8px; }
 
@@ -174,18 +186,10 @@
     transition: all 0.15s;
     user-select: none;
   }
-
   .aluno-item:active { transform: scale(0.985); }
 
-  .aluno-item.ausente {
-    border-color: var(--red);
-    background: #1f1212;
-  }
-
-  .aluno-item.ausente .aluno-nome {
-    text-decoration: line-through;
-    color: var(--text-muted);
-  }
+  .aluno-item.fora { border-color: var(--red); background: #1f1212; }
+  .aluno-item.fora .aluno-nome { text-decoration: line-through; color: var(--text-muted); }
 
   .checkbox {
     width: 22px; height: 22px;
@@ -196,18 +200,13 @@
     transition: all 0.15s;
     background: var(--surface2);
   }
-
-  .aluno-item.ausente .checkbox {
-    background: var(--red);
-    border-color: var(--red);
-  }
-
+  .aluno-item.fora .checkbox { background: var(--red); border-color: var(--red); }
   .checkbox svg { display: none; }
-  .aluno-item.ausente .checkbox svg { display: block; }
+  .aluno-item.fora .checkbox svg { display: block; }
 
   .aluno-nome { font-size: 0.9rem; font-weight: 500; flex: 1; transition: color 0.15s; }
 
-  .tag-ausente {
+  .tag-fora {
     font-family: 'DM Mono', monospace;
     font-size: 0.65rem;
     letter-spacing: 0.08em;
@@ -216,7 +215,7 @@
     opacity: 0;
     transition: opacity 0.15s;
   }
-  .aluno-item.ausente .tag-ausente { opacity: 1; }
+  .aluno-item.fora .tag-fora { opacity: 1; }
 
   .empty-state {
     text-align: center;
@@ -234,7 +233,6 @@
     padding: 12px 20px;
     z-index: 100;
   }
-
   .bottom-inner { display: flex; gap: 10px; max-width: 640px; margin: 0 auto; }
 
   .btn {
@@ -272,7 +270,6 @@
     flex-direction: column;
     gap: 12px;
   }
-
   .spinner {
     width: 36px; height: 36px;
     border: 3px solid var(--border);
@@ -297,20 +294,93 @@
   }
   .toast.ok  { border-color: var(--green); color: var(--green); }
   .toast.err { border-color: var(--red);   color: var(--red);   }
-
   @keyframes fadeInOut {
-    0%   { opacity: 0; top: 90px; }
-    15%  { opacity: 1; top: 80px; }
-    75%  { opacity: 1; }
-    100% { opacity: 0; }
+    0%  { opacity:0; top:90px } 15% { opacity:1; top:80px }
+    75% { opacity:1 } 100% { opacity:0 }
+  }
+
+  /* ── Histórico ──────────────────────────────────────────────── */
+  .historico {
+    max-width: 640px;
+    margin: 32px auto 0;
+    padding: 0 20px 24px;
+  }
+
+  .historico-titulo {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+  }
+
+  .historico-list { display: flex; flex-direction: column; gap: 6px; }
+
+  .historico-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 10px 14px;
+    gap: 10px;
+  }
+
+  .hist-data {
+    font-family: 'DM Mono', monospace;
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    white-space: nowrap;
+  }
+
+  .hist-resumo {
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    flex: 1;
+  }
+  .hist-resumo span { color: var(--red); font-weight: 600; }
+
+  .btn-hist-dl {
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text-muted);
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    padding: 4px 10px;
+    cursor: pointer;
+    transition: border-color 0.15s, color 0.15s;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .btn-hist-dl:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* ── Assinatura ─────────────────────────────────────────────── */
+  .assinatura {
+    text-align: center;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    color: #3a3a3a;
+    padding: 20px 0 6px;
+    letter-spacing: 0.04em;
   }
 </style>
 </head>
 <body>
 
 <header>
-  <h1>📋 Registro de Ausências</h1>
-  <div class="data" id="dataHoje"></div>
+  <div class="header-inner">
+    <img src="logo.png" alt="" class="header-logo"
+         onerror="this.style.display='none'">
+    <div class="header-titles">
+      <h1>Alunos fora de sala (gazeando)</h1>
+      <div class="data" id="dataHoje"></div>
+    </div>
+  </div>
 </header>
 
 <div class="container">
@@ -334,7 +404,7 @@
       <span class="status-dot" id="statusDot"></span>
       <span id="statusText" style="font-size:0.8rem">Pronto</span>
     </div>
-    <div class="ausentes-count">Ausentes: <span id="countAusentes">0</span></div>
+    <div class="fora-count">Fora de sala: <span id="countFora">0</span></div>
   </div>
 
   <div id="listaAlunos">
@@ -345,10 +415,20 @@
   </div>
 </div>
 
+<!-- Histórico dos últimos dias com dados -->
+<div class="historico">
+  <div class="historico-titulo">Registros anteriores</div>
+  <div class="historico-list" id="historicoList">
+    <div style="font-size:0.75rem;color:#3a3a3a;padding:4px 0">Carregando...</div>
+  </div>
+</div>
+
+<div class="assinatura" id="assinatura">DiarioPRO — por danfluz</div>
+
 <div class="bottom-bar-wrapper" id="bottomBar" style="display:none">
   <div class="bottom-inner">
     <button class="btn btn-salvar" id="btnSalvar" onclick="salvarDados()">Salvar</button>
-    <button class="btn btn-txt" id="btnTxt" onclick="baixarTxt()" title="Baixar .txt">⬇ .txt</button>
+    <button class="btn btn-txt" onclick="baixarTxt()" title="Baixar .txt">&#8595; .txt</button>
   </div>
 </div>
 
@@ -358,72 +438,86 @@
 </div>
 
 <script>
-// ── Disciplinas disponíveis (ordem fixa, igual ao DiarioPRO) ─────────
 const DISCIPLINAS = [
   "Artes", "Biologia", "Educação Física", "Filosofia", "Física",
   "História", "Inglês", "Itinerário", "Língua Portuguesa",
   "Matemática", "Química", "Sociologia"
 ];
 
-// ── Estado local ─────────────────────────────────────────────────────
-let estadoAtual    = {};   // { nomeAluno: true/false }
-let alunosDaTurma  = [];   // lista de nomes carregados do Firebase
-let turmaAtual     = "";   // label exibido, ex: "1º Ano A"
-let turmaKey       = "";   // chave Firebase, ex: "1A"
+let estadoAtual     = {};
+let alunosDaTurma   = [];
+let turmaAtual      = "";
+let turmaKey        = "";
 let disciplinaAtual = "";
-let firebaseOk     = false;
+let firebaseOk      = false;
 
-// ── Data ─────────────────────────────────────────────────────────────
 const agora = new Date();
-document.getElementById("dataHoje").textContent =
-  agora.toLocaleDateString("pt-BR", { weekday: "long", year: "numeric", month: "long", day: "numeric" });
 
-function chaveData() {
-  return agora.toISOString().slice(0, 10);  // "2025-06-10"
+document.getElementById("dataHoje").textContent =
+  agora.toLocaleDateString("pt-BR", {
+    weekday: "long", year: "numeric", month: "long", day: "numeric"
+  });
+
+function chaveData(d) {
+  const dt = d || agora;
+  // Garante que usa a data local, não UTC
+  const ano = dt.getFullYear();
+  const mes = String(dt.getMonth() + 1).padStart(2, "0");
+  const dia = String(dt.getDate()).padStart(2, "0");
+  return `${ano}-${mes}-${dia}`;
 }
 
-// ── Normalização de turma ─────────────────────────────────────────────
-// O DiarioPRO grava as chaves como "1A", "1B", "2C" etc.
-// O select usará o código direto como value (ex: "1A"), e o label formatado.
 function codigoParaLabel(cod) {
-  // "1A" → "1º Ano A",  "2B" → "2º Ano B"
   return `${cod[0]}º Ano ${cod[1]}`;
 }
 
-function chaveFirebase() {
-  const disc = disciplinaAtual.replace(/\s+/g, "_");
-  return `faltas/${chaveData()}/${turmaKey}/${disc}`;
+function chaveFirebase(turma, disc, data) {
+  const t  = turma || turmaKey;
+  const di = (disc || disciplinaAtual).replace(/\s+/g, "_");
+  const da = data  || chaveData();
+  return `faltas/${da}/${t}/${di}`;
 }
 
-// ── Aguarda Firebase ─────────────────────────────────────────────────
+// ── Firebase ready ───────────────────────────────────────────────────
 document.addEventListener("firebaseReady", () => {
   firebaseOk = true;
   document.getElementById("loadingOverlay").style.display = "none";
   carregarTurmas();
+  carregarVersao();
+  carregarHistorico();
 });
 
 setTimeout(() => {
   if (!firebaseOk) {
     document.getElementById("loadingOverlay").innerHTML = `
       <p style="color:#ff4f4f;text-align:center;padding:20px">
-        ⚠️ Não foi possível conectar ao Firebase.<br>
+        Não foi possível conectar ao Firebase.<br>
         <small>Verifique as configurações no código.</small>
       </p>`;
   }
 }, 8000);
 
-// ── Carrega turmas disponíveis do Firebase ───────────────────────────
-// Lê turmas/{cod} — populado pelo DiarioPRO via "Atualizar listagem do WebApp"
+// ── Versão vinda do Firebase (gravada pelo DiarioPRO) ────────────────
+async function carregarVersao() {
+  try {
+    const snap = await window.get(window.ref(window.db, "config/versao"));
+    if (snap.exists()) {
+      document.getElementById("assinatura").textContent =
+        `DiarioPRO v${snap.val()} — por danfluz`;
+    }
+  } catch(e) { /* mantém texto padrão */ }
+}
+
+// ── Turmas dinâmicas do Firebase ─────────────────────────────────────
 async function carregarTurmas() {
   const sel = document.getElementById("selTurma");
   try {
     const snap = await window.get(window.ref(window.db, "turmas"));
     if (!snap.exists()) {
-      mostrarToast("Nenhuma turma encontrada. Atualize a listagem no DiarioPRO.", "err");
+      mostrarToast("Nenhuma turma encontrada. Atualize no DiarioPRO.", "err");
       return;
     }
-    const turmas = Object.keys(snap.val()).sort();
-    turmas.forEach(cod => {
+    Object.keys(snap.val()).sort().forEach(cod => {
       const opt = document.createElement("option");
       opt.value = cod;
       opt.textContent = codigoParaLabel(cod);
@@ -434,10 +528,9 @@ async function carregarTurmas() {
   }
 }
 
-// ── Troca de turma ───────────────────────────────────────────────────
 document.getElementById("selTurma").addEventListener("change", async function() {
-  turmaKey    = this.value;
-  turmaAtual  = this.options[this.selectedIndex].text;
+  turmaKey   = this.value;
+  turmaAtual = this.options[this.selectedIndex].text;
   disciplinaAtual = "";
 
   const selDisc = document.getElementById("selDisciplina");
@@ -448,22 +541,19 @@ document.getElementById("selTurma").addEventListener("change", async function() 
 
   if (!turmaKey) return;
 
-  // Carrega alunos da turma do Firebase
   try {
     const snap = await window.get(window.ref(window.db, `turmas/${turmaKey}/alunos`));
     if (snap.exists()) {
-      // Chaves são NOME_COM_UNDERSCORE — converte de volta para exibição
       alunosDaTurma = Object.keys(snap.val())
         .map(k => k.replace(/_/g, " "))
         .sort();
     } else {
-      mostrarToast("Turma sem alunos. Atualize a listagem no DiarioPRO.", "err");
+      mostrarToast("Turma sem alunos. Atualize no DiarioPRO.", "err");
     }
   } catch(e) {
     mostrarToast("Erro ao carregar alunos.", "err");
   }
 
-  // Popula disciplinas (lista fixa)
   DISCIPLINAS.forEach(d => {
     const opt = document.createElement("option");
     opt.value = d; opt.textContent = d;
@@ -471,7 +561,6 @@ document.getElementById("selTurma").addEventListener("change", async function() 
   });
 });
 
-// ── Troca de disciplina ──────────────────────────────────────────────
 document.getElementById("selDisciplina").addEventListener("change", function() {
   disciplinaAtual = this.value;
   if (disciplinaAtual && alunosDaTurma.length > 0) carregarLista();
@@ -489,11 +578,8 @@ function resetLista() {
   document.getElementById("bottomBar").style.display = "none";
 }
 
-// ── Carrega lista de presenças do Firebase ───────────────────────────
 async function carregarLista() {
   mostrarStatus("carregando");
-
-  // Inicializa todos como presentes
   alunosDaTurma.forEach(nome => estadoAtual[nome] = false);
 
   try {
@@ -501,8 +587,7 @@ async function carregarLista() {
     if (snap.exists()) {
       const salvo = snap.val();
       alunosDaTurma.forEach(nome => {
-        const chave = nome.replace(/\s/g, "_");
-        if (salvo[chave] === true) estadoAtual[nome] = true;
+        if (salvo[nome.replace(/\s/g, "_")] === true) estadoAtual[nome] = true;
       });
     }
   } catch(e) {
@@ -515,17 +600,15 @@ async function carregarLista() {
   mostrarStatus("pronto");
 }
 
-// ── Renderiza lista de alunos ────────────────────────────────────────
 function renderizarLista() {
   const container = document.getElementById("listaAlunos");
   container.innerHTML = "";
-
   const ul = document.createElement("div");
   ul.className = "aluno-list";
 
   alunosDaTurma.forEach(nome => {
     const item = document.createElement("div");
-    item.className = "aluno-item" + (estadoAtual[nome] ? " ausente" : "");
+    item.className = "aluno-item" + (estadoAtual[nome] ? " fora" : "");
     item.innerHTML = `
       <div class="checkbox">
         <svg width="12" height="9" viewBox="0 0 12 9" fill="none">
@@ -534,7 +617,7 @@ function renderizarLista() {
         </svg>
       </div>
       <span class="aluno-nome">${nome}</span>
-      <span class="tag-ausente">ausente</span>`;
+      <span class="tag-fora">fora de sala</span>`;
     item.addEventListener("click", () => toggleAluno(nome, item));
     ul.appendChild(item);
   });
@@ -545,16 +628,15 @@ function renderizarLista() {
 
 function toggleAluno(nome, el) {
   estadoAtual[nome] = !estadoAtual[nome];
-  el.classList.toggle("ausente", estadoAtual[nome]);
+  el.classList.toggle("fora", estadoAtual[nome]);
   atualizarContador();
 }
 
 function atualizarContador() {
   const count = Object.values(estadoAtual).filter(Boolean).length;
-  document.getElementById("countAusentes").textContent = count;
+  document.getElementById("countFora").textContent = count;
 }
 
-// ── Status visual ────────────────────────────────────────────────────
 function mostrarStatus(tipo) {
   const dot = document.getElementById("statusDot");
   const txt = document.getElementById("statusText");
@@ -566,7 +648,6 @@ function mostrarStatus(tipo) {
   else                            {                              txt.textContent = "Pronto"; }
 }
 
-// ── Salvar no Firebase ───────────────────────────────────────────────
 async function salvarDados() {
   if (!turmaKey || !disciplinaAtual) return;
   mostrarStatus("salvando");
@@ -580,6 +661,7 @@ async function salvarDados() {
     await window.set(window.ref(window.db, chaveFirebase()), payload);
     mostrarStatus("salvo");
     mostrarToast("Salvo com sucesso!", "ok");
+    carregarHistorico();
   } catch(e) {
     mostrarStatus("erro");
     mostrarToast("Erro ao salvar. Verifique a conexão.", "err");
@@ -588,41 +670,147 @@ async function salvarDados() {
   }
 }
 
-// ── Baixar .txt ──────────────────────────────────────────────────────
 function baixarTxt() {
   if (!turmaKey || !disciplinaAtual) return;
+  const foraLista = Object.entries(estadoAtual)
+    .filter(([_, v]) => v).map(([nome]) => nome);
 
-  const ausentes = Object.entries(estadoAtual)
-    .filter(([_, v]) => v)
-    .map(([nome]) => nome);
-
-  const data = agora.toLocaleDateString("pt-BR");
-  let txt  = `REGISTRO DE AUSÊNCIAS\n`;
-  txt     += `Data: ${data}\n`;
+  let txt  = `ALUNOS FORA DE SALA\n`;
+  txt     += `Data: ${agora.toLocaleDateString("pt-BR")}\n`;
   txt     += `Turma: ${turmaAtual}\n`;
   txt     += `Disciplina: ${disciplinaAtual}\n`;
   txt     += `${"─".repeat(40)}\n\n`;
 
-  if (ausentes.length === 0) {
-    txt += "Nenhum aluno ausente registrado.\n";
+  if (foraLista.length === 0) {
+    txt += "Nenhum aluno fora de sala registrado.\n";
   } else {
-    txt += `Alunos ausentes (${ausentes.length}):\n\n`;
-    ausentes.forEach((nome, i) => { txt += `  ${i + 1}. ${nome}\n`; });
+    txt += `Fora de sala (${foraLista.length}):\n\n`;
+    foraLista.forEach((nome, i) => { txt += `  ${i + 1}. ${nome}\n`; });
   }
 
   txt += `\n${"─".repeat(40)}\n`;
-  txt += `Gerado em: ${agora.toLocaleString("pt-BR")}\n`;
+  txt += `Gerado em: ${new Date().toLocaleString("pt-BR")}\n`;
 
-  const blob = new Blob([txt], { type: "text/plain;charset=utf-8" });
+  _download(txt,
+    `registro_${turmaKey}_${disciplinaAtual.replace(/\s/g,"_")}_${chaveData()}.txt`);
+}
+
+// ── Histórico — últimos 3 dias com dados ────────────────────────────
+async function carregarHistorico() {
+  const container = document.getElementById("historicoList");
+  const encontrados = [];
+
+  // Verifica até 5 dias para trás para achar 3 com dados
+  for (let i = 1; i <= 5; i++) {
+    if (encontrados.length >= 3) break;
+    const d = new Date(agora);
+    d.setDate(d.getDate() - i);
+    const chave = chaveData(d);
+
+    try {
+      const snap = await window.get(window.ref(window.db, `faltas/${chave}`));
+      if (!snap.exists()) continue;
+
+      const dadosDia = snap.val();
+      const foraSet  = new Set();
+      let   temDados = false;
+
+      Object.values(dadosDia).forEach(turmaObj => {
+        Object.values(turmaObj).forEach(discObj => {
+          temDados = true;
+          Object.entries(discObj).forEach(([aluno, fora]) => {
+            if (fora === true) foraSet.add(aluno);
+          });
+        });
+      });
+
+      if (temDados) encontrados.push({ d, chave, dadosDia, total: foraSet.size });
+    } catch(e) { /* sem dados neste dia */ }
+  }
+
+  if (encontrados.length === 0) {
+    container.innerHTML =
+      `<div style="font-size:0.75rem;color:#3a3a3a;padding:4px 0">
+        Nenhum registro nos últimos dias.
+      </div>`;
+    return;
+  }
+
+  container.innerHTML = "";
+  encontrados.forEach(({ d, chave, dadosDia, total }) => {
+    const dataFmt    = d.toLocaleDateString("pt-BR",
+      { weekday: "short", day: "2-digit", month: "2-digit" });
+    const turmasNoDia = Object.keys(dadosDia).sort().join(", ");
+
+    const item = document.createElement("div");
+    item.className = "historico-item";
+    item.innerHTML = `
+      <span class="hist-data">${dataFmt}</span>
+      <span class="hist-resumo">
+        ${turmasNoDia} &mdash; <span>${total} fora de sala</span>
+      </span>
+      <button class="btn-hist-dl" onclick="baixarHistoricoDia('${chave}')">
+        &#8595; .txt
+      </button>`;
+    container.appendChild(item);
+  });
+}
+
+async function baixarHistoricoDia(dataISO) {
+  try {
+    const snap = await window.get(window.ref(window.db, `faltas/${dataISO}`));
+    if (!snap.exists()) { mostrarToast("Sem dados para esta data.", "err"); return; }
+
+    const dadosDia = snap.val();
+    const [ano, mes, dia] = dataISO.split("-");
+    const dataFmt = `${dia}/${mes}/${ano}`;
+
+    let txt  = `ALUNOS FORA DE SALA — TODAS AS TURMAS\n`;
+    txt     += `Data: ${dataFmt}\n`;
+    txt     += `${"═".repeat(44)}\n\n`;
+
+    Object.entries(dadosDia).sort().forEach(([turma, disciplinas]) => {
+      // Agrupa por aluno -> lista de disciplinas em que estava fora
+      const porAluno = {};
+      Object.entries(disciplinas).forEach(([disc, alunos]) => {
+        Object.entries(alunos).forEach(([alunoKey, fora]) => {
+          if (fora === true) {
+            const nome = alunoKey.replace(/_/g, " ");
+            if (!porAluno[nome]) porAluno[nome] = [];
+            porAluno[nome].push(disc.replace(/_/g, " "));
+          }
+        });
+      });
+
+      const qtd = Object.keys(porAluno).length;
+      if (qtd === 0) return;
+
+      txt += `  ${turma}  (${qtd} fora de sala)\n`;
+      txt += `  ${"─".repeat(40)}\n`;
+      Object.entries(porAluno).sort().forEach(([nome, discs], i) => {
+        txt += `  ${i + 1}. ${nome}\n`;
+        txt += `      ${discs.sort().join(", ")}\n`;
+      });
+      txt += "\n";
+    });
+
+    txt += `${"═".repeat(44)}\n`;
+    txt += `Gerado em: ${new Date().toLocaleString("pt-BR")}\n`;
+
+    _download(txt, `faltas_todas_${dataISO}.txt`);
+  } catch(e) {
+    mostrarToast("Erro ao gerar arquivo.", "err");
+  }
+}
+
+function _download(texto, nomeArquivo) {
+  const blob = new Blob([texto], { type: "text/plain;charset=utf-8" });
   const url  = URL.createObjectURL(blob);
   const a    = document.createElement("a");
-  a.href     = url;
-  a.download = `ausencias_${turmaKey}_${disciplinaAtual.replace(/\s/g,"_")}_${chaveData()}.txt`;
-  a.click();
+  a.href = url; a.download = nomeArquivo; a.click();
   URL.revokeObjectURL(url);
 }
 
-// ── Toast ────────────────────────────────────────────────────────────
 function mostrarToast(msg, tipo) {
   const t = document.createElement("div");
   t.className = `toast ${tipo}`;

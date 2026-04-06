@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro de Ausências</title>
+
+<!-- Firebase SDK -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+  import { getDatabase, ref, set, get, onValue } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
+
+  // ============================================================
+  // CONFIGURAÇÃO DO FIREBASE — substitua pelos seus dados
+  // ============================================================
+  const firebaseConfig = {
+    apiKey: "SUA_API_KEY",
+    authDomain: "SEU_PROJETO.firebaseapp.com",
+    databaseURL: "https://SEU_PROJETO-default-rtdb.firebaseio.com",
+    projectId: "SEU_PROJETO",
+    storageBucket: "SEU_PROJETO.appspot.com",
+    messagingSenderId: "SEU_SENDER_ID",
+    appId: "SEU_APP_ID"
+  };
+  // ============================================================
+
+  const app = initializeApp(firebaseConfig);
+  const db = getDatabase(app);
+
+  // ============================================================
+  // DADOS DAS TURMAS E ALUNOS — edite conforme sua escola
+  // ============================================================
+  const dados = {
+    "1º Ano A": {
+      disciplinas: ["Matemática", "Português", "História", "Geografia", "Ciências"],
+      alunos: ["Ana Silva", "Bruno Costa", "Carla Mendes", "Diego Souza", "Elena Ferreira",
+               "Felipe Lima", "Gabriela Rocha", "Henrique Alves", "Isabela Nunes", "João Pedro"]
+    },
+    "1º Ano B": {
+      disciplinas: ["Matemática", "Português", "História", "Geografia", "Ciências"],
+      alunos: ["Amanda Oliveira", "Carlos Eduardo", "Daniela Pires", "Eduardo Santos", "Fernanda Cruz",
+               "Gabriel Moura", "Helena Vieira", "Igor Teixeira", "Juliana Barros", "Leonardo Carmo"]
+    },
+    "2º Ano A": {
+      disciplinas: ["Matemática", "Português", "Física", "Química", "Biologia", "História", "Geografia"],
+      alunos: ["Alice Martins", "Bernardo Lima", "Camila Ribeiro", "Daniel Azevedo", "Eduarda Campos",
+               "Fabio Nascimento", "Giovanna Pereira", "Hugo Cardoso", "Iara Lopes", "José Ricardo"]
+    },
+    "2º Ano B": {
+      disciplinas: ["Matemática", "Português", "Física", "Química", "Biologia", "História", "Geografia"],
+      alunos: ["Adriana Fonseca", "Breno Castro", "Clara Duarte", "Davi Monteiro", "Elisa Correia",
+               "Francisco Moreira", "Graziela Cunha", "Heitor Pinto", "Ingrid Tavares", "Joana Rezende"]
+    },
+    "3º Ano A": {
+      disciplinas: ["Matemática", "Português", "Física", "Química", "Biologia", "Filosofia", "Sociologia"],
+      alunos: ["Alessandra Brito", "Benedito Freitas", "Cecília Andrade", "Denis Cavalcanti", "Emanuele Dias",
+               "Flavio Ramos", "Gisele Nogueira", "Humberto Vasconcelos", "Iris Melo", "Jonatas Araújo"]
+    }
+  };
+  // ============================================================
+
+  window.db = db;
+  window.ref = ref;
+  window.set = set;
+  window.get = get;
+  window.onValue = onValue;
+  window.dados = dados;
+  window.firebaseReady = true;
+  document.dispatchEvent(new Event("firebaseReady"));
+</script>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Sora:wght@400;600;700&display=swap');
+
+  :root {
+    --bg: #0f0f0f;
+    --surface: #1a1a1a;
+    --surface2: #242424;
+    --border: #2e2e2e;
+    --accent: #e8ff47;
+    --accent-dim: #c8df2a;
+    --text: #f0f0f0;
+    --text-muted: #888;
+    --red: #ff4f4f;
+    --green: #4fffb0;
+    --radius: 10px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Sora', sans-serif;
+    min-height: 100vh;
+    padding: 0 0 80px;
+  }
+
+  header {
+    background: var(--surface);
+    border-bottom: 2px solid var(--accent);
+    padding: 18px 20px 14px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  header h1 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: var(--accent);
+  }
+
+  header .data {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 2px;
+  }
+
+  .container { padding: 20px; max-width: 640px; margin: 0 auto; }
+
+  .selects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .select-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .select-wrap label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+
+  select {
+    background: var(--surface);
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text);
+    font-family: 'Sora', sans-serif;
+    font-size: 0.85rem;
+    padding: 10px 12px;
+    width: 100%;
+    cursor: pointer;
+    transition: border-color 0.2s;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23888' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 32px;
+  }
+
+  select:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+
+  .status-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--surface2);
+    border-radius: var(--radius);
+    padding: 10px 14px;
+    margin-bottom: 16px;
+    font-size: 0.8rem;
+  }
+
+  .status-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--text-muted);
+    display: inline-block;
+    margin-right: 8px;
+    transition: background 0.3s;
+  }
+  .status-dot.saving { background: var(--accent); animation: pulse 0.8s infinite; }
+  .status-dot.saved { background: var(--green); }
+  .status-dot.error { background: var(--red); }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  .ausentes-count {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+  }
+
+  .ausentes-count span {
+    color: var(--red);
+    font-weight: 600;
+  }
+
+  .aluno-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .aluno-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--surface);
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius);
+    padding: 13px 16px;
+    cursor: pointer;
+    transition: all 0.15s;
+    user-select: none;
+  }
+
+  .aluno-item:active { transform: scale(0.985); }
+
+  .aluno-item.ausente {
+    border-color: var(--red);
+    background: #1f1212;
+  }
+
+  .aluno-item.ausente .aluno-nome {
+    text-decoration: line-through;
+    color: var(--text-muted);
+  }
+
+  .checkbox {
+    width: 22px; height: 22px;
+    border-radius: 6px;
+    border: 2px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.15s;
+    background: var(--surface2);
+  }
+
+  .aluno-item.ausente .checkbox {
+    background: var(--red);
+    border-color: var(--red);
+  }
+
+  .checkbox svg { display: none; }
+  .aluno-item.ausente .checkbox svg { display: block; }
+
+  .aluno-nome {
+    font-size: 0.9rem;
+    font-weight: 500;
+    flex: 1;
+    transition: color 0.15s;
+  }
+
+  .tag-ausente {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    color: var(--red);
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 0.15s;
+  }
+
+  .aluno-item.ausente .tag-ausente { opacity: 1; }
+
+  .empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-muted);
+  }
+
+  .empty-state .icon { font-size: 2.5rem; margin-bottom: 12px; }
+  .empty-state p { font-size: 0.85rem; line-height: 1.6; }
+
+  .bottom-bar {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    background: var(--surface);
+    border-top: 1.5px solid var(--border);
+    padding: 12px 20px;
+    display: flex;
+    gap: 10px;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  /* centralizar bottom-bar */
+  .bottom-bar-wrapper {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    background: var(--surface);
+    border-top: 1.5px solid var(--border);
+    padding: 12px 20px;
+    z-index: 100;
+  }
+
+  .bottom-inner {
+    display: flex;
+    gap: 10px;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  .btn {
+    flex: 1;
+    padding: 13px;
+    border: none;
+    border-radius: var(--radius);
+    font-family: 'Sora', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s;
+    letter-spacing: 0.02em;
+  }
+
+  .btn:active { transform: scale(0.97); }
+
+  .btn-salvar {
+    background: var(--accent);
+    color: #0f0f0f;
+  }
+
+  .btn-salvar:hover { background: var(--accent-dim); }
+  .btn-salvar:disabled { background: var(--border); color: var(--text-muted); cursor: default; }
+
+  .btn-txt {
+    background: var(--surface2);
+    color: var(--text);
+    border: 1.5px solid var(--border);
+    flex: 0 0 auto;
+    padding: 13px 16px;
+  }
+
+  .btn-txt:hover { border-color: var(--text-muted); }
+
+  .loading-overlay {
+    position: fixed; inset: 0;
+    background: rgba(15,15,15,0.85);
+    display: flex; align-items: center; justify-content: center;
+    z-index: 200;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .spinner {
+    width: 36px; height: 36px;
+    border: 3px solid var(--border);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+  }
+
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .loading-overlay p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+
+  .toast {
+    position: fixed;
+    top: 80px; left: 50%; transform: translateX(-50%);
+    background: var(--surface2);
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius);
+    padding: 10px 20px;
+    font-size: 0.82rem;
+    z-index: 300;
+    animation: fadeInOut 2.5s forwards;
+    white-space: nowrap;
+  }
+
+  .toast.ok { border-color: var(--green); color: var(--green); }
+  .toast.err { border-color: var(--red); color: var(--red); }
+
+  @keyframes fadeInOut {
+    0% { opacity: 0; top: 90px; }
+    15% { opacity: 1; top: 80px; }
+    75% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>📋 Registro de Ausências</h1>
+  <div class="data" id="dataHoje"></div>
+</header>
+
+<div class="container">
+  <div class="selects">
+    <div class="select-wrap">
+      <label>Turma</label>
+      <select id="selTurma">
+        <option value="">— selecione —</option>
+      </select>
+    </div>
+    <div class="select-wrap">
+      <label>Disciplina</label>
+      <select id="selDisciplina" disabled>
+        <option value="">— selecione —</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="status-bar" id="statusBar" style="display:none">
+    <div>
+      <span class="status-dot" id="statusDot"></span>
+      <span id="statusText" style="font-size:0.8rem">Pronto</span>
+    </div>
+    <div class="ausentes-count">Ausentes: <span id="countAusentes">0</span></div>
+  </div>
+
+  <div id="listaAlunos">
+    <div class="empty-state">
+      <div class="icon">🏫</div>
+      <p>Selecione uma turma e disciplina<br>para carregar a lista de alunos.</p>
+    </div>
+  </div>
+</div>
+
+<div class="bottom-bar-wrapper" id="bottomBar" style="display:none">
+  <div class="bottom-inner">
+    <button class="btn btn-salvar" id="btnSalvar" onclick="salvarDados()">Salvar</button>
+    <button class="btn btn-txt" id="btnTxt" onclick="baixarTxt()" title="Baixar .txt">⬇ .txt</button>
+  </div>
+</div>
+
+<div class="loading-overlay" id="loadingOverlay">
+  <div class="spinner"></div>
+  <p>Conectando ao Firebase...</p>
+</div>
+
+<script>
+// Estado local
+let estadoAtual = {}; // { nomeAluno: true/false }
+let turmaAtual = "";
+let disciplinaAtual = "";
+let firebaseOk = false;
+
+// Data de hoje como chave
+function chaveData() {
+  const d = new Date();
+  return d.toISOString().slice(0, 10); // "2025-06-10"
+}
+
+function chaveFirebase() {
+  // Ex: "2025-06-10/1ºAnoA/Matemática"
+  const t = turmaAtual.replace(/\s+/g, "_").replace(/º/g, "").replace(/ª/g, "");
+  const disc = disciplinaAtual.replace(/\s+/g, "_");
+  return `faltas/${chaveData()}/${t}/${disc}`;
+}
+
+// Mostra data no header
+const dataEl = document.getElementById("dataHoje");
+const agora = new Date();
+dataEl.textContent = agora.toLocaleDateString("pt-BR", { weekday: "long", year: "numeric", month: "long", day: "numeric" });
+
+// Aguarda Firebase
+document.addEventListener("firebaseReady", () => {
+  firebaseOk = true;
+  document.getElementById("loadingOverlay").style.display = "none";
+  popularTurmas();
+});
+
+// Timeout se Firebase não conectar
+setTimeout(() => {
+  if (!firebaseOk) {
+    document.getElementById("loadingOverlay").innerHTML = `
+      <p style="color:#ff4f4f;text-align:center;padding:20px">
+        ⚠️ Não foi possível conectar ao Firebase.<br>
+        <small>Verifique as configurações no código.</small>
+      </p>`;
+  }
+}, 8000);
+
+function popularTurmas() {
+  const sel = document.getElementById("selTurma");
+  Object.keys(window.dados).forEach(t => {
+    const opt = document.createElement("option");
+    opt.value = t;
+    opt.textContent = t;
+    sel.appendChild(opt);
+  });
+}
+
+document.getElementById("selTurma").addEventListener("change", function() {
+  turmaAtual = this.value;
+  disciplinaAtual = "";
+  const selDisc = document.getElementById("selDisciplina");
+  selDisc.innerHTML = '<option value="">— selecione —</option>';
+  selDisc.disabled = !turmaAtual;
+
+  if (turmaAtual) {
+    window.dados[turmaAtual].disciplinas.forEach(d => {
+      const opt = document.createElement("option");
+      opt.value = d; opt.textContent = d;
+      selDisc.appendChild(opt);
+    });
+  }
+
+  resetLista();
+});
+
+document.getElementById("selDisciplina").addEventListener("change", function() {
+  disciplinaAtual = this.value;
+  if (disciplinaAtual) carregarLista();
+  else resetLista();
+});
+
+function resetLista() {
+  estadoAtual = {};
+  document.getElementById("listaAlunos").innerHTML = `
+    <div class="empty-state">
+      <div class="icon">🏫</div>
+      <p>Selecione uma turma e disciplina<br>para carregar a lista de alunos.</p>
+    </div>`;
+  document.getElementById("statusBar").style.display = "none";
+  document.getElementById("bottomBar").style.display = "none";
+}
+
+async function carregarLista() {
+  mostrarStatus("carregando");
+
+  const alunos = window.dados[turmaAtual].alunos;
+  // Inicializa estado com false
+  alunos.forEach(a => estadoAtual[a] = false);
+
+  // Tenta carregar do Firebase
+  try {
+    const snap = await window.get(window.ref(window.db, chaveFirebase()));
+    if (snap.exists()) {
+      const salvo = snap.val();
+      alunos.forEach(a => {
+        if (salvo[a.replace(/\s/g, "_")] === true) estadoAtual[a] = true;
+      });
+    }
+  } catch(e) {
+    mostrarToast("Erro ao carregar dados", "err");
+  }
+
+  renderizarLista();
+  document.getElementById("statusBar").style.display = "flex";
+  document.getElementById("bottomBar").style.display = "block";
+  mostrarStatus("pronto");
+}
+
+function renderizarLista() {
+  const alunos = window.dados[turmaAtual].alunos;
+  const container = document.getElementById("listaAlunos");
+  container.innerHTML = "";
+
+  const ul = document.createElement("div");
+  ul.className = "aluno-list";
+
+  alunos.forEach(nome => {
+    const item = document.createElement("div");
+    item.className = "aluno-item" + (estadoAtual[nome] ? " ausente" : "");
+    item.innerHTML = `
+      <div class="checkbox">
+        <svg width="12" height="9" viewBox="0 0 12 9" fill="none">
+          <path d="M1 4l3.5 3.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <span class="aluno-nome">${nome}</span>
+      <span class="tag-ausente">ausente</span>`;
+
+    item.addEventListener("click", () => toggleAluno(nome, item));
+    ul.appendChild(item);
+  });
+
+  container.appendChild(ul);
+  atualizarContador();
+}
+
+function toggleAluno(nome, el) {
+  estadoAtual[nome] = !estadoAtual[nome];
+  el.classList.toggle("ausente", estadoAtual[nome]);
+  atualizarContador();
+}
+
+function atualizarContador() {
+  const count = Object.values(estadoAtual).filter(Boolean).length;
+  document.getElementById("countAusentes").textContent = count;
+}
+
+function mostrarStatus(tipo) {
+  const dot = document.getElementById("statusDot");
+  const txt = document.getElementById("statusText");
+  dot.className = "status-dot";
+  if (tipo === "carregando") { dot.classList.add("saving"); txt.textContent = "Carregando..."; }
+  else if (tipo === "salvando") { dot.classList.add("saving"); txt.textContent = "Salvando..."; }
+  else if (tipo === "salvo") { dot.classList.add("saved"); txt.textContent = "Salvo ✓"; }
+  else if (tipo === "erro") { dot.classList.add("error"); txt.textContent = "Erro ao salvar"; }
+  else { txt.textContent = "Pronto"; }
+}
+
+async function salvarDados() {
+  if (!turmaAtual || !disciplinaAtual) return;
+  mostrarStatus("salvando");
+  document.getElementById("btnSalvar").disabled = true;
+
+  try {
+    // Converte nomes para chaves Firebase-safe
+    const payload = {};
+    Object.entries(estadoAtual).forEach(([nome, val]) => {
+      payload[nome.replace(/\s/g, "_")] = val;
+    });
+
+    await window.set(window.ref(window.db, chaveFirebase()), payload);
+    mostrarStatus("salvo");
+    mostrarToast("Salvo com sucesso!", "ok");
+  } catch(e) {
+    mostrarStatus("erro");
+    mostrarToast("Erro ao salvar. Verifique a conexão.", "err");
+  } finally {
+    document.getElementById("btnSalvar").disabled = false;
+  }
+}
+
+function baixarTxt() {
+  if (!turmaAtual || !disciplinaAtual) return;
+
+  const ausentes = Object.entries(estadoAtual)
+    .filter(([_, v]) => v)
+    .map(([nome]) => nome);
+
+  const data = agora.toLocaleDateString("pt-BR");
+  let txt = `REGISTRO DE AUSÊNCIAS\n`;
+  txt += `Data: ${data}\n`;
+  txt += `Turma: ${turmaAtual}\n`;
+  txt += `Disciplina: ${disciplinaAtual}\n`;
+  txt += `${"─".repeat(40)}\n\n`;
+
+  if (ausentes.length === 0) {
+    txt += "Nenhum aluno ausente registrado.\n";
+  } else {
+    txt += `Alunos ausentes (${ausentes.length}):\n\n`;
+    ausentes.forEach((nome, i) => {
+      txt += `  ${i + 1}. ${nome}\n`;
+    });
+  }
+
+  txt += `\n${"─".repeat(40)}\n`;
+  txt += `Gerado em: ${agora.toLocaleString("pt-BR")}\n`;
+
+  const blob = new Blob([txt], { type: "text/plain;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = `ausencias_${turmaAtual.replace(/\s/g,"_")}_${disciplinaAtual}_${chaveData()}.txt`;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+function mostrarToast(msg, tipo) {
+  const t = document.createElement("div");
+  t.className = `toast ${tipo}`;
+  t.textContent = msg;
+  document.body.appendChild(t);
+  setTimeout(() => t.remove(), 2600);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "DiarioPro - Alunos fora de sala",
+  "short_name": "DiarioPro",
+  "start_url": "/DiarioPro-faltas/",
+  "display": "standalone",
+  "background_color": "#0f0f0f",
+  "theme_color": "#e8ff47",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+}

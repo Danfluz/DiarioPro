@@ -3,825 +3,700 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alunos fora de sala - DiarioPro</title>
-<link rel="manifest" href="manifest.json">
+<title>DiarioPRO — diário de classe com automação do SIEPE</title>
+<meta name="description" content="DiarioPRO organiza planejamento, notas, frequência e lança direto no SIEPE por você. Dashboard de turma, ajuda de IA e registro de alunos fora de sala em tempo real.">
+<meta property="og:title" content="DiarioPRO — diário de classe com automação do SIEPE">
+<meta property="og:description" content="Planejamento, notas, frequência e o resto da burocracia do SIEPE, organizados num programa só.">
+<meta property="og:image" content="screenshot-hub.png">
+<meta property="og:type" content="website">
 <link rel="icon" type="image/png" href="logo.png">
-<link rel="apple-touch-icon" href="logo.png">
-<meta name="theme-color" content="#e8ff47">
-
-<!-- Firebase SDK -->
-<script type="module">
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-  import { getDatabase, ref, set, get } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
-
-  const firebaseConfig = {
-    apiKey: "AIzaSyA3uY2vMyD84-8WZDxcpKeXf0Vx4DGwGYY",
-    authDomain: "gazearam-hoje.firebaseapp.com",
-    databaseURL: "https://gazearam-hoje-default-rtdb.firebaseio.com",
-    projectId: "gazearam-hoje",
-    storageBucket: "gazearam-hoje.firebasestorage.app",
-    messagingSenderId: "922475289526",
-    appId: "1:922475289526:web:d112cd3787d6af72cb3f17"
-  };
-
-  const app = initializeApp(firebaseConfig);
-  const db  = getDatabase(app);
-
-  window.db  = db;
-  window.ref = ref;
-  window.set = set;
-  window.get = get;
-  window.firebaseReady = true;
-  document.dispatchEvent(new Event("firebaseReady"));
-</script>
+<meta name="theme-color" content="#0f0f0f">
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Sora:wght@400;600;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Sora:wght@400;500;600;700;800&display=swap');
 
   :root {
-    --bg: #0f0f0f;
-    --surface: #1a1a1a;
-    --surface2: #242424;
-    --border: #2e2e2e;
+    --bg: #0b0b0c;
+    --bg-soft: #101012;
+    --surface: #17171a;
+    --surface2: #1e1e22;
+    --border: #2a2a2f;
+    --border-soft: #232327;
     --accent: #e8ff47;
     --accent-dim: #c8df2a;
-    --text: #f0f0f0;
-    --text-muted: #888;
-    --red: #ff4f4f;
+    --accent-soft: rgba(232, 255, 71, 0.1);
+    --text: #f2f2f0;
+    --text-muted: #9a9a9e;
+    --text-faint: #5c5c62;
+    --red: #ff6b6b;
     --green: #4fffb0;
-    --radius: 10px;
+    --radius: 14px;
+    --radius-sm: 9px;
+    --maxw: 1120px;
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
 
   body {
     background: var(--bg);
     color: var(--text);
     font-family: 'Sora', sans-serif;
     min-height: 100vh;
-    padding: 0 0 80px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
   }
 
-  header {
-    background: var(--surface);
-    border-bottom: 2px solid var(--accent);
-    padding: 14px 20px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+  a { color: inherit; }
+  img { max-width: 100%; display: block; }
+  section { scroll-margin-top: 76px; }
+
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 28px; }
+  .mono { font-family: 'DM Mono', monospace; }
+
+  /* ── Nav ─────────────────────────────────────────────────────────── */
+  nav {
+    position: sticky; top: 0; z-index: 200;
+    background: rgba(11,11,12,0.78);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--border-soft);
   }
-
-  .header-inner {
-    max-width: 640px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    gap: 12px;
+  .nav-inner {
+    max-width: var(--maxw); margin: 0 auto; padding: 14px 28px;
+    display: flex; align-items: center; justify-content: space-between; gap: 20px;
   }
-
-  .header-logo {
-    width: 32px;
-    height: 32px;
-    object-fit: contain;
-    flex-shrink: 0;
-    opacity: 0.9;
+  .brand {
+    display: flex; align-items: center; gap: 9px;
+    font-weight: 800; font-size: 1.05rem; letter-spacing: -0.01em;
+    text-decoration: none;
   }
-
-  .header-titles { flex: 1; }
-
-  header h1 {
-    font-size: 1.05rem;
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    color: var(--accent);
-    line-height: 1.2;
+  .brand .dot { width: 9px; height: 9px; border-radius: 3px; background: var(--accent); flex-shrink: 0; }
+  .nav-links { display: flex; align-items: center; gap: 30px; }
+  .nav-links a {
+    text-decoration: none; color: var(--text-muted); font-size: 0.88rem; font-weight: 500;
+    transition: color 0.15s;
   }
-
-  header .data {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.72rem;
-    color: var(--text-muted);
-    margin-top: 2px;
+  .nav-links a:hover { color: var(--text); }
+  .nav-cta {
+    background: var(--accent); color: #0b0b0c; text-decoration: none;
+    font-weight: 700; font-size: 0.85rem; padding: 9px 18px; border-radius: 999px;
+    transition: background 0.15s, transform 0.1s; white-space: nowrap;
   }
+  .nav-cta:hover { background: var(--accent-dim); }
+  .nav-cta:active { transform: scale(0.97); }
+  .nav-toggle { display: none; }
 
-  .container { padding: 20px; max-width: 640px; margin: 0 auto; }
-
-  .selects {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    margin-bottom: 20px;
-  }
-
-  .select-wrap { display: flex; flex-direction: column; gap: 6px; }
-
-  .select-wrap label {
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--text-muted);
-  }
-
-  select {
-    background: var(--surface);
-    border: 1.5px solid var(--border);
-    border-radius: var(--radius);
-    color: var(--text);
-    font-family: 'Sora', sans-serif;
-    font-size: 0.85rem;
-    padding: 10px 12px;
-    width: 100%;
-    cursor: pointer;
-    transition: border-color 0.2s;
-    appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23888' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 12px center;
-    padding-right: 32px;
-  }
-
-  select:focus   { outline: none; border-color: var(--accent); }
-  select:disabled { opacity: 0.4; cursor: default; }
-
-  .status-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: var(--surface2);
-    border-radius: var(--radius);
-    padding: 10px 14px;
-    margin-bottom: 16px;
-    font-size: 0.8rem;
-  }
-
-  .status-dot {
-    width: 8px; height: 8px;
-    border-radius: 50%;
-    background: var(--text-muted);
-    display: inline-block;
-    margin-right: 8px;
-    transition: background 0.3s;
-  }
-  .status-dot.saving { background: var(--accent); animation: pulse 0.8s infinite; }
-  .status-dot.saved  { background: var(--green); }
-  .status-dot.error  { background: var(--red); }
-
-  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
-
-  .fora-count {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.75rem;
-    color: var(--text-muted);
-  }
-  .fora-count span { color: var(--red); font-weight: 600; }
-
-  .aluno-list { display: flex; flex-direction: column; gap: 8px; }
-
-  .aluno-item {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    background: var(--surface);
-    border: 1.5px solid var(--border);
-    border-radius: var(--radius);
-    padding: 13px 16px;
-    cursor: pointer;
-    transition: all 0.15s;
-    user-select: none;
-  }
-  .aluno-item:active { transform: scale(0.985); }
-
-  .aluno-item.fora { border-color: var(--red); background: #1f1212; }
-  .aluno-item.fora .aluno-nome { text-decoration: line-through; color: var(--text-muted); }
-
-  .checkbox {
-    width: 22px; height: 22px;
-    border-radius: 6px;
-    border: 2px solid var(--border);
-    display: flex; align-items: center; justify-content: center;
-    flex-shrink: 0;
-    transition: all 0.15s;
-    background: var(--surface2);
-  }
-  .aluno-item.fora .checkbox { background: var(--red); border-color: var(--red); }
-  .checkbox svg { display: none; }
-  .aluno-item.fora .checkbox svg { display: block; }
-
-  .aluno-nome { font-size: 0.9rem; font-weight: 500; flex: 1; transition: color 0.15s; }
-
-  .tag-fora {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.65rem;
-    letter-spacing: 0.08em;
-    color: var(--red);
-    text-transform: uppercase;
-    opacity: 0;
-    transition: opacity 0.15s;
-  }
-  .aluno-item.fora .tag-fora { opacity: 1; }
-
-  .empty-state {
+  /* ── Hero ────────────────────────────────────────────────────────── */
+  .hero {
+    position: relative;
+    padding: 96px 0 84px;
+    overflow: hidden;
     text-align: center;
-    padding: 60px 20px;
-    color: var(--text-muted);
   }
-  .empty-state .icon { font-size: 2.5rem; margin-bottom: 12px; }
-  .empty-state p { font-size: 0.85rem; line-height: 1.6; }
+  .hero-glow {
+    position: absolute; top: -220px; left: 50%; transform: translateX(-50%);
+    width: 900px; height: 560px;
+    background: radial-gradient(ellipse at center, rgba(232,255,71,0.16) 0%, rgba(232,255,71,0) 68%);
+    pointer-events: none; z-index: 0;
+  }
+  .hero > * { position: relative; z-index: 1; }
 
-  .bottom-bar-wrapper {
-    position: fixed;
-    bottom: 0; left: 0; right: 0;
-    background: var(--surface);
-    border-top: 1.5px solid var(--border);
-    padding: 12px 20px;
-    z-index: 100;
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--surface); border: 1px solid var(--border);
+    color: var(--text-muted); font-size: 0.78rem; font-weight: 500;
+    padding: 7px 16px; border-radius: 999px; margin-bottom: 28px;
   }
-  .bottom-inner { display: flex; gap: 10px; max-width: 640px; margin: 0 auto; }
+  .eyebrow span { color: var(--accent); }
+
+  h1 {
+    font-size: clamp(2.1rem, 4.6vw, 3.6rem);
+    font-weight: 800; letter-spacing: -0.025em; line-height: 1.12;
+    max-width: 820px; margin: 0 auto 22px;
+  }
+  h1 .hl { color: var(--accent); }
+
+  .hero-sub {
+    max-width: 600px; margin: 0 auto 36px;
+    color: var(--text-muted); font-size: 1.08rem; line-height: 1.6;
+  }
+
+  .hero-ctas { display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap; margin-bottom: 20px; }
 
   .btn {
-    flex: 1;
-    padding: 13px;
-    border: none;
-    border-radius: var(--radius);
-    font-family: 'Sora', sans-serif;
-    font-size: 0.85rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.15s;
-    letter-spacing: 0.02em;
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: 'Sora', sans-serif; font-weight: 700; font-size: 0.95rem;
+    padding: 14px 26px; border-radius: 999px; text-decoration: none;
+    border: 1px solid transparent; cursor: pointer; transition: all 0.15s;
   }
-  .btn:active { transform: scale(0.97); }
+  .btn-primary { background: var(--accent); color: #0b0b0c; }
+  .btn-primary:hover { background: var(--accent-dim); transform: translateY(-1px); }
+  .btn-ghost { background: transparent; color: var(--text); border-color: var(--border); }
+  .btn-ghost:hover { border-color: var(--text-faint); background: var(--surface); }
 
-  .btn-salvar { background: var(--accent); color: #0f0f0f; }
-  .btn-salvar:hover { background: var(--accent-dim); }
-  .btn-salvar:disabled { background: var(--border); color: var(--text-muted); cursor: default; }
-
-  .btn-txt {
-    background: var(--surface2);
-    color: var(--text);
-    border: 1.5px solid var(--border);
-    flex: 0 0 auto;
-    padding: 13px 16px;
-  }
-  .btn-txt:hover { border-color: var(--text-muted); }
-
-  .loading-overlay {
-    position: fixed; inset: 0;
-    background: rgba(15,15,15,0.85);
-    display: flex; align-items: center; justify-content: center;
-    z-index: 200;
-    flex-direction: column;
-    gap: 12px;
-  }
-  .spinner {
-    width: 36px; height: 36px;
-    border: 3px solid var(--border);
-    border-top-color: var(--accent);
-    border-radius: 50%;
-    animation: spin 0.7s linear infinite;
-  }
-  @keyframes spin { to { transform: rotate(360deg); } }
-  .loading-overlay p { font-size: 0.85rem; color: var(--text-muted); }
-
-  .toast {
-    position: fixed;
-    top: 80px; left: 50%; transform: translateX(-50%);
-    background: var(--surface2);
-    border: 1.5px solid var(--border);
-    border-radius: var(--radius);
-    padding: 10px 20px;
-    font-size: 0.82rem;
-    z-index: 300;
-    animation: fadeInOut 2.5s forwards;
-    white-space: nowrap;
-  }
-  .toast.ok  { border-color: var(--green); color: var(--green); }
-  .toast.err { border-color: var(--red);   color: var(--red);   }
-  @keyframes fadeInOut {
-    0%  { opacity:0; top:90px } 15% { opacity:1; top:80px }
-    75% { opacity:1 } 100% { opacity:0 }
+  .hero-meta {
+    color: var(--text-faint); font-size: 0.8rem;
   }
 
-  /* ── Histórico ──────────────────────────────────────────────── */
-  .historico {
-    max-width: 640px;
-    margin: 32px auto 0;
-    padding: 0 20px 24px;
+  /* ── Hero screenshot ────────────────────────────────────────────── */
+  .browser-frame {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 16px; overflow: hidden;
+    box-shadow: 0 40px 100px -30px rgba(0,0,0,0.6);
+  }
+  .browser-bar {
+    display: flex; align-items: center; gap: 6px;
+    padding: 11px 14px; background: var(--surface2);
+    border-bottom: 1px solid var(--border);
+  }
+  .browser-bar span {
+    width: 9px; height: 9px; border-radius: 50%; background: var(--border);
+  }
+  .browser-frame img, .browser-frame .img-fallback { width: 100%; display: block; }
+  .img-fallback {
+    aspect-ratio: 16/9.6; display: flex; align-items: center; justify-content: center;
+    flex-direction: column; gap: 8px; color: var(--text-faint);
+    background:
+      linear-gradient(135deg, var(--surface2) 25%, transparent 25%) -10px 0/20px 20px,
+      linear-gradient(225deg, var(--surface2) 25%, transparent 25%) -10px 0/20px 20px,
+      var(--bg-soft);
+  }
+  .img-fallback .fb-name { font-family: 'DM Mono', monospace; font-size: 0.72rem; }
+
+  .hero-shot { max-width: 900px; margin: 20px auto 0; }
+
+  /* ── Section shell ──────────────────────────────────────────────── */
+  .section { padding: 88px 0; }
+  .section-alt { background: var(--bg-soft); border-top: 1px solid var(--border-soft); border-bottom: 1px solid var(--border-soft); }
+  .section-head { text-align: center; max-width: 620px; margin: 0 auto 52px; }
+  .kicker {
+    font-family: 'DM Mono', monospace; font-size: 0.75rem; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--accent); margin-bottom: 12px; font-weight: 500;
+  }
+  .section-head h2 { font-size: clamp(1.7rem, 3vw, 2.3rem); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 14px; }
+  .section-head p { color: var(--text-muted); font-size: 1.02rem; line-height: 1.6; }
+
+  .reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+
+  /* ── Problema ────────────────────────────────────────────────────── */
+  .pain-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+    max-width: 980px; margin: 0 auto;
+  }
+  .pain-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 26px 24px;
+  }
+  .pain-card .n { font-family: 'DM Mono', monospace; color: var(--text-faint); font-size: 0.8rem; margin-bottom: 12px; }
+  .pain-card p { color: var(--text-muted); font-size: 0.92rem; line-height: 1.6; }
+  .pain-card strong { color: var(--text); font-weight: 600; }
+
+  /* ── Features ────────────────────────────────────────────────────── */
+  .feat-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+  }
+  .feat-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 24px 22px; transition: border-color 0.2s, transform 0.2s;
+  }
+  .feat-card:hover { border-color: var(--text-faint); transform: translateY(-3px); }
+  .feat-icon {
+    width: 40px; height: 40px; border-radius: 10px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; font-size: 1.15rem;
+    margin-bottom: 16px;
+  }
+  .feat-card h3 { font-size: 0.98rem; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.01em; }
+  .feat-card p { color: var(--text-muted); font-size: 0.86rem; line-height: 1.55; }
+
+  /* ── Como funciona ───────────────────────────────────────────────── */
+  .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; max-width: 1000px; margin: 0 auto; }
+  .step { text-align: center; position: relative; }
+  .step-num {
+    width: 44px; height: 44px; border-radius: 50%; background: var(--surface);
+    border: 1.5px solid var(--border); display: flex; align-items: center; justify-content: center;
+    font-family: 'DM Mono', monospace; font-weight: 500; color: var(--accent);
+    margin: 0 auto 18px;
+  }
+  .step h3 { font-size: 0.96rem; font-weight: 700; margin-bottom: 8px; }
+  .step p { color: var(--text-muted); font-size: 0.85rem; line-height: 1.55; }
+
+  /* ── Screenshots ─────────────────────────────────────────────────── */
+  .shots-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px;
+  }
+  .shot-card { display: flex; flex-direction: column; gap: 12px; }
+  .shot-card .browser-frame img { aspect-ratio: 16/10; object-fit: cover; }
+  .shot-cap { color: var(--text-muted); font-size: 0.85rem; text-align: center; }
+
+  /* ── Fora de sala ────────────────────────────────────────────────── */
+  .fs-section {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center;
+  }
+  .fs-text .kicker { }
+  .fs-text h2 { font-size: clamp(1.6rem, 2.8vw, 2.1rem); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 16px; }
+  .fs-text p { color: var(--text-muted); font-size: 1rem; line-height: 1.65; margin-bottom: 16px; }
+  .fs-flow { display: flex; flex-direction: column; gap: 14px; margin: 22px 0 26px; }
+  .fs-flow-item { display: flex; gap: 14px; align-items: flex-start; }
+  .fs-flow-num {
+    width: 26px; height: 26px; border-radius: 8px; background: var(--surface2); border: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center; font-family: 'DM Mono', monospace;
+    font-size: 0.72rem; color: var(--accent); flex-shrink: 0; margin-top: 1px;
+  }
+  .fs-flow-item p { margin: 0; font-size: 0.9rem; color: var(--text-muted); }
+  .fs-flow-item strong { color: var(--text); }
+
+  .fs-phone-wrap { display: flex; justify-content: center; }
+  .phone-frame {
+    width: 240px; border: 8px solid var(--surface2); border-radius: 34px;
+    background: var(--surface2); box-shadow: 0 30px 80px -20px rgba(0,0,0,0.6);
+    overflow: hidden;
+  }
+  .phone-frame img, .phone-frame .img-fallback { border-radius: 24px; }
+  .phone-frame .img-fallback { aspect-ratio: 9/17.5; }
+
+  /* ── Pricing ─────────────────────────────────────────────────────── */
+  .price-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; max-width: 700px; margin: 0 auto; }
+  .price-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 32px 28px; display: flex; flex-direction: column;
+  }
+  .price-card.featured {
+    border-color: var(--accent); background: linear-gradient(180deg, var(--accent-soft), var(--surface) 40%);
+    position: relative;
+  }
+  .price-badge {
+    position: absolute; top: -13px; left: 50%; transform: translateX(-50%);
+    background: var(--accent); color: #0b0b0c; font-size: 0.7rem; font-weight: 700;
+    padding: 5px 14px; border-radius: 999px; letter-spacing: 0.02em;
+  }
+  .price-name { font-size: 0.9rem; font-weight: 600; color: var(--text-muted); margin-bottom: 10px; }
+  .price-value { font-size: 2.4rem; font-weight: 800; letter-spacing: -0.03em; margin-bottom: 4px; }
+  .price-value span { font-size: 1rem; color: var(--text-muted); font-weight: 500; }
+  .price-note { color: var(--text-faint); font-size: 0.82rem; margin-bottom: 22px; }
+  .price-list { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 26px; flex: 1; }
+  .price-list li { font-size: 0.87rem; color: var(--text-muted); display: flex; gap: 9px; align-items: flex-start; }
+  .price-list li::before { content: "✓"; color: var(--accent); font-weight: 700; flex-shrink: 0; }
+  .price-card .btn { width: 100%; justify-content: center; }
+
+  .variants-note {
+    max-width: 700px; margin: 26px auto 0; text-align: center;
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm);
+    padding: 16px 22px; color: var(--text-muted); font-size: 0.85rem; line-height: 1.6;
+  }
+  .variants-note strong { color: var(--text); }
+
+  .pix-note {
+    text-align: center; margin-top: 22px; color: var(--text-faint); font-size: 0.82rem;
   }
 
-  .historico-titulo {
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--text-muted);
-    margin-bottom: 10px;
-    padding-top: 16px;
-    border-top: 1px solid var(--border);
+  /* ── FAQ ─────────────────────────────────────────────────────────── */
+  .faq { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 10px; }
+  .faq-item {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm);
+    overflow: hidden;
   }
-
-  .historico-list { display: flex; flex-direction: column; gap: 6px; }
-
-  .historico-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 10px 14px;
-    gap: 10px;
+  .faq-q {
+    width: 100%; text-align: left; background: none; border: none; color: var(--text);
+    font-family: 'Sora', sans-serif; font-size: 0.95rem; font-weight: 600;
+    padding: 18px 22px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px;
   }
+  .faq-q .plus { color: var(--accent); font-family: 'DM Mono', monospace; font-size: 1.1rem; transition: transform 0.2s; flex-shrink: 0; }
+  .faq-item.open .faq-q .plus { transform: rotate(45deg); }
+  .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.25s ease; }
+  .faq-item.open .faq-a { max-height: 240px; }
+  .faq-a p { padding: 0 22px 20px; color: var(--text-muted); font-size: 0.88rem; line-height: 1.6; }
 
-  .hist-data {
-    font-family: 'DM Mono', monospace;
-    color: var(--text-muted);
-    font-size: 0.75rem;
-    white-space: nowrap;
+  /* ── CTA final ───────────────────────────────────────────────────── */
+  .cta-final {
+    text-align: center; max-width: 640px; margin: 0 auto;
   }
+  .cta-final h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 14px; }
+  .cta-final p { color: var(--text-muted); margin-bottom: 30px; font-size: 1rem; }
 
-  .hist-resumo {
-    color: var(--text-muted);
-    font-size: 0.78rem;
-    flex: 1;
+  /* ── Footer ──────────────────────────────────────────────────────── */
+  footer { border-top: 1px solid var(--border-soft); padding: 44px 0 30px; }
+  .footer-inner {
+    display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;
+    margin-bottom: 22px;
   }
-  .hist-resumo span { color: var(--red); font-weight: 600; }
-
-  .btn-hist-dl {
-    background: none;
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    color: var(--text-muted);
-    font-family: 'DM Mono', monospace;
-    font-size: 0.7rem;
-    padding: 4px 10px;
-    cursor: pointer;
-    transition: border-color 0.15s, color 0.15s;
-    white-space: nowrap;
-    flex-shrink: 0;
+  .footer-links { display: flex; gap: 24px; flex-wrap: wrap; }
+  .footer-links a { color: var(--text-muted); text-decoration: none; font-size: 0.85rem; }
+  .footer-links a:hover { color: var(--text); }
+  .footer-bottom {
+    display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;
+    padding-top: 22px; border-top: 1px solid var(--border-soft);
   }
-  .btn-hist-dl:hover { border-color: var(--accent); color: var(--accent); }
+  .footer-bottom p { color: var(--text-faint); font-size: 0.78rem; }
+  .discreet-link {
+    color: var(--text-faint); font-size: 0.76rem; text-decoration: none;
+    border-bottom: 1px dotted var(--text-faint);
+  }
+  .discreet-link:hover { color: var(--text-muted); border-color: var(--text-muted); }
 
-  /* ── Assinatura ─────────────────────────────────────────────── */
-  .assinatura {
-    text-align: center;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.65rem;
-    color: #3a3a3a;
-    padding: 20px 0 6px;
-    letter-spacing: 0.04em;
+  /* ── Responsive ──────────────────────────────────────────────────── */
+  @media (max-width: 900px) {
+    .pain-grid { grid-template-columns: 1fr; }
+    .feat-grid { grid-template-columns: repeat(2, 1fr); }
+    .steps { grid-template-columns: repeat(2, 1fr); row-gap: 34px; }
+    .shots-grid { grid-template-columns: 1fr; }
+    .fs-section { grid-template-columns: 1fr; }
+    .fs-phone-wrap { order: -1; }
+    .price-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 640px) {
+    .nav-links { display: none; }
+    .feat-grid { grid-template-columns: 1fr; }
+    .steps { grid-template-columns: 1fr; }
+    .section { padding: 64px 0; }
+    .hero { padding: 64px 0 56px; }
+    .footer-inner { flex-direction: column; align-items: flex-start; }
   }
 </style>
 </head>
 <body>
 
-<header>
-  <div class="header-inner">
-    <img src="logo.png" alt="" class="header-logo"
-         onerror="this.style.display='none'">
-    <div class="header-titles">
-      <h1>Alunos fora de sala - DiarioPro</h1>
-      <div class="data" id="dataHoje"></div>
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="brand"><span class="dot"></span>DiarioPRO</a>
+    <div class="nav-links">
+      <a href="#recursos">Recursos</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#precos">Preços</a>
+      <a href="#faq">Dúvidas</a>
+    </div>
+    <a class="nav-cta" href="https://github.com/Danfluz/DiarioPro-faltas/releases/latest">Baixar grátis</a>
+  </div>
+</nav>
+
+<!-- ═══ Hero ═══ -->
+<header class="hero">
+  <div class="hero-glow"></div>
+  <div class="wrap">
+    <div class="eyebrow"><span>●</span> Feito pra quem usa o SIEPE todo santo dia</div>
+    <h1>Menos cliques no SIEPE.<br>Mais tempo <span class="hl">pra dar aula</span>.</h1>
+    <p class="hero-sub">
+      O DiarioPRO organiza planejamento, notas, frequência e o resto da burocracia escolar —
+      e ainda lança direto no SIEPE por você. Tudo num programa só, no seu computador.
+    </p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="https://github.com/Danfluz/DiarioPro-faltas/releases/latest">Baixar grátis para Windows</a>
+      <a class="btn btn-ghost" href="#como-funciona">Ver como funciona</a>
+    </div>
+    <p class="hero-meta">Sem cartão de crédito · ativação por PIX dentro do programa</p>
+
+    <div class="hero-shot reveal">
+      <div class="browser-frame">
+        <div class="browser-bar"><span></span><span></span><span></span></div>
+        <img src="screenshot-hub.png" alt="Tela inicial do DiarioPRO"
+             onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'img-fallback',innerHTML:'🖥️<div class=&quot;fb-name&quot;>screenshot-hub.png</div>'}))">
+      </div>
     </div>
   </div>
 </header>
 
-<div class="container">
-  <div class="selects">
-    <div class="select-wrap">
-      <label>Turma</label>
-      <select id="selTurma">
-        <option value="">— selecione —</option>
-      </select>
+<!-- ═══ Problema ═══ -->
+<section class="section section-alt">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker">O problema</div>
+      <h2>Se você já perdeu uma tarde inteira no SIEPE, sabe do que estamos falando</h2>
     </div>
-    <div class="select-wrap">
-      <label>Disciplina</label>
-      <select id="selDisciplina" disabled>
-        <option value="">— selecione —</option>
-      </select>
-    </div>
-  </div>
-
-  <div class="status-bar" id="statusBar" style="display:none">
-    <div>
-      <span class="status-dot" id="statusDot"></span>
-      <span id="statusText" style="font-size:0.8rem">Pronto</span>
-    </div>
-    <div class="fora-count">Fora de sala: <span id="countFora">0</span></div>
-  </div>
-
-  <div id="listaAlunos">
-    <div class="empty-state">
-      <div class="icon">🏫</div>
-      <p>Selecione uma turma e disciplina<br>para carregar a lista de alunos.</p>
+    <div class="pain-grid reveal">
+      <div class="pain-card">
+        <div class="n mono">01</div>
+        <p><strong>Lançar nota por nota, aluno por aluno</strong> é o tipo de trabalho manual e repetitivo que consome horas que poderiam ser gasto planejando aula.</p>
+      </div>
+      <div class="pain-card">
+        <div class="n mono">02</div>
+        <p><strong>Planejamento bimestral do zero</strong> a cada período, sem aproveitar nada do que já foi escrito antes.</p>
+      </div>
+      <div class="pain-card">
+        <div class="n mono">03</div>
+        <p><strong>Saber quem está fora de sala</strong> hoje, em qual aula, sem que professor e secretaria fiquem duplicando papel e mensagem.</p>
+      </div>
     </div>
   </div>
-</div>
+</section>
 
-<!-- Histórico dos últimos dias com dados -->
-<div class="historico">
-  <div class="historico-titulo">Registros anteriores</div>
-  <div class="historico-list" id="historicoList">
-    <div style="font-size:0.75rem;color:#3a3a3a;padding:4px 0">Carregando...</div>
+<!-- ═══ Recursos ═══ -->
+<section class="section" id="recursos">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker">Recursos</div>
+      <h2>Um programa só, pra tudo que o dia a dia escolar pede</h2>
+      <p>Cada módulo resolve uma parte real do trabalho — sem depender de planilha solta ou post-it.</p>
+    </div>
+    <div class="feat-grid reveal">
+      <div class="feat-card">
+        <div class="feat-icon">📝</div>
+        <h3>Notas e frequência no SIEPE</h3>
+        <p>Lança direto no sistema oficial, sem digitar aluno por aluno na tela do governo.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">🧭</div>
+        <h3>Planejamento com ajuda de IA</h3>
+        <p>O Tim escreve um rascunho do bimestre a partir do que você já ensinou — você revisa e ajusta.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">📊</div>
+        <h3>Dashboard da turma</h3>
+        <p>Médias, faltas, risco de reprovação e quem precisa de atenção — tudo em gráficos, sem planilha.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">🚪</div>
+        <h3>Alunos fora de sala em tempo real</h3>
+        <p>Professor marca pelo celular, secretaria acompanha tudo direto no programa, no mesmo dia.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">✅</div>
+        <h3>Correção de provas assistida</h3>
+        <p>Agiliza a correção sem tirar a palavra final de quem está corrigindo.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">🗂️</div>
+        <h3>Banco de questões</h3>
+        <p>Monta provas reaproveitando questões já usadas, organizadas por tema e dificuldade.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">📋</div>
+        <h3>Relatório de pendências</h3>
+        <p>Mostra de cara o que ainda falta lançar, turma por turma, sem precisar caçar manualmente.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">📄</div>
+        <h3>Ata de controle em .docx</h3>
+        <p>Gera o documento pronto pra imprimir e assinar, com um clique.</p>
+      </div>
+    </div>
   </div>
-</div>
+</section>
 
-<div class="assinatura" id="assinatura">DiarioPRO — por danfluz</div>
-
-<div class="bottom-bar-wrapper" id="bottomBar" style="display:none">
-  <div class="bottom-inner">
-    <button class="btn btn-salvar" id="btnSalvar" onclick="salvarDados()">Salvar</button>
-    <button class="btn btn-txt" onclick="baixarTxt()" title="Baixar .txt">&#8595; .txt</button>
+<!-- ═══ Como funciona ═══ -->
+<section class="section section-alt" id="como-funciona">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker">Como funciona</div>
+      <h2>Do download ao primeiro lançamento, em poucos minutos</h2>
+    </div>
+    <div class="steps reveal">
+      <div class="step">
+        <div class="step-num mono">1</div>
+        <h3>Baixe e instale</h3>
+        <p>Um instalador só, direto pro seu computador Windows.</p>
+      </div>
+      <div class="step">
+        <div class="step-num mono">2</div>
+        <h3>Ative com PIX</h3>
+        <p>Escolhe o plano, paga por PIX dentro do próprio programa e já libera o uso.</p>
+      </div>
+      <div class="step">
+        <div class="step-num mono">3</div>
+        <h3>Conecte seu SIEPE</h3>
+        <p>Informa seu login uma vez — fica salvo só no seu computador.</p>
+      </div>
+      <div class="step">
+        <div class="step-num mono">4</div>
+        <h3>Use no dia a dia</h3>
+        <p>Planeje, lance notas, acompanhe turmas — o resto o programa faz por você.</p>
+      </div>
+    </div>
   </div>
-</div>
+</section>
 
-<div class="loading-overlay" id="loadingOverlay">
-  <div class="spinner"></div>
-  <p>Conectando ao Firebase...</p>
-</div>
+<!-- ═══ Screenshots ═══ -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker">Por dentro do programa</div>
+      <h2>Feito pra ser usado de verdade, todo dia</h2>
+    </div>
+    <div class="shots-grid reveal">
+      <div class="shot-card">
+        <div class="browser-frame">
+          <div class="browser-bar"><span></span><span></span><span></span></div>
+          <img src="screenshot-dashboard.png" alt="Dashboard de turma do DiarioPRO"
+               onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'img-fallback',innerHTML:'📊<div class=&quot;fb-name&quot;>screenshot-dashboard.png</div>'}))">
+        </div>
+        <p class="shot-cap">Dashboard da turma — médias, faltas e risco de reprovação num só lugar</p>
+      </div>
+      <div class="shot-card">
+        <div class="browser-frame">
+          <div class="browser-bar"><span></span><span></span><span></span></div>
+          <img src="screenshot-planejamento.png" alt="Planejamento com IA no DiarioPRO"
+               onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'img-fallback',innerHTML:'🧭<div class=&quot;fb-name&quot;>screenshot-planejamento.png</div>'}))">
+        </div>
+        <p class="shot-cap">Planejamento bimestral com um rascunho pronto pra revisar</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Fora de sala ═══ -->
+<section class="section section-alt" id="fora-de-sala">
+  <div class="wrap">
+    <div class="fs-section reveal">
+      <div class="fs-text">
+        <div class="kicker">Alunos fora de sala</div>
+        <h2>Sem grupo de WhatsApp pra saber quem saiu de sala hoje</h2>
+        <p>
+          Cada professor marca pelo próprio celular, na hora — sem precisar instalar nada.
+          A secretaria abre o DiarioPRO e encontra tudo o que foi reportado no dia, já organizado por turma.
+        </p>
+        <div class="fs-flow">
+          <div class="fs-flow-item">
+            <div class="fs-flow-num mono">1</div>
+            <p><strong>Professor</strong> abre o link no celular e marca quem saiu de sala, por disciplina.</p>
+          </div>
+          <div class="fs-flow-item">
+            <div class="fs-flow-num mono">2</div>
+            <p><strong>Tudo é salvo na hora</strong>, sem precisar avisar ninguém manualmente.</p>
+          </div>
+          <div class="fs-flow-item">
+            <div class="fs-flow-num mono">3</div>
+            <p><strong>Secretaria</strong> vê o consolidado do dia direto no DiarioPRO, turma por turma.</p>
+          </div>
+        </div>
+      </div>
+      <div class="fs-phone-wrap">
+        <div class="phone-frame">
+          <img src="screenshot-fora-sala-celular.png" alt="Ferramenta de alunos fora de sala no celular"
+               onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'img-fallback',innerHTML:'📱<div class=&quot;fb-name&quot;>screenshot-fora-sala-celular.png</div>'}))">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Preços ═══ -->
+<section class="section" id="precos">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker">Preços</div>
+      <h2>Sem contrato, sem fidelidade</h2>
+      <p>Pague por PIX direto dentro do programa. Cancele quando quiser.</p>
+    </div>
+
+    <div class="price-grid reveal">
+      <div class="price-card">
+        <div class="price-name">Mensal</div>
+        <div class="price-value">R$ 19,90<span>/mês</span></div>
+        <div class="price-note">Renovação manual, sem fidelidade</div>
+        <ul class="price-list">
+          <li>Todos os módulos do programa</li>
+          <li>Ativação e pagamento por PIX</li>
+          <li>Atualizações inclusas</li>
+        </ul>
+        <a class="btn btn-ghost" href="https://github.com/Danfluz/DiarioPro-faltas/releases/latest">Baixar e testar</a>
+      </div>
+
+      <div class="price-card featured">
+        <div class="price-badge">MELHOR CUSTO</div>
+        <div class="price-name">Anual</div>
+        <div class="price-value">R$ 150<span>/ano</span></div>
+        <div class="price-note">Equivale a R$12,50 por mês</div>
+        <ul class="price-list">
+          <li>Todos os módulos do programa</li>
+          <li>Ativação e pagamento por PIX</li>
+          <li>Atualizações inclusas</li>
+          <li>Sai mais barato que pagar mês a mês</li>
+        </ul>
+        <a class="btn btn-primary" href="https://github.com/Danfluz/DiarioPro-faltas/releases/latest">Baixar e testar</a>
+      </div>
+    </div>
+
+    <div class="variants-note reveal">
+      Disponível em três versões pra baixar — <strong>Professor</strong>, <strong>Secretaria</strong> ou <strong>Completo</strong> —
+      escolha a que combina com o seu uso na tela de download. O preço é o mesmo em qualquer uma delas.
+    </div>
+
+    <p class="pix-note">Sem cadastro de cartão. O pagamento é um PIX gerado na hora, dentro do próprio programa.</p>
+  </div>
+</section>
+
+<!-- ═══ FAQ ═══ -->
+<section class="section section-alt" id="faq">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker">Dúvidas</div>
+      <h2>Antes de baixar</h2>
+    </div>
+    <div class="faq reveal" id="faqList">
+      <div class="faq-item">
+        <button class="faq-q">Preciso de internet o tempo todo? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Só nas ações que dependem do SIEPE ou da IA — como lançar notas ou gerar um planejamento. O resto do programa funciona normalmente offline.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Onde ficam meus dados e os dados dos alunos? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Guardados localmente no seu computador. Seu login do SIEPE fica salvo só na sua máquina, não em um servidor nosso.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">O DiarioPRO lança as notas por conta própria? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Ele preenche as mesmas telas que você já preenche manualmente no SIEPE, usando o seu próprio login — você continua no controle e pode revisar tudo antes de confirmar.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Funciona em Mac ou Linux? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Hoje o DiarioPRO roda em Windows. Não há versão para Mac ou Linux no momento.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Posso cancelar quando quiser? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Sim. O plano mensal não tem fidelidade — você só não renova se não quiser continuar.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Preciso instalar algo no computador da escola? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Não. O DiarioPRO roda no seu computador pessoal — nenhuma instalação do lado da escola é necessária.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA final ═══ -->
+<section class="section">
+  <div class="wrap">
+    <div class="cta-final reveal">
+      <h2>Pronto pra tirar o SIEPE do seu caminho?</h2>
+      <p>Baixe grátis, teste com sua própria turma e decida se vale a pena continuar.</p>
+      <a class="btn btn-primary" href="https://github.com/Danfluz/DiarioPro-faltas/releases/latest">Baixar DiarioPRO grátis</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-inner">
+      <a href="#" class="brand"><span class="dot"></span>DiarioPRO</a>
+      <div class="footer-links">
+        <a href="#recursos">Recursos</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#precos">Preços</a>
+        <a href="#faq">Dúvidas</a>
+        <a href="https://github.com/danfluz" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>DiarioPRO — por danfluz</p>
+      <a href="fora-de-sala.html" class="discreet-link">Já tem o link da sua escola? Acesse o registro de alunos fora de sala</a>
+    </div>
+  </div>
+</footer>
 
 <script>
-const DISCIPLINAS = [
-  "Artes", "Biologia", "Educação Física", "Filosofia", "Física",
-  "História", "Inglês", "Itinerário", "Língua Portuguesa",
-  "Matemática", "Química", "Sociologia"
-];
+  // Fade-in on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-let estadoAtual     = {};
-let alunosDaTurma   = [];
-let turmaAtual      = "";
-let turmaKey        = "";
-let disciplinaAtual = "";
-let firebaseOk      = false;
-
-const agora = new Date();
-
-document.getElementById("dataHoje").textContent =
-  agora.toLocaleDateString("pt-BR", {
-    weekday: "long", year: "numeric", month: "long", day: "numeric"
-  });
-
-function chaveData(d) {
-  const dt = d || agora;
-  // Garante que usa a data local, não UTC
-  const ano = dt.getFullYear();
-  const mes = String(dt.getMonth() + 1).padStart(2, "0");
-  const dia = String(dt.getDate()).padStart(2, "0");
-  return `${ano}-${mes}-${dia}`;
-}
-
-function codigoParaLabel(cod) {
-  return `${cod[0]}º Ano ${cod[1]}`;
-}
-
-function chaveFirebase(turma, disc, data) {
-  const t  = turma || turmaKey;
-  const di = (disc || disciplinaAtual).replace(/\s+/g, "_");
-  const da = data  || chaveData();
-  return `faltas/${da}/${t}/${di}`;
-}
-
-// ── Firebase ready ───────────────────────────────────────────────────
-document.addEventListener("firebaseReady", () => {
-  firebaseOk = true;
-  document.getElementById("loadingOverlay").style.display = "none";
-  carregarTurmas();
-  carregarVersao();
-  carregarHistorico();
-});
-
-setTimeout(() => {
-  if (!firebaseOk) {
-    document.getElementById("loadingOverlay").innerHTML = `
-      <p style="color:#ff4f4f;text-align:center;padding:20px">
-        Não foi possível conectar ao Firebase.<br>
-        <small>Verifique as configurações no código.</small>
-      </p>`;
-  }
-}, 8000);
-
-// ── Versão vinda do Firebase (gravada pelo DiarioPRO) ────────────────
-async function carregarVersao() {
-  try {
-    const snap = await window.get(window.ref(window.db, "config/versao"));
-    if (snap.exists()) {
-      document.getElementById("assinatura").textContent =
-        `DiarioPRO v${snap.val()} — por danfluz`;
-    }
-  } catch(e) { /* mantém texto padrão */ }
-}
-
-// ── Turmas dinâmicas do Firebase ─────────────────────────────────────
-async function carregarTurmas() {
-  const sel = document.getElementById("selTurma");
-  try {
-    const snap = await window.get(window.ref(window.db, "turmas"));
-    if (!snap.exists()) {
-      mostrarToast("Nenhuma turma encontrada. Atualize no DiarioPRO.", "err");
-      return;
-    }
-    Object.keys(snap.val()).sort().forEach(cod => {
-      const opt = document.createElement("option");
-      opt.value = cod;
-      opt.textContent = codigoParaLabel(cod);
-      sel.appendChild(opt);
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
     });
-  } catch(e) {
-    mostrarToast("Erro ao carregar turmas.", "err");
-  }
-}
-
-document.getElementById("selTurma").addEventListener("change", async function() {
-  turmaKey   = this.value;
-  turmaAtual = this.options[this.selectedIndex].text;
-  disciplinaAtual = "";
-
-  const selDisc = document.getElementById("selDisciplina");
-  selDisc.innerHTML = '<option value="">— selecione —</option>';
-  selDisc.disabled  = !turmaKey;
-  alunosDaTurma     = [];
-  resetLista();
-
-  if (!turmaKey) return;
-
-  try {
-    const snap = await window.get(window.ref(window.db, `turmas/${turmaKey}/alunos`));
-    if (snap.exists()) {
-      alunosDaTurma = Object.keys(snap.val())
-        .map(k => k.replace(/_/g, " "))
-        .sort();
-    } else {
-      mostrarToast("Turma sem alunos. Atualize no DiarioPRO.", "err");
-    }
-  } catch(e) {
-    mostrarToast("Erro ao carregar alunos.", "err");
-  }
-
-  DISCIPLINAS.forEach(d => {
-    const opt = document.createElement("option");
-    opt.value = d; opt.textContent = d;
-    selDisc.appendChild(opt);
   });
-});
-
-document.getElementById("selDisciplina").addEventListener("change", function() {
-  disciplinaAtual = this.value;
-  if (disciplinaAtual && alunosDaTurma.length > 0) carregarLista();
-  else resetLista();
-});
-
-function resetLista() {
-  estadoAtual = {};
-  document.getElementById("listaAlunos").innerHTML = `
-    <div class="empty-state">
-      <div class="icon">🏫</div>
-      <p>Selecione uma turma e disciplina<br>para carregar a lista de alunos.</p>
-    </div>`;
-  document.getElementById("statusBar").style.display = "none";
-  document.getElementById("bottomBar").style.display = "none";
-}
-
-async function carregarLista() {
-  mostrarStatus("carregando");
-  alunosDaTurma.forEach(nome => estadoAtual[nome] = false);
-
-  try {
-    const snap = await window.get(window.ref(window.db, chaveFirebase()));
-    if (snap.exists()) {
-      const salvo = snap.val();
-      alunosDaTurma.forEach(nome => {
-        if (salvo[nome.replace(/\s/g, "_")] === true) estadoAtual[nome] = true;
-      });
-    }
-  } catch(e) {
-    mostrarToast("Erro ao carregar registros.", "err");
-  }
-
-  renderizarLista();
-  document.getElementById("statusBar").style.display = "flex";
-  document.getElementById("bottomBar").style.display = "block";
-  mostrarStatus("pronto");
-}
-
-function renderizarLista() {
-  const container = document.getElementById("listaAlunos");
-  container.innerHTML = "";
-  const ul = document.createElement("div");
-  ul.className = "aluno-list";
-
-  alunosDaTurma.forEach(nome => {
-    const item = document.createElement("div");
-    item.className = "aluno-item" + (estadoAtual[nome] ? " fora" : "");
-    item.innerHTML = `
-      <div class="checkbox">
-        <svg width="12" height="9" viewBox="0 0 12 9" fill="none">
-          <path d="M1 4l3.5 3.5L11 1" stroke="white" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
-      <span class="aluno-nome">${nome}</span>
-      <span class="tag-fora">fora de sala</span>`;
-    item.addEventListener("click", () => toggleAluno(nome, item));
-    ul.appendChild(item);
-  });
-
-  container.appendChild(ul);
-  atualizarContador();
-}
-
-function toggleAluno(nome, el) {
-  estadoAtual[nome] = !estadoAtual[nome];
-  el.classList.toggle("fora", estadoAtual[nome]);
-  atualizarContador();
-}
-
-function atualizarContador() {
-  const count = Object.values(estadoAtual).filter(Boolean).length;
-  document.getElementById("countFora").textContent = count;
-}
-
-function mostrarStatus(tipo) {
-  const dot = document.getElementById("statusDot");
-  const txt = document.getElementById("statusText");
-  dot.className = "status-dot";
-  if      (tipo === "carregando") { dot.classList.add("saving"); txt.textContent = "Carregando..."; }
-  else if (tipo === "salvando")   { dot.classList.add("saving"); txt.textContent = "Salvando..."; }
-  else if (tipo === "salvo")      { dot.classList.add("saved");  txt.textContent = "Salvo ✓"; }
-  else if (tipo === "erro")       { dot.classList.add("error");  txt.textContent = "Erro ao salvar"; }
-  else                            {                              txt.textContent = "Pronto"; }
-}
-
-async function salvarDados() {
-  if (!turmaKey || !disciplinaAtual) return;
-  mostrarStatus("salvando");
-  document.getElementById("btnSalvar").disabled = true;
-
-  try {
-    const payload = {};
-    Object.entries(estadoAtual).forEach(([nome, val]) => {
-      payload[nome.replace(/\s/g, "_")] = val;
-    });
-    await window.set(window.ref(window.db, chaveFirebase()), payload);
-    mostrarStatus("salvo");
-    mostrarToast("Salvo com sucesso!", "ok");
-    carregarHistorico();
-  } catch(e) {
-    mostrarStatus("erro");
-    mostrarToast("Erro ao salvar. Verifique a conexão.", "err");
-  } finally {
-    document.getElementById("btnSalvar").disabled = false;
-  }
-}
-
-function baixarTxt() {
-  if (!turmaKey || !disciplinaAtual) return;
-  const foraLista = Object.entries(estadoAtual)
-    .filter(([_, v]) => v).map(([nome]) => nome);
-
-  let txt  = `ALUNOS FORA DE SALA\n`;
-  txt     += `Data: ${agora.toLocaleDateString("pt-BR")}\n`;
-  txt     += `Turma: ${turmaAtual}\n`;
-  txt     += `Disciplina: ${disciplinaAtual}\n`;
-  txt     += `${"─".repeat(40)}\n\n`;
-
-  if (foraLista.length === 0) {
-    txt += "Nenhum aluno fora de sala registrado.\n";
-  } else {
-    txt += `Fora de sala (${foraLista.length}):\n\n`;
-    foraLista.forEach((nome, i) => { txt += `  ${i + 1}. ${nome}\n`; });
-  }
-
-  txt += `\n${"─".repeat(40)}\n`;
-  txt += `Gerado em: ${new Date().toLocaleString("pt-BR")}\n`;
-
-  _download(txt,
-    `registro_${turmaKey}_${disciplinaAtual.replace(/\s/g,"_")}_${chaveData()}.txt`);
-}
-
-// ── Histórico — últimos 3 dias com dados ────────────────────────────
-async function carregarHistorico() {
-  const container = document.getElementById("historicoList");
-  const encontrados = [];
-
-  // Verifica até 5 dias para trás para achar 3 com dados
-  for (let i = 1; i <= 5; i++) {
-    if (encontrados.length >= 3) break;
-    const d = new Date(agora);
-    d.setDate(d.getDate() - i);
-    const chave = chaveData(d);
-
-    try {
-      const snap = await window.get(window.ref(window.db, `faltas/${chave}`));
-      if (!snap.exists()) continue;
-
-      const dadosDia = snap.val();
-      const foraSet  = new Set();
-      let   temDados = false;
-
-      Object.values(dadosDia).forEach(turmaObj => {
-        Object.values(turmaObj).forEach(discObj => {
-          temDados = true;
-          Object.entries(discObj).forEach(([aluno, fora]) => {
-            if (fora === true) foraSet.add(aluno);
-          });
-        });
-      });
-
-      if (temDados) encontrados.push({ d, chave, dadosDia, total: foraSet.size });
-    } catch(e) { /* sem dados neste dia */ }
-  }
-
-  if (encontrados.length === 0) {
-    container.innerHTML =
-      `<div style="font-size:0.75rem;color:#3a3a3a;padding:4px 0">
-        Nenhum registro nos últimos dias.
-      </div>`;
-    return;
-  }
-
-  container.innerHTML = "";
-  encontrados.forEach(({ d, chave, dadosDia, total }) => {
-    const dataFmt    = d.toLocaleDateString("pt-BR",
-      { weekday: "short", day: "2-digit", month: "2-digit" });
-    const turmasNoDia = Object.keys(dadosDia).sort().join(", ");
-
-    const item = document.createElement("div");
-    item.className = "historico-item";
-    item.innerHTML = `
-      <span class="hist-data">${dataFmt}</span>
-      <span class="hist-resumo">
-        ${turmasNoDia} &mdash; <span>${total} fora de sala</span>
-      </span>
-      <button class="btn-hist-dl" onclick="baixarHistoricoDia('${chave}')">
-        &#8595; .txt
-      </button>`;
-    container.appendChild(item);
-  });
-}
-
-async function baixarHistoricoDia(dataISO) {
-  try {
-    const snap = await window.get(window.ref(window.db, `faltas/${dataISO}`));
-    if (!snap.exists()) { mostrarToast("Sem dados para esta data.", "err"); return; }
-
-    const dadosDia = snap.val();
-    const [ano, mes, dia] = dataISO.split("-");
-    const dataFmt = `${dia}/${mes}/${ano}`;
-
-    let txt  = `ALUNOS FORA DE SALA — TODAS AS TURMAS\n`;
-    txt     += `Data: ${dataFmt}\n`;
-    txt     += `${"═".repeat(44)}\n\n`;
-
-    Object.entries(dadosDia).sort().forEach(([turma, disciplinas]) => {
-      // Agrupa por aluno -> lista de disciplinas em que estava fora
-      const porAluno = {};
-      Object.entries(disciplinas).forEach(([disc, alunos]) => {
-        Object.entries(alunos).forEach(([alunoKey, fora]) => {
-          if (fora === true) {
-            const nome = alunoKey.replace(/_/g, " ");
-            if (!porAluno[nome]) porAluno[nome] = [];
-            porAluno[nome].push(disc.replace(/_/g, " "));
-          }
-        });
-      });
-
-      const qtd = Object.keys(porAluno).length;
-      if (qtd === 0) return;
-
-      txt += `  ${turma}  (${qtd} fora de sala)\n`;
-      txt += `  ${"─".repeat(40)}\n`;
-      Object.entries(porAluno).sort().forEach(([nome, discs], i) => {
-        txt += `  ${i + 1}. ${nome}\n`;
-        txt += `      ${discs.sort().join(", ")}\n`;
-      });
-      txt += "\n";
-    });
-
-    txt += `${"═".repeat(44)}\n`;
-    txt += `Gerado em: ${new Date().toLocaleString("pt-BR")}\n`;
-
-    _download(txt, `faltas_todas_${dataISO}.txt`);
-  } catch(e) {
-    mostrarToast("Erro ao gerar arquivo.", "err");
-  }
-}
-
-function _download(texto, nomeArquivo) {
-  const blob = new Blob([texto], { type: "text/plain;charset=utf-8" });
-  const url  = URL.createObjectURL(blob);
-  const a    = document.createElement("a");
-  a.href = url; a.download = nomeArquivo; a.click();
-  URL.revokeObjectURL(url);
-}
-
-function mostrarToast(msg, tipo) {
-  const t = document.createElement("div");
-  t.className = `toast ${tipo}`;
-  t.textContent = msg;
-  document.body.appendChild(t);
-  setTimeout(() => t.remove(), 2600);
-}
 </script>
 </body>
 </html>

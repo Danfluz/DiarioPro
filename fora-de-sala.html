@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alunos fora de sala - DiarioPro</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
+<meta name="theme-color" content="#e8ff47">
+
+<!-- Firebase SDK -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+  import { getDatabase, ref, set, get } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyA3uY2vMyD84-8WZDxcpKeXf0Vx4DGwGYY",
+    authDomain: "gazearam-hoje.firebaseapp.com",
+    databaseURL: "https://gazearam-hoje-default-rtdb.firebaseio.com",
+    projectId: "gazearam-hoje",
+    storageBucket: "gazearam-hoje.firebasestorage.app",
+    messagingSenderId: "922475289526",
+    appId: "1:922475289526:web:d112cd3787d6af72cb3f17"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const db  = getDatabase(app);
+
+  window.db  = db;
+  window.ref = ref;
+  window.set = set;
+  window.get = get;
+  window.firebaseReady = true;
+  document.dispatchEvent(new Event("firebaseReady"));
+</script>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Sora:wght@400;600;700&display=swap');
+
+  :root {
+    --bg: #0f0f0f;
+    --surface: #1a1a1a;
+    --surface2: #242424;
+    --border: #2e2e2e;
+    --accent: #e8ff47;
+    --accent-dim: #c8df2a;
+    --text: #f0f0f0;
+    --text-muted: #888;
+    --red: #ff4f4f;
+    --green: #4fffb0;
+    --radius: 10px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Sora', sans-serif;
+    min-height: 100vh;
+    padding: 0 0 80px;
+  }
+
+  header {
+    background: var(--surface);
+    border-bottom: 2px solid var(--accent);
+    padding: 14px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .header-inner {
+    max-width: 640px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .header-logo {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    flex-shrink: 0;
+    opacity: 0.9;
+  }
+
+  .header-titles { flex: 1; }
+
+  .back-link {
+    display: inline-block;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    margin-bottom: 2px;
+    transition: color 0.15s;
+  }
+  .back-link:hover { color: var(--accent); }
+
+  header h1 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: var(--accent);
+    line-height: 1.2;
+  }
+
+  header .data {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    margin-top: 2px;
+  }
+
+  .container { padding: 20px; max-width: 640px; margin: 0 auto; }
+
+  .selects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .select-wrap { display: flex; flex-direction: column; gap: 6px; }
+
+  .select-wrap label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+
+  select {
+    background: var(--surface);
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text);
+    font-family: 'Sora', sans-serif;
+    font-size: 0.85rem;
+    padding: 10px 12px;
+    width: 100%;
+    cursor: pointer;
+    transition: border-color 0.2s;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23888' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 32px;
+  }
+
+  select:focus   { outline: none; border-color: var(--accent); }
+  select:disabled { opacity: 0.4; cursor: default; }
+
+  .status-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--surface2);
+    border-radius: var(--radius);
+    padding: 10px 14px;
+    margin-bottom: 16px;
+    font-size: 0.8rem;
+  }
+
+  .status-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--text-muted);
+    display: inline-block;
+    margin-right: 8px;
+    transition: background 0.3s;
+  }
+  .status-dot.saving { background: var(--accent); animation: pulse 0.8s infinite; }
+  .status-dot.saved  { background: var(--green); }
+  .status-dot.error  { background: var(--red); }
+
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+  .fora-count {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+  }
+  .fora-count span { color: var(--red); font-weight: 600; }
+
+  .aluno-list { display: flex; flex-direction: column; gap: 8px; }
+
+  .aluno-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--surface);
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius);
+    padding: 13px 16px;
+    cursor: pointer;
+    transition: all 0.15s;
+    user-select: none;
+  }
+  .aluno-item:active { transform: scale(0.985); }
+
+  .aluno-item.fora { border-color: var(--red); background: #1f1212; }
+  .aluno-item.fora .aluno-nome { text-decoration: line-through; color: var(--text-muted); }
+
+  .checkbox {
+    width: 22px; height: 22px;
+    border-radius: 6px;
+    border: 2px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.15s;
+    background: var(--surface2);
+  }
+  .aluno-item.fora .checkbox { background: var(--red); border-color: var(--red); }
+  .checkbox svg { display: none; }
+  .aluno-item.fora .checkbox svg { display: block; }
+
+  .aluno-nome { font-size: 0.9rem; font-weight: 500; flex: 1; transition: color 0.15s; }
+
+  .tag-fora {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    color: var(--red);
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 0.15s;
+  }
+  .aluno-item.fora .tag-fora { opacity: 1; }
+
+  .empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-muted);
+  }
+  .empty-state .icon { font-size: 2.5rem; margin-bottom: 12px; }
+  .empty-state p { font-size: 0.85rem; line-height: 1.6; }
+
+  .bottom-bar-wrapper {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    background: var(--surface);
+    border-top: 1.5px solid var(--border);
+    padding: 12px 20px;
+    z-index: 100;
+  }
+  .bottom-inner { display: flex; gap: 10px; max-width: 640px; margin: 0 auto; }
+
+  .btn {
+    flex: 1;
+    padding: 13px;
+    border: none;
+    border-radius: var(--radius);
+    font-family: 'Sora', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s;
+    letter-spacing: 0.02em;
+  }
+  .btn:active { transform: scale(0.97); }
+
+  .btn-salvar { background: var(--accent); color: #0f0f0f; }
+  .btn-salvar:hover { background: var(--accent-dim); }
+  .btn-salvar:disabled { background: var(--border); color: var(--text-muted); cursor: default; }
+
+  .btn-txt {
+    background: var(--surface2);
+    color: var(--text);
+    border: 1.5px solid var(--border);
+    flex: 0 0 auto;
+    padding: 13px 16px;
+  }
+  .btn-txt:hover { border-color: var(--text-muted); }
+
+  .loading-overlay {
+    position: fixed; inset: 0;
+    background: rgba(15,15,15,0.85);
+    display: flex; align-items: center; justify-content: center;
+    z-index: 200;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .spinner {
+    width: 36px; height: 36px;
+    border: 3px solid var(--border);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .loading-overlay p { font-size: 0.85rem; color: var(--text-muted); }
+
+  .toast {
+    position: fixed;
+    top: 80px; left: 50%; transform: translateX(-50%);
+    background: var(--surface2);
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius);
+    padding: 10px 20px;
+    font-size: 0.82rem;
+    z-index: 300;
+    animation: fadeInOut 2.5s forwards;
+    white-space: nowrap;
+  }
+  .toast.ok  { border-color: var(--green); color: var(--green); }
+  .toast.err { border-color: var(--red);   color: var(--red);   }
+  @keyframes fadeInOut {
+    0%  { opacity:0; top:90px } 15% { opacity:1; top:80px }
+    75% { opacity:1 } 100% { opacity:0 }
+  }
+
+  /* ── Histórico ──────────────────────────────────────────────── */
+  .historico {
+    max-width: 640px;
+    margin: 32px auto 0;
+    padding: 0 20px 24px;
+  }
+
+  .historico-titulo {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+  }
+
+  .historico-list { display: flex; flex-direction: column; gap: 6px; }
+
+  .historico-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 10px 14px;
+    gap: 10px;
+  }
+
+  .hist-data {
+    font-family: 'DM Mono', monospace;
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    white-space: nowrap;
+  }
+
+  .hist-resumo {
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    flex: 1;
+  }
+  .hist-resumo span { color: var(--red); font-weight: 600; }
+
+  .btn-hist-dl {
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text-muted);
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    padding: 4px 10px;
+    cursor: pointer;
+    transition: border-color 0.15s, color 0.15s;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .btn-hist-dl:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* ── Assinatura ─────────────────────────────────────────────── */
+  .assinatura {
+    text-align: center;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    color: #3a3a3a;
+    padding: 20px 0 6px;
+    letter-spacing: 0.04em;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <img src="logo.png" alt="" class="header-logo"
+         onerror="this.style.display='none'">
+    <div class="header-titles">
+      <a href="index.html" class="back-link">&larr; DiarioPRO</a>
+      <h1>Alunos fora de sala - DiarioPro</h1>
+      <div class="data" id="dataHoje"></div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="selects">
+    <div class="select-wrap">
+      <label>Turma</label>
+      <select id="selTurma">
+        <option value="">— selecione —</option>
+      </select>
+    </div>
+    <div class="select-wrap">
+      <label>Disciplina</label>
+      <select id="selDisciplina" disabled>
+        <option value="">— selecione —</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="status-bar" id="statusBar" style="display:none">
+    <div>
+      <span class="status-dot" id="statusDot"></span>
+      <span id="statusText" style="font-size:0.8rem">Pronto</span>
+    </div>
+    <div class="fora-count">Fora de sala: <span id="countFora">0</span></div>
+  </div>
+
+  <div id="listaAlunos">
+    <div class="empty-state">
+      <div class="icon">🏫</div>
+      <p>Selecione uma turma e disciplina<br>para carregar a lista de alunos.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Histórico dos últimos dias com dados -->
+<div class="historico">
+  <div class="historico-titulo">Registros anteriores</div>
+  <div class="historico-list" id="historicoList">
+    <div style="font-size:0.75rem;color:#3a3a3a;padding:4px 0">Carregando...</div>
+  </div>
+</div>
+
+<div class="assinatura" id="assinatura">DiarioPRO — por danfluz</div>
+
+<div class="bottom-bar-wrapper" id="bottomBar" style="display:none">
+  <div class="bottom-inner">
+    <button class="btn btn-salvar" id="btnSalvar" onclick="salvarDados()">Salvar</button>
+    <button class="btn btn-txt" onclick="baixarTxt()" title="Baixar .txt">&#8595; .txt</button>
+  </div>
+</div>
+
+<div class="loading-overlay" id="loadingOverlay">
+  <div class="spinner"></div>
+  <p>Conectando ao Firebase...</p>
+</div>
+
+<script>
+const DISCIPLINAS = [
+  "Artes", "Biologia", "Educação Física", "Filosofia", "Física",
+  "História", "Inglês", "Itinerário", "Língua Portuguesa",
+  "Matemática", "Química", "Sociologia"
+];
+
+let estadoAtual     = {};
+let alunosDaTurma   = [];
+let turmaAtual      = "";
+let turmaKey        = "";
+let disciplinaAtual = "";
+let firebaseOk      = false;
+
+const agora = new Date();
+
+document.getElementById("dataHoje").textContent =
+  agora.toLocaleDateString("pt-BR", {
+    weekday: "long", year: "numeric", month: "long", day: "numeric"
+  });
+
+function chaveData(d) {
+  const dt = d || agora;
+  // Garante que usa a data local, não UTC
+  const ano = dt.getFullYear();
+  const mes = String(dt.getMonth() + 1).padStart(2, "0");
+  const dia = String(dt.getDate()).padStart(2, "0");
+  return `${ano}-${mes}-${dia}`;
+}
+
+function codigoParaLabel(cod) {
+  return `${cod[0]}º Ano ${cod[1]}`;
+}
+
+function chaveFirebase(turma, disc, data) {
+  const t  = turma || turmaKey;
+  const di = (disc || disciplinaAtual).replace(/\s+/g, "_");
+  const da = data  || chaveData();
+  return `faltas/${da}/${t}/${di}`;
+}
+
+// ── Firebase ready ───────────────────────────────────────────────────
+document.addEventListener("firebaseReady", () => {
+  firebaseOk = true;
+  document.getElementById("loadingOverlay").style.display = "none";
+  carregarTurmas();
+  carregarVersao();
+  carregarHistorico();
+});
+
+setTimeout(() => {
+  if (!firebaseOk) {
+    document.getElementById("loadingOverlay").innerHTML = `
+      <p style="color:#ff4f4f;text-align:center;padding:20px">
+        Não foi possível conectar ao Firebase.<br>
+        <small>Verifique as configurações no código.</small>
+      </p>`;
+  }
+}, 8000);
+
+// ── Versão vinda do Firebase (gravada pelo DiarioPRO) ────────────────
+async function carregarVersao() {
+  try {
+    const snap = await window.get(window.ref(window.db, "config/versao"));
+    if (snap.exists()) {
+      document.getElementById("assinatura").textContent =
+        `DiarioPRO v${snap.val()} — por danfluz`;
+    }
+  } catch(e) { /* mantém texto padrão */ }
+}
+
+// ── Turmas dinâmicas do Firebase ─────────────────────────────────────
+async function carregarTurmas() {
+  const sel = document.getElementById("selTurma");
+  try {
+    const snap = await window.get(window.ref(window.db, "turmas"));
+    if (!snap.exists()) {
+      mostrarToast("Nenhuma turma encontrada. Atualize no DiarioPRO.", "err");
+      return;
+    }
+    Object.keys(snap.val()).sort().forEach(cod => {
+      const opt = document.createElement("option");
+      opt.value = cod;
+      opt.textContent = codigoParaLabel(cod);
+      sel.appendChild(opt);
+    });
+  } catch(e) {
+    mostrarToast("Erro ao carregar turmas.", "err");
+  }
+}
+
+document.getElementById("selTurma").addEventListener("change", async function() {
+  turmaKey   = this.value;
+  turmaAtual = this.options[this.selectedIndex].text;
+  disciplinaAtual = "";
+
+  const selDisc = document.getElementById("selDisciplina");
+  selDisc.innerHTML = '<option value="">— selecione —</option>';
+  selDisc.disabled  = !turmaKey;
+  alunosDaTurma     = [];
+  resetLista();
+
+  if (!turmaKey) return;
+
+  try {
+    const snap = await window.get(window.ref(window.db, `turmas/${turmaKey}/alunos`));
+    if (snap.exists()) {
+      alunosDaTurma = Object.keys(snap.val())
+        .map(k => k.replace(/_/g, " "))
+        .sort();
+    } else {
+      mostrarToast("Turma sem alunos. Atualize no DiarioPRO.", "err");
+    }
+  } catch(e) {
+    mostrarToast("Erro ao carregar alunos.", "err");
+  }
+
+  DISCIPLINAS.forEach(d => {
+    const opt = document.createElement("option");
+    opt.value = d; opt.textContent = d;
+    selDisc.appendChild(opt);
+  });
+});
+
+document.getElementById("selDisciplina").addEventListener("change", function() {
+  disciplinaAtual = this.value;
+  if (disciplinaAtual && alunosDaTurma.length > 0) carregarLista();
+  else resetLista();
+});
+
+function resetLista() {
+  estadoAtual = {};
+  document.getElementById("listaAlunos").innerHTML = `
+    <div class="empty-state">
+      <div class="icon">🏫</div>
+      <p>Selecione uma turma e disciplina<br>para carregar a lista de alunos.</p>
+    </div>`;
+  document.getElementById("statusBar").style.display = "none";
+  document.getElementById("bottomBar").style.display = "none";
+}
+
+async function carregarLista() {
+  mostrarStatus("carregando");
+  alunosDaTurma.forEach(nome => estadoAtual[nome] = false);
+
+  try {
+    const snap = await window.get(window.ref(window.db, chaveFirebase()));
+    if (snap.exists()) {
+      const salvo = snap.val();
+      alunosDaTurma.forEach(nome => {
+        if (salvo[nome.replace(/\s/g, "_")] === true) estadoAtual[nome] = true;
+      });
+    }
+  } catch(e) {
+    mostrarToast("Erro ao carregar registros.", "err");
+  }
+
+  renderizarLista();
+  document.getElementById("statusBar").style.display = "flex";
+  document.getElementById("bottomBar").style.display = "block";
+  mostrarStatus("pronto");
+}
+
+function renderizarLista() {
+  const container = document.getElementById("listaAlunos");
+  container.innerHTML = "";
+  const ul = document.createElement("div");
+  ul.className = "aluno-list";
+
+  alunosDaTurma.forEach(nome => {
+    const item = document.createElement("div");
+    item.className = "aluno-item" + (estadoAtual[nome] ? " fora" : "");
+    item.innerHTML = `
+      <div class="checkbox">
+        <svg width="12" height="9" viewBox="0 0 12 9" fill="none">
+          <path d="M1 4l3.5 3.5L11 1" stroke="white" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <span class="aluno-nome">${nome}</span>
+      <span class="tag-fora">fora de sala</span>`;
+    item.addEventListener("click", () => toggleAluno(nome, item));
+    ul.appendChild(item);
+  });
+
+  container.appendChild(ul);
+  atualizarContador();
+}
+
+function toggleAluno(nome, el) {
+  estadoAtual[nome] = !estadoAtual[nome];
+  el.classList.toggle("fora", estadoAtual[nome]);
+  atualizarContador();
+}
+
+function atualizarContador() {
+  const count = Object.values(estadoAtual).filter(Boolean).length;
+  document.getElementById("countFora").textContent = count;
+}
+
+function mostrarStatus(tipo) {
+  const dot = document.getElementById("statusDot");
+  const txt = document.getElementById("statusText");
+  dot.className = "status-dot";
+  if      (tipo === "carregando") { dot.classList.add("saving"); txt.textContent = "Carregando..."; }
+  else if (tipo === "salvando")   { dot.classList.add("saving"); txt.textContent = "Salvando..."; }
+  else if (tipo === "salvo")      { dot.classList.add("saved");  txt.textContent = "Salvo ✓"; }
+  else if (tipo === "erro")       { dot.classList.add("error");  txt.textContent = "Erro ao salvar"; }
+  else                            {                              txt.textContent = "Pronto"; }
+}
+
+async function salvarDados() {
+  if (!turmaKey || !disciplinaAtual) return;
+  mostrarStatus("salvando");
+  document.getElementById("btnSalvar").disabled = true;
+
+  try {
+    const payload = {};
+    Object.entries(estadoAtual).forEach(([nome, val]) => {
+      payload[nome.replace(/\s/g, "_")] = val;
+    });
+    await window.set(window.ref(window.db, chaveFirebase()), payload);
+    mostrarStatus("salvo");
+    mostrarToast("Salvo com sucesso!", "ok");
+    carregarHistorico();
+  } catch(e) {
+    mostrarStatus("erro");
+    mostrarToast("Erro ao salvar. Verifique a conexão.", "err");
+  } finally {
+    document.getElementById("btnSalvar").disabled = false;
+  }
+}
+
+function baixarTxt() {
+  if (!turmaKey || !disciplinaAtual) return;
+  const foraLista = Object.entries(estadoAtual)
+    .filter(([_, v]) => v).map(([nome]) => nome);
+
+  let txt  = `ALUNOS FORA DE SALA\n`;
+  txt     += `Data: ${agora.toLocaleDateString("pt-BR")}\n`;
+  txt     += `Turma: ${turmaAtual}\n`;
+  txt     += `Disciplina: ${disciplinaAtual}\n`;
+  txt     += `${"─".repeat(40)}\n\n`;
+
+  if (foraLista.length === 0) {
+    txt += "Nenhum aluno fora de sala registrado.\n";
+  } else {
+    txt += `Fora de sala (${foraLista.length}):\n\n`;
+    foraLista.forEach((nome, i) => { txt += `  ${i + 1}. ${nome}\n`; });
+  }
+
+  txt += `\n${"─".repeat(40)}\n`;
+  txt += `Gerado em: ${new Date().toLocaleString("pt-BR")}\n`;
+
+  _download(txt,
+    `registro_${turmaKey}_${disciplinaAtual.replace(/\s/g,"_")}_${chaveData()}.txt`);
+}
+
+// ── Histórico — últimos 3 dias com dados ────────────────────────────
+async function carregarHistorico() {
+  const container = document.getElementById("historicoList");
+  const encontrados = [];
+
+  // Verifica até 5 dias para trás para achar 3 com dados
+  for (let i = 1; i <= 5; i++) {
+    if (encontrados.length >= 3) break;
+    const d = new Date(agora);
+    d.setDate(d.getDate() - i);
+    const chave = chaveData(d);
+
+    try {
+      const snap = await window.get(window.ref(window.db, `faltas/${chave}`));
+      if (!snap.exists()) continue;
+
+      const dadosDia = snap.val();
+      const foraSet  = new Set();
+      let   temDados = false;
+
+      Object.values(dadosDia).forEach(turmaObj => {
+        Object.values(turmaObj).forEach(discObj => {
+          temDados = true;
+          Object.entries(discObj).forEach(([aluno, fora]) => {
+            if (fora === true) foraSet.add(aluno);
+          });
+        });
+      });
+
+      if (temDados) encontrados.push({ d, chave, dadosDia, total: foraSet.size });
+    } catch(e) { /* sem dados neste dia */ }
+  }
+
+  if (encontrados.length === 0) {
+    container.innerHTML =
+      `<div style="font-size:0.75rem;color:#3a3a3a;padding:4px 0">
+        Nenhum registro nos últimos dias.
+      </div>`;
+    return;
+  }
+
+  container.innerHTML = "";
+  encontrados.forEach(({ d, chave, dadosDia, total }) => {
+    const dataFmt    = d.toLocaleDateString("pt-BR",
+      { weekday: "short", day: "2-digit", month: "2-digit" });
+    const turmasNoDia = Object.keys(dadosDia).sort().join(", ");
+
+    const item = document.createElement("div");
+    item.className = "historico-item";
+    item.innerHTML = `
+      <span class="hist-data">${dataFmt}</span>
+      <span class="hist-resumo">
+        ${turmasNoDia} &mdash; <span>${total} fora de sala</span>
+      </span>
+      <button class="btn-hist-dl" onclick="baixarHistoricoDia('${chave}')">
+        &#8595; .txt
+      </button>`;
+    container.appendChild(item);
+  });
+}
+
+async function baixarHistoricoDia(dataISO) {
+  try {
+    const snap = await window.get(window.ref(window.db, `faltas/${dataISO}`));
+    if (!snap.exists()) { mostrarToast("Sem dados para esta data.", "err"); return; }
+
+    const dadosDia = snap.val();
+    const [ano, mes, dia] = dataISO.split("-");
+    const dataFmt = `${dia}/${mes}/${ano}`;
+
+    let txt  = `ALUNOS FORA DE SALA — TODAS AS TURMAS\n`;
+    txt     += `Data: ${dataFmt}\n`;
+    txt     += `${"═".repeat(44)}\n\n`;
+
+    Object.entries(dadosDia).sort().forEach(([turma, disciplinas]) => {
+      // Agrupa por aluno -> lista de disciplinas em que estava fora
+      const porAluno = {};
+      Object.entries(disciplinas).forEach(([disc, alunos]) => {
+        Object.entries(alunos).forEach(([alunoKey, fora]) => {
+          if (fora === true) {
+            const nome = alunoKey.replace(/_/g, " ");
+            if (!porAluno[nome]) porAluno[nome] = [];
+            porAluno[nome].push(disc.replace(/_/g, " "));
+          }
+        });
+      });
+
+      const qtd = Object.keys(porAluno).length;
+      if (qtd === 0) return;
+
+      txt += `  ${turma}  (${qtd} fora de sala)\n`;
+      txt += `  ${"─".repeat(40)}\n`;
+      Object.entries(porAluno).sort().forEach(([nome, discs], i) => {
+        txt += `  ${i + 1}. ${nome}\n`;
+        txt += `      ${discs.sort().join(", ")}\n`;
+      });
+      txt += "\n";
+    });
+
+    txt += `${"═".repeat(44)}\n`;
+    txt += `Gerado em: ${new Date().toLocaleString("pt-BR")}\n`;
+
+    _download(txt, `faltas_todas_${dataISO}.txt`);
+  } catch(e) {
+    mostrarToast("Erro ao gerar arquivo.", "err");
+  }
+}
+
+function _download(texto, nomeArquivo) {
+  const blob = new Blob([texto], { type: "text/plain;charset=utf-8" });
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement("a");
+  a.href = url; a.download = nomeArquivo; a.click();
+  URL.revokeObjectURL(url);
+}
+
+function mostrarToast(msg, tipo) {
+  const t = document.createElement("div");
+  t.className = `toast ${tipo}`;
+  t.textContent = msg;
+  document.body.appendChild(t);
+  setTimeout(() => t.remove(), 2600);
+}
+</script>
+</body>
+</html>

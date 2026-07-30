@@ -224,7 +224,7 @@
 
   /* ── Screenshots ─────────────────────────────────────────────────── */
   .shots-grid {
-    display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px;
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px;
   }
   .shot-card { display: flex; flex-direction: column; gap: 12px; }
   .shot-card .browser-frame img { aspect-ratio: 16/10; object-fit: cover; }
@@ -528,6 +528,14 @@
                onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'img-fallback',innerHTML:'🧭<div class=&quot;fb-name&quot;>screenshot-planejamento.png</div>'}))">
         </div>
         <p class="shot-cap">Planejamento bimestral com um rascunho pronto pra revisar</p>
+      </div>
+      <div class="shot-card">
+        <div class="browser-frame">
+          <div class="browser-bar"><span></span><span></span><span></span></div>
+          <img src="screenshot-fora-sala-secretaria.png" alt="Alunos fora de sala na secretaria"
+               onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'img-fallback',innerHTML:'🚪<div class=&quot;fb-name&quot;>screenshot-fora-sala-secretaria.png</div>'}))">
+        </div>
+        <p class="shot-cap">O que a secretaria vê — tudo que os professores reportaram no dia</p>
       </div>
     </div>
   </div>

@@ -375,6 +375,63 @@
   }
   .btn-hist-dl:hover { border-color: var(--accent); color: var(--accent); }
 
+  /* ── Pareamento com a escola ────────────────────────────────── */
+  .gate-card {
+    background: var(--surface);
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius);
+    padding: 26px 22px;
+    text-align: center;
+  }
+  .gate-card h2 {
+    font-size: 1.05rem;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+  .gate-card p {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    line-height: 1.55;
+    margin-bottom: 18px;
+  }
+  .gate-input {
+    width: 100%;
+    background: var(--surface2);
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text);
+    font-family: 'DM Mono', monospace;
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 0.08em;
+    padding: 13px 10px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+  }
+  .gate-input:focus { outline: none; border-color: var(--accent); }
+  .gate-erro {
+    color: var(--red);
+    font-size: 0.78rem;
+    margin-top: 12px;
+    display: none;
+  }
+  .gate-anterior {
+    margin-top: 16px;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    display: none;
+  }
+  .gate-anterior button {
+    background: none;
+    border: none;
+    color: var(--accent);
+    cursor: pointer;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.75rem;
+    text-decoration: underline;
+    padding: 0;
+  }
+
   /* ── Assinatura ─────────────────────────────────────────────── */
   .assinatura {
     text-align: center;
@@ -394,13 +451,33 @@
          onerror="this.style.display='none'">
     <div class="header-titles">
       <a href="index.html" class="back-link">&larr; DiarioPRO</a>
+      <a href="#" class="back-link" id="btnTrocarEscola" style="margin-left:10px;display:none"
+         onclick="trocarEscola();return false;">trocar escola</a>
       <h1>Alunos fora de sala - DiarioPro</h1>
       <div class="data" id="dataHoje"></div>
     </div>
   </div>
 </header>
 
-<div class="container">
+<div class="container" id="gatePareamento" style="display:none;">
+  <div class="gate-card">
+    <h2>Código da escola</h2>
+    <p>
+      Peça o código pra secretaria da sua escola (gerado no DiarioPRO) e digite abaixo.
+      Fica salvo neste aparelho até você trocar de escola.
+    </p>
+    <input type="text" id="inputCodigoEscola" class="gate-input"
+           placeholder="XXXX-XXXX-XXXX-XXXX" maxlength="24"
+           onkeydown="if(event.key==='Enter')parearComCodigo()">
+    <button class="btn btn-salvar" style="width:100%" onclick="parearComCodigo()">Entrar</button>
+    <div id="gateErro" class="gate-erro"></div>
+    <div id="gateAnterior" class="gate-anterior">
+      Último código usado: <button id="btnUsarUltimo"></button>
+    </div>
+  </div>
+</div>
+
+<div class="container" id="containerPrincipal" style="display:none;">
   <div class="selects">
     <div class="select-wrap">
       <label>Turma</label>
@@ -433,7 +510,7 @@
 </div>
 
 <!-- Histórico dos últimos dias com dados -->
-<div class="historico">
+<div class="historico" id="historicoWrap" style="display:none;">
   <div class="historico-titulo">Registros anteriores</div>
   <div class="historico-list" id="historicoList">
     <div style="font-size:0.75rem;color:#3a3a3a;padding:4px 0">Carregando...</div>
@@ -468,6 +545,105 @@ let turmaKey        = "";
 let disciplinaAtual = "";
 let firebaseOk      = false;
 
+// ── Pareamento com a escola ───────────────────────────────────────────
+// Cada escola que usa o DiarioPRO tem um código próprio (gerado no app,
+// modo secretaria). Sem ele não dá pra saber de qual escola são as turmas
+// — e mais importante, os dados de uma escola não podem aparecer pra
+// gente de outra escola. O código fica salvo neste aparelho (localStorage)
+// até a própria pessoa clicar em "trocar escola".
+const LS_ESCOLA          = "diariopro_escola_id";
+const LS_ESCOLA_ANTERIOR = "diariopro_escola_id_anterior";
+let escolaId = "";
+
+function normalizarCodigo(txt) {
+  return (txt || "").toUpperCase().replace(/[^0-9A-Z]/g, "");
+}
+
+function formatarCodigo(cod) {
+  return (cod.match(/.{1,4}/g) || [cod]).join("-");
+}
+
+function obterEscolaIdInicial() {
+  // Link de pareamento (?escola=...) tem prioridade — vem de um link/QR
+  // compartilhado pela secretaria e substitui o que já estava salvo.
+  const params = new URLSearchParams(window.location.search);
+  const daUrl = normalizarCodigo(params.get("escola"));
+  if (daUrl) {
+    localStorage.setItem(LS_ESCOLA, daUrl);
+    params.delete("escola");
+    const resto = params.toString();
+    window.history.replaceState({}, "", window.location.pathname + (resto ? "?" + resto : ""));
+    return daUrl;
+  }
+  return normalizarCodigo(localStorage.getItem(LS_ESCOLA));
+}
+
+function mostrarGate() {
+  document.getElementById("gatePareamento").style.display = "block";
+  document.getElementById("containerPrincipal").style.display = "none";
+  document.getElementById("historicoWrap").style.display = "none";
+  document.getElementById("bottomBar").style.display = "none";
+  document.getElementById("btnTrocarEscola").style.display = "none";
+
+  const anterior = normalizarCodigo(localStorage.getItem(LS_ESCOLA_ANTERIOR));
+  const bloco = document.getElementById("gateAnterior");
+  if (anterior) {
+    bloco.style.display = "block";
+    const btn = document.getElementById("btnUsarUltimo");
+    btn.textContent = formatarCodigo(anterior);
+    btn.onclick = () => {
+      document.getElementById("inputCodigoEscola").value = anterior;
+      parearComCodigo();
+    };
+  } else {
+    bloco.style.display = "none";
+  }
+  document.getElementById("inputCodigoEscola").focus();
+}
+
+function esconderGate() {
+  document.getElementById("gatePareamento").style.display = "none";
+  document.getElementById("containerPrincipal").style.display = "block";
+  document.getElementById("historicoWrap").style.display = "block";
+  document.getElementById("btnTrocarEscola").style.display = "inline-block";
+}
+
+function parearComCodigo() {
+  const cod = normalizarCodigo(document.getElementById("inputCodigoEscola").value);
+  const erro = document.getElementById("gateErro");
+  if (cod.length < 10) {
+    erro.textContent = "Código inválido — confira com a secretaria da sua escola.";
+    erro.style.display = "block";
+    return;
+  }
+  erro.style.display = "none";
+  escolaId = cod;
+  localStorage.setItem(LS_ESCOLA, cod);
+  esconderGate();
+  if (firebaseOk) {
+    carregarTurmas();
+    carregarHistorico();
+  }
+}
+
+function trocarEscola() {
+  if (escolaId) localStorage.setItem(LS_ESCOLA_ANTERIOR, escolaId);
+  localStorage.removeItem(LS_ESCOLA);
+  escolaId = "";
+
+  document.getElementById("selTurma").innerHTML = '<option value="">— selecione —</option>';
+  const selDisc = document.getElementById("selDisciplina");
+  selDisc.innerHTML = '<option value="">— selecione —</option>';
+  selDisc.disabled = true;
+  turmaKey = ""; turmaAtual = ""; disciplinaAtual = "";
+  alunosDaTurma = [];
+  resetLista();
+
+  const input = document.getElementById("inputCodigoEscola");
+  if (input) input.value = "";
+  mostrarGate();
+}
+
 const agora = new Date();
 
 document.getElementById("dataHoje").textContent =
@@ -492,15 +668,19 @@ function chaveFirebase(turma, disc, data) {
   const t  = turma || turmaKey;
   const di = (disc || disciplinaAtual).replace(/\s+/g, "_");
   const da = data  || chaveData();
-  return `faltas/${da}/${t}/${di}`;
+  return `escolas/${escolaId}/faltas/${da}/${t}/${di}`;
 }
 
 // ── Firebase ready ───────────────────────────────────────────────────
 document.addEventListener("firebaseReady", () => {
   firebaseOk = true;
   document.getElementById("loadingOverlay").style.display = "none";
-  carregarTurmas();
   carregarVersao();
+
+  escolaId = obterEscolaIdInicial();
+  if (!escolaId) { mostrarGate(); return; }
+  esconderGate();
+  carregarTurmas();
   carregarHistorico();
 });
 
@@ -529,7 +709,7 @@ async function carregarVersao() {
 async function carregarTurmas() {
   const sel = document.getElementById("selTurma");
   try {
-    const snap = await window.get(window.ref(window.db, "turmas"));
+    const snap = await window.get(window.ref(window.db, `escolas/${escolaId}/turmas`));
     if (!snap.exists()) {
       mostrarToast("Nenhuma turma encontrada. Atualize no DiarioPRO.", "err");
       return;
@@ -559,7 +739,7 @@ document.getElementById("selTurma").addEventListener("change", async function() 
   if (!turmaKey) return;
 
   try {
-    const snap = await window.get(window.ref(window.db, `turmas/${turmaKey}/alunos`));
+    const snap = await window.get(window.ref(window.db, `escolas/${escolaId}/turmas/${turmaKey}/alunos`));
     if (snap.exists()) {
       alunosDaTurma = Object.keys(snap.val())
         .map(k => k.replace(/_/g, " "))
@@ -725,7 +905,7 @@ async function carregarHistorico() {
     const chave = chaveData(d);
 
     try {
-      const snap = await window.get(window.ref(window.db, `faltas/${chave}`));
+      const snap = await window.get(window.ref(window.db, `escolas/${escolaId}/faltas/${chave}`));
       if (!snap.exists()) continue;
 
       const dadosDia = snap.val();
@@ -775,7 +955,7 @@ async function carregarHistorico() {
 
 async function baixarHistoricoDia(dataISO) {
   try {
-    const snap = await window.get(window.ref(window.db, `faltas/${dataISO}`));
+    const snap = await window.get(window.ref(window.db, `escolas/${escolaId}/faltas/${dataISO}`));
     if (!snap.exists()) { mostrarToast("Sem dados para esta data.", "err"); return; }
 
     const dadosDia = snap.val();

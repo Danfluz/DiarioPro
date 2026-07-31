@@ -256,6 +256,12 @@
   .feat-icon img { width: 100%; height: 100%; object-fit: cover; }
   .feat-card h3 { font-size: 0.96rem; font-weight: 700; margin-bottom: 7px; color: var(--text); }
   .feat-card p { color: var(--text-faint); font-size: 0.85rem; line-height: 1.5; }
+  .feat-tag {
+    display: inline-block; font-size: 0.66rem; font-weight: 800; letter-spacing: 0.02em;
+    padding: 3px 9px; border-radius: 999px; margin-bottom: 7px;
+  }
+  .feat-tag-secretaria { background: #F3E5F5; color: var(--purple); }
+  .feat-tag-professor  { background: #E3F2FD; color: var(--blue); }
 
   .soon-card {
     margin-top: 20px; display: flex; align-items: center; gap: 16px;
@@ -603,16 +609,19 @@
       <div class="feat-card">
         <div class="feat-icon"><img src="tim/pfstim20.png" alt=""></div>
         <h3>Conselho de Classe</h3>
+        <span class="feat-tag feat-tag-secretaria">🔒 Modo Secretaria</span>
         <p>Reúne nota, falta e foto de cada aluno num resumo só, pra você chegar preparado na reunião.</p>
       </div>
       <div class="feat-card">
         <div class="feat-icon"><img src="tim/pfstim19.png" alt=""></div>
         <h3>Alunos fora de sala em tempo real</h3>
-        <p>Professor marca pelo celular, secretaria acompanha tudo no programa, no mesmo dia.</p>
+        <span class="feat-tag feat-tag-secretaria">🔒 Consulta: Modo Secretaria</span>
+        <p>Qualquer professor marca pelo celular, de graça, sem precisar comprar nada. Só a tela de consulta consolidada, dentro do programa, é exclusiva de quem tem o Modo Secretaria.</p>
       </div>
       <div class="feat-card">
         <div class="feat-icon"><img src="tim/pfstim5.png" alt=""></div>
         <h3>Correção de provas assistida</h3>
+        <span class="feat-tag feat-tag-professor">🔒 Modo Professor</span>
         <p>Agiliza a correção sem tirar a palavra final de quem está corrigindo.</p>
       </div>
       <div class="feat-card">
@@ -623,6 +632,7 @@
       <div class="feat-card">
         <div class="feat-icon"><img src="tim/pfstim18.png" alt=""></div>
         <h3>Relatório de pendências</h3>
+        <span class="feat-tag feat-tag-professor">🔒 Modo Professor</span>
         <p>Mostra de cara o que ainda falta lançar, turma por turma.</p>
       </div>
       <div class="feat-card">
@@ -787,6 +797,7 @@
     <div class="variants-note reveal">
       Disponível em três versões pra baixar — <strong>Professor</strong>, <strong>Secretaria</strong> ou <strong>Completo</strong> —
       escolha a que combina com o seu uso na tela de download. O preço é o mesmo em qualquer uma delas.
+      Os recursos marcados com 🔒 lá em cima só vêm no modo indicado — o Completo tem os dois.
     </div>
 
     <p class="pix-note">7 dias de teste sem pagar nada. Depois, sem cadastro de cartão — o pagamento é um PIX gerado na hora, dentro do próprio programa.</p>
@@ -950,7 +961,7 @@
 <script>
   // Headline dinâmico — troca a palavra em destaque
   const heroWords = [
-    'pra dar aula', 'pra sua tarde de domingo', 'pra você', 'pra curtir a família',
+    'pra dar aula', 'pra você', 'pra curtir a família',
     'pra viver', 'pra descansar', 'pra se planejar', 'pra dormir à noite',
   ];
   const heroWordEl = document.getElementById('heroWord');

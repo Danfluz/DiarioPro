@@ -316,6 +316,12 @@
 
   /* ── Pricing ─────────────────────────────────────────────────────── */
   .price-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; max-width: 700px; margin: 0 auto; }
+  .price-grid-3 { grid-template-columns: repeat(3, 1fr); max-width: 980px; }
+  .launch-banner {
+    max-width: 700px; margin: 0 auto 24px; text-align: center;
+    background: var(--gold-soft); border: 1.5px solid var(--gold-frame); border-radius: var(--radius-sm);
+    padding: 10px 18px; font-size: 0.85rem; font-weight: 600; color: #6b5400;
+  }
   .price-card {
     background: var(--surface); border: 1.5px solid var(--border); border-radius: var(--radius);
     padding: 30px 26px; display: flex; flex-direction: column;
@@ -329,6 +335,7 @@
   .price-name { font-size: 0.88rem; font-weight: 700; color: var(--text-faint); margin-bottom: 8px; }
   .price-value { font-size: 2.2rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 4px; color: var(--text); }
   .price-value span { font-size: 0.95rem; color: var(--text-faint); font-weight: 600; }
+  .price-strike { font-size: 1.1rem; font-weight: 600; color: var(--text-faintest); text-decoration: line-through; margin-right: 8px; }
   .price-note { color: var(--text-faintest); font-size: 0.8rem; margin-bottom: 20px; }
   .price-list { list-style: none; display: flex; flex-direction: column; gap: 9px; margin-bottom: 24px; flex: 1; }
   .price-list li { font-size: 0.85rem; color: var(--text-muted); display: flex; gap: 8px; align-items: flex-start; }
@@ -342,6 +349,47 @@
   }
   .variants-note strong { color: var(--text); }
   .pix-note { text-align: center; margin-top: 20px; color: var(--text-faintest); font-size: 0.8rem; }
+
+  /* ── Para escolas ────────────────────────────────────────────────── */
+  .school-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 40px; align-items: start; max-width: 980px; margin: 0 auto; }
+  .school-points { display: flex; flex-direction: column; gap: 22px; }
+  .school-point { display: flex; gap: 14px; align-items: flex-start; }
+  .school-point-icon {
+    width: 42px; height: 42px; border-radius: 10px; background: var(--surface); border: 1.5px solid var(--border);
+    display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0;
+  }
+  .school-point h3 { font-size: 0.95rem; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+  .school-point p { font-size: 0.85rem; color: var(--text-faint); line-height: 1.55; }
+
+  .school-calc {
+    background: var(--surface); border: 1.5px solid var(--border); border-radius: var(--radius);
+    padding: 26px 24px;
+  }
+  .school-calc-label { font-size: 0.85rem; font-weight: 700; color: var(--text); margin-bottom: 12px; }
+  .school-calc-stepper {
+    display: flex; align-items: center; gap: 10px; margin-bottom: 20px;
+  }
+  .school-calc-stepper button {
+    width: 38px; height: 38px; border-radius: 50%; border: 1.5px solid var(--border); background: var(--surface2);
+    font-size: 1.2rem; font-weight: 700; color: var(--text); cursor: pointer; flex-shrink: 0;
+  }
+  .school-calc-stepper input {
+    flex: 1; text-align: center; font-size: 1.3rem; font-weight: 800; color: var(--text);
+    border: 1.5px solid var(--border); border-radius: var(--radius-sm); padding: 8px; font-family: inherit;
+    -moz-appearance: textfield;
+  }
+  .school-calc-rows { display: flex; flex-direction: column; gap: 8px; margin-bottom: 14px; }
+  .school-calc-row { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; font-size: 0.86rem; color: var(--text-faint); }
+  .school-calc-row span { flex: 1; }
+  .school-calc-row small { display: block; font-size: 0.72rem; color: var(--text-faintest); margin-top: 1px; }
+  .school-calc-row strong { flex-shrink: 0; text-align: right; }
+  .school-calc-row.destaque { font-size: 1rem; color: var(--text); }
+  .school-calc-row .price-strike { margin-right: 0; }
+  .school-calc-economia {
+    text-align: center; background: var(--gold-soft); border: 1px solid var(--gold-frame); border-radius: var(--radius-sm);
+    padding: 10px; font-size: 0.88rem; color: #6b5400; margin-bottom: 8px;
+  }
+  .school-calc-nota { font-size: 0.74rem; color: var(--text-faintest); text-align: center; margin-bottom: 16px; }
 
   /* ── FAQ ─────────────────────────────────────────────────────────── */
   .faq { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 10px; }
@@ -390,6 +438,7 @@
     .fs-section { grid-template-columns: 1fr; }
     .fs-phone-wrap { order: -1; }
     .price-grid { grid-template-columns: 1fr; }
+    .school-grid { grid-template-columns: 1fr; }
     .car-slide { width: 480px; }
     .car-stage { height: 380px; }
   }
@@ -420,6 +469,7 @@
       <a href="#recursos">Recursos</a>
       <a href="#como-funciona">Como funciona</a>
       <a href="#precos">Preços</a>
+      <a href="#para-escolas">Para escolas</a>
       <a href="#faq">Dúvidas</a>
     </div>
     <a class="nav-cta" href="https://github.com/Danfluz/DiarioPro-faltas/releases/latest">Teste grátis</a>
@@ -685,11 +735,15 @@
       <p>Comece com 7 dias grátis. Pague por PIX direto dentro do programa. Cancele quando quiser.</p>
     </div>
 
-    <div class="price-grid reveal">
+    <div class="launch-banner reveal">
+      🚀 Preço de lançamento até dezembro de 2026 — depois disso, os valores sobem pro preço normal.
+    </div>
+
+    <div class="price-grid price-grid-3 reveal">
       <div class="price-card">
         <div class="price-name">Mensal</div>
-        <div class="price-value">R$ 19,90<span>/mês</span></div>
-        <div class="price-note">Renovação manual, sem fidelidade</div>
+        <div class="price-value"><span class="price-strike">R$ 24,90</span> R$ 20,90<span>/mês</span></div>
+        <div class="price-note">A partir de janeiro de 2027: R$ 24,90/mês</div>
         <ul class="price-list">
           <li>Todos os módulos do programa</li>
           <li>Ativação e pagamento por PIX</li>
@@ -698,16 +752,28 @@
         <a class="btn btn-ghost" href="https://github.com/Danfluz/DiarioPro-faltas/releases/latest">Teste grátis</a>
       </div>
 
+      <div class="price-card">
+        <div class="price-name">Por Unidade</div>
+        <div class="price-value"><span class="price-strike">R$ 89,90</span> R$ 74,90</div>
+        <div class="price-note">Vale por 1 das 3 unidades do ano. A partir de janeiro: R$ 89,90</div>
+        <ul class="price-list">
+          <li>Todos os módulos do programa</li>
+          <li>Ideal pra usar só no fechamento</li>
+          <li>Ativação e pagamento por PIX</li>
+        </ul>
+        <a class="btn btn-ghost" href="https://github.com/Danfluz/DiarioPro-faltas/releases/latest">Teste grátis</a>
+      </div>
+
       <div class="price-card featured">
         <div class="price-badge">MELHOR CUSTO</div>
         <div class="price-name">Anual</div>
-        <div class="price-value">R$ 150<span>/ano</span></div>
-        <div class="price-note">Equivale a R$12,50 por mês</div>
+        <div class="price-value"><span class="price-strike">R$ 240</span> R$ 199<span>/ano</span></div>
+        <div class="price-note">A partir de janeiro de 2027: R$ 240/ano (R$ 20/mês)</div>
         <ul class="price-list">
           <li>Todos os módulos do programa</li>
           <li>Ativação e pagamento por PIX</li>
           <li>Atualizações inclusas</li>
-          <li>Sai mais barato que pagar mês a mês</li>
+          <li>Sai mais barato que os outros planos</li>
         </ul>
         <a class="btn btn-primary" href="https://github.com/Danfluz/DiarioPro-faltas/releases/latest">Teste grátis</a>
       </div>
@@ -719,6 +785,67 @@
     </div>
 
     <p class="pix-note">7 dias de teste sem pagar nada. Depois, sem cadastro de cartão — o pagamento é um PIX gerado na hora, dentro do próprio programa.</p>
+  </div>
+</section>
+
+<!-- ═══ Para escolas ═══ -->
+<section class="section section-alt" id="para-escolas">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker">Para escolas</div>
+      <h2>Sua escola inteira com o DiarioPRO, pela metade do preço</h2>
+      <p>Fechado com você, não com cada professor separado — sua equipe toda no mesmo sistema, sem PIX avulso um por um.</p>
+    </div>
+
+    <div class="school-grid reveal">
+      <div class="school-points">
+        <div class="school-point">
+          <div class="school-point-icon">👀</div>
+          <div>
+            <h3>Visão da escola inteira</h3>
+            <p>Conselho de Classe, planejamentos aprovados e alunos fora de sala — de todas as turmas, não só de uma.</p>
+          </div>
+        </div>
+        <div class="school-point">
+          <div class="school-point-icon">🔒</div>
+          <div>
+            <h3>Dado isolado por escola</h3>
+            <p>Sua instituição tem seu próprio espaço no sistema — nada se mistura com o de nenhuma outra escola.</p>
+          </div>
+        </div>
+        <div class="school-point">
+          <div class="school-point-icon">💬</div>
+          <div>
+            <h3>Um preço, uma conversa</h3>
+            <p>Você fecha direto comigo, recebe um código por funcionário, e ninguém precisa se virar com PIX individual.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="school-calc">
+        <div class="school-calc-label">Quantos funcionários vão usar o DiarioPRO?</div>
+        <div class="school-calc-stepper">
+          <button type="button" onclick="escolaAlterarQtd(-1)" aria-label="Diminuir">−</button>
+          <input type="number" id="escolaQtd" value="10" min="2" max="500" onchange="escolaAtualizarCalculo()" oninput="escolaAtualizarCalculo()">
+          <button type="button" onclick="escolaAlterarQtd(1)" aria-label="Aumentar">+</button>
+        </div>
+        <div class="school-calc-rows">
+          <div class="school-calc-row">
+            <span>Preço individual <small>(R$ 199/pessoa)</small></span>
+            <strong class="price-strike" id="escolaTotalIndividual">R$ 1.990</strong>
+          </div>
+          <div class="school-calc-row destaque">
+            <span>Preço da escola <small>(R$ 99/pessoa)</small></span>
+            <strong id="escolaTotalInstitucional">R$ 990</strong>
+          </div>
+        </div>
+        <div class="school-calc-economia">
+          Você economiza <strong id="escolaEconomia">R$ 1.000</strong> por ano
+        </div>
+        <p class="school-calc-nota">Preço institucional de lançamento (2026) — R$ 120/professor a partir de janeiro de 2027.</p>
+        <a class="btn btn-primary" style="width:100%;justify-content:center;" href="https://github.com/danfluz" target="_blank" rel="noopener">Falar sobre esse plano</a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -929,6 +1056,41 @@
     document.getElementById('lightbox').classList.remove('open');
   }
   document.addEventListener('keydown', e => { if (e.key === 'Escape') fecharLightbox(); });
+
+  // ── Calculadora "Para escolas" ──────────────────────────────────────
+  const ESCOLA_PRECO_INDIVIDUAL = 199;   // preço de lançamento (2026), por pessoa/ano
+  const ESCOLA_PRECO_INSTITUCIONAL = 99; // 50% do individual, preço de lançamento (2026)
+
+  function formatarReal(n) {
+    return 'R$ ' + Math.round(n).toLocaleString('pt-BR');
+  }
+
+  function escolaAtualizarCalculo() {
+    const input = document.getElementById('escolaQtd');
+    if (!input) return;
+    let qtd = parseInt(input.value, 10);
+    if (isNaN(qtd) || qtd < 2) qtd = 2;
+    if (qtd > 500) qtd = 500;
+    input.value = qtd;
+
+    const totalIndividual = qtd * ESCOLA_PRECO_INDIVIDUAL;
+    const totalInstitucional = qtd * ESCOLA_PRECO_INSTITUCIONAL;
+    document.getElementById('escolaTotalIndividual').textContent = formatarReal(totalIndividual);
+    document.getElementById('escolaTotalInstitucional').textContent = formatarReal(totalInstitucional);
+    document.getElementById('escolaEconomia').textContent = formatarReal(totalIndividual - totalInstitucional);
+  }
+
+  function escolaAlterarQtd(delta) {
+    const input = document.getElementById('escolaQtd');
+    if (!input) return;
+    let qtd = (parseInt(input.value, 10) || 10) + delta;
+    if (qtd < 2) qtd = 2;
+    if (qtd > 500) qtd = 500;
+    input.value = qtd;
+    escolaAtualizarCalculo();
+  }
+
+  escolaAtualizarCalculo();
 </script>
 </body>
 </html>

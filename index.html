@@ -317,11 +317,6 @@
   /* ── Pricing ─────────────────────────────────────────────────────── */
   .price-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; max-width: 700px; margin: 0 auto; }
   .price-grid-3 { grid-template-columns: repeat(3, 1fr); max-width: 980px; }
-  .launch-banner {
-    max-width: 700px; margin: 0 auto 24px; text-align: center;
-    background: var(--gold-soft); border: 1.5px solid var(--gold-frame); border-radius: var(--radius-sm);
-    padding: 10px 18px; font-size: 0.85rem; font-weight: 600; color: #6b5400;
-  }
   .price-card {
     background: var(--surface); border: 1.5px solid var(--border); border-radius: var(--radius);
     padding: 30px 26px; display: flex; flex-direction: column;
@@ -352,6 +347,18 @@
 
   /* ── Para escolas ────────────────────────────────────────────────── */
   .school-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 40px; align-items: start; max-width: 980px; margin: 0 auto; }
+  .school-hook {
+    display: flex; gap: 16px; align-items: flex-start; max-width: 820px; margin: 0 auto 32px;
+    background: var(--gold-soft); border: 1.5px solid var(--gold-frame); border-radius: var(--radius);
+    padding: 20px 24px;
+  }
+  .school-hook-icon {
+    width: 46px; height: 46px; border-radius: 10px; background: var(--surface); border: 1.5px solid var(--gold-frame);
+    display: flex; align-items: center; justify-content: center; font-size: 1.4rem; flex-shrink: 0;
+  }
+  .school-hook h3 { font-size: 1rem; font-weight: 800; color: var(--text); margin-bottom: 6px; }
+  .school-hook p { font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; }
+
   .school-points { display: flex; flex-direction: column; gap: 22px; }
   .school-point { display: flex; gap: 14px; align-items: flex-start; }
   .school-point-icon {
@@ -454,6 +461,7 @@
     .car-arrow { width: 34px; height: 34px; font-size: 1.05rem; }
     .cta-final { flex-direction: column; text-align: center; }
     .soon-card { flex-direction: column; text-align: center; }
+    .school-hook { flex-direction: column; text-align: center; align-items: center; }
   }
 </style>
 </head>
@@ -732,18 +740,15 @@
     <div class="section-head reveal">
       <div class="kicker">Preços</div>
       <h2>Sem contrato, sem fidelidade</h2>
-      <p>Comece com 7 dias grátis. Pague por PIX direto dentro do programa. Cancele quando quiser.</p>
-    </div>
-
-    <div class="launch-banner reveal">
-      🚀 Preço de lançamento até dezembro de 2026 — depois disso, os valores sobem pro preço normal.
+      <p>Comece com 7 dias grátis. Pague por PIX direto dentro do programa. Cancele quando quiser.<br>
+      Custa menos que boa parte dos streamings que você já assina.</p>
     </div>
 
     <div class="price-grid price-grid-3 reveal">
       <div class="price-card">
-        <div class="price-name">Mensal</div>
-        <div class="price-value"><span class="price-strike">R$ 24,90</span> R$ 20,90<span>/mês</span></div>
-        <div class="price-note">A partir de janeiro de 2027: R$ 24,90/mês</div>
+        <div class="price-name">1 mês</div>
+        <div class="price-value">R$ 22,90<span>/mês</span></div>
+        <div class="price-note">Renovação manual, sem fidelidade</div>
         <ul class="price-list">
           <li>Todos os módulos do programa</li>
           <li>Ativação e pagamento por PIX</li>
@@ -753,9 +758,9 @@
       </div>
 
       <div class="price-card">
-        <div class="price-name">Por Unidade</div>
-        <div class="price-value"><span class="price-strike">R$ 89,90</span> R$ 74,90</div>
-        <div class="price-note">Vale por 1 das 3 unidades do ano. A partir de janeiro: R$ 89,90</div>
+        <div class="price-name">4 meses</div>
+        <div class="price-value">R$ 79,90</div>
+        <div class="price-note">Vale por 1 unidade — ideal pra usar só no fechamento</div>
         <ul class="price-list">
           <li>Todos os módulos do programa</li>
           <li>Ideal pra usar só no fechamento</li>
@@ -766,9 +771,9 @@
 
       <div class="price-card featured">
         <div class="price-badge">MELHOR CUSTO</div>
-        <div class="price-name">Anual</div>
-        <div class="price-value"><span class="price-strike">R$ 240</span> R$ 199<span>/ano</span></div>
-        <div class="price-note">A partir de janeiro de 2027: R$ 240/ano (R$ 20/mês)</div>
+        <div class="price-name">12 meses</div>
+        <div class="price-value">R$ 209,90<span>/ano</span></div>
+        <div class="price-note">Equivale a R$17,49 por mês</div>
         <ul class="price-list">
           <li>Todos os módulos do programa</li>
           <li>Ativação e pagamento por PIX</li>
@@ -793,8 +798,18 @@
   <div class="wrap">
     <div class="section-head reveal">
       <div class="kicker">Para escolas</div>
-      <h2>Sua escola inteira com o DiarioPRO, pela metade do preço</h2>
-      <p>Fechado com você, não com cada professor separado — sua equipe toda no mesmo sistema, sem PIX avulso um por um.</p>
+      <h2>Comece pequeno. Sua escola inteira já participa.</h2>
+      <p>Com 1 licença Secretaria, todo professor já pode reportar aluno fora de sala pelo celular — sem comprar nada, sem instalar nada. Quando quiser ir além, cada professor pode ter o DiarioPRO completo por um preço especial.</p>
+    </div>
+
+    <div class="school-hook reveal">
+      <div class="school-hook-icon">🔑</div>
+      <div>
+        <h3>Como funciona</h3>
+        <p>Você ativa 1 licença Secretaria e gera o código da sua escola dentro do programa. Manda o link pros professores
+        (WhatsApp, por exemplo) — cada um abre no celular, entra com o código uma vez, e já pode marcar quem saiu de sala
+        na hora. Nenhum professor precisa comprar nada pra fazer parte disso.</p>
+      </div>
     </div>
 
     <div class="school-grid reveal">
@@ -823,7 +838,7 @@
       </div>
 
       <div class="school-calc">
-        <div class="school-calc-label">Quantos funcionários vão usar o DiarioPRO?</div>
+        <div class="school-calc-label">Quer ir além? Dê o DiarioPRO completo pra cada professor — planejamento com o Tim, notas automáticas no SIEPE — por um preço bem menor comprando junto. Quantos funcionários vão usar?</div>
         <div class="school-calc-stepper">
           <button type="button" onclick="escolaAlterarQtd(-1)" aria-label="Diminuir">−</button>
           <input type="number" id="escolaQtd" value="10" min="2" max="500" onchange="escolaAtualizarCalculo()" oninput="escolaAtualizarCalculo()">
@@ -831,18 +846,18 @@
         </div>
         <div class="school-calc-rows">
           <div class="school-calc-row">
-            <span>Preço individual <small>(R$ 199/pessoa)</small></span>
-            <strong class="price-strike" id="escolaTotalIndividual">R$ 1.990</strong>
+            <span>Preço individual <small>(R$ 209,90/pessoa)</small></span>
+            <strong class="price-strike" id="escolaTotalIndividual">R$ 2.099</strong>
           </div>
           <div class="school-calc-row destaque">
-            <span>Preço da escola <small>(R$ 99/pessoa)</small></span>
-            <strong id="escolaTotalInstitucional">R$ 990</strong>
+            <span>Preço da escola <small>(R$ 104,95/pessoa)</small></span>
+            <strong id="escolaTotalInstitucional">R$ 1.050</strong>
           </div>
         </div>
         <div class="school-calc-economia">
-          Você economiza <strong id="escolaEconomia">R$ 1.000</strong> por ano
+          Você economiza <strong id="escolaEconomia">R$ 1.050</strong> por ano
         </div>
-        <p class="school-calc-nota">Preço institucional de lançamento (2026) — R$ 120/professor a partir de janeiro de 2027.</p>
+        <p class="school-calc-nota">Metade do preço individual — fechado direto com você, sem burocracia.</p>
         <a class="btn btn-primary" style="width:100%;justify-content:center;" href="https://github.com/danfluz" target="_blank" rel="noopener">Falar sobre esse plano</a>
       </div>
     </div>
@@ -1058,8 +1073,8 @@
   document.addEventListener('keydown', e => { if (e.key === 'Escape') fecharLightbox(); });
 
   // ── Calculadora "Para escolas" ──────────────────────────────────────
-  const ESCOLA_PRECO_INDIVIDUAL = 199;   // preço de lançamento (2026), por pessoa/ano
-  const ESCOLA_PRECO_INSTITUCIONAL = 99; // 50% do individual, preço de lançamento (2026)
+  const ESCOLA_PRECO_INDIVIDUAL = 209.90;    // preço individual, por pessoa/ano
+  const ESCOLA_PRECO_INSTITUCIONAL = 104.95; // 50% do individual
 
   function formatarReal(n) {
     return 'R$ ' + Math.round(n).toLocaleString('pt-BR');

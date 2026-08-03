@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DiarioPRO — diário de classe com automação do SIEPE</title>
+<title>DiarioPRO — Diário de classe com automação do SIEPE</title>
 <meta name="description" content="DiarioPRO organiza planejamento, notas, frequência e lança direto no SIEPE por você. Dashboard de turma, o Tim ajudando no planejamento, e registro de alunos fora de sala em tempo real.">
-<meta property="og:title" content="DiarioPRO — diário de classe com automação do SIEPE">
+<meta property="og:title" content="DiarioPRO — Diário de classe com automação do SIEPE">
 <meta property="og:description" content="Planejamento, notas, frequência e o resto da burocracia do SIEPE, organizados num programa só.">
 <meta property="og:image" content="screenshot-hub.png">
 <meta property="og:type" content="website">
@@ -41,7 +41,7 @@
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
+  html { scroll-behavior: smooth; overflow-x: hidden; }
 
   body {
     background: var(--bg);
@@ -49,6 +49,7 @@
     font-family: "Segoe UI", Arial, sans-serif;
     min-height: 100vh;
     line-height: 1.5;
+    overflow-x: hidden;
   }
 
   a { color: inherit; }
@@ -137,6 +138,7 @@
   .carousel { position: relative; }
   .car-stage {
     position: relative; height: 460px; margin: 0 auto; max-width: 980px;
+    overflow: hidden;
   }
   .car-slide {
     position: absolute; top: 50%; left: 50%; width: 640px;
@@ -254,6 +256,12 @@
   .feat-icon img { width: 100%; height: 100%; object-fit: cover; }
   .feat-card h3 { font-size: 0.96rem; font-weight: 700; margin-bottom: 7px; color: var(--text); }
   .feat-card p { color: var(--text-faint); font-size: 0.85rem; line-height: 1.5; }
+  .feat-tag {
+    display: inline-block; font-size: 0.66rem; font-weight: 800; letter-spacing: 0.02em;
+    padding: 3px 9px; border-radius: 999px; margin-bottom: 7px;
+  }
+  .feat-tag-secretaria { background: #F3E5F5; color: var(--purple); }
+  .feat-tag-professor  { background: #E3F2FD; color: var(--blue); }
 
   .soon-card {
     margin-top: 20px; display: flex; align-items: center; gap: 16px;
@@ -314,6 +322,7 @@
 
   /* ── Pricing ─────────────────────────────────────────────────────── */
   .price-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; max-width: 700px; margin: 0 auto; }
+  .price-grid-3 { grid-template-columns: repeat(3, 1fr); max-width: 980px; }
   .price-card {
     background: var(--surface); border: 1.5px solid var(--border); border-radius: var(--radius);
     padding: 30px 26px; display: flex; flex-direction: column;
@@ -327,6 +336,7 @@
   .price-name { font-size: 0.88rem; font-weight: 700; color: var(--text-faint); margin-bottom: 8px; }
   .price-value { font-size: 2.2rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 4px; color: var(--text); }
   .price-value span { font-size: 0.95rem; color: var(--text-faint); font-weight: 600; }
+  .price-strike { font-size: 1.1rem; font-weight: 600; color: var(--text-faintest); text-decoration: line-through; margin-right: 8px; }
   .price-note { color: var(--text-faintest); font-size: 0.8rem; margin-bottom: 20px; }
   .price-list { list-style: none; display: flex; flex-direction: column; gap: 9px; margin-bottom: 24px; flex: 1; }
   .price-list li { font-size: 0.85rem; color: var(--text-muted); display: flex; gap: 8px; align-items: flex-start; }
@@ -340,6 +350,59 @@
   }
   .variants-note strong { color: var(--text); }
   .pix-note { text-align: center; margin-top: 20px; color: var(--text-faintest); font-size: 0.8rem; }
+
+  /* ── Para escolas ────────────────────────────────────────────────── */
+  .school-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 40px; align-items: start; max-width: 980px; margin: 0 auto; }
+  .school-hook {
+    display: flex; gap: 16px; align-items: flex-start; max-width: 820px; margin: 0 auto 32px;
+    background: var(--gold-soft); border: 1.5px solid var(--gold-frame); border-radius: var(--radius);
+    padding: 20px 24px;
+  }
+  .school-hook-icon {
+    width: 46px; height: 46px; border-radius: 10px; background: var(--surface); border: 1.5px solid var(--gold-frame);
+    display: flex; align-items: center; justify-content: center; font-size: 1.4rem; flex-shrink: 0;
+  }
+  .school-hook h3 { font-size: 1rem; font-weight: 800; color: var(--text); margin-bottom: 6px; }
+  .school-hook p { font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; }
+
+  .school-points { display: flex; flex-direction: column; gap: 22px; }
+  .school-point { display: flex; gap: 14px; align-items: flex-start; }
+  .school-point-icon {
+    width: 42px; height: 42px; border-radius: 10px; background: var(--surface); border: 1.5px solid var(--border);
+    display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0;
+  }
+  .school-point h3 { font-size: 0.95rem; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+  .school-point p { font-size: 0.85rem; color: var(--text-faint); line-height: 1.55; }
+
+  .school-calc {
+    background: var(--surface); border: 1.5px solid var(--border); border-radius: var(--radius);
+    padding: 26px 24px;
+  }
+  .school-calc-label { font-size: 0.85rem; font-weight: 700; color: var(--text); margin-bottom: 12px; }
+  .school-calc-stepper {
+    display: flex; align-items: center; gap: 10px; margin-bottom: 20px;
+  }
+  .school-calc-stepper button {
+    width: 38px; height: 38px; border-radius: 50%; border: 1.5px solid var(--border); background: var(--surface2);
+    font-size: 1.2rem; font-weight: 700; color: var(--text); cursor: pointer; flex-shrink: 0;
+  }
+  .school-calc-stepper input {
+    flex: 1; text-align: center; font-size: 1.3rem; font-weight: 800; color: var(--text);
+    border: 1.5px solid var(--border); border-radius: var(--radius-sm); padding: 8px; font-family: inherit;
+    -moz-appearance: textfield;
+  }
+  .school-calc-rows { display: flex; flex-direction: column; gap: 8px; margin-bottom: 14px; }
+  .school-calc-row { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; font-size: 0.86rem; color: var(--text-faint); }
+  .school-calc-row span { flex: 1; }
+  .school-calc-row small { display: block; font-size: 0.72rem; color: var(--text-faintest); margin-top: 1px; }
+  .school-calc-row strong { flex-shrink: 0; text-align: right; }
+  .school-calc-row.destaque { font-size: 1rem; color: var(--text); }
+  .school-calc-row .price-strike { margin-right: 0; }
+  .school-calc-economia {
+    text-align: center; background: var(--gold-soft); border: 1px solid var(--gold-frame); border-radius: var(--radius-sm);
+    padding: 10px; font-size: 0.88rem; color: #6b5400; margin-bottom: 8px;
+  }
+  .school-calc-nota { font-size: 0.74rem; color: var(--text-faintest); text-align: center; margin-bottom: 16px; }
 
   /* ── FAQ ─────────────────────────────────────────────────────────── */
   .faq { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 10px; }
@@ -388,6 +451,7 @@
     .fs-section { grid-template-columns: 1fr; }
     .fs-phone-wrap { order: -1; }
     .price-grid { grid-template-columns: 1fr; }
+    .school-grid { grid-template-columns: 1fr; }
     .car-slide { width: 480px; }
     .car-stage { height: 380px; }
   }
@@ -403,6 +467,7 @@
     .car-arrow { width: 34px; height: 34px; font-size: 1.05rem; }
     .cta-final { flex-direction: column; text-align: center; }
     .soon-card { flex-direction: column; text-align: center; }
+    .school-hook { flex-direction: column; text-align: center; align-items: center; }
   }
 </style>
 </head>
@@ -418,6 +483,7 @@
       <a href="#recursos">Recursos</a>
       <a href="#como-funciona">Como funciona</a>
       <a href="#precos">Preços</a>
+      <a href="#para-escolas">Para escolas</a>
       <a href="#faq">Dúvidas</a>
     </div>
     <a class="nav-cta" href="#pra-quem">Baixe agora</a>
@@ -429,7 +495,7 @@
   <div class="wrap">
     <div class="hero-tim reveal">
       <img src="tim/pfstim0.png" alt="Tim">
-      <p>Oi, eu sou o Tim. <strong>Inventei o DiarioPRO</strong> pra ninguém mais perder uma tarde inteira lançando nota no SIEPE.</p>
+      <p>Oi, eu sou o Tim. <strong>Inventei o DiarioPRO</strong> pra ninguém ficar acordado até tarde lançando nota no SIEPE.</p>
     </div>
     <h1>
       <span class="hero-line">Menos cliques no SIEPE.</span>
@@ -497,16 +563,16 @@
     </div>
     <div class="problem-tim reveal">
       <img src="tim/pfstim2.png" alt="Tim">
-      <p>Eu também já perdi. Foi <em>bem</em> chato. Por isso inventei o resto desta página.</p>
+      <p>Eu também já perdi. Foi <em>bem...</em> chato. Por isso tive de pensar e trabalhar em uma solução.</p>
     </div>
     <div class="pain-grid reveal">
       <div class="pain-card">
         <div class="n">01</div>
-        <p><strong>Lançar nota por nota, aluno por aluno</strong> é lento, chato e não ensina nada a ninguém.</p>
+        <p><strong>Lançar nota por nota, aluno por aluno</strong> é lento e chato, ainda mais quando o SIEPE trava e você perde tudo.</p>
       </div>
       <div class="pain-card">
         <div class="n">02</div>
-        <p><strong>Reescrever o planejamento do zero</strong> todo bimestre, como se o ano passado nunca tivesse acontecido.</p>
+        <p><strong>Reescrever o planejamento do zero</strong> toda unidade, para cada turma.</p>
       </div>
       <div class="pain-card">
         <div class="n">03</div>
@@ -522,61 +588,65 @@
     <div class="section-head reveal">
       <div class="kicker">Recursos</div>
       <h2>Um programa só, pra tudo que o dia a dia escolar pede</h2>
-      <p>Cada módulo resolve uma parte real do trabalho — sem depender de planilha solta ou post-it.</p>
+      <p>Cada módulo resolve uma parte real do trabalho sem depender de anotações em papéis, planilhas ou post-it.</p>
     </div>
     <div class="feat-grid reveal">
       <div class="feat-card">
         <div class="feat-icon"><img src="tim/pfstim30.png" alt=""></div>
         <h3>Notas, frequência e conteúdos no SIEPE</h3>
-        <p>Lança tudo direto no sistema oficial — notas, frequência, registro de conteúdo. Você só confere antes de mandar.</p>
+        <p>Lança tudo direto no sistema oficial — notas, frequência, registro de conteúdo. Você pode conferir e ajustar antes de mandar.</p>
       </div>
       <div class="feat-card">
         <div class="feat-icon"><img src="tim/pfstim1.png" alt=""></div>
         <h3>Planejamento com o Tim</h3>
-        <p>Ele lê o que você já ensinou e escreve um rascunho do próximo bimestre. Você só ajusta e assina embaixo.</p>
+        <p>Eu posso te ajudar a escrever seu planejamento baseado no organizador curricular de Pernambuco, além de mandar para todas as turmas de uma só vez. Você só ajusta de acordo com suas práticas pedagógicas.</p>
       </div>
       <div class="feat-card">
         <div class="feat-icon"><img src="tim/pfstim31.png" alt=""></div>
-        <h3>Dashboard da turma</h3>
-        <p>Médias, faltas e risco de reprovação — tudo em gráfico, sem montar planilha.</p>
+        <h3>Relatórios de turma</h3>
+        <p>Veja dados consistentes para cada turma da escola. Identifique padrões e solucione problemas.</p>
       </div>
       <div class="feat-card">
         <div class="feat-icon"><img src="tim/pfstim20.png" alt=""></div>
         <h3>Conselho de Classe</h3>
-        <p>Reúne nota, falta e foto de cada aluno num resumo só, pra você chegar preparado na reunião.</p>
+        <span class="feat-tag feat-tag-secretaria">🔒 Modo Secretaria</span>
+        <p>Realize o conselho de classe com fotos, faltas, médias, e outras observações de cada aluno. Para chegar preparado na reunião.</p>
       </div>
       <div class="feat-card">
         <div class="feat-icon"><img src="tim/pfstim19.png" alt=""></div>
-        <h3>Alunos fora de sala em tempo real</h3>
-        <p>Professor marca pelo celular, secretaria acompanha tudo no programa, no mesmo dia.</p>
+        <h3>Veja quem gazeia aula em tempo real</h3>
+        <span class="feat-tag feat-tag-secretaria">🔒 Modo Secretaria</span>
+        <p>A secretaria pode consultar quais alunos foram reportados fora de sala durante o horário de aula pelos professores. Não exige que professores paguem por nada para usar.</p>
       </div>
       <div class="feat-card">
         <div class="feat-icon"><img src="tim/pfstim5.png" alt=""></div>
         <h3>Correção de provas assistida</h3>
+        <span class="feat-tag feat-tag-professor">🔒 Modo Professor</span>
         <p>Agiliza a correção sem tirar a palavra final de quem está corrigindo.</p>
       </div>
       <div class="feat-card">
         <div class="feat-icon"><img src="tim/pfstim21.png" alt=""></div>
         <h3>Banco de questões</h3>
-        <p>Reaproveita questão já usada, organizada por tema e dificuldade.</p>
+        <p>Organize suas questões organizadas por tema e dificuldade. Importe questões de prova e use para criar provas automáticas mais tarde.</p>
       </div>
       <div class="feat-card">
         <div class="feat-icon"><img src="tim/pfstim18.png" alt=""></div>
         <h3>Relatório de pendências</h3>
-        <p>Mostra de cara o que ainda falta lançar, turma por turma.</p>
+        <span class="feat-tag feat-tag-professor">🔒 Modo Professor</span>
+        <p>O estresse de todo fim de unidade. Mostra de cara o que ainda falta lançar, turma por turma. E ainda tem botão para resolver a bronca na hora (com seus ajustes). É sério!</p>
       </div>
       <div class="feat-card">
         <div class="feat-icon"><img src="tim/pfstim32.png" alt=""></div>
-        <h3>Ata de controle em .docx</h3>
-        <p>Documento pronto pra imprimir e assinar, com um clique.</p>
+        <h3>Ata de controle em Word</h3>
+        <p>Documento .docx pronto pra imprimir e assinar, instantâneo com um clique.</p>
       </div>
     </div>
 
     <div class="soon-card reveal">
-      <span class="soon-badge">EM BREVE</span>
+      <span class="soon-badge">ATUALIZAÇÕES</span>
       <div class="soon-text">
-        <h3>Criador de horários</h3>
-        <p>Monta o horário da escola inteira automaticamente, direto aqui dentro — sem precisar de outro programa separado só pra isso.</p>
+        <h3>Novidades e suporte</h3>
+        <p>Verifique por atualizações para obter correções de bugs e receber novas funcionalidades. Tudo já incluso em qualquer um dos planos.</p>
       </div>
     </div>
   </div>
@@ -587,7 +657,7 @@
   <div class="wrap">
     <div class="section-head reveal">
       <div class="kicker">Como funciona</div>
-      <h2>Do download ao primeiro lançamento, em poucos minutos</h2>
+      <h2>Entre baixar e usar se vão poucos minutos</h2>
     </div>
     <div class="steps reveal">
       <div class="step">
@@ -597,18 +667,18 @@
       </div>
       <div class="step">
         <div class="step-num">2</div>
-        <h3>Use 7 dias grátis</h3>
-        <p>Clique em "Teste grátis" na tela de ativação — acesso completo, sem código, sem pagar nada.</p>
+        <h3>Comece com tudo ou teste 7 dias grátis</h3>
+        <p>Insira sua licença para ativar ou clique em "Teste grátis" na tela de ativação — acesso completo, sem código, sem pagar nada.</p>
       </div>
       <div class="step">
         <div class="step-num">3</div>
         <h3>Conecte seu SIEPE</h3>
-        <p>Informa seu login uma vez — fica salvo só no seu computador.</p>
+        <p>Informe seu login uma vez e fica salvo só no seu computador.</p>
       </div>
       <div class="step">
         <div class="step-num">4</div>
         <h3>Gostou? Ative por PIX</h3>
-        <p>Escolhe o plano e paga por PIX dentro do próprio programa pra continuar depois do teste.</p>
+        <p>Escolhe o plano e paga por PIX dentro do próprio programa pra continuar.</p>
       </div>
     </div>
   </div>
@@ -619,14 +689,14 @@
   <div class="wrap">
     <div class="section-head reveal">
       <div class="kicker">Pra quem é</div>
-      <h2>Professor ou secretaria — cada um ganha o seu</h2>
+      <h2>Professor ou secretaria — soluções para cada um</h2>
       <p>Escolha sua versão: Professor ou Secretaria. O preço é o mesmo nas duas — baixe a que combina com o seu uso e teste 7 dias grátis.</p>
     </div>
     <div class="who-grid reveal">
       <div class="who-card professor">
         <h3>🎓 Pra quem dá aula</h3>
-        <p>Menos burocracia, mais aula de verdade. O Tim escreve o rascunho do seu planejamento,
-        lança nota e frequência no SIEPE por você, e avisa quando um aluno seu está em risco —
+        <p>Menos aperreio com o SIEPE, mais dedicação às aulas E ao seu tempo livre! Tenha o rascunho do seu planejamento,
+        notas e frequências lançadas no SIEPE por você, e avisa quando um aluno seu está em risco —
         antes que isso vire problema lá na frente.</p>
         <a class="btn btn-primary" style="margin-top:18px" href="https://github.com/Danfluz/DiarioPro/releases/latest/download/DiarioPro_Setup_Professor.exe">Baixar versão Professor</a>
       </div>
@@ -683,13 +753,14 @@
     <div class="section-head reveal">
       <div class="kicker">Preços</div>
       <h2>Sem contrato, sem fidelidade</h2>
-      <p>Comece com 7 dias grátis. Pague por PIX direto dentro do programa. Cancele quando quiser.</p>
+      <p>Comece com 7 dias grátis. Pague por PIX direto dentro do programa. Cancele quando quiser.<br>
+      Custa menos que boa parte dos streamings que você já assina.</p>
     </div>
 
-    <div class="price-grid reveal">
+    <div class="price-grid price-grid-3 reveal">
       <div class="price-card">
-        <div class="price-name">Mensal</div>
-        <div class="price-value">R$ 19,90<span>/mês</span></div>
+        <div class="price-name">1 mês</div>
+        <div class="price-value">R$ 22,90<span>/mês</span></div>
         <div class="price-note">Renovação manual, sem fidelidade</div>
         <ul class="price-list">
           <li>Todos os módulos do programa</li>
@@ -699,16 +770,28 @@
         <a class="btn btn-ghost" href="#pra-quem">Baixe agora</a>
       </div>
 
+      <div class="price-card">
+        <div class="price-name">4 meses</div>
+        <div class="price-value">R$ 79,90</div>
+        <div class="price-note">Vale por 1 unidade — ideal pra usar só no fechamento</div>
+        <ul class="price-list">
+          <li>Todos os módulos do programa</li>
+          <li>Ideal pra usar só no fechamento</li>
+          <li>Ativação e pagamento por PIX</li>
+        </ul>
+        <a class="btn btn-ghost" href="#pra-quem">Baixe agora</a>
+      </div>
+
       <div class="price-card featured">
         <div class="price-badge">MELHOR CUSTO</div>
-        <div class="price-name">Anual</div>
-        <div class="price-value">R$ 150<span>/ano</span></div>
-        <div class="price-note">Equivale a R$12,50 por mês</div>
+        <div class="price-name">12 meses</div>
+        <div class="price-value">R$ 209,90<span>/ano</span></div>
+        <div class="price-note">Equivale a R$17,49 por mês</div>
         <ul class="price-list">
           <li>Todos os módulos do programa</li>
           <li>Ativação e pagamento por PIX</li>
           <li>Atualizações inclusas</li>
-          <li>Sai mais barato que pagar mês a mês</li>
+          <li>Sai mais barato que os outros planos</li>
         </ul>
         <a class="btn btn-primary" href="#pra-quem">Baixe agora</a>
       </div>
@@ -716,10 +799,82 @@
 
     <div class="variants-note reveal">
       Disponível em duas versões pra baixar — <a href="#pra-quem"><strong>Professor</strong></a> ou <a href="#pra-quem"><strong>Secretaria</strong></a> —
-      escolha a que combina com o seu uso. O preço é o mesmo nas duas.
+      escolha a que combina com o seu uso. O preço é o mesmo nas duas. Os recursos marcados com 🔒 lá em cima
+      são exclusivos do modo indicado.
     </div>
 
     <p class="pix-note">7 dias de teste sem pagar nada. Depois, sem cadastro de cartão — o pagamento é um PIX gerado na hora, dentro do próprio programa.</p>
+  </div>
+</section>
+
+<!-- ═══ Para escolas ═══ -->
+<section class="section section-alt" id="para-escolas">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker">Para escolas</div>
+      <h2>Comece pequeno. Sua escola inteira já participa.</h2>
+      <p>Com 1 licença Secretaria, todo professor já pode reportar aluno fora de sala pelo celular sem comprar nem instalar nada. Além de participar do conselho de classe melhoradoe outras funções.</p>
+    </div>
+
+    <div class="school-hook reveal">
+      <div class="school-hook-icon">🔑</div>
+      <div>
+        <h3>Como funciona</h3>
+        <p>Você ativa 1 licença Secretaria e gera o código da sua escola dentro do programa. Manda o link pros professores
+        (No WhatsApp, por exemplo) e cada um abre no celular, entra com o código uma vez, e já pode marcar quem saiu de sala
+        na hora. Nenhum professor precisa comprar nada pra fazer parte disso.</p>
+      </div>
+    </div>
+
+    <div class="school-grid reveal">
+      <div class="school-points">
+        <div class="school-point">
+          <div class="school-point-icon">👀</div>
+          <div>
+            <h3>Visão da escola inteira</h3>
+            <p>Faça o Conselho de Classe, aprove planejamentos e controle de frequências de todas as disciplinas e turmas, não só de uma.</p>
+          </div>
+        </div>
+        <div class="school-point">
+          <div class="school-point-icon">🔒</div>
+          <div>
+            <h3>Dado isolado por escola</h3>
+            <p>Sua instituição tem seu próprio espaço no sistema — nada se mistura com o de nenhuma outra escola.</p>
+          </div>
+        </div>
+        <div class="school-point">
+          <div class="school-point-icon">💬</div>
+          <div>
+            <h3>Um preço amigável para várias licenças</h3>
+            <p>Um pedido por email, um código de licença por pessoa, e ninguém precisa se virar pagando PIX individual por 1 ano.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="school-calc">
+        <div class="school-calc-label">Quer ir além? Dê a versão Professor pra cada funcionário — planejamento com o Tim, notas automáticas no SIEPE — por um preço bem menor comprando junto. Quantos funcionários vão usar?</div>
+        <div class="school-calc-stepper">
+          <button type="button" onclick="escolaAlterarQtd(-1)" aria-label="Diminuir">−</button>
+          <input type="number" id="escolaQtd" value="10" min="2" max="500" onchange="escolaAtualizarCalculo()" oninput="escolaAtualizarCalculo()">
+          <button type="button" onclick="escolaAlterarQtd(1)" aria-label="Aumentar">+</button>
+        </div>
+        <div class="school-calc-rows">
+          <div class="school-calc-row">
+            <span>Preço individual <small>(R$ 209,90/pessoa)</small></span>
+            <strong class="price-strike" id="escolaTotalIndividual">R$ 2.099</strong>
+          </div>
+          <div class="school-calc-row destaque">
+            <span>Preço da escola <small>(R$ 104,95/pessoa)</small></span>
+            <strong id="escolaTotalInstitucional">R$ 1.050</strong>
+          </div>
+        </div>
+        <div class="school-calc-economia">
+          Você economiza <strong id="escolaEconomia">R$ 1.050</strong> por ano
+        </div>
+        <p class="school-calc-nota">Metade do preço individual — fechado direto com você, sem burocracia.</p>
+        <a class="btn btn-primary" id="escolaContatoBtn" style="width:100%;justify-content:center;" href="mailto:example@example.com">Falar sobre esse plano</a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -809,7 +964,7 @@
 <script>
   // Headline dinâmico — troca a palavra em destaque
   const heroWords = [
-    'pra dar aula', 'pra sua tarde de domingo', 'pra você', 'pra curtir a família',
+    'pra dar aula', 'pra você', 'pra curtir a família',
     'pra viver', 'pra descansar', 'pra se planejar', 'pra dormir à noite',
   ];
   const heroWordEl = document.getElementById('heroWord');
@@ -930,6 +1085,53 @@
     document.getElementById('lightbox').classList.remove('open');
   }
   document.addEventListener('keydown', e => { if (e.key === 'Escape') fecharLightbox(); });
+
+  // ── Calculadora "Para escolas" ──────────────────────────────────────
+  const ESCOLA_PRECO_INDIVIDUAL = 209.90;    // preço individual, por pessoa/ano
+  const ESCOLA_PRECO_INSTITUCIONAL = 104.95; // 50% do individual
+
+  function formatarReal(n) {
+    return 'R$ ' + Math.round(n).toLocaleString('pt-BR');
+  }
+
+  function escolaAtualizarCalculo() {
+    const input = document.getElementById('escolaQtd');
+    if (!input) return;
+    let qtd = parseInt(input.value, 10);
+    if (isNaN(qtd) || qtd < 2) qtd = 2;
+    if (qtd > 500) qtd = 500;
+    input.value = qtd;
+
+    const totalIndividual = qtd * ESCOLA_PRECO_INDIVIDUAL;
+    const totalInstitucional = qtd * ESCOLA_PRECO_INSTITUCIONAL;
+    document.getElementById('escolaTotalIndividual').textContent = formatarReal(totalIndividual);
+    document.getElementById('escolaTotalInstitucional').textContent = formatarReal(totalInstitucional);
+    document.getElementById('escolaEconomia').textContent = formatarReal(totalIndividual - totalInstitucional);
+
+    const contatoBtn = document.getElementById('escolaContatoBtn');
+    if (contatoBtn) {
+      const assunto = `Licenças institucionais do DiarioPRO — ${qtd} professores`;
+      const corpo = `Olá! Quero contratar licenças institucionais do DiarioPRO pra minha escola.\n\n`
+        + `Quantidade de licenças: ${qtd}\n`
+        + `Valor combinado (50% off): ${formatarReal(totalInstitucional)}\n\n`
+        + `Nome da escola: \n`
+        + `Meu e-mail pra contato: \n`
+        + `Telefone (opcional): `;
+      contatoBtn.href = `mailto:example@example.com?subject=${encodeURIComponent(assunto)}&body=${encodeURIComponent(corpo)}`;
+    }
+  }
+
+  function escolaAlterarQtd(delta) {
+    const input = document.getElementById('escolaQtd');
+    if (!input) return;
+    let qtd = (parseInt(input.value, 10) || 10) + delta;
+    if (qtd < 2) qtd = 2;
+    if (qtd > 500) qtd = 500;
+    input.value = qtd;
+    escolaAtualizarCalculo();
+  }
+
+  escolaAtualizarCalculo();
 </script>
 </body>
 </html>

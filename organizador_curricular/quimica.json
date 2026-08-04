@@ -1,0 +1,287 @@
+{
+  "disciplina": "Química",
+  "tem_computacao": true,
+  "conteudo": {
+    "1 ANO": {
+      "1 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CNT302) Comunicar, para públicos variados, em diversos contextos, resultados de análises, pesquisas e/ou experimentos, elaborando e/ou interpretando textos, gráficos, tabelas, símbolos, códigos, sistemas de classificação e equações, por meio de diferentes linguagens, mídias, tecnologias digitais de informação e comunicação (TDIC), de modo a participar e/ou promover debates em torno de temas científicos e/ou tecnológicos de relevância sociocultural e ambiental.",
+          "(EM13CNT306) Avaliar os riscos envolvidos em atividades cotidianas, aplicando conhecimentos das Ciências da Natureza, para justificar o uso de equipamentos e recursos, bem como comportamentos de segurança, visando à integridade física, individual e coletiva, e socioambiental, podendo fazer uso de dispositivos e aplicativos digitais que viabilizem a estruturação de simulações de tais riscos.",
+          "(EM13CNT101) Analisar e representar, com ou sem o uso de dispositivos e de aplicativos digitais específicos, as transformações e conservações em sistemas que envolvam quantidade de matéria, de energia e de movimento para realizar previsões sobre seus comportamentos em situações cotidianas e em processos produtivos que priorizem o desenvolvimento sustentável, o uso consciente dos recursos naturais e a preservação da vida em todas as suas formas.",
+          "(EM13CNT305) Investigar e discutir o uso indevido de conhecimentos das Ciências da Natureza na justificativa de processos de discriminação, segregação e privação de direitos individuais e coletivos para promover a equidade e o respeito à diversidade.",
+          "(EM13CNT201) Analisar e discutir modelos, teorias e leis propostos em diferentes épocas e culturas para comparar distintas explicações sobre o surgimento e a evolução da Vida, da Terra e do Universo com as teorias científicas aceitas atualmente."
+        ],
+        "habilidades_especificas": [
+          "(EM13CNT302QUI20PE) Disseminar, através de diversos meios, formatos e linguagens, a Química enquanto ciência, logo, atividade humana, construída sócio-historicamente por diferentes atores, presente no cotidiano, respaldada por pesquisa de campo, exploratória, experimental, laboratorial, empírica e teórica para que cumpra o seu papel científico, sociocultural e ambiental.",
+          "(EM13CNT306QUI25PE) Minimizar riscos susceptíveis de ameaças à segurança e à saúde de cada indivíduo e da comunidade, utilizando de forma proficiente os equipamentos de proteção individual e coletiva (auditiva, respiratória, visual ou facial, cabeça, membros, queda) em atividades cotidianas.",
+          "(EM13CNT101QUI01PE) Compreender e analisar as transformações ocorridas nos sistemas químicos, a partir das propriedades das substâncias que os compõem, articulando os conceitos, princípios e leis que as regem para prever efeitos que garantam a preservação da vida em todas as suas formas.",
+          "(EM13CNT305QUI24PE) Debater sob uma perspectiva ética fundamentada em critérios científicos para o tratamento de água, saneamento básico e resíduos entre outros marcadores para promover equidade e respeito à diversidade.",
+          "(EM13CNT201QUI10PE A) Compreender as teorias de surgimento da vida, tendo como base as Teorias dos Modelos Atômicos e a Teoria da Evolução Molecular, considerando suas proposições alternativas e inovadoras de explicação sobre a evolução da estrutura proteica, a adaptação molecular e a formação de moléculas orgânicas."
+        ],
+        "objetos_conhecimento": [
+          "Alquimia. Química na antiguidade. Química na Idade Medieval e no Renascimento. Química Clássica. Química Moderna.",
+          "Noções básicas de instrumentação e experimentação de laboratório. Noções em legislação sobre segurança e prevenção de acidentes. Análise de vários tipos de riscos (físicos, químicos, biológicos, ergonômicos e mecânicos). Equipamento de proteção individual e coletiva (EPI e EPC). Sinalização, pictogramas e ações de segurança em ambientes coletivos.",
+          "Matéria e suas propriedades: estados físicos e mudanças de estado, conceito de energia, corpo, objeto. Diferenciação entre as transformações químicas e físicas.",
+          "Tipos de substâncias, tipos de misturas. Processos de separação de misturas em escala laboratorial e industrial. Propriedades dos materiais, sua disponibilidade, usos, degradação, reaproveitamento e reciclagem na perspectiva da sustentabilidade.",
+          "Teoria dos modelos atômicos. Estrutura atômica. Semelhanças atômicas (isótopos, isóbaros, isótonos e espécies isoeletrônicas)."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO20) Criar conteúdos, disponibilizando-os em ambientes virtuais para publicação e compartilhamento, avaliando a confiabilidade e as consequências da disseminação dessas informações.",
+          "(EM13CO01) Explorar e construir a solução de problemas por meio da reutilização de partes de soluções existentes.",
+          "(EM13CO11) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico.",
+          "(EM13CO21) Comunicar ideias complexas de forma clara por meio de objetos digitais como mapas conceituais, infográficos, hipertextos e outros.",
+          "(EM13CO11) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico."
+        ],
+        "possibilidades_abordagens": [
+          "Criação de postagens audiovisuais, textos jornalísticos, crônicas e/ou fotografias sobre alquimia, química na antiguidade, química na Idade Medieval e no Renascimento, química clássica, química moderna.",
+          "Catalogação de materiais e reagentes utilizados em laboratórios, para a aplicação de medidas de segurança, análise de riscos e legislação pertinente, preservando a privacidade e integridade dos dados e promovendo boas práticas de proteção individual e coletiva.",
+          "Uso de diferentes ferramentas de modelagem e/ou simulação computacional para análise das propriedades da matéria e previsões sobre as transformações físicas e químicas que a matéria pode sofrer.",
+          "Criação de infográficos, esquemas, hipertextos, fluxogramas e/ou mapas conceituais digitais, comparando os tipos de substâncias e misturas, processos de separação de misturas e o ciclo de vida dos materiais.",
+          "Exploração de diferentes ferramentas de modelagem e/ou simulação computacional, plugadas ou desplugadas, para análise das teorias dos modelos atômicos e previsões sobre a estrutura atômica."
+        ]
+      },
+      "2 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CNT209) Analisar a evolução estelar associando-a aos modelos de origem e distribuição dos elementos químicos no Universo, compreendendo suas relações com as condições necessárias ao surgimento de sistemas solares e planetários, suas estruturas e composições e as possibilidades de existência de vida, utilizando representações e simulações, com ou sem o uso de dispositivos e aplicativos digitais (como softwares de simulação e de realidade virtual, entre outros).",
+          "(EM13CNT104) Avaliar os benefícios e os riscos à saúde e ao ambiente, considerando a composição, a toxicidade e a reatividade de diferentes materiais e produtos, como também o nível de exposição a eles, posicionando-se criticamente e propondo soluções individuais e/ou coletivas para seus usos e descartes responsáveis.",
+          "(EM13CNT310) Investigar e analisar os efeitos de programas de infraestrutura e demais serviços básicos (saneamento, energia elétrica, transporte, telecomunicações, cobertura vacinal, atendimento primário à saúde e produção de alimentos, entre outros) e identificar necessidades locais e/ou regionais em relação a esses serviços, a fim de avaliar e/ou promover ações que contribuam para a melhoria na qualidade de vida e nas condições de saúde da população."
+        ],
+        "habilidades_especificas": [
+          "(EM13CNT209QUI18PE) Correlacionar origem, natureza, propriedades, combinações e atual classificação dos elementos químicos, destacando o estudo da tabela periódica e seus elementos, vinculando-os à constituição dos seres vivos, ao meio ambiente e ao surgimento do sistema solar, planetário e do universo.",
+          "(EM13CNT104QUI06PE) Compreender e analisar a composição, classificação e funcionalidade dos elementos, substâncias e materiais, bem como, os resíduos e rejeitos decorrentes de sua utilização, propondo alternativas éticas e responsáveis com a vida e com o ambiente.",
+          "(EM13CNT310QUI30PE) Discutir aspectos da Química Ambiental relacionados às estações de tratamentos de água e esgoto, destinação adequada dos resíduos gerados pela sociedade e pela indústria, abordando ações inovadoras e sustentáveis para a melhoria na qualidade de vida e nas condições de saúde da população."
+        ],
+        "objetos_conhecimento": [
+          "Tabela periódica. Constituição elementar dos seres vivos e meio ambiente. Propriedades periódicas. Surgimento do sistema solar, planetário e do universo.",
+          "Estudo da composição geral da matéria (fórmulas químicas), suas classificações, importâncias e suas destinações no meio ambiente. Ligações químicas, geometria molecular, polaridade das ligações e interações intermoleculares.",
+          "Funções Inorgânicas aplicadas às noções de Química Ambiental. Estações de tratamento de água e esgoto. Destinação adequada de resíduos e seus respectivos tratamentos. Tecnologias limpas como alternativas éticas e responsáveis para um futuro melhor."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO14) Avaliar a confiabilidade das informações encontradas em meio digital, investigando seus modos de construção e considerando a autoria, a estrutura e o propósito da mensagem.",
+          "(EM13CO18) Planejar e gerenciar projetos integrados às áreas de conhecimento de forma colaborativa, solucionando problemas, usando diversos artefatos computacionais.",
+          "(EM13CO19) Expor, argumentar e negociar propostas, produtos e serviços, utilizando diferentes mídias e ferramentas digitais."
+        ],
+        "possibilidades_abordagens": [
+          "Avaliação da origem e a confiabilidade das informações divulgadas nas mídias digitais sobre os elementos químicos e a tabela periódica.",
+          "Utilização de ferramentas para gerenciamento de projetos, organização de informações em drives virtuais, configuração de permissões de compartilhamento de arquivos de forma consciente e adequação ao estudo da composição geral da matéria, suas classificações, ligações químicas e suas propriedades.",
+          "Elaboração de protótipos para solução de problemas ambientais, principalmente sobre o tratamento de água e resíduos, que envolva funções inorgânicas, podendo-se fazer a utilização de ferramentas digitais para comunicar e compartilhar as soluções propostas."
+        ]
+      },
+      "3 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CNT206) Discutir a importância da preservação e conservação da biodiversidade, considerando parâmetros qualitativos e quantitativos, e avaliar os efeitos da ação humana e das políticas ambientais para a garantia da sustentabilidade do planeta.",
+          "(EM13CNT303) Interpretar textos de divulgação científica que tratem de temáticas das Ciências da Natureza, disponíveis em diferentes mídias, considerando a apresentação dos dados, tanto na forma de textos como em equações, gráficos e/ou tabelas, a consistência dos argumentos e a coerência das conclusões, visando construir estratégias de seleção de fontes confiáveis de informações.",
+          "(EM13CNT309) Analisar questões socioambientais, políticas e econômicas relativas à dependência do mundo atual em relação aos recursos não renováveis e discutir a necessidade de introdução de alternativas e novas tecnologias energéticas e de materiais, comparando diferentes tipos de motores e processos de produção de novos materiais."
+        ],
+        "habilidades_especificas": [
+          "(EM13CNT206QUI14PE A) Analisar o ciclo dos materiais no ambiente, suas propriedades e seu uso pelos humanos e as consequências para o planeta, empregando tecnologias que possibilitem uma extração e produção sustentáveis e uma extenuante utilização, para dirimir os problemas enfrentados no descarte desses materiais.",
+          "(EM13CNT303QUI21PE) Interpretar a linguagem matemática empregada nas deduções e generalizações dos fenômenos químicos, de modo a conceber essa linguagem como ferramenta de mediação na sistematização do conhecimento científico e posterior divulgação em fontes confiáveis de informação.",
+          "(EM13CNT309QUI29PE) Discutir o papel da inteligência artificial e da nanotecnologia na descoberta de novos materiais, bem como dos comportamentos incomuns dos estados exóticos da matéria e suas transições como alternativa para melhorar a performance e eficiência de equipamentos e técnicas de investigação."
+        ],
+        "objetos_conhecimento": [
+          "Reações inorgânicas, classificação, balanceamento de equações químicas. Leis ponderais e cálculos estequiométricos.",
+          "Linguagem matemática empregada nas deduções e generalizações dos fenômenos químicos. Sistematização e normatização do conhecimento científico para divulgação em diferentes mídias. Reconhecimento de fontes confiáveis de informação.",
+          "Noções de inteligência artificial; Nanotecnologia; Química Computacional; Novos materiais; Estados exóticos da matéria; Aplicação destes conhecimentos na melhora da performance e eficiência de equipamentos e técnicas de investigação."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO11) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico.",
+          "(EM13CO18) Planejar e gerenciar projetos integrados às áreas de conhecimento de forma colaborativa, solucionando problemas, usando diversos artefatos computacionais.",
+          "(EM13CO10) Conhecer os fundamentos da Inteligência Artificial, comparando-a com a inteligência humana, analisando suas potencialidades, riscos e limites."
+        ],
+        "possibilidades_abordagens": [
+          "Utilização de simuladores de balanceamento de reações químicas visando a otimização da eficiência de processos produtivos e/ou criação de banco de dados para registro das principais reações inorgânicas de sais, óxidos, bases, ácidos, etc.",
+          "Uso de ferramentas de produtividade para gerenciamento de projetos, organização de informações em drives virtuais, configuração de compartilhamento de arquivos de forma segura e sistematização do conhecimento científico.",
+          "Criação e/ou uso de algoritmos de recomendação, utilizando inteligência artificial (prompt), para melhora da performance das principais técnicas químicas de investigação."
+        ]
+      }
+    },
+    "2 ANO": {
+      "1 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CNT101) Analisar e representar, com ou sem o uso de dispositivos e de aplicativos digitais específicos, as transformações e conservações em sistemas que envolvam quantidade de matéria, de energia e de movimento para realizar previsões sobre seus comportamentos em situações cotidianas e em processos produtivos que priorizem o desenvolvimento sustentável, o uso consciente dos recursos naturais e a preservação da vida em todas as suas formas.",
+          "(EM13CNT304) Analisar e debater situações controversas sobre a aplicação de conhecimentos da área de Ciências da Natureza (tais como tecnologias do DNA, tratamentos com células-tronco, neurotecnologias, produção de tecnologias de defesa, estratégias de controle de pragas, entre outros), com base em argumentos consistentes, legais, éticos e responsáveis, distinguindo diferentes pontos de vista."
+        ],
+        "habilidades_especificas": [
+          "(EM13CNT101QUI02PE) Compreender os conceitos, princípios, leis e classificação das soluções, estabelecendo critérios qualitativos e quantitativos na investigação por um desenvolvimento sustentável dos recursos naturais, atrelando esses conhecimentos a situações cotidianas e ambientais.",
+          "(EM13CNT304QUI23PE) Compreender os princípios físico-químicos de algumas técnicas empregadas pela química forense (cromatografia, espectroscopia, espectrometria de massa, calorimetria, papiloscopia, termogravimetria) e suas aplicações em investigações criminais, controle de qualidade de produtos, adulteração em combustíveis e bebidas, pareceres sobre insalubridade, funcionamento do etilômetro, perícias em alimentos e medicamentos, doping esportivo, controle de pragas, entre outros.",
+          "(EM13CNT304QUI22PE) – Discutir aspectos favoráveis e desfavoráveis das estratégias químicas e biológicas em toda cadeia produtiva tais como, no controle de pragas, aquecimento global, escassez de água, produção e consumo de alimentos transgênicos, para promover intervenções legais, éticas e sustentáveis."
+        ],
+        "objetos_conhecimento": [
+          "Solubilidade e curva de solubilidade das substâncias, soluções, tipos de soluções, concentração das soluções. Misturas coloidais, dispersões, emulsões e propriedades coligativas. Aspectos qualitativos e quantitativos, bem como aplicações no dia a dia, com foco em rótulos de produtos constituídos por soluções, alimentos industrializados, medicamentos ou produtos de limpeza na perspectiva de consumo consciente e saudável.",
+          "Técnicas de análise físico-químicas. Aplicações da análise físico-química na defesa social, controle de qualidade na indústria, no esporte, na saúde e no ambiente.",
+          "Ética na pesquisa científica; Aspectos favoráveis e desfavoráveis das tecnologias químicas e biológicas de atendimento às demandas humanas e de preservação ambiental."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO11) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico.",
+          "(EM13CO05) Identificar os limites da Computação para diferenciar o que pode ou não ser automatizado, buscando uma compreensão mais ampla dos limites dos processos mentais envolvidos na resolução de problemas.",
+          "(EM13CO17) Construir redes virtuais de interação e colaboração, favorecendo o desenvolvimento de projetos de forma segura, legal e ética."
+        ],
+        "possibilidades_abordagens": [
+          "Coleta de dados para geração de gráficos que expressem as curvas de solubilidade, concentração e propriedades coligativas, explorando modelos computacionais. Uso de planilhas para calcular e representação de dados de soluções em produtos cotidianos (alimentos, medicamentos, produtos de limpeza), relacionando-os ao consumo consciente e ao desenvolvimento sustentável.",
+          "Reconhecimento, entre as principais técnicas de análise físico-química, das que são passíveis de automação, pensando na otimização do controle de qualidade. Uso de softwares e/ou ferramentas digitais para simulação ou interpretação de dados aplicados à química forense, permitindo aos estudantes compreenderem as tecnologias envolvidas, seus limites e impactos sociais, além de discutir aspectos éticos e de segurança relacionados ao uso dessas ferramentas.",
+          "Debate, em plataformas digitais, das vantagens e desvantagens da aplicação de estratégias químicas e biológicas, como, por exemplo, o uso de agrotóxicos, levando em consideração os seus impactos ambientais e sociais."
+        ]
+      },
+      "2 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CNT102) Realizar previsões, avaliar intervenções e/ou construir protótipos de sistemas térmicos que visem à sustentabilidade, considerando sua composição e os efeitos das variáveis termodinâmicas sobre seu funcionamento, considerando também o uso de tecnologias digitais que auxiliem no cálculo de estimativas e no apoio à construção dos protótipos.",
+          "(EM13CNT101) Analisar e representar, com ou sem o uso de dispositivos e de aplicativos digitais específicos, as transformações e conservações em sistemas que envolvam quantidade de matéria, de energia e de movimento para realizar previsões sobre seus comportamentos em situações cotidianas e em processos produtivos que priorizem o desenvolvimento sustentável, o uso consciente dos recursos naturais e a preservação da vida em todas as suas formas."
+        ],
+        "habilidades_especificas": [
+          "(EM13CNT102QUI04PE) Realizar previsões e avaliar a quantidade de energia absorvida ou liberada em sistemas químicos e biológicos estabelecendo analogias entre os princípios da termoquímica para solucionar problemas cotidianos referentes à composição, função, aplicação e vida útil dos materiais empregados na construção de protótipos que visem à sustentabilidade.",
+          "(EM13CNT101QUI03PE A) Correlacionar as teorias de espontaneidade e reversibilidade para compreensão dos conceitos de equilíbrio e cinética química como forma de intervir de maneira efetiva, eficiente e eficaz nas cadeias produtivas e industriais."
+        ],
+        "objetos_conhecimento": [
+          "Termoquímica e termodinâmica: entalpia, Lei de Hess, conceitos e cálculos aplicados ao cotidiano. Espontaneidade e reversibilidade. Noções de bioenergética. Composição, função, aplicação e vida útil dos materiais empregados na construção de sistemas térmicos, visando à sustentabilidade.",
+          "Cinética química: Conceitos (definição, teoria das colisões), fatores que influenciam na taxa de reações, velocidade média e lei de velocidade."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO02) Explorar e construir a solução de problemas por meio de refinamentos, utilizando diversos níveis de abstração desde a especificação até a implementação.",
+          "(EM13CO03) Identificar o comportamento dos algoritmos no que diz respeito ao consumo de recursos como tempo de execução, espaço de memória e energia, entre outros."
+        ],
+        "possibilidades_abordagens": [
+          "Refino das reações termoquímicas, considerando aspectos da bioenergética, visando à sustentabilidade em sistemas térmicos.",
+          "Análise das taxas cinéticas, na perspectiva de transformações mais eficientes, através de instrumentos digitais ou não."
+        ]
+      },
+      "3 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CNT101) Analisar e representar, com ou sem o uso de dispositivos e de aplicativos digitais específicos, as transformações e conservações em sistemas que envolvam quantidade de matéria, de energia e de movimento para realizar previsões sobre seus comportamentos em situações cotidianas e em processos produtivos que priorizem o desenvolvimento sustentável, o uso consciente dos recursos naturais e a preservação da vida em todas as suas formas.",
+          "(EM13CNT107) Realizar previsões qualitativas e quantitativas sobre o funcionamento de geradores, motores elétricos e seus componentes, bobinas, transformadores, pilhas, baterias e dispositivos eletrônicos, com base na análise dos processos de transformação e condução de energia envolvidos – com ou sem o uso de dispositivos e aplicativos digitais –, para propor ações que visem a sustentabilidade.",
+          "(EM13CNT301) Construir questões, elaborar hipóteses, previsões e estimativas, empregar instrumentos de medição e representar e interpretar modelos explicativos, dados e/ou resultados experimentais para construir, avaliar e justificar conclusões no enfrentamento de situações-problema sob uma perspectiva científica."
+        ],
+        "habilidades_especificas": [
+          "(EM13CNT101QUI03PEB) Correlacionar as teorias de espontaneidade e reversibilidade para compreensão dos conceitos de equilíbrio e cinética química como forma de intervir de maneira efetiva, eficiente e eficaz nas cadeias produtivas e industriais.",
+          "(EM13CNT107QUI09PE) Compreender o funcionamento de pilhas, baterias e sistemas de eletrólise a partir de suas reações de constituição, potencial elétrico, tempo de vida útil e aplicações práticas, visando à tomada de decisões por ações sociais, ambientais e economicamente viáveis.",
+          "(EM13CNT301QUI19PE) Delimitar um problema e suas variáveis (podendo envolver projetos), elaborando hipóteses, realizando experimentos, avaliando dados, validando ou não os pressupostos no enfrentamento das demandas que envolvam as temáticas Matéria e Energia, Vida e Evolução e Terra e Universo, sob a perspectiva científica e de sustentabilidade."
+        ],
+        "objetos_conhecimento": [
+          "Equilíbrio Químico e equilíbrio Iônico, deslocamento de equilíbrio e seus princípios. Processos produtivos, industriais ou exploratórios à luz dessas teorias.",
+          "Processos de oxidação e redução. Cálculo do número de oxidação (Nox). Balanceamento de reações redox. Eletroquímica. Pilhas e baterias. Química da eletrólise em escala laboratorial e industrial. Pesquisa de tecnologias e materiais alternativos menos nocivos à vida e ao ambiente.",
+          "Metodologia científica e sustentabilidade. Metais pesados. Uso e descarte de componentes eletrônicos. Legislação sobre o descarte. Processos de reciclagem seus desafios e benefícios. Destinação final adequada e estratégias para reduzir a geração desses resíduos."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO03) Identificar o comportamento dos algoritmos no que diz respeito ao consumo de recursos como tempo de execução, espaço de memória e energia, entre outros.",
+          "(EM13CO16) Desenvolver projetos com robótica, utilizando artefatos físicos ou simuladores.",
+          "(EM13CO20) Criar conteúdos, disponibilizando-os em ambientes virtuais para publicação e compartilhamento, avaliando a confiabilidade e as consequências da disseminação dessas informações."
+        ],
+        "possibilidades_abordagens": [
+          "Análise das constantes de equilíbrio, na perspectiva de transformações mais eficientes, através de instrumentos digitais ou não.",
+          "Construção de circuitos elétricos simples para compreensão da conversão de energia química em elétrica por meio de reações de oxirredução, identificando ânodo e cátodo em células eletroquímicas para análise da vida útil e composição de baterias.",
+          "Criação e postagem de conteúdo em ambientes virtuais com o objetivo de promover, por exemplo, a conscientização do descarte adequado de lixo eletrônico e dos seus impactos no meio ambiente."
+        ]
+      }
+    },
+    "3 ANO": {
+      "1 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CNT103) Utilizar o conhecimento sobre as radiações e suas origens para avaliar as potencialidades e os riscos de sua aplicação em equipamentos de uso cotidiano, na saúde, no ambiente, na indústria, na agricultura e na geração de energia elétrica.",
+          "(EM13CNT205) Interpretar resultados e realizar previsões sobre atividades experimentais, fenômenos naturais e processos tecnológicos, com base nas noções de probabilidade e incerteza, reconhecendo os limites explicativos das ciências.",
+          "(EM13CNT208) Aplicar os princípios da evolução biológica para analisar a história humana, considerando sua origem, diversificação, dispersão pelo planeta e diferentes formas de interação com a natureza, valorizando e respeitando a diversidade étnica e cultural humana.",
+          "(EM13CNT201) Analisar e discutir modelos, teorias e leis propostos em diferentes épocas e culturas para comparar distintas explicações sobre o surgimento e a evolução da Vida, da Terra e do Universo com as teorias científicas aceitas atualmente.",
+          "(EM13CNT203) Avaliar e prever efeitos de intervenções nos ecossistemas, e seus impactos nos seres vivos e no corpo humano, com base nos mecanismos de manutenção da vida, nos ciclos da matéria e nas transformações e transferências de energia, utilizando representações e simulações sobre tais fatores, com ou sem o uso de dispositivos e aplicativos digitais (como softwares de simulação e de realidade virtual, entre outros)."
+        ],
+        "habilidades_especificas": [
+          "(EM13CNT103QUI05PE) Compreender as mudanças de paradigmas entre a visão clássica e o modelo quântico para o átomo, através de contextualizações históricas, referenciais teóricos e demonstrações experimentais, refletindo de que forma e até que ponto a radioatividade pode ser empregada na vida e no meio ambiente.",
+          "(EM13CNT205QUI13PE) Desenvolver modelos experimentais para a observação e interpretação de fenômenos à luz da perspectiva probabilística da mecânica quântica e de suas intervenções no funcionamento e desenvolvimento reativo de superfluidos, supercondutores, blu-ray, GPS, QR code, entre outros.",
+          "(EM13CNT208QUI17PE) Recorrer aos diversos sistemas de datação de fósseis para auxiliar a análise histórica de seres, materiais e objetos que relatam a evolução da história humana, valorizando e respeitando a diversidade étnica e cultural.",
+          "(EM13CNT201QUI10PEB) Compreender as teorias de surgimento da vida, tendo como base as Teorias dos Modelos Atômicos e a Teoria da Evolução Molecular, considerando suas proposições alternativas e inovadoras de explicação sobre a evolução da estrutura proteica, a adaptação molecular e a formação de moléculas orgânicas.",
+          "(EM13CNT203QUI12PE) Discutir os prejuízos e benefícios do uso de combustíveis fósseis a partir de critérios ambientais, econômicos e das características regionais, considerando a importância da eficiência energética do petróleo como combustível e principal matéria-prima para os diversos setores da economia, sua condição de fonte de recurso esgotável e poluidora, estabelecendo relação com a química orgânica."
+        ],
+        "objetos_conhecimento": [
+          "Atomística Clássica e Quântica. Conceitos fundamentais de Radioatividade. Potencialidades e riscos da aplicação da radioatividade em equipamentos de uso cotidiano, na saúde, no ambiente, na indústria, na área militar, na agricultura e na geração de energia elétrica.",
+          "Química Quântica. Noções de mecânica quântica. Princípio da incerteza. Dualidade onda-partícula. Algumas aplicações da teoria quântica: superfluidos, supercondutores, blu-ray, QR code etc.",
+          "Evidências de evolução. Noções de paleontologia. Sistemas de datação. Datação por Carbono-14.",
+          "Teoria da evolução molecular. Introdução à Química Orgânica (Química do carbono, cadeias carbônicas, representação molecular e estrutural).",
+          "Química do petróleo, com ênfase na caracterização dos hidrocarbonetos. Petróleo como matéria-prima para diversos setores da indústria e economia. Petróleo como recurso esgotável e poluidor à luz da química orgânica."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO11) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico.",
+          "(EM13CO21) Comunicar ideias complexas de forma clara por meio de objetos digitais como mapas conceituais, infográficos, hipertextos e outros.",
+          "(EM13CO10) Conhecer os fundamentos da Inteligência Artificial, comparando-a com a inteligência humana, analisando suas potencialidades, riscos e limites.",
+          "(EM13CO11) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico.",
+          "(EM13CO14) Avaliar a confiabilidade das informações encontradas em meio digital, investigando seus modos de construção e considerando a autoria, a estrutura e o propósito da mensagem."
+        ],
+        "possibilidades_abordagens": [
+          "Uso de diferentes ferramentas de modelagem e/ou simulação computacional, plugadas ou desplugadas, para análise dos conceitos da química quântica e previsões sobre radioatividade.",
+          "Criação de infográficos, esquemas, hipertextos, fluxogramas e/ou mapas conceituais digitais, relacionando os conceitos da química quântica e suas aplicações.",
+          "Aplicação dos fundamentos da inteligência artificial na análise de materiais arqueológicos, comparando potencialidades, riscos e limites da IA com métodos tradicionais de datação e interpretação histórica, promovendo o respeito à diversidade cultural, por meio de soluções computacionais integradas.",
+          "Uso de diferentes ferramentas de modelagem e/ou simulação computacional para análise da constituição das cadeias carbônicas e previsões acerca da estrutura molecular.",
+          "Investigação de autores por trás de publicações referentes ao petróleo (a citar, empresas de petróleo, grupos ambientalistas, jornais independentes), quais os propósitos da informação (venda de um produto, geração de medo, informação), identificando padrões de postagens."
+        ]
+      },
+      "2 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CNT207) Identificar, analisar e discutir vulnerabilidades vinculadas às vivências e aos desafios contemporâneos aos quais as juventudes estão expostas, considerando os aspectos físico, psicoemocional e social, a fim de desenvolver e divulgar ações de prevenção e de promoção da saúde e do bem-estar.",
+          "(EM13CNT207) Identificar, analisar e discutir vulnerabilidades vinculadas às vivências e aos desafios contemporâneos aos quais as juventudes estão expostas, considerando os aspectos físico, psicoemocional e social, a fim de desenvolver e divulgar ações de prevenção e de promoção da saúde e do bem-estar.",
+          "(EM13CNT307) Analisar as propriedades dos materiais para avaliar a adequação de seu uso em diferentes aplicações (industriais, cotidianas, arquitetônicas ou tecnológicas) e/ou propor soluções seguras e sustentáveis considerando seu contexto local e cotidiano.",
+          "(EM13CNT203) Avaliar e prever efeitos de intervenções nos ecossistemas, e seus impactos nos seres vivos e no corpo humano, com base nos mecanismos de manutenção da vida, nos ciclos da matéria e nas transformações e transferências de energia, utilizando representações e simulações sobre tais fatores, com ou sem o uso de dispositivos e aplicativos digitais (como softwares de simulação e de realidade virtual, entre outros)."
+        ],
+        "habilidades_especificas": [
+          "(EM13CNT207QUI16PE) Debater os impactos no corpo humano decorrente do uso de anabolizantes, métodos contraceptivos e dietas sem acompanhamento profissional, automedicação e uso indiscriminado de alimentos industrializados (refrigerantes, fast-food etc.), visando a promoção da saúde física, mental e emocional.",
+          "(EM13CNT207QUI15PE) Discutir os diversos tipos de drogas lícitas e ilícitas de acordo com critérios como origem (sintética ou natural), relações entre as reações bioquímicas de causa e efeito no organismo, aplicações na área de saúde pública, evitando o uso indevido e buscando bem-estar físico, psicoemocional e social.",
+          "(EM13CNT307QUI26PE) Conhecer as características dos produtos, materiais e processos por meio das reações orgânicas, analisando a logística de produção e os produtos industriais na perspectiva das transformações químicas e propriedades dos materiais, propondo tecnologias e técnicas inovadoras, otimização de processos, elevação do padrão de qualidade e sustentabilidade.",
+          "(EM13CNT203QUI11PE) Reconhecer as reações bioquímicas que ocorrem no metabolismo dos seres vivos, relacionando-os com os ciclos da matéria, transformações e transferências de energia."
+        ],
+        "objetos_conhecimento": [
+          "Funções Orgânicas e suas propriedades. Isomeria. Composição, princípio ativo, interação e impactos no organismo decorrentes do uso de tatuagens, anabolizantes, fármacos empregados no tratamento das enfermidades psicoemocionais e emagrecedoras, armas químicas, cosméticos, métodos contraceptivos e dietas sem prescrição médica. Mediadores químicos naturais de bem-estar (endorfina, dopamina, serotonina e ocitocina).",
+          "Efeitos da exposição excessiva a substâncias químicas. Drogas lícitas e ilícitas. Metabolismo das substâncias químicas psicoativas. Controvérsias sobre aplicações na medicina.",
+          "Reações Orgânicas e características dos produtos, materiais e processos com aplicação industrial. Análise de técnicas e tecnologias atuais e inovadoras que otimizem processos produtivos, elevando o padrão de qualidade e promovendo sustentabilidade.",
+          "Reações bioquímicas (hidrólise, fotossíntese, biossíntese, respiração e oxidação). Reconhecimento das substâncias bioquímicas: carboidratos, proteínas, lipídios, aminoácidos, água, sais minerais e vitaminas (bioquímica celular). Compostagem. Educação ambiental (reaproveitamento e reciclagem)."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO24) Identificar e reconhecer como as redes sociais e artefatos computacionais em geral interferem na saúde física e mental de seus usuários.",
+          "(EM13CO12) Produzir, analisar, gerir e compartilhar informações a partir de dados, utilizando princípios de ciência de dados.",
+          "(EM13CO02) Explorar e construir a solução de problemas por meio de refinamentos, utilizando diversos níveis de abstração desde a especificação até a implementação.",
+          "(EM13CO21) Comunicar ideias complexas de forma clara por meio de objetos digitais como mapas conceituais, infográficos, hipertextos e outros."
+        ],
+        "possibilidades_abordagens": [
+          "Sensibilização dos estudantes sobre o impacto do uso excessivo das tecnologias para sua saúde física, emocional e social, relacionando-o à exposição a anabolizantes, fármacos psicoemocionais e emagrecedores, armas químicas, cosméticos, métodos contraceptivos e dietas sem prescrição médica.",
+          "Investigação das bases digitais oficiais (OMS, Fiocruz, Ministério da Saúde) para coleta de dados sobre consumo e impactos biológicos e sociais decorrentes do uso de drogas. Criação de materiais digitais multimodais para conscientização (infográficos, vídeos) e publicação em plataformas escolares.",
+          "Análise de características de produtos (FISPQ/FDS), materiais e processos químicos, desde a especificação conceitual até a implementação de tecnologias e técnicas inovadoras na logística de produção.",
+          "Criação de mapas conceituais para as reações bioquímicas e/ou moléculas usando softwares ou plataformas."
+        ]
+      },
+      "3 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CNT105) Analisar os ciclos biogeoquímicos e interpretar os efeitos de fenômenos naturais e da interferência humana sobre esses ciclos, para promover ações individuais e/ ou coletivas que minimizem consequências nocivas à vida.",
+          "(EM13CNT206) Discutir a importância da preservação e conservação da biodiversidade, considerando parâmetros qualitativos e quantitativos, e avaliar os efeitos da ação humana e das políticas ambientais para a garantia da sustentabilidade do planeta.",
+          "(EM13CNT308) Investigar e analisar o funcionamento de equipamentos elétricos e/ou eletrônicos e sistemas de automação para compreender as tecnologias contemporâneas e avaliar seus impactos sociais, culturais e ambientais.",
+          "(EM13CNT106) Avaliar, com ou sem o uso de dispositivos e aplicativos digitais, tecnologias e possíveis soluções para as demandas que envolvem a geração, o transporte, a distribuição e o consumo de energia elétrica, considerando a disponibilidade de recursos, a eficiência energética, a relação custo/benefício, as características geográficas e ambientais, a produção de resíduos e os impactos socioambientais e culturais.",
+          "(EM13CNT309) Analisar questões socioambientais, políticas e econômicas relativas à dependência do mundo atual em relação aos recursos não renováveis e discutir a necessidade de introdução de alternativas e novas tecnologias energéticas e de materiais, comparando diferentes tipos de motores e processos de produção de novos materiais."
+        ],
+        "habilidades_especificas": [
+          "(EM13CNT105QUI07PE) Discutir a importância dos ciclos biogeoquímicos gasosos (carbono, nitrogênio, oxigênio e hidrogênio) e sedimentares (enxofre, fósforo e cálcio) a partir de fatores como origem, reserva, essencialidade, utilização, aproveitamento, reaproveitamento e extinção de elementos químicos, relacionando-os às suas propriedades, às suas disponibilidades, custos e usos, promovendo uma intervenção consciente e responsável sobre a vida e fenômenos naturais e de interferência humana empregada na vida e no meio ambiente.",
+          "(EM13CNT206QUI14PEB) Analisar o ciclo dos materiais no ambiente, suas propriedades e seu uso pelos humanos e as consequências para o planeta, empregando tecnologias que possibilitem uma extração e produção sustentáveis e uma extenuante utilização para dirimir os problemas enfrentados no descarte desses materiais.",
+          "(EM13CNT308QUI27PE) Discutir alternativas de reaproveitamento e reciclagem, de acordo com a demanda regional, propondo soluções eticamente seguras e sustentáveis, a fim de diminuir a degradação ambiental provocada pelos rejeitos decorrentes da atividade humana no ambiente.",
+          "(EM13CNT106QUI08PE) Discutir a produção de energia elétrica a partir de fontes naturais renováveis e não renováveis, abundantes e disponíveis no Brasil e no mundo, podendo propor alternativas para a construção de uma matriz nacional mais limpa, sustentável e viável do ponto de vista tecnológico e econômico, considerando os impactos socioambientais.",
+          "(EM13CNT309QUI28PE) Discutir fontes alternativas e sustentáveis de energia, observando fatores favoráveis e desfavoráveis, considerando aspectos, socioambientais, econômicos, políticos e as características regionais e, principalmente, valorizando as formas de energia solar e eólica como fontes primárias para matriz energética do Nordeste Brasileiro."
+        ],
+        "objetos_conhecimento": [
+          "Ciclos biogeoquímicos (carbono, nitrogênio, oxigênio, enxofre, fósforo, cálcio e hidrogênio), gasosos e sedimentares. Propriedades, disponibilidades e extinção dos elementos químicos. Fenômenos naturais do movimento elementar e os efeitos da interferência humana. Tecnologias que minimizem efeitos nocivos à vida e ao ambiente.",
+          "Ciclo da matéria. Propriedades e características macroscópicas dos polímeros sintéticos e naturais. Produção mais limpa (Ecodesign) de polímeros sintéticos. Uso, reuso e tratamento de resíduos poliméricos.",
+          "Vocação e demanda regional para o reaproveitamento e reciclagem. Impactos sociais, culturais e ambientais de equipamentos e sistemas automatizados. Tecnologias limpas empregadas no reaproveitamento e reciclagem.",
+          "Química das fontes não renováveis e renováveis de energia elétrica. Fontes abundantes e disponíveis no Brasil e no mundo. Matriz energética nacional mais limpa e viável do ponto de vista tecnológico e econômico, considerando os impactos socioambientais.",
+          "Matrizes energéticas exploradas no Nordeste Brasileiro (solar, eólica e hidrelétrica). Fatores favoráveis e desfavoráveis do uso de fontes alternativas de energia. Biodiesel, biodigestor e célula de hidrogênio."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO13) Analisar e utilizar as diferentes formas de representação e consulta a dados em formato digital para pesquisas científicas.",
+          "(EM13CO01) Explorar e construir a solução de problemas por meio da reutilização de partes de soluções existentes.",
+          "(EM13CO05) Identificar os limites da Computação para diferenciar o que pode ou não ser automatizado, buscando uma compreensão mais ampla dos limites dos processos mentais envolvidos na resolução de problemas.",
+          "(EM13CO19) Expor, argumentar e negociar propostas, produtos e serviços, utilizando diferentes mídias e ferramentas digitais.",
+          "(EM13CO19) Expor, argumentar e negociar propostas, produtos e serviços, utilizando diferentes mídias e ferramentas digitais."
+        ],
+        "possibilidades_abordagens": [
+          "Coleta de séries históricas de dados ambientais abertos, organizando e representando as informações em planilhas ou bancos de dados digitais, aplicando filtros, construindo gráficos comparativos e analisando variações temporais e regionais.",
+          "Compreensão sobre a reutilização em nível molecular, identificando e classificando os resíduos para analisar o ciclo de vida útil do produto. Aplicação do Conceito de Reuso e utilização de ferramentas de simulação para construção e otimização das soluções ecológicas.",
+          "Reconhecimento das principais formas de reaproveitamento e reciclagem e quais são passíveis de automação, pensando na minimização dos impactos sociais, ambientais e culturais. Uso de softwares e/ou ferramentas digitais para simulação ou interpretação de dados aplicados às tecnologias limpas.",
+          "Criação de um website simples e/ou perfis para redes sociais a fim de socializar campanhas educativas de conscientização sobre problemas ambientais, causados pelo petróleo, sugerindo formas alternativas para obtenção de energia, tais como: biocombustíveis e biomassa, além de explorar potencialidades e desafios da energia solar, eólica e hidrelétrica.",
+          "Criação de um website simples e/ou perfis para redes sociais a fim de socializar campanhas educativas de conscientização sobre problemas ambientais, causados pelo petróleo, sugerindo formas alternativas para obtenção de energia, tais como: biocombustíveis e biomassa, além de explorar potencialidades e desafios da energia solar, eólica e hidrelétrica."
+        ]
+      }
+    }
+  },
+  "deteccao_confiavel": true,
+  "gerado_em": "2026-08-04T13:03",
+  "arquivo_origem": "Quimica__Organizador-Curricular-Trimestral-da-FGB.pdf"
+}

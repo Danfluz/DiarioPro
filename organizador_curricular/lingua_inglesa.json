@@ -1,0 +1,247 @@
+{
+  "disciplina": "Língua Inglesa",
+  "tem_computacao": true,
+  "conteudo": {
+    "1 ANO": {
+      "1 UNIDADE": {
+        "habilidades_area": [
+          "(EM13LGG101) Compreender e analisar processos de produção e circulação de discursos, nas diferentes linguagens, para fazer escolhas fundamentadas em função de interesses pessoais e coletivos.",
+          "(EM13LGG101) Compreender e analisar processos de produção e circulação de discursos, nas diferentes linguagens, para fazer escolhas fundamentadas em função de interesses pessoais e coletivos.",
+          "(EM13LGG401) Analisar criticamente textos de modo a compreender e caracterizar as línguas como fenômeno (geo)político, histórico, social, cultural, variável, heterogêneo e sensível aos contextos de uso.",
+          "(EM13LGG301) Participar de processos de produção individual e colaborativa em diferentes linguagens (artísticas, corporais e verbais), levando em conta suas formas e seus funcionamentos, para produzir sentidos em diferentes contextos."
+        ],
+        "habilidades_especificas": [
+          "(EM13LGG101LI01PE) Compreensão oral/leitura – Identificar a ideia central e as informações secundárias a partir de enunciados orais (quando o ritmo da fala for relativamente lento e claro) e/ou textos escritos, em língua inglesa, nos diversos campos de atuação social (escola, trabalho, lazer, entre outros).",
+          "(EM13LGG101LI02PE) Compreensão oral/leitura – Compreender informações específicas (tais como títulos, legendas, anúncios curtos, entre outros) em língua inglesa, abordadas em situações de comunicação oral e/ou textos escritos diversos (diálogos, exposições orais, entrevistas, ted talks, filmes/séries, entre outros) conforme diferentes contextos (no trabalho, na escola, no lazer, entre outros), relacionados com temas da atualidade.",
+          "(EM13LGG401LI20PEa) Compreensão Oral/Leitura - Identificar informações gerais em textos orais e/ou escritos (documentários, artigos, entrevistas etc.) que apontem aspectos culturais específicos de diferentes países falantes de língua inglesa, relacionando-os (por afastamento ou aproximação) com aspectos da nossa cultura linguística local, tais como: expressões de polidez, formalidade e informalidade no uso da língua, conforme diferentes contextos.",
+          "(EM13LGG301LI12PE) Produção Oral/Escrita – Produzir textos em diferentes modalidades, gêneros e suportes, considerando a temática abordada e os efeitos de sentido promovido pelos recursos lexicais, audiovisuais e multissemióticos utilizados (fontes, negrito, grifos, itálico, cores, imagens, volume dos sons, entre outros), levando em conta suas formas e seus funcionamentos, para produzir sentidos em diferentes contextos."
+        ],
+        "objetos_conhecimento": [
+          "Gêneros orais e/ou escritos: Comentários em áudio (podcasts, rádio), mesa redonda, entrevista, debates, seminários, entre outros. Análise Linguística: Personal Pronouns, Simple Present, Adverbs of frequency, WH questions, verb to be (present), present continuous, greetings, Yes/No questions.",
+          "Gêneros orais e/ou escritos: Comentários orais, entrevistas, debates, seminários, resenhas, sinopses, menus, mensagens de erro, instruções (através de aplicativos e sites em inglês), tutoriais em vídeo e manuais técnicos, podcasts e entrevistas com desenvolvedores de tecnologia, debates ou seminários em sala, entre outros. Análise Linguística: Personal Pronouns, Simple Present, Adverbs of manner, verb to have.",
+          "Gêneros orais e escritos: Escuta/Leitura de textos formais e/ou informais tais como: filmes/séries, memes e jogos digitais (em 1ª e 3ª pessoas), diálogos, músicas entre outros), carta do leitor, entrevistas, artigos, entre outros. Análise Linguística: Adverbs of frequency, Verb there to be and Prepositions of place.",
+          "Gêneros publicitários: Anúncios, cartazes, folders, infográficos, avisos, entre outros, em versões impressas e/ou digitais. Análise Linguística: Imperative Form; Modal Verbs (can, could, may, might); Personal Pronouns; Adjective Pronouns, Demonstrative Pronouns; Possessive (Pronouns and Adjective)."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO01) Explorar e construir a solução de problemas por meio da reutilização de partes de soluções existentes.",
+          "(EM13CO02) Explorar e construir a solução de problemas por meio de refinamentos, utilizando diversos níveis de abstração desde a especificação até a implementação.",
+          "(EM13CO15) Analisar a interação entre usuários e artefatos computacionais, abordando aspectos da experiência do usuário e promovendo reflexão sobre a qualidade do uso dos artefatos nas esferas do trabalho, do lazer e do estudo."
+        ],
+        "possibilidades_abordagens": [
+          "O uso de bibliotecas virtuais e de Github são bons exemplos do aproveitamento dessa habilidade nas aulas de Língua Inglesa. Também podemos ver seu uso quando usamos a inteligência artificial para a resolução de problemas, através da inserção de pequenos trechos, palavras e partes selecionadas de algum outro texto prévio. Na computação, ao construir um programa, um desenvolvedor pode não começar do zero. Ele usa bibliotecas, que são coleções de códigos pré-escritos para tarefas comuns, como exibir imagens ou conectar-se à internet. Ao usar uma biblioteca, ele está reutilizando uma solução já pronta, economizando tempo e esforço para focar na parte mais importante do projeto.",
+          "Um exemplo prático pode ser observado quando relacionamos o processo de refinamento na solução de problemas da computação com a compreensão de informações específicas em língua inglesa. Assim como um programador parte de uma ideia geral e vai detalhando, testando e ajustando até chegar à implementação final, o estudante de inglês também inicia com uma visão global de um texto – observando título, imagens ou contexto – e, a partir daí, seleciona palavras-chave, legendas ou informações específicas para compreender o sentido. Esse processo de abstração e refinamento é semelhante nas duas áreas: na computação, ignora-se o que não é essencial para o funcionamento do programa; na leitura ou escuta em inglês, desconsideram-se palavras desconhecidas que não comprometem o entendimento global. Podemos perceber essa integração em situações práticas, como ao assistir a um tutorial em inglês ou a uma palestra curta em plataformas de streaming, em que o estudante precisa identificar instruções e informações pontuais para executar uma tarefa ou resolver um problema. Nesse caso, a língua inglesa se torna uma ferramenta de acesso, auxiliando o estudante a compreender, refinar e aplicar informações na prática, de modo muito semelhante ao que acontece na construção de soluções computacionais.",
+          "O uso de recursos tecnológicos diversos incrementa as aulas de língua inglesa e torna o aprendizado mais significativo. Ao consumir conteúdos digitais em inglês (séries, memes, jogos, músicas, entrevistas, artigos), o estudante não apenas exercita a compreensão linguística e cultural, mas também analisa como essas plataformas são projetadas. Algumas possíveis perguntas podem ser feitas para que os estudantes possam pesquisar e compreender melhor o assunto. Dentre elas: Como o design de jogos digitais influencia a maneira como aspectos culturais são representados? De que forma memes circulam em diferentes interfaces e moldam percepções sociais e políticas? Como a legenda, a tradução automática ou a acessibilidade impactam a experiência do usuário em aplicativos de streaming e redes sociais? Que aspectos da interface (claridade, interatividade, usabilidade) favorecem ou dificultam a compreensão de conteúdos culturais em inglês?"
+        ]
+      },
+      "2 UNIDADE": {
+        "habilidades_area": [
+          "(EM13LGG402) Empregar, nas interações sociais, a variedade e o estilo de língua adequados à situação comunicativa, ao(s) interlocutor(es) e ao gênero do discurso, respeitando os usos das línguas por esse(s) interlocutor(es) e sem preconceito linguístico.",
+          "(EM13LGG304) Formular propostas, intervir e tomar decisões que levem em conta o bem comum e os Direitos Humanos, a consciência socioambiental e o consumo responsável em âmbito local, regional e global.",
+          "(EM13LGG401) Analisar criticamente textos de modo a compreender e caracterizar as línguas como fenômeno (geo)político, histórico, social, cultural, variável, heterogêneo e sensível aos contextos de uso."
+        ],
+        "habilidades_especificas": [
+          "(EM13LGG402LI21PEa) Produção Oral/ Escrita - Produzir textos orais e/ou escritos, servindo-se dos recursos da variação linguística, em situações que simulem práticas de linguagem em diferentes campos da atuação social (ir ao mercado, ao restaurante, fazer uma viagem, pedir informações, participar de uma entrevista de emprego, entre outros), considerando seus interlocutores, de modo a usar a língua inglesa com certa autonomia, de acordo com a realidade do estudante.",
+          "(EM13LGG304LI18PE) Compreensão Oral/ Leitura - Apreender, de textos em língua inglesa (informativos, reportagens, documentários etc.) a partir de estratégias de escuta/ leitura pertinentes, informações gerais e específicas sobre temas ligados às relações de meio ambiente e consumo que fundamentem pontos de vista.",
+          "(EM13LGG401LI20PEb) Compreensão Oral/Leitura - Identificar informações gerais em textos orais e/ou escritos (documentários, artigos, entrevistas etc.) que apontem aspectos culturais específicos de diferentes países falantes de língua inglesa, relacionando-os (por afastamento ou aproximação) com aspectos da nossa cultura linguística local, tais como: expressões de polidez, formalidade e informalidade no uso da língua, conforme diferentes contextos."
+        ],
+        "objetos_conhecimento": [
+          "Gêneros descritivos - Textos multimodais como infográficos, tabelas, cartazes publicitários, entre outros. Análise Linguística/Vocabulário: Cardinal and ordinal numbers, quantifiers (some, any, (a) little, (a) few, a bit of, many, much, a lot of, lots of, a lot), the hours. Imperative form, countable and uncountable. Campo de Atuação: VIDA PÚBLICA",
+          "Gênero jornalístico - Editorial, notícia, reportagem, artigo de opinião, charge, tirinha, anúncio classificado, cartoon, entre outros. Reading/ Listening Strategies (Scanning, Skimming, main idea, finding evidence, ...) Análise Linguística: Verb to be (past tense); Plural of nouns; Simple Past, Irregular and Regular verbs. Campo de Atuação: CAMPO JORNALÍSTICO MIDIÁTICO",
+          "Gêneros orais ou escritos - Escuta de textos formais e/ou informais, como diálogos, resenha crítica, crônica, carta do leitor, entrevista, artigo, entre outros. Análise Linguística: Modal Verbs (use of should, could and would for polite settings) and slangs. Campo de Atuação: CAMPO JORNALÍSTICO MIDIÁTICO"
+        ],
+        "habilidades_computacao": [
+          "(EM13CO02) Explorar e construir a solução de problemas por meio de refinamentos, utilizando diversos níveis de abstração desde a especificação até a implementação.",
+          "(EM13CO25) Dialogar em ambientes virtuais com segurança e respeito às diferenças culturais e pessoais, reconhecendo e denunciando atitudes abusivas."
+        ],
+        "possibilidades_abordagens": [
+          "Um exemplo prático pode ser observado quando relacionamos o processo de refinamento na solução de problemas da computação com a compreensão de informações específicas em língua inglesa. Assim como um programador parte de uma ideia geral e vai detalhando, testando e ajustando até chegar à implementação final, o estudante de inglês também inicia com uma visão global de um texto – observando título, imagens ou contexto – e, a partir daí, seleciona palavras-chave, legendas ou informações específicas para compreender o sentido. Esse processo de abstração e refinamento é semelhante nas duas áreas: na computação, ignora-se o que não é essencial para o funcionamento do programa; na leitura ou escuta em inglês, desconsideram-se palavras desconhecidas que não comprometem o entendimento global. Podemos perceber essa integração em situações práticas, como ao assistir a um tutorial em inglês ou a uma palestra curta, em que o estudante precisa identificar instruções e informações pontuais para executar uma tarefa ou resolver um problema. Nesse caso, a língua inglesa se torna uma ferramenta de acesso, auxiliando o estudante a compreender, refinar e aplicar informações na prática, de modo muito semelhante ao que acontece na construção de soluções computacionais.",
+          "O desenvolvimento de um trabalho ético e respeitoso nos ambientes virtuais é necessário, pois é importante entender que a língua inglesa moderna é o produto da interação de diferentes culturas, ao longo do tempo. O respeito aos diferentes sotaques e formas de expressão do inglês é a base para o desenvolvimento de metodologias ativas de ensino. Esses procedimentos corroboram para o entendimento de que as aulas de inglês devem primar pelo respeito às diferenças culturais dos estudantes e não há lugar para xenofobia ou glotofobia. Uma sugestão de aula a ser trabalhada com eles pode ser sobre o tema Cyberbullying linguístico. A atividade pode incluir a projeção de imagens e vídeos que apresentam tais situações. Os estudantes poderão ser perguntados sobre o conteúdo dos mesmos, inicialmente, com perguntas como: What does this image show? ou Why do people post mean comments? As respostas escritas dos estudantes poderão ser analisadas em razão do Simple Present nos verbos abordados, por exemplo. O debate em torno do tema poderá ser em língua inglesa, estimulando os exercícios de oralidade pelos estudantes."
+        ]
+      },
+      "3 UNIDADE": {
+        "habilidades_area": [
+          "(EM13LGG402) Empregar, nas interações sociais, a variedade e o estilo de língua adequados à situação comunicativa, ao(s) interlocutor(es) e ao gênero do discurso, respeitando os usos das línguas por esse(s) interlocutor(es) e sem preconceito linguístico.",
+          "(EM13LGG102) Analisar visões de mundo, conflitos de interesse, preconceitos e ideologias presentes nos discursos veiculados nas diferentes mídias, ampliando suas possibilidades de explicação, interpretação e intervenção crítica da/na realidade.",
+          "(EM13LGG103) Analisar o funcionamento das linguagens, para interpretar e produzir criticamente discursos em textos de diversas semioses (visuais, verbais, sonoras, gestuais)."
+        ],
+        "habilidades_especificas": [
+          "(EM13LGG402LI21PEb) Produção Oral/ Escrita - Produzir textos orais e/ou escritos, servindo-se dos recursos da variação linguística, em situações que simulem práticas de linguagem em diferentes campos da atuação social (ir ao mercado, ao restaurante, fazer uma viagem, pedir informações, participar de uma entrevista de emprego, entre outros), considerando seus interlocutores, de modo a usar a língua inglesa com certa autonomia, de acordo com a realidade do estudante.",
+          "(EM13LGG102LI03PE) Compreensão Oral/ Leitura: Reconhecer e analisar diferentes pontos de vista acerca de assuntos de interesse pessoal ou coletivo conforme diversas situações de exposição oral (programas de rádio e TV, documentários, notícias, vídeo notícias, podcasts, vídeos na internet, reportagens etc.), considerando o ritmo da fala relativamente lento.",
+          "(EM13LGG103LI04PE) Compreensão Oral / Leitura - Reconhecer padrões típicos de ordem das palavras na língua inglesa, reconhecendo as formas reduzidas representadas tanto na forma escrita quanto na oralidade, detectando significados expressos em diferentes formas gramaticais e sentenças."
+        ],
+        "objetos_conhecimento": [
+          "Gêneros descritivos e/ou narrativos: Relatos, plano de viagem e de experiência, cartão postal, bilhete, passagem, ticket, lista de compras, lista de presentes, application form, cards, folders, vídeos, entre outros. Análise Linguística: Future with going to; Numbers (cardinal and ordinal), dates, prepositions. Campo de Atuação: VIDA PESSOAL",
+          "Gêneros orais (veiculados em programas de rádio, TV e outras mídias): Notícias, reportagens, documentários, talk shows, vídeo notícias, podcasts, vídeos na internet, entre outros. Análise Linguística: Yes/No questions, Wh-Questions (do, does, will, did...); Connectors/ Linking words (and, so, but, etc.). Campo de Atuação: VIDA PÚBLICA",
+          "Gêneros instrucionais: Manuais, receitas culinárias, regras de jogos, tutoriais, entre outros. Análise Linguística: Imperative Forms; Question Tags; sentence order, contractions, Reflexive Pronouns. Campo de Atuação: VIDA PESSOAL"
+        ],
+        "habilidades_computacao": [
+          "(EM13CO20) Criar conteúdos, disponibilizando-os em ambientes virtuais para publicação e compartilhamento, avaliando a confiabilidade e as consequências da disseminação dessas informações.",
+          "(EM13CO17) Construir redes virtuais de interação e colaboração, favorecendo o desenvolvimento de projetos de forma segura, legal e ética."
+        ],
+        "possibilidades_abordagens": [
+          "Em Língua Inglesa, os estudantes criam mensagens persuasivas (slogans, anúncios, comerciais em áudio/vídeo, cartazes digitais) explorando vocabulário e estruturas linguísticas adequadas; Em Computação, os estudantes traduzem essas mensagens em produtos digitais multimodais, escolhendo ferramentas de design (infográficos, editores gráficos, softwares de apresentação, plataformas de vídeo) para tornar a comunicação mais clara e acessível. Um exemplo de atividade integrada pode incluir a produção, em grupos, de uma campanha bilíngue (português e inglês) sobre um tema relevante (meio ambiente, consumo consciente, saúde digital). No componente Inglês, é possível criar os textos persuasivos e ensaiar a entonação para áudios ou vídeos. Na etapa de Computação, transformar esses textos em objetos digitais (cartazes, vídeos curtos, infográficos animados ou hipertextos). Uma atividade final poderá ser a apresentação dos resultados em uma exposição multimodal para a comunidade escolar.",
+          "Aulas on-line, feitas em plataformas ou aplicativos de interação, são uma realidade no ensino e no aprendizado de inglês. A educação a distância tem se tornado uma prática cada dia mais comum e eficiente por meio de aplicativos que favorecem a comunicação e oferecem uma experiência bastante positiva. Alguns deles permitem uma melhor interação entre professores e estudantes e podem facilitar o aprendizado. Essas plataformas têm feito a diferença quando se fala em reuniões e encontros para prática da língua inglesa nas redes. A experiência poderá ser ampliada se o professor propuser atividades em grupo, utilizando vídeos, fotos e áudios. Os estudantes poderão também divulgar o resultado de seus trabalhos em aplicativos, estimulando práticas de oralidade e uso das tecnologias. Esse tipo de atividade poderá servir para ampliar o repertório vocabular dos estudantes e sua fluência no idioma."
+        ]
+      }
+    },
+    "2 ANO": {
+      "1 UNIDADE": {
+        "habilidades_area": [
+          "(EM13LGG105) Analisar e experimentar diversos processos de remidiação de produções multissemióticas, multimídia e transmídia, desenvolvendo diferentes modos de participação e intervenção social.",
+          "(EM13LGG105) Analisar e experimentar diversos processos de remidiação de produções multissemióticas, multimídia e transmídia, desenvolvendo diferentes modos de participação e intervenção social.",
+          "(EM13LGG301) Participar de processos de produção individual e colaborativa em diferentes linguagens (artísticas, corporais e verbais), levando em contas suas formas e seus funcionamentos, para produzir sentidos em diferentes contextos.",
+          "(EM13LGG203) Analisar os diálogos e os processos de disputa por legitimidade nas práticas de linguagem e em suas produções (artísticas, corporais e verbais)."
+        ],
+        "habilidades_especificas": [
+          "(EM13LGG105LI06PE) Compreensão Leitura- Reconhecer as relações de interesse existentes na propagação de um mesmo conteúdo em veículos de comunicação diferentes e expressos a partir de gêneros textuais distintos (news, blog, meme etc.), demonstrando consciência acerca da possibilidade da manipulação de informações (fake news) e os impactos sociais desta prática.",
+          "(EM13LGG105LI07PE) Produção Escrita - (Re)criar textos escritos em língua inglesa, de caráter multissemiótico (programa de rádio, canal na Internet, jornal impresso ou digital) como proposta de intervenção social acerca de algum tema da realidade estudantil.",
+          "(EM13LGG301LI13PE) Produção Escrita/ Oral - Produzir, individual e/ ou coletivamente, textos orais e/ ou escritos que empreguem recursos persuasivos (comerciais para rádio e tv, anúncios publicitários, etc.), verbais e não verbais, de modo criativo, respeitando as especificidades da língua inglesa (formas verbais, entonação etc.), bem como as características próprias de cada gênero escolhido, considerando estruturas linguísticas mais familiares.",
+          "(EM13LGG203LI11PE) Compreensão Oral/ Leitura - Reconhecer, em textos escritos e /ou falados em língua inglesa, elementos lexicais presentes no cotidiano e que caracterizem marcas identitárias do inglês, em diversos países, e nos países onde ele é falado, como segunda língua ou como língua estrangeira, e em comparação com a língua portuguesa (língua materna), demonstrando compreensão acerca do diálogo intercultural."
+        ],
+        "objetos_conhecimento": [
+          "Textos informativos impressos e/ou digitais: Notícias, reportagens, infográficos e textos de divulgação científica. Análise Linguística: Infinitive x Gerund; Indefinite Pronouns, cognates and false cognates.",
+          "Textos multissemióticos: Campanhas publicitárias, jornal impresso e/ou digital, fórum on-line, chat. Análise Linguística: Relative Pronouns (who, where, which, whose, that) e recursos linguísticos e efeitos de sentido do léxico, polissemia, Imperative Form, anglicismos.",
+          "Gêneros Publicitários (Booktube, anúncio, infográficos, entre outros). Análise Linguística: Análise de recursos linguísticos multissemióticos e efeitos de sentido do léxico; estudo do Possessive Case, Comparative and Superlative.",
+          "Gêneros orais e ou escritos: Lista de compras, relatos sobre viagens, distintas formas de anúncios no meio publicitário (digital/impresso), letras de músicas, cenas de filmes/séries entre outros; textos literários (poemas, contos, fábulas). Reading/Writing strategies: Translation as a facilitator of lexical acquisition. Análise Linguística: Adjectives, Modal Verbs (can, could, may, might, must, should), Connectors (but, and, so...), sentence rhythm and word stress and accent."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO06) Avaliar software levando em consideração diferentes características e métricas associadas.",
+          "(EM13CO14) Avaliar a confiabilidade das informações encontradas em meio digital, investigando seus modos de construção e considerando a autoria, a estrutura e o propósito da mensagem.",
+          "(EM13CO22) Produzir e publicar conteúdo como textos, imagens, áudios, vídeos e suas associações, bem como ferramentas para sua integração, organização e apresentação, utilizando diferentes mídias digitais.",
+          "(EM13CO26) Aplicar os conceitos e pressupostos do direito digital em sua conduta e experiências com o cotidiano da cultura digital, bem como na produção e uso de artefatos computacionais."
+        ],
+        "possibilidades_abordagens": [
+          "Os estudantes poderão propor a avaliação de alguns sistemas desenvolvidos e apresentados por eles, estabelecendo critérios em nível de importância, por comparação de seus resultados. É possível criar uma discussão em torno de aplicativos de edição de vídeos em redes sociais, por exemplo. Eles poderão levar em consideração: usabilidade, eficiência, portabilidade, correção, privacidade e referências éticas.",
+          "É importante primar pela navegabilidade saudável e pela busca responsável por sites e conteúdos da internet sobre Língua Inglesa que apontem para a pesquisa confiável e segura da informação. Promover a correta distinção entre notícias falsas (fake News) e notícias confiáveis em fóruns de debate, chats, mensagens publicitárias etc. Uma sugestão de atividade envolvendo essa habilidade pode ser sobre o uso de fake news em campanhas publicitárias, por exemplo.",
+          "A Promoção de trabalhos em grupo por meio da produção de conteúdo em vídeos, fotografias digitais ou músicas coopera para o aprendizado de Língua Inglesa, estimulando os estudantes a conhecerem mais sobre o universo cultural dos diversos países que têm esse idioma como sua língua oficial e produzirem conteúdo para internet utilizando recursos digitais diversos para isto. Então, outros aspectos culturais podem ser considerados, como a culinária, as vestimentas típicas ou os pontos turísticos dos lugares pesquisados. Ao realizarem trabalhos sobre o Halloween, O Dia de São Jorge, A noite de Guy Fawkes, O Dia de Ação de Graças ou o Independence Day os estudantes são estimulados a conhecerem um pouco mais sobre outras culturas. Para tanto, o uso das diversas mídias digitais colabora enormemente e deve ser estimulado.",
+          "A promoção de uma discussão saudável em torno de temas relativos às competências específicas da BNCC computação como a ética e as leis específicas deve ser prioridade nas aulas de Língua Inglesa também. O foco deve ser as atividades que provoquem os estudantes em relação aos seus direitos e suas responsabilidades diante da cultura digital, de forma ampla. Compreender como o marco civil da internet e o licenciamento de direitos autorais funcionam, para que eles ajam com responsabilidade quando navegarem na web e ao produzirem conteúdo para plataformas ou adquirirem algum produto, por exemplo. Estimular a organização de grupos de discussão e promover simulações de violações de direitos e suas consequências pode ser uma boa ideia para abordagem desse assunto."
+        ]
+      },
+      "2 UNIDADE": {
+        "habilidades_area": [
+          "(EM13LGG604) Relacionar as práticas artísticas às diferentes dimensões da vida social, cultural, política e econômica e identificar o processo de construção histórica dessas práticas.",
+          "(EM13LGG303) Debater questões polêmicas de relevância social, analisando diferentes argumentos e opiniões, para formular, negociar e sustentar posições, frente à análise de perspectivas distintas."
+        ],
+        "habilidades_especificas": [
+          "(EM13LGG604LI24PE) Produção Oral - Expressar-se oralmente, por meio de exposições e vídeo minutos em língua inglesa para apresentar práticas culturais próprias de regiões de tradição linguística anglo saxã, destacando a importância dessas práticas para a vida social, política e econômica locais, a partir de planejamento prévio que oriente a seleção das informações, a melhor forma de organizar o discurso, com certa autonomia, ainda que com um ritmo de fala mais pausado.",
+          "(EM13LGG303LI16PE) Produção Oral/ Escrita - Produzir textos, individual ou coletivamente, que expressem diferentes pontos de vista (agreement / disagreement) sobre temas relacionados à atualidade (consumo consciente, sustentabilidade, hábitos saudáveis de vida, cidadania participativa entre outros) baseando-se em fatos, dados e informações confiáveis."
+        ],
+        "objetos_conhecimento": [
+          "Gêneros orais: Tutoriais, telefonemas, declamações, vídeos, encenações, entre outros. Análise Linguística: Past Continuous, Adverbs; Connectors (first, next, after that). Campo de Atuação: ARTÍSTICO-LITERÁRIO.",
+          "Gêneros orais e/ou escritos: Debates, exposições, depoimentos, entrevistas, talk shows, documentários, artigos de opinião, manifestos, entre outros. Análise Linguística: Question Tag, Cognates and False Cognates, Prefixes and Sufixes, Connectors. Campo de Atuação: JORNALÍSTICO-MIDIÁTICO."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO08) Entender como mudanças na tecnologia afetam a segurança, incluindo novas maneiras de preservar sua privacidade e dados pessoais on-line, reportando suspeitas e buscando ajuda em situações de risco."
+        ],
+        "possibilidades_abordagens": [
+          "As mudanças tecnológicas podem afetar a segurança digital, contribuindo para a preservação da privacidade e para a identificação de riscos online. Porém, na prática, ainda vemos com frequência a ação de hackers que violam sistemas de computadores e roubam dados de usuários e empresas, expondo-os indevidamente na internet. Como prática, os estudantes podem analisar documentários sobre a ação de hackers no meio digital, ler sobre casos de insegurança na internet ou assistir a entrevistas e talk shows sobre o assunto, em inglês, debater o tema e, ao final, produzir artigos de opinião ou manifestos coletivos sobre questões que vão desde como criar um ambiente virtual mais seguro até como fazer denúncias sobre crimes cibernéticos. Dessa forma, desenvolvem argumentação, consciência digital e participação responsável na vida pública."
+        ]
+      },
+      "3 UNIDADE": {
+        "habilidades_area": [
+          "(EM13LGG305) Mapear e criar, por meio de práticas de linguagem, possibilidades de atuação social, política, artística e cultural para enfrentar desafios contemporâneos, discutindo princípios e objetivos dessa atuação de maneira crítica, criativa, solidária e ética.",
+          "(EM13LGG603) Expressar-se e atuar em processos de criação autorais individuais e coletivos nas diferentes linguagens artísticas (artes visuais, audiovisual, dança, música e teatro) e nas intersecções entre elas, recorrendo a referências estéticas e culturais, conhecimentos de naturezas diversas (artísticos, históricos, sociais e políticos) e experiências individuais e coletivas.",
+          "(EM13LGG302) Posicionar-se criticamente diante de diversas visões de mundo presentes nos discursos em diferentes linguagens, levando em conta seus contextos de produção e de circulação."
+        ],
+        "habilidades_especificas": [
+          "(EM13LGG305LI19PE) Produção Escrita - Expressar-se através da escrita em língua inglesa, para desenvolver campanhas sociais através de gêneros textuais adequados (jornal impresso ou digital, panfleto, folheto, banner, cartaz, etc) articuladas com situações-problemas da comunidade local e/ou escolar de maneira crítica, solidária e ética, observando as características dos gêneros e elementos coesivos.",
+          "(EM13LGG603LI23PE) Produção oral/ escrita - Relatar através da língua inglesa, oralmente ou por escrito, por meio de estruturas linguísticas básicas, práticas culturais características da literatura local, regional e global, escolhendo gêneros apropriados, promovendo a valorização da cultura, de acordo com a realidade dos estudantes.",
+          "(EM12LGG302LI15PE) Produção Oral/Escrita - Produzir textos da ordem do argumentar ancorados em diferentes gêneros (textos de opinião, blogs, tweets etc.), conforme os diversos campos de atuação social, em vistas da construção da cidadania."
+        ],
+        "objetos_conhecimento": [
+          "Gêneros textuais impressos e/ou digitais (jornalísticos, publicitários, dentre outros), como panfletos, guias turísticos, cartazes, leading, fotolegenda. Análise Linguística: Simple Past X Past Continuous Tense, Indefinite Pronouns (some, any, no, every and compounds), Simple Future and Immediate Future (Going To); Conjunctions, Future Continuous.",
+          "Gêneros Literários: Poema, lendas (e suas variações), peça de teatro, música, contos (e suas variações), fanfics, biografia e autobiografia, entre outros. Análise Linguística: Adverbs and Adverbial Phrases, Present Perfect x Simple Past.",
+          "Gêneros Jornalísticos (impressos e/ou digitais, de diferentes suportes): Webblogs, tweets, artigos de opinião, resenha crítica, comentário, podcasts, vídeos de cunho opinativo (reviews, unboxing). Análise Linguística: Present Perfect x Simple Past e Past Perfect."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO25) Dialogar em ambientes virtuais com segurança e respeito às diferenças culturais e pessoais, reconhecendo e denunciando atitudes abusivas.",
+          "(EM13CO22) Produzir e publicar conteúdo como textos, imagens, áudios, vídeos e suas associações, bem como ferramentas para sua integração, organização e apresentação, utilizando diferentes mídias digitais.",
+          "(EM13CO23) Analisar criticamente as experiências em comunidades virtuais e as relações advindas da interação e comunicação com outras pessoas, bem como seus impactos na sociedade."
+        ],
+        "possibilidades_abordagens": [
+          "O desenvolver de um trabalho ético e respeitoso nos ambientes virtuais é necessário, uma vez que se faz importante entender que as diferenças culturais são base para a elaboração de materiais didáticos em Língua Inglesa e para a boa convivência entre as pessoas que navegam nesses ambientes. Esses procedimentos corroboram para o entendimento de que as aulas de inglês devem primar pelo respeito às diferenças culturais dos estudantes. Uma sugestão de aula a ser trabalhada com eles pode ser sobre o tema Deep Web. Os estudantes poderão ser questionados sobre os perigos de navegarem em ambientes tóxicos e com conteúdos proibidos para menores. Rodas de conversa, reportagens de tv, cartazes e vídeos tratando do assunto são oportunos neste momento. Estimular a promoção de campanhas e trabalhos em grupos sobre o problema, usando as tecnologias para isto, também podem ser boas pedidas.",
+          "A Promoção de trabalhos em grupo por meio da produção de conteúdo em vídeos, fotografias digitais ou músicas pode cooperar para o aprendizado de Língua Inglesa, estimulando os estudantes a conhecerem mais sobre o universo cultural dos diversos países que têm esse idioma como sua língua oficial. Então, outros aspectos culturais podem ser considerados, como a produção cultural, incluindo-se as artes visuais, a música, o teatro e a dança. Por meio das mídias digitais, o estudante poderá ampliar seu repertório cultural e usar essas ferramentas para facilitar o aprendizado do idioma, melhorando a escrita (writing) e a pronúncia (listening) de forma lúdica.",
+          "O uso de chats (salas de bate papo e reuniões online), dando preferência ao uso da língua inglesa nessas interações, é importante. É preciso analisar criticamente essas atividades, priorizando o respeito, a cordialidade e as regras de uso de cada uma das plataformas ou ferramentas utilizadas. É possível criar uma sala de bate papo virtual conjuntamente com os estudantes, postar algum assunto de relevância e pedir que eles avaliem a participação dos membros e seu comportamento e engajamento nas atividades."
+        ]
+      }
+    },
+    "3 ANO": {
+      "1 UNIDADE": {
+        "habilidades_area": [
+          "(EM13LGG701) Explorar tecnologias digitais da informação e comunicação (TDIC), compreendendo seus princípios e funcionalidades, e utilizá-las de modo ético, criativo, responsável e adequado a práticas de linguagem em diferentes contextos.",
+          "(EM13LGG104) Utilizar as diferentes linguagens, levando em conta seus funcionamentos, para a compreensão e produção de textos e discursos em diversos campos de atuação social.",
+          "(EM13LGG201) Utilizar as diversas linguagens (artísticas, corporais e verbais) em diferentes contextos, valorizando-as como fenômeno social, cultural, histórico, variável, heterogêneo e sensível aos contextos de uso."
+        ],
+        "habilidades_especificas": [
+          "(EM13LGG701LI25PE) Compreensão leitura / Produção Escrita - Familiarizar-se com diversos gêneros digitais em língua inglesa, demonstrando compreensão dos princípios e das funcionalidades, a partir da escrita, utilizando elementos linguísticos e estruturas composicionais específicas.",
+          "(EM13LGG104LI05PE) Produção Escrita - Escrever textos da ordem do descrever e do relatar: (postcards, travel reports, brochure), com ênfase no vocabulário específico de cada tema e seus respectivos contextos, bem como nas estruturas específicas da língua inglesa (reporting verbs, reported speech etc.), compartilhando experiências e desejos.",
+          "(EM13LGG201LI08PE) Compreensão de Leitura - (Re)conhecer informações em contextos sócio-político-culturais presentes em textos multissemióticos em língua inglesa, fortalecendo a compreensão sobre diversidade, identidade e respeito, ajustando estratégias de compreensão a diferentes propósitos."
+        ],
+        "objetos_conhecimento": [
+          "Gêneros digitais: E-mail, mensagens de textos, blogs, posts em redes sociais, entre outros), textos de divulgação científica, infográficos. Análise Linguística: Review of time tenses (Present Simple, Simple Future), Present Perfect; Adverbs, Adverbial Phrases, Conditional (If) Clauses (zero and first).",
+          "Gêneros discursivos - Textos da ordem do descrever e do relatar, impressos ou digitais (postcards, travel reports, brochure, fotolegenda, entre outros). Análise Linguística: Direct and Reported Speeches.",
+          "Textos multissemióticos: Charge, tiras, fotografia, GIF, animações, memes, entre outros. Análise Linguística: Efeitos de sentido representados por elementos verbais em grifos, itálicos, negritos, tamanho da letra ou por elementos imagéticos, através de símbolos, imagens, processo de formação das palavras, flexão de substantivos e adjetivos, Cognates, False Cognates; Expressões idiomáticas (Idioms)."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO23) Analisar criticamente as experiências em comunidades virtuais e as relações advindas da interação e comunicação com outras pessoas, bem como seus impactos na sociedade.",
+          "(EM13CO19) Expor, argumentar e negociar propostas, produtos e serviços, utilizando diferentes mídias e ferramentas digitais."
+        ],
+        "possibilidades_abordagens": [
+          "O uso de chats (salas de bate papo e reunião online), dando preferência ao uso da língua inglesa nessas interações, é importante. É preciso analisar criticamente essas atividades, priorizando o respeito, a cordialidade e as regras de uso de cada uma das plataformas ou ferramentas utilizadas. É possível criar uma sala de bate papo virtual conjuntamente com os estudantes, postar algum assunto de relevância e pedir que eles avaliem a participação dos membros e seu comportamento e engajamento nas atividades.",
+          "Os estudantes poderão simular atividades de venda de ideias, criação de startups, negociação de produtos, utilizando aplicativos de compra e venda, aprendendo, com isto, a utilizar as plataformas digitais para negociar e empreender. Para tanto, eles poderão promover a construção de sites, fazer apresentação de produtos por marketing digital, e-mail marketing, slides e storytelling em videoconferência. Os resultados desse trabalho poderão ser apresentados em formato de feiras culturais e de negócios, por exemplo."
+        ]
+      },
+      "2 UNIDADE": {
+        "habilidades_area": [
+          "(EM13LGG201) Utilizar as diversas linguagens (artísticas, corporais e verbais) em diferentes contextos, valorizando-as como fenômeno social, cultural, histórico, variável, heterogêneo e sensível aos contextos de uso.",
+          "(EM13LGG201) Utilizar as diversas linguagens (artísticas, corporais e verbais) em diferentes contextos, valorizando-as como fenômeno social, cultural, histórico, variável, heterogêneo e sensível aos contextos de uso.",
+          "(EM13LGG302) Posicionar-se criticamente diante de diversas visões de mundo presentes nos discursos em diferentes linguagens, levando em conta seus contextos de produção e de circulação."
+        ],
+        "habilidades_especificas": [
+          "(EM13LGG201LI09PE) Compreensão de Leitura - Distinguir significados literais e implícitos, considerando as linguagens conotativa e denotativa, a partir do léxico específico (expressions, phrasal verbs, modal verbs, entre outros) presentes em gêneros textuais literários (poems, lyrics, novels, plays, entre outros) em língua inglesa, situando o contexto discursivo.",
+          "(EM13LGG201LI10PE) Produção Oral/Escrita - Produzir textos orais e/ ou escritos, para compartilhar informações sobre um determinado assunto de interesse, organizados de forma clara, desenvolvidos em volta de um tema central e que permitam o reconhecimento da valorização cultural (da comunidade local, regional e global) social e histórica em diferentes contextos (apreciação de um filme, peça, música, poema, apresentação cultural etc.)",
+          "(EM13LGG302LI14PE) Produção Escrita - Planejar um texto argumentativo, a partir da organização de ideias de maneira crítica e fundamentada, considerando o contexto, o tema e a situação discursiva, em defesa de pontos de vista de forma autônoma, solidária e ética."
+        ],
+        "objetos_conhecimento": [
+          "Gêneros literários e identificação do gênero em foco: Poems, lyrics, novels, plays, entre outros. Reading Strategies: Inference, Scanning, Skimming. Análise Linguística: Phrasal Verbs, Collocations.",
+          "Gêneros literários orais: Declamação de poema e representação, através de textos escritos (poemas, romances, letras de músicas, drama, entre outros); Gêneros da cultura popular nordestina, (gêneros típicos da oralidade, lendas, contos, causos, entre outros). Análise Linguística: Linking words, review of tenses (past simple, use of would, past perfect) conditionals (second and third).",
+          "Textos Argumentativos: Defesa de ponto de vista para situações comunicativas definidas, como debates, carta do leitor, justificativas, entre outros. Análise Linguística: Passive Voice x Active Voice and discourse markers."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO17) Construir redes virtuais de interação e colaboração, favorecendo o desenvolvimento de projetos de forma segura, legal e ética."
+        ],
+        "possibilidades_abordagens": [
+          "Aulas on-line, feitas em plataformas ou aplicativos de interação, são uma realidade no ensino e no aprendizado de inglês. A educação a distância tem se tornado uma prática cada dia mais comum e eficiente por meio de aplicativos que favorecem a comunicação e oferecem uma experiência bastante positiva. Alguns deles permitem uma melhor interação entre professores e estudantes e podem facilitar o aprendizado. Essas plataformas têm feito a diferença quando se fala em reuniões e encontros para prática da língua inglesa nas redes. A experiência poderá ser ampliada se o professor propuser atividades em grupo, utilizando vídeos, fotos e áudios. Os estudantes poderão também divulgar o resultado de seus trabalhos em aplicativos, estimulando práticas de oralidade e uso das tecnologias. Esse tipo de atividade poderá servir para ampliar o repertório vocabular dos estudantes e sua fluência no idioma."
+        ]
+      },
+      "3 UNIDADE": {
+        "habilidades_area": [
+          "(EM13LGG304) Formular propostas, intervir e tomar decisões que levem em conta o bem comum e os Direitos Humanos, a consciência socioambiental e o consumo responsável em âmbito local, regional e global.",
+          "(EM13LGG403) Fazer uso do inglês como língua de comunicação global, levando em conta a multiplicidade e variedade de usos, usuários e funções dessa língua no mundo contemporâneo.",
+          "(EM13LGG702) Avaliar o impacto das tecnologias digitais da informação e comunicação (TDIC) na formação do sujeito e em suas práticas sociais, para fazer uso crítico dessa mídia em práticas de seleção, compreensão e produção de discursos em ambiente digital."
+        ],
+        "habilidades_especificas": [
+          "(EM13LGG304LI17PE) Produção Escrita/ Oral - Produzir textos que permitam interagir socialmente propondo alternativas pautadas na ideia de bem comum e coletividade (ex.: anúncios publicitários para campanhas educativas, curtas, panfletos explicativos, videominuto, etc.) promovendo a consciência socioambiental e o consumo responsável.",
+          "(EM13LGG403LI22PE) Produção Escrita - Comunicar-se em língua inglesa, usando a escrita, através de redes sociais e/ ou sites específicos para conhecer pessoas, para pedir informações sobre pontos turísticos, bolsas de estudo e seleções para cursos, considerando os gêneros apropriados para tais funções (application forms, e-mails, posts em sites, comunicação via online, costumer service centre etc.)",
+          "(EM13LGG702LI26PE) Compreensão Leitura- Analisar os discursos em língua inglesa, produzidos e veiculados nos meios digitais de modo a identificar seus propósitos e intencionalidades, considerando a postura crítica e ética e de que forma a circulação desses textos contribuem com a formação dos sujeitos contemporâneos."
+        ],
+        "objetos_conhecimento": [
+          "Gêneros Digitais: E-mail, podcast, posts em redes sociais, mensagens virtuais, entre outros); Gênero Propaganda (anúncio impresso e/ou digital, folders, entre outros), curtas etc. Análise Linguística: Imperative form, review of comparative and superlative forms.",
+          "Gêneros digitais: E-mails, posts, messages, application forms, carta, blogs, tweets, entre outros. Análise Linguística: Léxico e Estruturas Linguísticas pertinentes às situações discursivas, homonímia, paronímia, antonímia e sinonímia.",
+          "Gêneros orais e/ou escritos veiculados em ambientes digitais, como tweets, postagens nas redes sociais, weblogs, notícias veiculadas em sites, infográficos, fake News entre outras. Reading Strategies: inference, scanning, skimming. Análise Linguística: Processos de formação das palavras (prefixos, sufixos e compostos)."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO09) Identificar tecnologias digitais, sua presença e formas de uso, nas diferentes atividades no mundo do trabalho.",
+          "(EM13CO08) Entender como mudanças na tecnologia afetam a segurança, incluindo novas maneiras de preservar sua privacidade e dados pessoais online, reportando suspeitas e buscando ajuda em situações de risco."
+        ],
+        "possibilidades_abordagens": [
+          "Identificação do uso das ferramentas digitais que auxiliam na resolução de problemas do mundo do trabalho e como utilizar mídias e equipamentos eletrônicos para isso, como impressoras 3D, mapas mentais e ferramentas de produtividade. Os estudantes poderiam criar um escritório simulado e ver como alguns equipamentos seriam utilizados para facilitar as atividades nesta empresa virtual. As equipes poderiam ser divididas em torno de algumas ferramentas, as quais seriam por eles explicadas sobre suas funcionalidades e como foram pensadas para dar celeridade e eficiência ao trabalho e as suas diversas formas de aplicação. Essa atividade evidencia modelos metodológicos ativos e o uso de gêneros da oralidade nas aulas de inglês, além do tipo descritivo de texto.",
+          "Utilização das tecnologias digitais para identificar perfis falsos, fake news e possíveis fraudadores, criando formas de se livrar e de analisar esse tipo de perfil, entendendo os riscos de se navegar de maneira incorreta na rede e de manter interações com pessoas e perfis mal intencionados. Como essas escolhas podem afetar as relações na web? Que risco corremos? Os estudantes podem criar perfis com características de cantores conhecidos de língua inglesa num tipo de gincana que envolveria a imitação e performance de algum artista, cantando ou atuando, em inglês. Ao final, eles poderiam opinar sobre identidade falsa e suas consequências para aqueles que se habilitam a simular (mimese) um perfil de outra pessoa na internet ou na TV."
+        ]
+      }
+    }
+  },
+  "deteccao_confiavel": true,
+  "gerado_em": "2026-08-04T12:36",
+  "arquivo_origem": "Lingua-Inglesa-Organizador-Curricular-Trimestral-da-FGB_.pdf"
+}

@@ -1,0 +1,146 @@
+[
+  {
+    "slug": "arte",
+    "disciplina": "Arte",
+    "anos": [
+      "1 ANO",
+      "2 ANO",
+      "3 ANO"
+    ],
+    "gerado_em": "2026-08-04T13:47",
+    "deteccao_confiavel": true,
+    "observacao": null
+  },
+  {
+    "slug": "biologia",
+    "disciplina": "Biologia",
+    "anos": [
+      "1 ANO",
+      "2 ANO",
+      "3 ANO"
+    ],
+    "gerado_em": "2026-08-04T12:17",
+    "deteccao_confiavel": true,
+    "observacao": null
+  },
+  {
+    "slug": "educacao_fisica",
+    "disciplina": "Educação Física",
+    "anos": [
+      "1 ANO",
+      "2 ANO",
+      "3 ANO"
+    ],
+    "gerado_em": "2026-08-04T15:54",
+    "deteccao_confiavel": true,
+    "observacao": "2 ANO / 1 UNIDADE ausente no documento oficial da SEE-PE — não é falha de extração, o conteúdo não existe no PDF fonte."
+  },
+  {
+    "slug": "filosofia",
+    "disciplina": "Filosofia",
+    "anos": [
+      "1 ANO",
+      "2 ANO",
+      "3 ANO"
+    ],
+    "gerado_em": "2026-08-04T12:20",
+    "deteccao_confiavel": true,
+    "observacao": null
+  },
+  {
+    "slug": "fisica",
+    "disciplina": "Física",
+    "anos": [
+      "1 ANO",
+      "2 ANO",
+      "3 ANO"
+    ],
+    "gerado_em": "2026-08-04T12:26",
+    "deteccao_confiavel": true,
+    "observacao": null
+  },
+  {
+    "slug": "geografia",
+    "disciplina": "Geografia",
+    "anos": [
+      "1 ANO",
+      "2 ANO",
+      "3 ANO"
+    ],
+    "gerado_em": "2026-08-04T15:47",
+    "deteccao_confiavel": true,
+    "observacao": null
+  },
+  {
+    "slug": "historia",
+    "disciplina": "História",
+    "anos": [
+      "1 ANO",
+      "2 ANO",
+      "3 ANO"
+    ],
+    "gerado_em": "2026-08-04T12:31",
+    "deteccao_confiavel": true,
+    "observacao": null
+  },
+  {
+    "slug": "lingua_inglesa",
+    "disciplina": "Língua Inglesa",
+    "anos": [
+      "1 ANO",
+      "2 ANO",
+      "3 ANO"
+    ],
+    "gerado_em": "2026-08-04T12:36",
+    "deteccao_confiavel": true,
+    "observacao": null
+  },
+  {
+    "slug": "lingua_portuguesa",
+    "disciplina": "Língua Portuguesa",
+    "anos": [
+      "1 ANO",
+      "2 ANO",
+      "3 ANO"
+    ],
+    "gerado_em": "2026-08-04T12:50",
+    "deteccao_confiavel": true,
+    "observacao": null
+  },
+  {
+    "slug": "matematica",
+    "disciplina": "Matemática",
+    "anos": [
+      "1 ANO",
+      "2 ANO",
+      "3 ANO"
+    ],
+    "gerado_em": "2026-08-04T12:58",
+    "deteccao_confiavel": true,
+    "observacao": null
+  },
+  {
+    "slug": "quimica",
+    "disciplina": "Química",
+    "anos": [
+      "1 ANO",
+      "2 ANO",
+      "3 ANO"
+    ],
+    "gerado_em": "2026-08-04T13:03",
+    "deteccao_confiavel": true,
+    "observacao": null
+  },
+  {
+    "slug": "sociologia",
+    "disciplina": "Sociologia",
+    "anos": [
+      "1 ANO",
+      "2 ANO",
+      "3 ANO"
+    ],
+    "gerado_em": "2026-08-04T13:05",
+    "deteccao_confiavel": true,
+    "observacao": null
+  }
+]

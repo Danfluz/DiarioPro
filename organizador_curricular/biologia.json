@@ -1,0 +1,332 @@
+{
+  "disciplina": "Biologia",
+  "tem_computacao": true,
+  "conteudo": {
+    "1 ANO": {
+      "1 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CNT201) Analisar e discutir modelos, teorias e leis propostas em diferentes épocas e culturas para comparar distintas explicações sobre o surgimento e a evolução da Vida, da Terra e do Universo com as teorias científicas aceitas atualmente.",
+          "(EM13CNT301) Construir questões, elaborar hipóteses, previsões e estimativas, empregar instrumentos de medição e representar e interpretar modelos explicativos, dados e/ou resultados experimentais para construir, avaliar e justificar conclusões no enfrentamento de situações-problema sob uma perspectiva científica."
+        ],
+        "habilidades_especificas": [
+          "(EM13CNT201BIO06PE) Comparar diferentes explicações sobre a origem e evolução do Universo, da Terra e da Vida, a partir de evidências e explicações das teorias filosóficas/científicas considerando a importância de analisar diferentes perspectivas do saber científico no contexto histórico e social, permitindo que os estudantes compreendam como as concepções dessas teorias se transformam ao longo do tempo.",
+          "(EM13CNT301BIO13PE-a) Compreender o papel da investigação científica a partir da proposição de situações-problema que envolvam a identidade dos seres vivos para produzir conhecimento científico seguro que auxilie nas explicações para compreensão de fenômenos biológicos e químicos, explorando novas realidades que se renovam e modificam com o tempo."
+        ],
+        "objetos_conhecimento": [
+          "Introdução ao método científico. Hipóteses e teorias da Origem do Universo, da Vida e da Terra. Introdução ao surgimento dos primeiros seres vivos. Diversificação biológica. Características e níveis de organização dos seres vivos.",
+          "Composição química da vida: Bioquímica (moléculas inorgânicas e orgânicas)."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO01) Explorar e construir a solução de problemas por meio da reutilização de partes de soluções existentes.",
+          "(EM13CO11) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico.",
+          "(EM13CO13) Analisar e utilizar as diferentes formas de representação e consulta a dados em formato digital para pesquisas científicas.",
+          "(EM13CO22) Produzir e publicar conteúdo como textos, imagens, áudios, vídeos e suas associações, bem como ferramentas para sua integração, organização e apresentação, utilizando diferentes mídias digitais.",
+          "(EM13CO01) Explorar e construir a solução de problemas por meio da reutilização de partes de soluções existentes.",
+          "(EM13CO02) Explorar e construir a solução de problemas por meio de refinamentos, utilizando diversos níveis de abstração desde a especificação até a implementação.",
+          "(EM13CO11) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico.",
+          "(EM13CO12) Produzir, analisar, gerir e compartilhar informações a partir de dados, utilizando princípios de ciência de dados.",
+          "(EM13CO13) Analisar e utilizar as diferentes formas de representação e consulta a dados em formato digital para pesquisas científicas.",
+          "(EM13CO21) Comunicar ideias complexas de forma clara por meio de objetos digitais como mapas conceituais, infográficos, hipertextos e outros."
+        ],
+        "possibilidades_abordagens": [
+          "Utilização de informações coletadas em meio digital sobre as Hipóteses e teorias da Origem do Universo, da Vida e da Terra, a exemplo de plataformas digitais e ferramentas tecnológicas para emitir juízo de valor a respeito dessas informações.",
+          "Criação de linhas do tempo digitais (plataformas e softwares). Construir mapas conceituais digitais, infográficos digitais, diagramas hierárquicos, representando as teorias de origem e evolução.",
+          "Construção de ferramentas digitais que promovam o aprendizado significativo pelo alunado, tais como, sites, podcasts, blogs, entre outros.",
+          "Identificação da composição química da vida aplicando os conhecimentos para projetar materiais (biomateriais) que interagem de forma compatível com sistemas biológicos utilizando ferramentas digitais.",
+          "Conhecimento e utilização de aplicativos na criação de vídeos interativos para explorar conceitos complexos presentes na Biologia.",
+          "Utilização de planilhas simples para organizar dados de experimentos. Produzir infográficos digitais sobre macromoléculas (carboidratos, proteínas, lipídios, etc.)",
+          "Utilização de simuladores online usando os mais diversos tipos de tecnologias digitais e ou ferramentas existentes para observar como as moléculas interagem no metabolismo e o que acontece quando as condições se alteram."
+        ]
+      },
+      "2 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CNT301) Construir questões, elaborar hipóteses, previsões e estimativas, empregar instrumentos de medição e representar e interpretar modelos explicativos, dados e/ou resultados experimentais para construir, avaliar e justificar conclusões no enfrentamento de situações-problema sob uma perspectiva científica.",
+          "(EM13CNT202) Analisar as diversas formas de manifestação da vida em seus diferentes níveis de organização, bem como as condições ambientais favoráveis e os fatores limitantes a elas, com ou sem o uso de dispositivos e aplicativos digitais (como softwares de simulação e de realidade virtual, entre outros).",
+          "(EM13CNT101) Analisar e representar, com ou sem o uso de dispositivos e de aplicativos digitais específicos, as transformações e conservações em sistemas que envolvam quantidade de matéria, de energia e de movimento para realizar previsões sobre seus comportamentos em situações cotidianas e em processos produtivos que priorizem o desenvolvimento sustentável, o uso consciente dos recursos naturais e a preservação da vida em todas as suas formas."
+        ],
+        "habilidades_especificas": [
+          "(EM13CNT301BIO13PE-b) Compreender o papel da investigação científica a partir da proposição de situações-problema que envolvam a identidade dos seres vivos para produzir conhecimento científico seguro que auxilie nas explicações para compreensão de fenômenos biológicos e químicos, explorando novas realidades que se renovam e modificam com o tempo.",
+          "(EM13CNT202BIO07PE-a) Reconhecer a existência das diversas formas de vida, suas diferentes características morfofisiológicas associadas ao seu hábitat e a capacidade adaptativa, explicando como a ciência apresenta os seres vivos, as formas limítrofes de vida (vírus), seus respectivos sistemas e, subsequentemente, a biodiversidade local, regional e global, fazendo uso de dispositivos e aplicativos digitais (como softwares de simulação e de realidade virtual, entre outros).",
+          "(EM13CNT101BIO01PE) Compreender os processos básicos do metabolismo energético na obtenção de energia, em situações cotidianas, para manutenção das diversas atividades desempenhadas pelos seres vivos nos processos de preservação da vida."
+        ],
+        "objetos_conhecimento": [
+          "Microscopia.",
+          "Biossegurança (Definições, tipos de riscos, EPIs e práticas laboratoriais).",
+          "Citologia. Divisão Celular.",
+          "Metabolismo energético (Fotossíntese, respiração, quimiossíntese e fermentação como processos de transformação de energia)."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO01) Explorar e construir a solução de problemas por meio da reutilização de partes de soluções existentes.",
+          "(EM13CO02) Explorar e construir a solução de problemas por meio de refinamentos, utilizando diversos níveis de abstração desde a especificação até a implementação.",
+          "(EM13CO11) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico.",
+          "(EM13CO12) Produzir, analisar, gerir e compartilhar informações a partir de dados, utilizando princípios de ciência de dados.",
+          "(EM13CO13) Analisar e utilizar as diferentes formas de representação e consulta a dados em formato digital para pesquisas científicas.",
+          "(EM13CO18) Planejar e gerenciar projetos integrados às áreas de conhecimento de forma colaborativa, solucionando problemas, usando diversos artefatos computacionais."
+        ],
+        "possibilidades_abordagens": [
+          "Manipulação de softwares e/ou simuladores computacionais nos processos de divisão celular, facilitando o entendimento de como ocorre a divisão celular e sua relevância na identidade e na continuidade da vida.",
+          "Administração da realidade aumentada, utilizando os mais diversos tipos de tecnologias digitais e ou ferramentas existentes.",
+          "Utilização do microscópio (estudar a evolução da ferramenta tecnológica e construir vlogs para divulgação em plataformas digitais) criando células interativas digitais e impressas.",
+          "Utilização de jogos digitais que simulam o papel de cada organela (gamificação).",
+          "Compreensão da estrutura e do funcionamento das organelas celulares por meio de jogos digitais, estimulando a curiosidade científica, o pensamento computacional e o uso criativo da tecnologia.",
+          "Utilização de infográficos e diagramas interativos feitos em plataformas digitais.",
+          "Utilização de realidade aumentada para os mais diversos tipos de tecnologias digitais e ou ferramentas existentes para observar organelas em 3D.",
+          "Integração de conhecimentos de Biologia, Química e Computação para modelar reações metabólicas e fluxos de energia nos organismos vivos.",
+          "Desenvolvimento de práticas experimentais com questionamentos e problemáticas acerca das reações metabólicas, explorando softwares para elaboração de gráficos e tabelas, vídeos de animações, entre outros.",
+          "Construção de esquemas conceituais, mapas mentais e análise de dados obtidos, a partir de pesquisas."
+        ]
+      },
+      "3 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CNT301) Construir questões, elaborar hipóteses, previsões e estimativas, empregar instrumentos de medição representar e interpretar modelos explicativos, dados e/ou resultados experimentais para construir, avaliar e justificar conclusões no enfrentamento de situações-problema sob uma perspectiva científica."
+        ],
+        "habilidades_especificas": [
+          "(EM13CNT301BIO13PE-c) Compreender o papel da investigação científica a partir da proposição de situações-problema que envolvam a identidade dos seres vivos para produzir conhecimento científico seguro que auxilie nas explicações para compreensão de fenômenos biológicos, explorando novas realidades que se renovam e modificam com o tempo."
+        ],
+        "objetos_conhecimento": [
+          "Reprodução Embriologia Animal",
+          "Histologia Humana"
+        ],
+        "habilidades_computacao": [
+          "(EM13CO01) Explorar e construir a solução de problemas por meio da reutilização de partes de soluções existentes.",
+          "(EM13CO02) Explorar e construir a solução de problemas por meio de refinamentos, utilizando diversos níveis de abstração desde a especificação até a implementação.",
+          "(EM13CO11) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico.",
+          "(EM13CO12) Produzir, analisar, gerir e compartilhar informações a partir de dados, utilizando princípios de ciência de dados.",
+          "(EM13CO13) Analisar e utilizar as diferentes formas de representação e consulta a dados em formato digital para pesquisas científicas."
+        ],
+        "possibilidades_abordagens": [
+          "Projeção e produção de modelos tridimensionais (físicos ou digitais) para representar tecidos, órgãos e sistemas do corpo humano, integrando conhecimentos de histologia e fisiologia para compreender a relação entre estrutura e função nos processos biológicos.",
+          "Utilização de Atlas digitais referentes aos tecidos que compõem a Histologia Animal.",
+          "Utilização do pensamento computacional para reconhecer as etapas de processos reprodutivos e embrionários.",
+          "Utilização de aplicativos de realidade aumentada."
+        ]
+      }
+    },
+    "2 ANO": {
+      "1 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CNT202) Analisar as diversas formas de manifestação da vida em seus diferentes níveis de organização, bem como as condições ambientais favoráveis e os fatores limitantes a elas, com ou sem o uso de dispositivos e aplicativos digitais (como softwares de simulação e de realidade virtual, entre outros)."
+        ],
+        "habilidades_especificas": [
+          "(EM13CNT202BIO07PE-b) Reconhecer a existência das diversas formas de vida, suas diferentes características morfofisiológicas associadas ao seu hábitat e à capacidade adaptativa, explicando como a ciência apresenta os seres vivos, as formas limítrofes de vida (vírus), seus respectivos sistemas e, subsequentemente, a biodiversidade local, regional e global, fazendo uso de dispositivos e aplicativos digitais (como softwares de simulação e de realidade virtual, entre outros)."
+        ],
+        "objetos_conhecimento": [
+          "Sistemática e taxonomia.",
+          "Diversidade de Vida.",
+          "Características Morfofisiológicas dos seres vivos.",
+          "Vírus (Características gerais, classificação e processos infectocontagiosos)."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO11) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico.",
+          "(EM13CO13) Analisar e utilizar as diferentes formas de representação e consulta a dados em formato digital para pesquisas científicas.",
+          "(EM13CO20) Criar conteúdos, disponibilizando-os em ambientes virtuais para publicação e compartilhamento, avaliando a confiabilidade e as consequências da disseminação dessas informações.",
+          "(EM13CO21) Comunicar ideias complexas de forma clara por meio de objetos digitais como mapas conceituais, infográficos, hipertextos e outros."
+        ],
+        "possibilidades_abordagens": [
+          "Representação das relações evolutivas e hierárquicas dos seres vivos pelo uso de mapas conceituais e infográficos digitais para ilustrar a classificação biológica e as regras de nomenclatura.",
+          "Construção e interpretação de árvores filogenéticas digitais de maneira mais acessível e interativa a partir de simuladores, mapas conceituais, infográficos e outros.",
+          "Utilização de hipertextos e outros objetos digitais para explorar a diversidade de vida, permitindo que os usuários naveguem por informações detalhadas sobre diferentes táxons, suas características e sua importância, de forma não linear e aprofundada.",
+          "Produção e divulgação de conteúdos em redes sociais, utilizando diferentes mídias e ferramentas digitais."
+        ]
+      },
+      "2 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CNT202) Analisar as diversas formas de manifestação da vida em seus diferentes níveis de organização, bem como as condições ambientais favoráveis e os fatores limitantes a elas, com ou sem o uso de dispositivos e aplicativos digitais (como softwares de simulação e de realidade virtual, entre outros).",
+          "(EM13CNT307) Analisar as propriedades dos materiais para avaliar a adequação de seu uso em diferentes aplicações (industriais, cotidianas, arquitetônicas ou tecnológicas) e/ ou propor soluções seguras e sustentáveis considerando seu contexto local e cotidiano.",
+          "(EM13CNT302) Comunicar, para públicos variados, em diversos contextos, resultados de análises, pesquisas e/ou experimentos, elaborando e/ou interpretando textos, gráficos, tabelas, símbolos, códigos, sistemas de classificação e equações, por meio de diferentes linguagens, mídias, tecnologias digitais de informação e comunicação (TDIC), de modo a participar e/ou promover debates em torno de temas científicos e/ou tecnológicos de relevância sociocultural e ambiental."
+        ],
+        "habilidades_especificas": [
+          "(EM13CNT202BIO07PE-c) Reconhecer a existência das diversas formas de vida, suas diferentes características morfofisiológicas associadas ao seu hábitat e a capacidade adaptativa, explicando como a ciência apresenta os seres vivos, as formas limítrofes de vida (vírus), seus respectivos sistemas e, subsequentemente, a biodiversidade local, regional e global, fazendo uso de dispositivos e aplicativos digitais (como softwares de simulação e de realidade virtual, entre outros).",
+          "(EM13CNT307BIO19PE) Compreender o conceito de biodiversidade, nos diferentes níveis hierárquicos (genético, de espécies, ecossistema), avaliando as contribuições desse conhecimento para reconhecer a importância das diversas formas de vida que contribuem com a sua existência e sua utilização em vários setores da sociedade, propondo soluções seguras e sustentáveis através de meios tecnológicos, considerando seu contexto local e cotidiano.",
+          "(EM13CNT302BIO14PE) Promover discussões e debates, em torno de temas sociocientíficos e/ou tecnológicos com relevância na saúde humana e no meio ambiente em diversos eventos científicos intra/extraescolares, resultados de atividades de pesquisas (investigativas, bibliográficas e/ou experimentais) que problematizam os avanços dos conhecimentos em relação à saúde, ao ser humano e ao meio ambiente, considerando o contexto local, regional e global e relacionando essas pesquisas como forma de melhoria e aplicações nas condições locais, utilizando-se dos recursos e ferramentas das TDIC e das mídias digitais."
+        ],
+        "objetos_conhecimento": [
+          "Reinos biológicos (Monera, Protista e Fungi) características gerais e seus representantes.",
+          "Reinos biológicos (Plantae e Animalia) características gerais e seus representantes.",
+          "Processos infectocontagiosos provocados por diferentes seres vivos, formas de contágio, transmissão e tratamento. Importância econômica e ambiental dos grupos de seres vivos."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO11) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico.",
+          "(EM13CO13) Analisar e utilizar as diferentes formas de representação e consulta a dados em formato digital para pesquisas científicas.",
+          "(EM13CO18) Planejar e gerenciar projetos integrados às áreas de conhecimento de forma colaborativa, solucionando problemas, usando diversos artefatos computacionais.",
+          "(EM13CO21) Comunicar ideias complexas de forma clara por meio de objetos digitais como mapas conceituais, infográficos, hipertextos e outros.",
+          "(EM13CO19) Expor, argumentar e negociar propostas, produtos e serviços, utilizando diferentes mídias e ferramentas digitais.",
+          "(EM13CO20) Criar conteúdos, disponibilizando-os em ambientes virtuais para publicação e compartilhamento, avaliando a confiabilidade e as consequências da disseminação dessas informações.",
+          "(EM13CO22) Produzir e publicar conteúdo como textos, imagens, áudios, vídeos e suas associações, bem como ferramentas para sua integração, organização e apresentação, utilizando diferentes mídias digitais.",
+          "(EM13CO23) Analisar criticamente as experiências em comunidades virtuais e as relações advindas da interação e comunicação com outras pessoas, bem como seus impactos na sociedade."
+        ],
+        "possibilidades_abordagens": [
+          "Compreensão e esquematização de informações existentes sobre as características gerais e os representantes dos diversos reinos biológicos utilizando mapas conceituais, infográficos, entre outros.",
+          "Utilização de diferentes formatos de representação de dados em ambiente digital, como bancos de dados, árvores filogenéticas digitais, gráficos e tabelas, para visualizar e interpretar as relações evolutivas e as particularidades morfológicas e fisiológicas entre os diferentes grupos de seres vivos.",
+          "Desenvolvimento de materiais gráficos virtuais interativos sobre conceitos ou modelos complexos de forma a possibilitar a compreensão e o compartilhamento de informações.",
+          "Exposição e argumentação sobre a importância médica de determinados grupos de seres vivos, como a ação de microrganismos na produção de antibióticos ou a utilização de plantas medicinais, utilizando apresentações digitais, vídeos ou podcasts.",
+          "Análise de propostas relacionadas à exploração sustentável de recursos biológicos, por meio de relatórios interativos e plataformas colaborativas.",
+          "Compartilhamento de informações sobre a importância ambiental dos grupos de seres vivos, utilizando mídias sociais, blogs ou sites para conscientização pública."
+        ]
+      },
+      "3 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CNT306) Avaliar os riscos envolvidos em atividades cotidianas, aplicando conhecimentos das Ciências da Natureza, para justificar o uso de equipamentos e recursos, bem como comportamentos de segurança, visando à integridade física, individual e coletiva, e socioambiental, podendo fazer uso de dispositivos e aplicativos digitais que viabilizem a estruturação de simulações de tais riscos.",
+          "(EM13CNT207) Identificar, analisar e discutir vulnerabilidades vinculadas às vivências e aos desafios contemporâneos aos quais as juventudes estão expostas, considerando os aspectos físico, psicoemocional e social, a fim de desenvolver e divulgar ações de prevenção e de promoção da saúde e do bem-estar.",
+          "(EM13CNT310) Investigar e analisar os efeitos de programas de infraestrutura e demais serviços básicos (saneamento, energia elétrica, transporte, telecomunicações, cobertura vacinal, atendimento primário à saúde e produção de alimentos, entre outros) e identificar necessidades locais e/ou regionais em relação a esses serviços, a fim de avaliar e/ou promover ações que contribuam para a melhoria na qualidade de vida e nas condições de saúde da população."
+        ],
+        "habilidades_especificas": [
+          "(EM13CNT306BIO18PE) Analisar os processos anatômicos e fisiológicos identificando os riscos, envolvidos na saúde do corpo humano, físicas e virtuais, justificando o uso de equipamentos e recursos, bem como comportamentos de segurança, visando à integridade física, individual, coletiva e socioambiental.",
+          "(EM13CNT207BIO11PE) Avaliar os problemas sociais e de saúde (individuais e coletivos), discutindo e desenvolvendo soluções relacionadas a ações para a prevenção e a promoção da saúde e do bem-estar.",
+          "(EM13CNT310BIO23PE) Investigar e interpretar os Indicadores de Desenvolvimento Humano e de Saúde Pública através de levantamento de dados, relacionando a ocupação desordenada dos espaços urbanos e a degradação ambiental, levando à incidência e ao reaparecimento de doenças, considerando a realidade local, tendo em vista a promoção de ações que contribuam para a melhoria na qualidade de vida, nas condições higiênico-sanitárias e de saúde coletiva."
+        ],
+        "objetos_conhecimento": [
+          "Anatomia e Fisiologia Humana. Principais danos causados nos Sistemas Orgânicos (Fisiologia e Morfologia Humanas).",
+          "Biossegurança (Definições, tipos de riscos, EPIs).",
+          "Indicadores de Desenvolvimento Humano (Saúde, Educação e Renda). Indicadores de Saúde Pública (Mortalidade, Morbidade e fatores de risco entre outros). Promoção de saúde. Programa de imunização. Saneamento básico. Doenças negligenciadas. Noções básicas da política do SUS. Acidentes com animais peçonhentos e zoonoses."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO08) Entender como mudanças na tecnologia afetam a segurança, incluindo novas maneiras de preservar sua privacidade e dados pessoais on-line, reportando suspeitas e buscando ajuda em situações de risco.",
+          "(EM13CO11) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico.",
+          "(EM13CO24) Identificar e reconhecer como as redes sociais e artefatos computacionais em geral interferem na saúde física e mental de seus usuários.",
+          "(EM13CO25) Dialogar em ambientes virtuais com segurança e respeito às diferenças culturais e pessoais, reconhecendo e denunciando atitudes abusivas.",
+          "(EM13CO11) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico.",
+          "(EM13CO12) Produzir, analisar, gerir e compartilhar informações a partir de dados, utilizando princípios de ciência de dados.",
+          "(EM13CO13) Analisar e utilizar as diferentes formas de representação e consulta a dados em formato digital para pesquisas científicas.",
+          "(EM13CO21) Comunicar ideias complexas de forma clara por meio de objetos digitais como mapas conceituais, infográficos, hipertextos e outros."
+        ],
+        "possibilidades_abordagens": [
+          "Promoção de diálogos, rodas de conversas, seminários, abordando a importância de verificação das informações recebidas, distinguindo entre fontes confiáveis e não confiáveis, correlacionando a segurança de dados pessoais on-line para a gestão e proteção de informações de saúde individuais.",
+          "Simplificação para tornar acessíveis informações complexas sobre as noções básicas da política do SUS, que podem ser difíceis de compreender para o público em geral, utilizando softwares e plataformas digitais, entre outros.",
+          "Disseminação de informações vitais sobre acidentes com animais peçonhentos e zoonoses de forma clara e objetiva por meio de infográficos.",
+          "Utilização de objetos digitais para campanhas de conscientização e educação em saúde para a prevenção de doenças e acidentes."
+        ]
+      }
+    },
+    "3 ANO": {
+      "1 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CNT205) Interpretar resultados e realizar previsões sobre atividades experimentais, fenômenos naturais e processos tecnológicos, com base nas noções de probabilidade e incerteza, reconhecendo os limites explicativos das ciências.",
+          "(EM13CNT103) Utilizar o conhecimento sobre as radiações e suas origens para avaliar as potencialidades e os riscos de sua aplicação em equipamentos de uso cotidiano, na saúde, no ambiente, na indústria, na agricultura e na geração de energia elétrica."
+        ],
+        "habilidades_especificas": [
+          "(EM13CNT205BIO09PE) Exercitar o raciocínio lógico, interpretando dados estatísticos, formas de representações (gráficos, tabelas, infográficos, heredogramas, símbolos) e a reflexão ética sobre temas relacionados à Genética para ampliar o conhecimento científico acerca da hereditariedade, confrontando os resultados, os avanços e os limites da Ciência.",
+          "(EM13CNT103BIO03PE) Analisar os efeitos biológicos das radiações à saúde humana e ao meio ambiente para posicionar-se, criticamente, diante de situações do cotidiano em relação a sua utilização."
+        ],
+        "objetos_conhecimento": [
+          "Conceitos fundamentais da genética. Herança Mendeliana. Genética de Populações. Transmissão dos padrões de herança.",
+          "Mutações: alterações gênicas e cromossômicas (Estruturais e numéricas). Tecidos biológicos humanos e o efeito da exposição excessiva à radiação ultravioleta e Raios-X. Fatores potencializadores de mutações. Variabilidade Genética e Genoma. Radiação e meio ambiente (Efeitos no solo, na água, nas plantas e nos animais)."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO02) Explorar e construir a solução de problemas por meio de refinamentos, utilizando diversos níveis de abstração desde a especificação até a implementação.",
+          "(EM13CO12) Produzir, analisar, gerir e compartilhar informações a partir de dados, utilizando princípios de ciência de dados.",
+          "(EM13CO13) Analisar e utilizar as diferentes formas de representação e consulta a dados em formato digital para pesquisas científicas.",
+          "(EM13CO21) Comunicar ideias complexas de forma clara por meio de objetos digitais como mapas conceituais, fotográficos, hipertextos e outros.",
+          "(EM13CO11) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico.",
+          "(EM13CO19) Expor, argumentar e negociar propostas, produtos e serviços utilizando diferentes mídias e ferramentas digitais.",
+          "(EM13CO20) Criar conteúdos, disponibilizando-os em ambientes virtuais para publicação e compartilhamento, avaliando a confiabilidade e as consequências da disseminação dessas informações.",
+          "(EM13CO24) Identificar e reconhecer como as redes sociais e artefatos computacionais em geral interferem na saúde física e mental de seus usuários."
+        ],
+        "possibilidades_abordagens": [
+          "Análise de dados genéticos relacionados aos padrões de herança observados nos experimentos de Mendel, a partir da construção de tabelas, análise de gráficos e jogos virtuais. Produção de gráficos simples (Excel/Google Sheets offline) representando heredogramas e frequências. Elaboração de materiais que utilizam ferramentas digitais para informar sobre a transmissão de características genéticas entre gerações utilizando equipamentos tecnológicos para calcular frequências genotípicas e fenotípicas.",
+          "Elaboração de vídeos, documentários, reels, entre outros, que disseminem informações sobre mutação e suas aplicações na comunidade em geral, através de mídias digitais. Análise crítica de como as informações e desinformações sobre os efeitos da exposição excessiva à radiação ultravioleta (UV) e Raios-X nos tecidos biológicos humanos são disseminadas e percebidas em redes sociais e outros artefatos computacionais. Identificação e reconhecimento como a comunicação digital sobre temas como câncer de pele (relacionado à UV), exames de imagem (Raios-X) ou proteção solar pode interferir na saúde física (levando a comportamentos de risco ou de prevenção) e mental (gerando ansiedade, preocupação ou, por outro lado, uma falsa sensação de segurança) dos usuários. Realização de estudos de caso em que as redes sociais influenciam decisões pessoais relacionadas à exposição à radiação, como a busca por bronzeamento artificial (UV) ou a adesão a exames médicos que utilizam Raios-X, e como essas escolhas afetam a integridade dos tecidos biológicos. Avaliação do papel dos artefatos computacionais (como aplicativos de previsão UV ou sites de saúde) na conscientização sobre os perigos da radiação e na promoção de hábitos saudáveis para a proteção dos tecidos biológicos humanos."
+        ]
+      },
+      "2 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CNT304) Analisar e debater situações controversas sobre a aplicação de conhecimentos da área de Ciências da Natureza (tais como tecnologias do DNA, tratamentos com células-tronco, neurotecnologias, produção de tecnologias de defesa, estratégias de controle de pragas, entre outros), com base em argumentos consistentes, legais, éticos e responsáveis, distinguindo diferentes pontos de vista.",
+          "(EM13CNT307) Analisar as propriedades dos materiais para avaliar a adequação de seu uso em diferentes aplicações (industriais, cotidianas, arquitetônicas ou tecnológicas) e/ ou propor soluções seguras e sustentáveis considerando seu contexto local e cotidiano.",
+          "(EM13CNT303) Interpretar textos de divulgação científica que tratem de temáticas das Ciências da Natureza, disponíveis em diferentes mídias, considerando a apresentação dos dados, tanto na forma de textos como em equações, gráficos e/ou tabelas, a consistência dos argumentos e a coerência das conclusões, visando construir estratégias de seleção de fontes confiáveis de informações.",
+          "(EM13CNT305) Investigar e discutir o uso indevido de conhecimentos das Ciências da Natureza na justificativa de processos de discriminação, segregação e privação de direitos individuais e coletivos, em diferentes contextos sociais e históricos, para promover a equidade e o respeito à diversidade.",
+          "(EM13CNT208) Aplicar os princípios da evolução biológica para analisar a história humana, considerando sua origem, diversificação, dispersão pelo planeta e diferentes formas de interação com a natureza, valorizando e respeitando a diversidade étnica e cultural humana."
+        ],
+        "habilidades_especificas": [
+          "(EM13CNT304BIO16PE) Avaliar e aplicar os conhecimentos adquiridos em relação a questões que abordam situações cotidianas e relevantes, percebendo diferentes pontos de vista, e baseando-se em argumentos consistentes, legais e éticos que possibilitem o senso crítico para posicionar-se frente a temáticas polêmicas (tais como tecnologias do DNA, tratamentos com células-tronco, neurotecnologias, produção de tecnologias de defesa, estratégias de controle de pragas, entre outros).",
+          "(EM13CNT307BIO20PE) Analisar as propriedades dos materiais adequando seu uso em diferentes aplicações no cotidiano (industriais, arquitetônicas ou biotecnológicas), compreendendo sua interferência nos ecossistemas e/ou propondo soluções seguras e sustentáveis em seu contexto local, regional e global.",
+          "(EM13CNT303BIO15PE) Interpretar, com o auxílio de ferramentas multimodais, numa perspectiva transdisciplinar, os fenômenos ecológicos, genéticos e de saúde pública, percebendo a importância desses processos para o entendimento dos fatos estudados, visando construir estratégias de seleção de fontes confiáveis de informações.",
+          "(EM13CNT305BIO17PE) Discutir sobre questões relativas à igualdade de direitos, equidade em relação à diversidade cultural, étnica, social, de orientação sexual e de gênero, em processos de discriminação, segregação e privação de direitos individuais e coletivos na sociedade e na vida humana para o desenvolvimento de valores no indivíduo, tornando-o um ser crítico, ético e consciente do seu papel na sociedade, no âmbito local, regional e mundial.",
+          "(EM13CNT208BIO12PE) Analisar as modificações que ocorrem nos organismos, através do tempo, reconhecendo a origem da humanidade para compreender o surgimento da espécie humana, aplicando em processos de valorização e respeito a diversidade étnica e suas culturas."
+        ],
+        "objetos_conhecimento": [
+          "Biotecnologia.",
+          "Engenharia Genética.",
+          "Bioética.",
+          "Teorias clássicas evolutivas e Neodarwinismo. Evidências da evolução, especiação, tempo geológico e paleontológico.",
+          "Processo evolutivo da espécie humana (Evolução e origem do Homo sapiens) e a diversidade étnica existente (abusos da teoria da evolução, holocausto, racismo, darwinismo social)."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO19) Expor, argumentar e negociar propostas, produtos e serviços, utilizando diferentes mídias e ferramentas digitais.",
+          "(EM13CO22) Produzir e publicar conteúdo como textos, imagens, áudios, vídeos e suas associações, bem como ferramentas para sua integração, organização e apresentação, utilizando diferentes mídias digitais.",
+          "(EM13CO23) Analisar criticamente as experiências em comunidades virtuais e as relações advindas da interação e comunicação com outras pessoas, bem como seus impactos na sociedade.",
+          "(EM13CO10) Conhecer os fundamentos da Inteligência Artificial, comparando-a com a inteligência humana, analisando suas potencialidades, riscos e limites.",
+          "(EM13CO20) Criar conteúdos, disponibilizando-os em ambientes virtuais para publicação e compartilhamento, avaliando a confiabilidade e as consequências da disseminação dessas informações.",
+          "(EM13CO25) Dialogar em ambientes virtuais com segurança e respeito às diferenças culturais e pessoais, reconhecendo e denunciando atitudes abusivas."
+        ],
+        "possibilidades_abordagens": [
+          "Análise de produtos do cotidiano do aluno que os permitam compreender a sua composição, para possível identificação de produtos modificados geneticamente (alimentos industrializados, organismos transgênicos, engenharia genética, genoma humano, fecundação in vitro, etc.), acessando periódicos acadêmicos (artigos, documentários, vídeos, entre outros) que permitam um maior esclarecimento sobre o assunto.",
+          "Utilização de sites para pesquisas e construção de argumentos que tragam as implicações éticas sobre alguns aspectos biotecnológicos controversos em casos simulados e júris simulados.",
+          "Exposição, argumentação e negociação de propostas, produtos e serviços utilizando diferentes mídias e ferramentas digitais.",
+          "Exposição de teorias e mecanismos da seleção natural e sexual, utilizando apresentações interativas, vídeos ou infográficos digitais que ilustram exemplos dessas seleções em diferentes populações.",
+          "Negociação da validade de diferentes modelos ou interpretações sobre a evolução e manutenção da diversidade biológica, promovendo debates e colaborações que utilizem plataformas digitais para compartilhar e refinar propostas sobre o tema.",
+          "Construção de portfólios digitais sobre os temas polêmicos em nuvem ou aplicativos de elaboração coletiva com informações coletadas na internet.",
+          "Simulação utilizando os mais diversos tipos de tecnologias digitais e ou ferramentas existentes de modelagem e de produção digital, o processo de especiação em diferentes ambientes.",
+          "Criação de populações virtuais que, ao longo das gerações, se diversificam por isolamento geográfico, reprodutivo ou adaptativo por meio de tecnologias digitais.",
+          "Produção de cartazes digitais ou pequenos vídeos com o uso de inteligência artificial mostrando como novas espécies surgem."
+        ]
+      },
+      "3 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CNT101) Analisar e representar, com ou sem o uso de dispositivos e de aplicativos digitais específicos, as transformações e conservações em sistemas que envolvam quantidade de matéria, de energia e de movimento para realizar previsões sobre seus comportamentos em situações cotidianas e em processos produtivos que priorizem o desenvolvimento sustentável, o uso consciente dos recursos naturais e a preservação da vida em todas as suas formas.",
+          "(EM13CNT104) Avaliar os benefícios e os riscos à saúde e ao ambiente, considerando a composição, a toxicidade e a reatividade de diferentes materiais e produtos, como também o nível de exposição a eles, posicionando-se criticamente e propondo soluções individuais e/ou coletivas para seus usos e descartes responsáveis.",
+          "(EM13CNT206) Discutir a importância da preservação e conservação da biodiversidade, considerando parâmetros qualitativos e quantitativos, e avaliar os efeitos da ação humana e das políticas ambientais para a garantia da sustentabilidade do planeta.",
+          "(EM13CNT105) Analisar os ciclos biogeoquímicos e interpretar os efeitos de fenômenos naturais e da interferência humana sobre esses ciclos, para promover ações individuais e/ou coletivas que minimizem consequências nocivas à vida.",
+          "(EM13CNT203) Avaliar e prever efeitos de intervenções nos ecossistemas, e seus impactos nos seres vivos e no corpo humano, com base nos mecanismos de manutenção da vida, nos ciclos da matéria e nas transformações e transferências de energia, utilizando representações e simulações sobre tais fatores, com ou sem o uso de dispositivos e aplicativos digitais (como softwares de simulação e de realidade virtual, entre outros).",
+          "(EM13CNT309) Analisar questões socioambientais, políticas e econômicas relativas à dependência do mundo atual em relação aos recursos não renováveis e discutir a necessidade de introdução de alternativas e novas tecnologias energéticas e de materiais, comparando diferentes tipos de motores e processos de produção de novos materiais.",
+          "(EM13CNT308) Investigar e analisar o funcionamento de equipamentos elétricos e/ou eletrônicos e sistemas de automação para compreender as tecnologias contemporâneas e avaliar seus impactos sociais, culturais e ambientais."
+        ],
+        "habilidades_especificas": [
+          "(EM13CNT101BIO02PE) Analisar as interações biológicas estabelecidas entre os diferentes organismos e destes com o ambiente, relacionando a estabilidade dos sistemas vivos, com a necessidade de sua preservação/conservação no âmbito local, regional e global, com ou sem o uso de dispositivos e aplicativos digitais.",
+          "(EM13CNT104BIO04PE) Avaliar os impactos causados pelo descarte inadequado de agentes tóxicos provenientes de efluentes industriais/domésticos e resíduos sólidos diversos nas cadeias e teias tróficas, reconhecendo os benefícios/riscos à saúde humana e ao meio ambiente e desenvolvendo um pensamento crítico na busca de soluções viáveis.",
+          "(EM13CNT206BIO10PE) Discutir sobre temáticas ambientais nos diferentes espaços sociais, avaliando os efeitos da ação humana e suas consequências para um planejamento de ações (políticas ambientais) que favoreçam a sustentabilidade local, regional e global.",
+          "(EM13CNT105BIO05PE) Discutir as etapas e processos dos ciclos biogeoquímicos, relacionando os efeitos dos fenômenos naturais e das ações antrópicas sobre o ambiente natural com vistas a desenvolver, de forma argumentativa, propositiva, sua participação em tomadas de decisão em relação às consequências nocivas à vida, como a escassez de recursos naturais renováveis e não renováveis, propondo alternativas sustentáveis.",
+          "(EM13CNT203BIO08PE) Compreender que as ações humanas interferem no meio ambiente, alterando os fatores bióticos e/ou abióticos, causando impactos diretos na qualidade de vida do planeta, reconhecendo possíveis consequências dos danos causados por essas ações aos seres vivos, através da utilização de representações e/ou simulações sobre esses processos, com ou sem o uso de dispositivos e aplicativos digitais (como softwares de simulação e de realidade virtual, entre outros).",
+          "(EM13CNT309BIO22PE) Discutir e apontar caminhos e alternativas tecnológicas relacionadas à intensa utilização dos recursos naturais por parte da sociedade atual, reconhecendo a necessidade de mudança de hábitos frente a utilização das novidades tecnológicas e suas consequências ambientais, buscando minimizar problemas decorrentes do seu uso em nível local, regional e global.",
+          "(EM13CNT308BIO21PE) Investigar o uso de equipamentos elétricos e/ou eletrônicos, sistemas de automação e seus impactos na saúde e no meio ambiente, propondo uma reflexão crítica e construtiva para a utilização destas tecnologias contemporâneas."
+        ],
+        "objetos_conhecimento": [
+          "Introdução à Ecologia. Níveis de Organização Ecológica. Relações Ecológicas. Sucessão Ecológica. Biomas.",
+          "Impactos naturais e antrópicos sobre os ecossistemas.",
+          "Ciclos Biogeoquímicos.",
+          "Interferência Humana.",
+          "Tecnologias ambientais e práticas sustentáveis.",
+          "Recursos naturais renováveis e não renováveis."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO11) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico.",
+          "(EM13CO12) Produzir, analisar, gerir e compartilhar informações a partir de dados, utilizando princípios de ciência de dados.",
+          "(EM13CO13) Analisar e utilizar as diferentes formas de representação e consulta a dados em formato digital para pesquisas científicas.",
+          "(EM13CO21) Comunicar ideias complexas de forma clara por meio de objetos digitais como mapas conceituais, infográficos, hipertextos e outros.",
+          "(EM13CO19) Expor, argumentar e negociar propostas, produtos e serviços, utilizando diferentes mídias e ferramentas digitais.",
+          "(EM13CO20) Criar conteúdos, disponibilizando-os em ambientes virtuais para publicação e compartilhamento, avaliando a confiabilidade e as consequências da disseminação dessas informações.",
+          "(EM13CO10) Conhecer os fundamentos da Inteligência Artificial, comparando-a com a inteligência humana, analisando suas potencialidades, riscos e limites.",
+          "(EM13CO16) Desenvolver projetos com robótica, utilizando artefatos físicos ou simuladores.",
+          "(EM13CO18) Planejar e gerenciar projetos integrados às áreas de conhecimento de forma colaborativa, solucionando problemas, usando diversos artefatos computacionais.",
+          "(EM13CO22) Produzir e publicar conteúdo como textos, imagens, áudios, vídeos e suas associações, bem como ferramentas para sua integração, organização e apresentação, utilizando diferentes mídias digitais."
+        ],
+        "possibilidades_abordagens": [
+          "Utilização de mapas, fotos comparativas da localidade e imagens de satélites, para comparar áreas degradadas por ações naturais e antrópicas.",
+          "Utilização de modelos computacionais para simular e prever o comportamento de sistemas ambientais diante de diferentes cenários de desequilíbrios ambientais.",
+          "Identificação dos potenciais impactos sobre os ecossistemas ao explorar como fatores como poluição, desmatamento ou mudanças climáticas podem afetar a biodiversidade, a dinâmica populacional por meio de sites confiáveis.",
+          "Elaboração de mapas conceituais e mentais para correlacionar conceitos básicos de ecologia e interações biológicas.",
+          "Comunicação de ideias complexas sobre as diversas formas de interferência humana no meio ambiente e nos sistemas biológicos criando mapas conceituais para ilustrar as relações de causa e efeito das ações humanas no planeta.",
+          "Utilização de infográficos para apresentar dados sobre o impacto ambiental de certas atividades ou hipertextos que explorem de forma aprofundada temas como o uso de recursos, a poluição ou as mudanças climáticas causadas pela atividade humana.",
+          "Produção e apresentação de informações críticas sobre a Interferência Humana no ambiente, utilizando ferramentas digitais.",
+          "Representação de problemas delimitados em conjunto com outras áreas, como na Biologia, e partir de esboço geral para níveis crescentes de detalhamento.",
+          "Utilização de bibliotecas de código de dados utilizando os mais diversos tipos de tecnologias digitais e ou ferramentas existentes (como a plataforma Chico Mendes ou IBGE).",
+          "Identificação das potencialidades da Inteligência Artificial (IA) na otimização e desenvolvimento de tecnologias ambientais e práticas sustentáveis.",
+          "Estímulo à reflexão crítica sobre como a inteligência humana, com sua capacidade de julgamento ético e compreensão holística dos ecossistemas, pode guiar o desenvolvimento e a aplicação da IA de forma responsável para enfrentar os desafios ambientais e promover um futuro mais sustentável.",
+          "Desenvolvimento de projetos ambientais utilizando kits físicos de robótica e simuladores instalados em dispositivos computacionais ou online.",
+          "Promoção de debates que utilizem plataformas digitais para compartilhar propostas sobre tecnologias ambientais e práticas sustentáveis."
+        ]
+      }
+    }
+  },
+  "deteccao_confiavel": true,
+  "gerado_em": "2026-08-04T12:17",
+  "arquivo_origem": "Biologia_Organizador-Curricular-Trimestral-da-FGB.pdf"
+}

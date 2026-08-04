@@ -1,0 +1,190 @@
+{
+  "disciplina": "Sociologia",
+  "tem_computacao": true,
+  "conteudo": {
+    "1 ANO": {
+      "1 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CHS103) Elaborar hipóteses, selecionar evidências e compor argumentos relativos a processos políticos, econômicos, sociais, ambientais, culturais e epistemológicos, com base na sistematização de dados e informações de diversas naturezas (expressões artísticas, textos filosóficos e sociológicos, documentos históricos e geográficos, gráficos, mapas, tabelas, tradições orais, entre outros)."
+        ],
+        "habilidades_especificas": [
+          "(EM13CHS103SOC03PE) Compreender a Sociologia no âmbito das Ciências Sociais, sua origem, objeto e objetivos, utilizando seus métodos como instrumentos para conhecer e produzir conhecimentos científicos sobre a realidade."
+        ],
+        "objetos_conhecimento": [
+          "A relação entre indivíduo e sociedade: socialização e sociabilidade;",
+          "A formação das Ciências Sociais: Sociologia, Antropologia e Ciência Política; origem, objeto de estudo, objetivos e processo de organização ciência, senso comum e o mito do cientificismo.",
+          "O que é Sociologia: o surgimento e o desenvolvimento da Sociologia como ciência; o saber científico; a contribuição da Sociologia para a compreensão da vida social; fundamentos epistemológicos da Sociologia: o processo de desnaturalização e o estranhamento da realidade; métodos de análise e instrumentos de pesquisa das Ciências Sociais."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO24) Identificar e reconhecer como as redes sociais e artefatos computacionais em geral interferem na saúde física e mental de seus usuários."
+        ],
+        "possibilidades_abordagens": [
+          "Promoção e sensibilização dos estudantes sobre o impacto do uso excessivo das tecnologias na saúde, considerando aspectos físicos, sociais e emocionais. Nesse contexto, é possível abordar questões como depressão, fobias, baixa autoestima, lesões por movimentos repetitivos e isolamento social, relacionando a expansão das redes digitais ao papel da Sociologia em explicar novos fenômenos sociais."
+        ]
+      },
+      "2 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CHS101) Identificar, analisar e comparar diferentes fontes e narrativas expressas em diversas linguagens, com vistas à compreensão de ideias filosóficas e de processos e eventos históricos, geográficos, políticos, econômicos, sociais, ambientais e culturais."
+        ],
+        "habilidades_especificas": [
+          "(EM13CHS101SOC01PE) Analisar temas, fenômenos e processos sociais, econômicos, políticos e culturais com base em concepções clássicas e contemporâneas da Sociologia, fomentando a imaginação sociológica por meio de diferentes narrativas e fontes que explicam a vida social."
+        ],
+        "objetos_conhecimento": [
+          "A relação entre indivíduo e sociedade: socialização e sociabilidade.",
+          "Perspectivas sociológicas clássicas: fatos sociais (Durkheim), ação social (Weber) e classes sociais (Marx) e suas relações com a sociedade brasileira.",
+          "Perspectivas sociológicas contemporâneas: Anthony Giddens e o conceito de estruturação; Pierre Bourdieu e os conceitos de capital, campo e habitus; Zygmunt Bauman e o conceito de modernidade líquida."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO23) Analisar criticamente as experiências em comunidades virtuais e as relações advindas da interação e comunicação com outras pessoas, bem como seus impactos na sociedade.",
+          "(EM13CO13) Analisar e utilizar as diferentes formas de representação e consulta a dados em formato digital para pesquisas científicas."
+        ],
+        "possibilidades_abordagens": [
+          "Relação entre comunidades virtuais e conceitos clássicos: fatos sociais (Durkheim), ações sociais (Weber) e desigualdades como expressão de classes sociais (Marx). Interpretação de fenômenos digitais a partir de teorias como a estruturação das interações online (Giddens), os capitais simbólicos e culturais nas redes (Bourdieu), e a fluidez e instabilidade das relações digitais e interpessoais na sociedade do descarte (Bauman). Exemplo: realizar pesquisas sobre fenômenos digitais contemporâneos, como fake news, bolhas sociais e influenciadores.",
+          "Análise de dados digitais para identificar padrões de socialização, comportamento coletivo e desigualdades sociais, interpretar ações individuais e coletivas em redes sociais, movimentos e hábitos culturais, e mostrar como estruturas sociais e diferentes tipos de capital se expressam e mudam na sociedade digital."
+        ]
+      },
+      "3 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CHS102) Identificar, analisar e discutir as circunstâncias históricas, geográficas, políticas, econômicas, sociais, ambientais e culturais de matrizes conceituais (etnocentrismo, racismo, evolução, modernidade, cooperativismo/desenvolvimento etc.), avaliando criticamente seu significado histórico e comparando-as a narrativas que contemplem outros agentes e discursos."
+        ],
+        "habilidades_especificas": [
+          "(EM13CHS102SOC02PE) Analisar criticamente os contextos sociais, políticos, econômicos e culturais da modernidade e suas transformações ao longo das sociedades contemporâneas, nos quais emergiram os conceitos de etnocentrismo, evolucionismo, racismo e civilização."
+        ],
+        "objetos_conhecimento": [
+          "Conceito de cultura; concepções de etnocentrismo, relativismo cultural como crítica ao etnocentrismo; evolucionismo, antropocentrismo; raça, etnia, etnicidade, multiculturalismo, identidade; racismo e modernidade; alteridade e distinção entre natureza e cultura; comunidade; processo civilizador (Lévi-Strauss,"
+        ],
+        "habilidades_computacao": [
+          "(EM13CO25) Dialogar em ambientes virtuais com segurança e respeito às diferenças culturais e pessoais, reconhecendo e denunciando atitudes abusivas."
+        ],
+        "possibilidades_abordagens": [
+          "Análise sobre como as tecnologias digitais transformam práticas culturais e identidades sociais e como seu uso pode gerar visões etnocêntricas e também como o relativismo cultural contribui para compreender diferentes realidades digitais; reflexão sobre como a inclusão ou exclusão digital reforça ou combate desigualdades sociais, raciais e étnicas, relacionando os avanços tecnológicos às"
+        ]
+      }
+    },
+    "2 ANO": {
+      "1 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CHS104) Analisar objetos e vestígios da cultura material e imaterial de modo a identificar conhecimentos, valores, crenças e práticas que caracterizam a identidade e a diversidade cultural de diferentes sociedades inseridas no tempo e no espaço.",
+          "(EM13CHS302) Analisar e avaliar criticamente os impactos econômicos e socioambientais de cadeias produtivas ligadas à exploração de recursos naturais e às atividades agropecuárias em diferentes ambientes e escalas de análise, considerando o modo de vida das populações locais – entre elas as indígenas, quilombolas e demais comunidades tradicionais –, suas práticas agroextrativistas e o compromisso com a sustentabilidade."
+        ],
+        "habilidades_especificas": [
+          "(EM13CHS104SOC04PE) Distinguir e valorizar objetos e elementos da cultura material e imaterial de diferentes povos e grupos étnico-raciais, pesquisando, reconhecendo e respeitando as diversidades socioculturais e identitárias e suas multiplicidades de conhecimentos, crenças, valores e práticas culturais.",
+          "(EM13CHS302SOC07PE) - Identificar e caracterizar questões relativas à exclusão e à inclusão precária dos povos indígenas, afrodescendentes e quilombolas nas políticas públicas brasileiras, a partir de indicadores econômicos, políticos, sociais, socioambientais, culturais e educacionais."
+        ],
+        "objetos_conhecimento": [
+          "Perspectivas dos estudos culturais: concepções de cultura; cultura material e imaterial, cultura erudita e cultura popular; processos de interação social e cultural; identidade cultural, multiculturalismo e interculturalidade; relações étnico-raciais; contracultura; sistemas simbólicos, valores culturais e ideológicos; ideologia e comportamento social; a discussão pós-colonial; Boaventura de Souza Santos; Frantz Fanon.",
+          "Desigualdade no Brasil: colonização, colonialismo e patriarcalismo como estruturas da desigualdade; Decolonialidade, Desigualdades étnico-raciais como fatores estruturantes da sociedade brasileira e valorização dos saberes dos povos originários e dos povos e comunidades tradicionais (Decreto 11.481/2023)"
+        ],
+        "habilidades_computacao": [
+          "(EM13CO22) Produzir e publicar conteúdo como textos, imagens, áudios, vídeos e suas associações, bem como ferramentas para sua integração, organização e apresentação, utilizando diferentes mídias digitais.",
+          "(EM13CO14) Avaliar a confiabilidade das informações encontradas em meio digital, investigando seus modos de construção e considerando a autoria, a estrutura e o propósito da mensagem."
+        ],
+        "possibilidades_abordagens": [
+          "Seleção e utilização de tecnologias e ferramentas digitais adequadas para integrar recursos, como a inserção de vídeos em blogs, criação de campanhas ou blogs educativos, ou desenvolvimento de redes de apoio digital escolar, de acordo com o propósito da mensagem e o público-alvo, analisando criticamente as dinâmicas sociais e culturais das comunidades virtuais e investigando perspectivas dos estudos culturais, interações sociais e impactos na sociedade para a promoção do protagonismo juvenil.",
+          "Análise das informações encontradas em meios digitais, com capacidade de identificação de sua confiabilidade, atualidade, autoria (instituição e/ou indivíduo), relação da mensagem com a visão do(s) autor(es) e originalidade do texto."
+        ]
+      },
+      "2 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CHS303) - Debater e avaliar o papel da indústria cultural e das culturas de massa no estímulo ao consumismo, seus impactos econômicos e socioambientais, com vistas à percepção crítica das necessidades criadas pelo consumo e a adoção de hábitos sustentáveis."
+        ],
+        "habilidades_especificas": [
+          "(EM13CHS303ASOC08PE) Identificar o papel da cultura de massa na formação, na reprodução e reinterpretação de ideologias, investigando as mudanças sociais, culturais e políticas decorrentes das transformações técnicas, tecnológicas e informacionais desde a criação das indústrias culturais até o advento da internet e das plataformas digitais."
+        ],
+        "objetos_conhecimento": [
+          "A Escola de Frankfurt e a indústria cultural: conceitos de cultura de massa, alienação, reificação e fetichismo; consumo, consumismo; comunicação, informação e ideologia; indústria cultural no Brasil - meios de comunicação de massa, culturas locais e regionais; Ciência, tecnologia e inovação no mundo contemporâneo; sociedade em rede (Castells); modernidade líquida (Bauman) e outras; Desenvolvimento tecnológico - internet, e plataformas digitais; cibercultura, sociedade do cansaço, sociedade do ócio."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO14) Avaliar a confiabilidade das informações encontradas em meio digital, investigando seus modos de construção e considerando a autoria, a estrutura e o propósito da mensagem.",
+          "(EM13CO10) Conhecer os fundamentos da Inteligência Artificial, comparando-a com a inteligência humana, analisando suas potencialidades, riscos e limites."
+        ],
+        "possibilidades_abordagens": [
+          "Discussão sobre a solidão em rede, os impactos das redes nos padrões de consumo e a relação entre ideologia e comportamento de consumo. Análise crítica do fenômeno social dos jogos de azar (como apostas esportivas) entre os jovens, considerando seus impactos sociais, econômicos e culturais, suas implicações nas relações de consumo e na construção de identidades juvenis, além dos dilemas éticos relacionados ao vício, à exploração econômica, à cibercultura e à desinformação, verificando a origem das \"fake news\" por meio das fontes originais de publicação. Reflexão sobre os efeitos da Inteligência Artificial na sociedade para o reconhecimento de suas potencialidades e riscos, como tendências de algoritmos que aprofundam desigualdades sociais, reforçam a alienação, promovem o consumo de massa em plataformas de streaming, impactam o trabalho, a educação, a saúde e o lazer, e contribuem para a superficialização do conhecimento entre os jovens, considerando também seus limites, como a ausência de consciência, a incapacidade de empatia e a dependência da programação humana."
+        ]
+      },
+      "3 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CHS205) Analisar a produção de diferentes territorialidades em suas dimensões culturais, econômicas, ambientais, políticas e sociais, no Brasil e no mundo contemporâneo, com destaque para as culturas juvenis."
+        ],
+        "habilidades_especificas": [
+          "(EM13CHS205SOC06PE) Compreender e caracterizar as culturas juvenis, identificando seus significados e formas de cooperação social, além de problematizar questões como sexualidade, drogas, violência, criminalidade e relações de poder com"
+        ],
+        "objetos_conhecimento": [
+          "Juventudes, cultura juvenil, território juvenil, identidades e consumo, relações de poder e instituições sociais; juventude e o exercício da cidadania."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO23) Analisar criticamente as experiências em comunidades virtuais e as relações advindas da interação e comunicação com"
+        ],
+        "possibilidades_abordagens": [
+          "Estímulo à reflexão dos estudantes sobre o diálogo e o alcance das mensagens em comunidades virtuais para considerar aspectos positivos e negativos em contextos pessoais, estudantis, profissionais, com possibilidade de discutir seu uso na pesquisa científica, no avanço"
+        ]
+      }
+    },
+    "3 ANO": {
+      "1 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CHS601) Identificar e analisar as demandas e os protagonismos políticos, sociais e culturais dos povos indígenas e das populações afrodescendentes (incluindo as quilombolas) no Brasil contemporâneo considerando a história das Américas e o contexto de exclusão e inclusão precária desses grupos na ordem social e econômica atual, promovendo ações para a redução das desigualdades étnico-raciais no país."
+        ],
+        "habilidades_especificas": [
+          "(EM13CHS601SOC12PE) Relacionar identidades coletivas e movimentos sociais, explicitando suas mudanças, interações, ambiguidades e formas de atuação, além de investigar o papel desses movimentos na promoção da justiça socioambiental identificando suas Estratégias e desafios."
+        ],
+        "objetos_conhecimento": [
+          "O que é um movimento social e quais são suas implicações históricas, sociais, culturais e políticas para a vida em sociedade; Tipos e contextos sociais, econômicos, políticos e culturais dos movimentos sociais: de classe, do campo, urbanos, ambientalistas, indígenas, quilombolas e de mulheres. Diferenças e coexistência entre movimentos sociais tradicionais, novos movimentos sociais e movimentos sociais contemporâneos; Comunidades tradicionais e o direito à terra; política agrícola brasileira; participação feminina nos processos produtivos e o papel das mulheres na agricultura familiar."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO17) Construir redes virtuais de interação e colaboração, favorecendo o desenvolvimento de projetos de forma segura, legal e ética."
+        ],
+        "possibilidades_abordagens": [
+          "Utilização das redes virtuais de forma segura, ética e colaborativa para estudar movimentos sociais, criando projetos digitais que explorem como diferentes identidades coletivas se organizam e interagem, reflexão sobre estratégias e desafios; construção de redes colaborativas para estudar, divulgar e propor soluções relacionadas à justiça socioambiental; mapeamento e análise dos movimentos sociais em ambientes digitais, comparando ações de grupos tradicionais e contemporâneos e seus impactos nas comunidades."
+        ]
+      },
+      "2 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CHS404) Identificar e discutir os múltiplos aspectos do trabalho em diferentes circunstâncias e contextos históricos e/ou geográficos e seus efeitos sobre as gerações, em especial, os jovens, levando em consideração, na atualidade, as transformações técnicas, tecnológicas e informacionais.",
+          "(EM13CHS503) Identificar diversas formas de violência (física, simbólica, psicológica etc.), suas principais vítimas, suas causas sociais, psicológicas e afetivas, seus significados e usos políticos, sociais e culturais, discutindo e avaliando mecanismos para combatê-las, com base em argumentos éticos."
+        ],
+        "habilidades_especificas": [
+          "(EM13CHS404SOC10PE) Compreender os fundamentos econômicos das sociedades contemporâneas e suas implicações na vida social, associando criticamente indicadores de trabalho, emprego, transformações tecnológicas, renda e escolaridade, no Brasil e no mundo, aos processos de estratificação e desigualdade socioeconômica, além das inclusões e exclusões de grupos sociais no mundo do trabalho.",
+          "(EM13CHS503SOC11PE) Compreender as consequências provocadas pelo patriarcalismo, dentre elas a desigualdade entre gêneros e os fenômenos violentos naturalizados nas relações de poder, de forma a desnaturalizar as violências e as estruturas sociais da desigualdade."
+        ],
+        "objetos_conhecimento": [
+          "Estratificação e desigualdades socioeconômicas: processos e modos de produção, trabalho, mercadoria, mercado de trabalho, precarização do trabalho, emprego, subemprego e desemprego; Educação, escolaridade, relações de produção e circulação de riquezas; Transformações tecnológicas e o mundo do trabalho; inclusão e exclusão tecnológica de jovens, adultos, idosos (etarismo) e pessoas com deficiência.",
+          "Desigualdade entre gêneros no Brasil e no mundo; Estrutura das sociedades patriarcais: violência e relações de poder; violência contra a população LGBTQIA PN+, violência doméstica, sexual, feminina, infantil, na escola; formas de violência: física, simbólica, psicológica, econômica; O movimento de sororidade no Brasil e no mundo como resposta da sociedade civil à desigualdade de gênero e aos direitos preteridos das mulheres; Desigualdade de gênero e interseccionalidade."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO25) Dialogar em ambientes virtuais com segurança e respeito às diferenças culturais e pessoais, reconhecendo e denunciando atitudes abusivas.",
+          "(EM13CO25) Dialogar em ambientes virtuais com segurança e respeito às diferenças culturais e pessoais, reconhecendo e denunciando atitudes abusivas."
+        ],
+        "possibilidades_abordagens": [
+          "Utilização de ferramentas digitais para coletar e analisar indicadores de trabalho, emprego, renda e escolaridade, relacionando-os à realidade socioeconômica do Brasil e do mundo. Criação de projetos colaborativos que investiguem desigualdades no mundo do trabalho e proponham soluções baseadas em dados e informações digitais. Desenvolvimento de projetos que explorem como a tecnologia impacta o trabalho e como diferentes grupos são incluídos ou excluídos, considerando idade, deficiência e escolaridade. Elaboração de projetos digitais que cruzem dados econômicos, sociais e tecnológicos, permitindo visualizar desigualdades e propor soluções interdisciplinares.",
+          "Uso de ferramentas digitais para coletar postagens de redes sociais, identificando padrões de preconceito e discriminação, analisando-os com recursos como nuvens de palavras e gráficos, e, em seguida, criar campanhas virtuais que promovam segurança digital e respeito às diferenças."
+        ]
+      },
+      "3 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CHS501) - Analisar os fundamentos da ética em diferentes culturas, tempos e espaços, identificando processos que contribuem para a formação de sujeitos éticos que valorizem a liberdade, a cooperação, a autonomia, o empreendedorismo, a convivência democrática e a solidariedade.",
+          "(EM13CHS304) - Analisar os impactos socioambientais decorrentes de práticas de instituições governamentais, de empresas e de indivíduos, discutindo as origens dessas práticas, selecionando, incorporando e promovendo aquelas que favoreçam a consciência e a ética socioambiental e o consumo responsável."
+        ],
+        "habilidades_especificas": [
+          "(EM13CHS501SOC13PE) Compreender a importância da sociedade civil organizada no Brasil e no mundo como agente de luta e resistência aos totalitarismos e autoritarismos de Estado, identificando conexões e interações entre o Estado Democrático de Direito, os fundamentos dos direitos de cidadania e os princípios éticos da Declaração Universal dos Direitos Humanos.",
+          "(EM13CHS304SOC09PE) Compreender as inter-relações entre sociedade e natureza a partir de dinâmicas de poder (entre países, localidades, classes sociais, etnias, gêneros e outros marcadores sociais), de modo a identificar as causas estruturais dos problemas socioambientais e propor soluções que promovam justiça e equilíbrio socioambiental."
+        ],
+        "objetos_conhecimento": [
+          "Definição de Nação, Estado, Poder, Política, Sistemas Políticos, Ideologia, Partidos Políticos, Sociedade Civil Organizada, Cidadania, Participação Política; Formação do Estado Brasileiro: patriarcalismo, coronelismo, clientelismo e patrimonialismo; Organização do Estado Brasileiro: regimes políticos e períodos de democracia e ditadura; Características do Estado Democrático de Direito brasileiro, Constituição Federal 1988; Direitos Humanos e a Declaração Universal de 1948: princípios e valores; os desafios atuais: Guerras híbridas, Necropolítica, Lawfare (Achille Mbembe).",
+          "Sociedade e Meio Ambiente; Políticas públicas e legislação ambiental; Ecologia política; Justiça Ambiental e Racismo Ambiental; Eras socioecológicas: Antropoceno, Capitaloceno, Plantationoceno, Chthuluceno."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO26) Aplicar os conceitos e pressupostos do direito digital em sua conduta e experiências com o cotidiano da cultura digital, bem como na produção e uso de artefatos computacionais.",
+          "(EM13CO19) Expor, argumentar e negociar propostas, produtos e serviços utilizando diferentes mídias e ferramentas digitais."
+        ],
+        "possibilidades_abordagens": [
+          "Acesso de textos, documentos e materiais sobre cidadania, sociedade civil, Estado, nação e poder em acervos digitais, através da criação de infográficos, mapas visuais e linhas do tempo sobre história política, cidadania e ideologia; promoção de debates sobre democracia e participação política em fóruns online, Google Classroom e Edmodo; e utilização de jogos educativos sobre democracia e direitos humanos. Trabalho sobre reflexão crítica do uso de tecnologias digitais na participação política e na defesa dos direitos humanos, discutindo os impactos das redes sociais, das plataformas digitais e da inteligência artificial na democracia e na cidadania, bem como as questões legais relacionadas ao uso das redes sociais, como ética, regulação, cyberbullying, liberdade de expressão e responsabilidade.",
+          "Observação de como a relação entre usuários das redes sociais e algoritmos podem contribuir para compreender a formação de opinião das pessoas sobre temas como consumo, política, entre outros. Promoção de Interface entre Sociologia e Computação que pode se concretizar em atividades que conectem os conceitos de justiça socioambiental, participação cidadã e ética digital, por meio da análise de dados ambientais (desmatamento, queimadas, poluição, mudanças climáticas) e com uso de ferramentas digitais, relacionando-os às desigualdades sociais e territoriais."
+        ]
+      }
+    }
+  },
+  "deteccao_confiavel": true,
+  "gerado_em": "2026-08-04T13:05",
+  "arquivo_origem": "Sociologia_Organizador-Curricular-Trimestral-da-FGB.pdf"
+}

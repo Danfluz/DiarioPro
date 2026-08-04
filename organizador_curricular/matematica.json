@@ -1,0 +1,457 @@
+{
+  "disciplina": "Matemática",
+  "tem_computacao": true,
+  "conteudo": {
+    "1 ANO": {
+      "1 UNIDADE": {
+        "habilidades_area": [
+          "(EM13MAT313) Utilizar, quando necessário, a notação científica para expressar uma medida, compreendendo as noções de algarismos significativos e algarismos duvidosos, e reconhecendo que toda medida é inevitavelmente acompanhada de erro.",
+          "(EM13MAT314) Resolver e elaborar problemas que envolvem grandezas determinadas pela razão ou pelo produto de outras (velocidade, densidade demográfica, energia elétrica etc.).",
+          "(EM13MAT103) Interpretar e compreender textos científicos ou divulgados pelas mídias, que empregam unidades de medida de diferentes grandezas e as conversões possíveis entre elas, adotadas ou não pelo Sistema Internacional (SI), como as de armazenamento e velocidade de transferência de dados, ligadas aos avanços tecnológicos.",
+          "(EM13MAT301) Resolver e elaborar problemas do cotidiano, da Matemática e de outras áreas do conhecimento, que envolvem equações lineares simultâneas, usando técnicas algébricas e gráficas, com ou sem apoio de tecnologias digitais.",
+          "(EM13MAT510) Investigar conjuntos de dados relativos ao comportamento de duas variáveis numéricas, usando ou não tecnologias da informação, e, quando apropriado, levar em conta a variação é utilizar uma reta para descrever a relação observada.",
+          "(EM13MAT201) Propor ou participar de ações adequadas às demandas da região, preferencialmente para sua comunidade, envolvendo medições e cálculos de perímetro, de área, de volume, de capacidade ou de massa.",
+          "(EM13MAT307) Empregar diferentes métodos para a obtenção da medida da área de uma superfície (reconfigurações, aproximação por cortes etc.) e deduzir expressões de cálculo para aplicá-las em situações reais (como o remanejamento e a distribuição de plantações, entre outros), com ou sem apoio de tecnologias digitais."
+        ],
+        "habilidades_especificas": [
+          "(EM13MAT313PE29) Utilizar, quando necessário, a notação científica e sua ordem de grandeza, para expressar medida, compreendendo as noções de algarismos significativos e duvidosos, reconhecendo que toda medida é uma aproximação, consequência das limitações de sentido e imprecisão dos instrumentos, com e/ou sem apoio de tecnologias digitais.",
+          "(EM13MAT314PE30) Resolver e elaborar situações-problema, envolvendo grandezas determinadas pela razão ou pelo produto de outras, explorando a noção de grandezas como aceleração, densidade, energia elétrica, entre outras.",
+          "(EM13MAT103PE05) Compreender a ideia de grandeza e as conversões possíveis entre elas, identificando-as a partir de experimentos, textos científicos e/ou midiáticos.",
+          "(EM13MAT103PE06) Interpretar textos científicos ou midiáticos, identificando unidades de medida de diferentes grandezas como também as conversões possíveis entre essas unidades inseridas ou não no Sistema Internacional (SI) como, por exemplo, quilômetro; toneladas; megabyte, entre outras.",
+          "(EM13MAT301PE17) Resolver e elaborar situações-problema do cotidiano, envolvendo a matemática e/ou outros domínios do conhecimento em torno das equações lineares simultâneas, por exemplo, sistemas de equações do 1º grau, utilizando técnicas algébricas (substituição, escalonamento etc.) e gráficas, com e/ou sem apoio de tecnologias digitais.",
+          "(EM13MAT510PE49) Investigar conjuntos de dados relativos ao comportamento de duas variáveis numéricas de acordo com a lei de formação que determina o comportamento das variáveis, usando ou não tecnologias da informação, e, quando apropriado, levando em conta a variação e utilização de uma reta para descrever a relação observada.",
+          "(EM13MAT201PE13) Propor ou participar de ações adequadas às demandas de sua região e/ou de sua comunidade, envolvendo medições e cálculos de perímetro, área, volume, capacidade e massa, entre outros, relacionando as funções algébricas e os diferentes campos do conhecimento, com e/ou sem o uso de tecnologias digitais.",
+          "(EM13MAT201PE14) Mobilizar conceitos e propriedades para estabelecer as fórmulas de medida da área e do volume em figuras geométricas, podendo associá-las aos conceitos de \"função área\" e de \"função volume\", com e/ou sem o uso de tecnologias digitais.",
+          "(EM13MAT307PE23) Utilizar diferentes modelos de situações-problema para a obtenção da medida da área de uma superfície por meio, por exemplo, da aproximação por cortes, composição e decomposição, entre outros, deduzindo expressões de cálculos, com e/ou sem apoio de tecnologias digitais."
+        ],
+        "objetos_conhecimento": [
+          "Notação Científica. Medidas. Ordem de Grandeza. Algarismos significativos e duvidosos.",
+          "Grandezas: razão ou produto de outras grandezas",
+          "Ideia e Conversão de Grandezas",
+          "Unidades de Medida de uma Grandeza; Sistema Internacional (SI)",
+          "Equações lineares e sistemas de equações do 1º grau e sua representação gráfica.",
+          "Variáveis numéricas e Conjunto de dados numéricos.",
+          "Medição e cálculo de perímetro, área, volume, capacidade e massa. Funções Algébricas aplicadas à essas grandezas.",
+          "Conceitos, Propriedades e Medidas de Área e Volume",
+          "Área de figuras geométricas planas."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO03) Identificar o comportamento dos algoritmos no que diz respeito ao consumo de recursos como tempo de execução, espaço de memória e energia, entre outros.",
+          "(EM13CO01) Explorar e construir a solução de problemas por meio da reutilização de partes de soluções existentes.",
+          "(EM13CO03) Identificar o comportamento dos algoritmos no que diz respeito ao consumo de recursos como tempo de execução, espaço de memória e energia, entre outros.",
+          "(EM13CO12) Produzir, analisar, gerir e compartilhar informações a partir de dados, utilizando princípios de ciência de dados.",
+          "(EM13CO11) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico.",
+          "(EM13CO09) Identificar tecnologias digitais, sua presença e formas de uso, nas diferentes atividades no mundo do trabalho.",
+          "(EM13CO12) Produzir, analisar, gerir e compartilhar informações a partir de dados, utilizando princípios de ciência de dados.",
+          "(EM13CO14) Avaliar a confiabilidade das informações encontradas em meio digital, investigando seus modos de construção e considerando a autoria, a estrutura e o propósito da mensagem.",
+          "(EM13CO04) Reconhecer o conceito de metaprogramação como uma forma de generalização na construção de programas, permitindo que algoritmos sejam entrada ou saída para outros algoritmos.",
+          "(EM13CO11) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico.",
+          "(EM13CO04) Reconhecer o conceito de metaprogramação como uma forma de generalização na construção de programas, permitindo que algoritmos sejam entrada ou saída para outros algoritmos.",
+          "(EM13CO11) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico.",
+          "(EM13CO11) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico."
+        ],
+        "possibilidades_abordagens": [
+          "Aplicação da notação científica e o conceito de ordem de grandeza para quantificar e comunicar o consumo de recursos dos algoritmos, como expressar tempos de execução muito pequenos ou espaços de memória muito grandes (bytes, gigabytes ou terabytes); Uso de ferramentas como planilhas eletrônicas para realizar experimentos, coleta de dados sobre o desempenho dos algoritmos, aplicando a notação científica e análise de grandezas para interpretar esses resultados.",
+          "Compreensão do processo fundamental das operações básicas como potências aplicadas às notações científicas com o viés diálogo, ativo e construtivo na construção do conhecimento científico com o uso das TIC'S, no cotidiano dos discentes, de maneira formativa e processual.",
+          "Avaliação do tempo de execução e da memória consumida pelo programa, utilizando funções matemáticas (polinomiais, logarítmicas, exponenciais) para descrever o consumo de recursos. Medida da eficiência: Uso de unidades do SI, como segundos para o tempo de execução e bytes para a memória, para quantificar e comparar a eficiência de diferentes soluções. Avaliação do consumo de energia: Medida do consumo energético do computador ou dispositivo, ao executar o algoritmo, utilizando unidades como o Joule ou o Watt.",
+          "Aplicação de modelos ou fórmulas matemáticas que expressam relações entre grandezas; Utilização de planilhas eletrônicas ou softwares de programação visual; Construção de modelos que simulem a aceleração de um objeto se a força ou a massa forem alteradas, ou o como o gasto de energia elétrica muda ao usar aparelhos por mais tempo.",
+          "Medição e Análise de Recursos Computacionais como Grandezas Matemáticas. Exploração das conversões possíveis entre essas unidades (converter milissegundos para segundos, kilobytes para megabytes). Uso de ferramentas de geometria dinâmica ou planilhas eletrônicas para plotar gráficos do consumo de recursos em função do tamanho da entrada.",
+          "Análise crítica de Informações sobre Tecnologia e Consumo de Recursos. Apresentação de textos científicos ou midiáticos que discutam a capacidade de armazenamento de dispositivos, a velocidade de processamento de computadores ou consumo de energia de centros de dados.",
+          "Pesquisa e análise a partir da extração de dados/informações, utilizando ferramentas computacionais como planilhas, bancos de dados, ferramentas estatísticas e técnicas de aprendizado de máquina.",
+          "Criação de um modelo computacional simples, utilizando uma planilha eletrônica avançada ou um programa básico para simular e fazer previsões sobre o consumo de energia de uma casa ao longo do tempo. O modelo permite a inserção de variáveis como o custo fixo mensal e o custo por quilowatt-hora (kWh), além do consumo mensal estimado. Criação de outros modelos matemáticos no formato de planilhas, associando a uma diversidade de situação do cotidiano. Estudo da programação linear.",
+          "Aplicação de tecnologias digitais para analisar e interpretar dados quantitativos em cenários práticos do mundo do trabalho. Simulação de um ambiente de trabalho para analisar o desempenho de vendas de um produto ao longo de vários meses. Identificação de uma tecnologia digital apropriada, como um software de planilha eletrônica, para demonstrar a eficiência da ferramenta para essa tarefa. Utilização das funcionalidades da planilha, para investigar a relação entre o tempo e o volume de vendas.",
+          "Aplicação de ferramentas de análise gráfica para visualizar padrões de crescimento ou declínio, e até mesmo traçar uma linha para descrever essa relação, como uma tendência linear. Análise de dados no contexto da ciência de dados para o estudante que frequentemente se depara com informações quantitativas. Proposta de atividades para compreensão das unidades de medida em que esses dados são apresentados, como bytes, megabytes, gigabytes, terabytes, ou bits por segundo, considerados essenciais para uma interpretação correta e significativa. Análise da \"gestão\" e \"compartilhamento\" de informações a partir de dados que, muitas vezes, exigem a conversão entre diferentes unidades de medida. Análise crítica das informações no meio digital, atentando para a confiabilidade da informação, sua atualidade, quem a produziu (autoria), a relação da mensagem com a visão dos autores e a originalidade do texto. Avaliação da origem de postagens de \"fake news\" por meio da busca de locais originais de publicação.",
+          "Elaboração de modelos de planta baixa e ou modelos tridimensionais. Simulação de Cenários Geométricos: criação de modelos computacionais para simular o comportamento de figuras e sólidos geométricos em diferentes contextos. Análise de dados reais por meio de um modelo computacional que pode considerar as áreas das janelas, paredes e telhado (medidas de área e volume) para prever a eficiência energética em diferentes condições climáticas.",
+          "Elaboração de modelos de planta baixa e/ou modelos tridimensionais para calcular áreas de cômodos e determinar o dimensionamento do ar-condicionado, a necessidade de iluminação, quantidade máxima de pessoas circulando no ambiente e volumes de reservatórios para uma residência. Simulação de cenários geométricos: criação de modelos computacionais para simular o comportamento de figuras e sólidos geométricos em diferentes contextos. Análise de dados reais, por meio da utilização de um modelo computacional que pode considerar as áreas das janelas, paredes e telhado (medidas de área e volume) para prever a eficiência energética em diferentes condições climáticas.",
+          "Criação e exploração de modelos computacionais simples, que podem ser diretamente aplicados para simular e fazer previsões relacionadas à área de figuras geométricas planas. Criação de algoritmo para cálculo da área de qualquer retângulo, identificando as medidas da base e da altura como variáveis. Simulação de cenários onde as dimensões de um terreno retangular (ou outras figuras planas) são alteradas."
+        ]
+      },
+      "2 UNIDADE": {
+        "habilidades_area": [
+          "(EM13MAT302) Construir modelos empregando as funções polinomiais de 1º ou 2º graus, para resolver problemas em contextos diversos, com ou sem apoio de tecnologias digitais.",
+          "(EM13MAT401) Converter representações algébricas de funções polinomiais de 1º grau em representações geométricas no plano cartesiano, distinguindo os casos nos quais o comportamento é proporcional, recorrendo ou não a softwares ou aplicativos de álgebra e geometria dinâmica.",
+          "(EM13MAT402) Converter representações algébricas de funções polinomiais de 2º grau em representações geométricas no plano cartesiano, distinguindo os casos nos quais uma variável for diretamente proporcional ao quadrado da outra, recorrendo ou não a softwares ou aplicativos de álgebra e geometria dinâmica, entre outros materiais.",
+          "(EM13MAT404) Analisar funções definidas por uma ou mais sentenças (tabela do Imposto de Renda, contas de luz, água, gás etc.), em suas representações algébrica e gráfica, identificando domínios de validade, imagem, crescimento e decrescimento, e convertendo essas representações de uma para outra, com ou sem apoio de tecnologias digitais.",
+          "(EM13MAT501) Investigar relações entre números expressos em tabelas para representá-los no plano cartesiano, identificando padrões e criando conjecturas para generalizar e expressar algebricamente essa generalização, reconhecendo quando essa representação é de função polinomial de 1º grau.",
+          "(EM13MAT502) Investigar relações entre números expressos em tabelas para representá-los no plano cartesiano, identificando padrões e criando conjecturas para generalizar e expressar algebricamente essa generalização, reconhecendo quando essa representação é de função polinomial de 2º grau do tipo y = ax²."
+        ],
+        "habilidades_especificas": [
+          "(EM13MAT302PE18) Construir modelos matemáticos, a partir das leis de formação, para resolver situações-problema em vários contextos, envolvendo funções polinomiais do 1º e 2º graus, com e/ou sem apoio de tecnologias digitais.",
+          "(EM13MAT401PE33) Converter representações algébricas de funções polinomiais do 1º grau em representações geométricas no plano cartesiano, distinguindo os casos em que as funções tenham um comportamento proporcional, com e/ou sem apoio de tecnologias digitais.",
+          "(EM13MAT402PE34) Converter e analisar representações algébricas de funções polinomiais do 2º grau em representações geométricas no plano cartesiano, reconhecendo o papel dos coeficientes a, b e c no gráfico, como também distinguir os casos nos quais uma variável for diretamente proporcional ao quadrado de outra variável, com e/ou sem apoio de tecnologias digitais.",
+          "(EM13MAT404PE36) Analisar funções definidas por uma ou mais sentenças como, por exemplo, uma tabela de imposto de renda, em suas representações algébrica e gráfica, identificando domínios de validade, imagem, crescimento ou decrescimento, entre outras, com e/ou sem o uso de tecnologias digitais.",
+          "(EM13MAT501PE40) Investigar relações entre números expressos em tabelas para representá-los no plano cartesiano, identificando padrões e criando conjecturas para generalizar e expressar algebricamente essa generalização, reconhecendo quando essa representação é de função polinomial de 1º grau.",
+          "(EM13MAT502PE41) Investigar relações entre números expressos em tabelas para representá-los no plano cartesiano, identificando padrões e criando conjecturas para generalizar e expressar algebricamente essa generalização, reconhecendo quando essa representação é de função polinomial de 2º grau do tipo y = ax2, com e/ou sem apoio de tecnologias digitais."
+        ],
+        "objetos_conhecimento": [
+          "Sequências Numéricas. Funções Polinomiais do 1º e 2º Graus.",
+          "Funções Polinomiais do 1º grau: proporcionalidade",
+          "Funções Polinomiais do 2º grau: proporcionalidade",
+          "Funções: representações algébricas e gráficas. Domínios de validade. Imagem. Crescimento e Decrescimento.",
+          "Função Polinomial do 1º grau: relações e representações. Função Modular.",
+          "Função Polinomial do 2º grau: relações e representações."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO11) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico.",
+          "(EM13CO06) Avaliar software levando em consideração diferentes características e métricas associadas.",
+          "(EM13CO12) Produzir, analisar, gerir e compartilhar informações a partir de dados, utilizando princípios de ciência de dados."
+        ],
+        "possibilidades_abordagens": [
+          "Simulação de fenômenos em que seja possível observar a evolução de variáveis em passos discretos, que muitas vezes formam sequências numéricas.",
+          "Simulação de fenômenos em que seja possível observar a evolução de variáveis em passos discretos, que muitas vezes formam sequências numéricas.",
+          "Trabalho com diferentes softwares ou modelos computacionais simples para gerar e analisar gráficos de funções quadráticas. Avaliação da eficiência de um programa (software) que realiza uma tarefa simples, como somar elementos em uma lista. Utilização de softwares para modelar situações do mundo real que são descritas por funções quadráticas. Avaliação da capacidade dos softwares de representar o modelo e fazer previsões de forma precisa e compreensível.",
+          "Demonstração através do Phet e/ou catapulta caseira, de modo experimental, para determinação da expressão algébrica do 2º grau e análise geométrica dos seus coeficientes. Construção de algoritmos para calcular valores da função. Propor a elaboração de um pseudocódigo ou fluxograma para calcular f(x)=ax+b dado um valor de x. Exploração tabular com programação por meio de planilhas ou linguagens simples para gerar uma tabela de valores da função. Conectar a tabela com o gráfico automático. Extração de dados por diferentes processos apoiados por ferramentas computacionais, como planilhas, bancos de dados, ferramentas estatísticas, ferramentas baseadas em padrões e técnicas de aprendizado de máquina, entre outras.",
+          "Uso de funções do 1º grau para modelação de situações reais e simulação no computador. Criação de fluxogramas que representem a função e o comportamento. Contextualização de problemas + programação.",
+          "Elaboração de pseudocódigo (algoritmo) ou fluxograma para calcular raízes e vértices para e exploração computacional. Uso de planilhas ou linguagens de programação para: gerar tabelas de valores de f(x); plotar gráficos automáticos; e verificar o efeito da variação dos coeficientes a, b, c."
+        ]
+      },
+      "3 UNIDADE": {
+        "habilidades_area": [
+          "(EM13MAT503) Investigar pontos de máximo ou de mínimo de funções quadráticas em contextos envolvendo superfícies, Matemática Financeira ou Cinemática, entre outros, com apoio de tecnologias digitais.",
+          "(EM13MAT101) Interpretar criticamente situações econômicas, sociais e fatos relativos às Ciências da Natureza que envolvam a variação de grandezas, pela análise dos gráficos das funções representadas e das taxas de variação, com ou sem apoio de tecnologias digitais.",
+          "(EM13MAT507) Identificar e associar progressões aritméticas (PA) a funções afins de domínios discretos, para análise de propriedades, dedução de algumas fórmulas e resolução de problemas.",
+          "(EM13MAT508) Identificar e associar progressões geométricas (PG) a funções exponenciais de domínios discretos, para análise de propriedades, dedução de algumas fórmulas e resolução de problemas.",
+          "(EM13MAT104) Interpretar taxas e índices de natureza socioeconômica (índice de desenvolvimento humano, taxas de inflação, entre outros), investigando os processos de cálculo desses números, para analisar criticamente a realidade e produzir argumento.",
+          "(EM13MAT202) Planejar e executar pesquisa amostral sobre questões relevantes, usando dados coletados diretamente ou em diferentes fontes, e comunicar os resultados por meio de relatório contendo gráficos e interpretação das medidas de tendência central e das medidas de dispersão (amplitude e desvio padrão), utilizando ou não recursos tecnológicos."
+        ],
+        "habilidades_especificas": [
+          "(EM13MAT503PE42) Investigar e reconhecer pontos de máximo ou de mínimo de funções quadráticas em contextos, envolvendo superfícies, Matemática Financeira ou Cinemática, entre outros, com e/ou sem apoio de tecnologias digitais.",
+          "(EM13MAT101PE01) Interpretar, criticamente, situações reais econômicas, sociais e fatos relativos às Ciências da Natureza que envolvam a variação de grandezas, por meio de análise de gráficos das funções representadas e das taxas de variação, com e/ou sem apoio de tecnologias digitais.",
+          "(EM13MAT507PE46) Identificar e associar progressões aritméticas (PA) a funções afins de domínios discretos, para análise de propriedades, dedução de algumas fórmulas e resolução de situações-problema em diversos contextos.",
+          "(EM13MAT508PE47) Identificar e associar progressões geométricas (PG) a funções exponenciais de domínios discretos, para análise de propriedades, dedução de algumas fórmulas e resolução de situações-problema em diversos contextos.",
+          "(EM13MAT104PE07) Compreender e aplicar o conceito de taxa e de índice, investigando, analisando criticamente e produzindo argumentos no contexto socioeconômico.",
+          "(EM13MAT202PE15) Realizar pesquisa amostral, utilizando a coleta de dados, de acordo com a realidade da sua região, comunicando os resultados por meio de relatórios, contendo gráficos e interpretação das medidas de tendência central e das medidas de dispersão (amplitude e desvio padrão) com e/ou sem apoio de tecnologias digitais."
+        ],
+        "objetos_conhecimento": [
+          "Pontos de máximo e de mínimo de funções quadráticas",
+          "Gráficos de Funções. Variação de Grandezas. Taxas de Variação.",
+          "Função afim de domínio discreto. Progressão Aritmética",
+          "Função Exponencial de domínio discreto. Progressão Geométrica",
+          "Conceitos de Taxa e Índice: compreensão e aplicação.",
+          "Dados de Pesquisas Estatísticas. Gráficos Estatísticos. Medidas de Tendência Central e de Dispersão."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO24) Identificar e reconhecer como as redes sociais e artefatos computacionais em geral interferem na saúde física e mental de seus usuários.",
+          "(EM13CO03) Identificar o comportamento dos algoritmos no que diz respeito ao consumo de recursos como tempo de execução, espaço de memória e energia, entre outros.",
+          "(EM13CO12) Produzir, analisar, gerir e compartilhar informações a partir de dados, utilizando princípios de ciência de dados.",
+          "(EM13CO13) Analisar e utilizar as diferentes formas de representação e consulta a dados em formato digital para pesquisas científicas.",
+          "(EM13CO14) Avaliar a confiabilidade das informações encontradas em meio digital, investigando seus modos de construção e considerando a autoria, a estrutura e o propósito da mensagem.",
+          "(EM13CO21) Comunicar ideias complexas de forma clara por meio de objetos digitais como mapas conceituais, infográficos, hipertextos e outros.",
+          "(EM13CO02) Explorar e construir a solução de problemas por meio de refinamentos, utilizando diversos níveis de abstração desde a especificação até a implementação.",
+          "(EM13CO11) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico.",
+          "(EM13CO09) Identificar tecnologias digitais, sua presença e formas de uso, nas diferentes atividades no mundo do trabalho.",
+          "(EM13CO19) Expor, argumentar e negociar propostas, produtos e serviços utilizando diferentes mídias e ferramentas digitais.",
+          "(EM13CO20) Criar conteúdos, disponibilizando-os em ambientes virtuais para publicação e compartilhamento, avaliando a confiabilidade e as consequências da disseminação dessas informações.",
+          "(EM13CO24) Identificar e reconhecer como as redes sociais e artefatos computacionais em geral interferem na saúde física e mental de seus usuários."
+        ],
+        "possibilidades_abordagens": [
+          "Coleta e análise de dados (reais ou simulados) sobre o tempo de uso de redes sociais ou artefatos computacionais e a elaboração de métricas de saúde. Investigação de dados sobre tempos de uso e bem-estar, por meio de pesquisas ou simulações sobre os padrões de uso de dispositivos eletrônicos em um determinado grupo. Coleta de dados sobre variáveis relacionadas ao bem-estar (horas de sono, níveis de atenção em aula), relacionando esses dados para que possam ser modelados por funções quadráticas e, então, determinar os picos ou vales (máximos ou mínimos) que indicam uma correlação entre o tempo de tela e as métricas de saúde/bem-estar.",
+          "Análise e construção de gráficos a partir de dados. Interpretação desses gráficos e a relação entre grandezas. Elaboração de tabelas de dados sobre fenômenos do cotidiano. Simulação interativa com softwares. Exploração de gráficos dinâmicos para compreender variações de grandezas, utilizando planilhas ou ferramentas similares para a criação de gráficos interativos de funções lineares, quadráticas e exponenciais, atentando para a variação de coeficientes e as mudanças no gráfico e destacando visualmente essas taxas de variação (inclinação da reta, declive da curva). Interpretação crítica de situações e realização de análise dos gráficos das funções representadas e das taxas de variação. Produção e análise de informações a partir de dados, para desenvolver a capacidade de identificar tendências, padrões e variações. Manipulação de diversas representações digitais de dados (que podem incluir gráficos e tabelas). Avaliação da confiabilidade das informações e suas fontes, especialmente em um ambiente digital. Tradução e síntese de informações complexas em ideias mais simples, transformando os dados em infográficos. Criação de infográficos e outras representações digitais.",
+          "Criação de algoritmos em linguagem natural ou fluxogramas para dedução de fórmulas de PA (decompor, generalizar, refinar). Utilização de planilhas eletrônicas para modelar PAs e funções afins, variando os parâmetros e observando o comportamento da sequência e seus gráficos. Simulação e previsões sobre o crescimento ou o decaimento da PA e análise das propriedades da função afim de forma interativa. Construção de soluções por refinamentos para serem visualizadas na forma como um problema de PA que pode ser abordado. Identificação de padrões, generalização de soluções (deduzir fórmulas) e aplicação de sequências lógicas (algoritmos) para resolver problemas complexos de forma eficiente. Construção de modelos de simulação simples para avaliar consumo de energia de uma casa ao longo do tempo, envelhecimento da população, crescimento da população.",
+          "Utilização da dedução da fórmula do termo geral ou da soma dos termos de uma PG como casos de generalização. Aplicação de uma solução desenvolvida para um problema a outros problemas semelhantes. Exploração de modelo para observação de como diferentes razões de uma PG afetam o crescimento ou o decaimento ao longo do tempo. Exploração, de forma prática, interativa e visual, dos padrões de crescimento e decaimento, compreendendo a lógica por trás das fórmulas e a aplicabilidade de conceitos matemáticos em problemas do mundo real.",
+          "Aplicação de ferramentas digitais no universo do trabalho, por meio do uso de planilhas eletrônicas. Realização de pesquisas eficazes, em bases de dados digitais, criando e utilizando palavras-chave e fazendo uso de filtros em buscadores avançados para identificar a origem da informação. Análise de base de dados públicas (IBGE, INEP, ONU, Banco Mundial, DATASUS etc). Trabalho em planilhas ou softwares de visualização para calcular taxas de natalidade, mortalidade, inflação, crescimento econômico e índices sociais. Análise das informações encontradas em meio digital, a confiabilidade da informação, o quanto ela é atual, por quem ela foi produzida (instituição e/ou sujeito), qual a relação da mensagem com a visão deste(s) autor(es) e a originalidade do texto. Desenvolvimento da habilidade de vender uma ideia fazendo uso de diferentes recursos tecnológicos, compreendendo o comportamento das ferramentas de marketing digital para analisar a performance de cada campanha. Criação de conteúdos, de diversas naturezas, para serem disseminados em ambientes virtuais, refletindo sobre seus alcances e como o teor da mensagem veiculada pode influenciar uma comunidade local ou até mesmo global.",
+          "Reflexões sobre a importância de um posicionamento com base em dados. Exploração de situações-problema em contextos diversos com pesquisas de dados na comunidade escolar para explorar e contextualizar as medidas estatísticas por meio de tecnologias, inserindo algoritmos e fórmulas que tabulam e organizam resultados para análise crítica das informações e compreensão da linguagem computacional atrelada aos comandos matemáticos."
+        ]
+      }
+    },
+    "2 ANO": {
+      "1 UNIDADE": {
+        "habilidades_area": [
+          "(EM13MAT316) Resolver e elaborar problemas, em diferentes contextos, que envolvem cálculo e interpretação das medidas de tendência central (média, moda, mediana) e das medidas de dispersão (amplitude, variância e desvio padrão).",
+          "(EM13MAT406) Construir e interpretar tabelas e gráficos de frequências com base em dados obtidos em pesquisas por amostras estatísticas, incluindo ou não o uso de softwares que inter-relacionem estatísticas, geometria e álgebra.",
+          "(EM13MAT104) Interpretar taxas e índices de natureza socioeconômica (índice de desenvolvimento humano, taxas de inflação, entre outros), investigando os processos de cálculo desses números, para analisar criticamente a realidade e produzir argumentos.",
+          "(EM13MAT203) Aplicar conceitos matemáticos no planejamento, na execução e na análise de ações envolvendo a utilização de aplicativos e a criação de planilhas (para o controle de orçamento familiar, simuladores de cálculos de juros simples e compostos, entre outros), para tomar decisões."
+        ],
+        "habilidades_especificas": [
+          "(EM13MAT316PE32) Resolver e elaborar situações-problema, em contextos diversos, que envolvam o cálculo e a interpretação das medidas de tendência central (média, moda, mediana) e das medidas de dispersão (amplitude, variância e desvio padrão), com e/ou sem apoio de tecnologias digitais.",
+          "(EM13MAT406PE38) Construir e interpretar tabelas e gráficos de frequências com base em dados de pesquisas estatísticas relacionadas ao cotidiano (gravidez na adolescência, sexualidade, entre outros), com e/ou sem apoio de tecnologias digitais que inter-relacionem estatística, geometria e álgebra.",
+          "(EM13MAT104PE08) Interpretar os conceitos envolvendo taxas e índices na resolução de situações-problema relacionados às atividades humanas, como por exemplo, taxas de inflação, analisando criticamente a realidade e produzindo argumentos.",
+          "(EM13MAT104PE09) Investigar os processos de cálculo envolvendo as noções de taxas e de índices de natureza socioeconômica (produzindo argumentos e explorando taxas como: IR, ICMS, IPTU, IPVA), a fim de produzir análise e argumentos.",
+          "(EM13MAT203PE16) Utilizar conceitos matemáticos no planejamento, na execução e na análise de ações para o uso de aplicativos e criação de planilhas (por exemplo, nas atividades envolvendo o controle de orçamento familiar, simuladores de cálculos de juros simples e compostos, entre outros), para tomada de decisão em situações diversas, com e/ou sem o uso de tecnologias digitais."
+        ],
+        "objetos_conhecimento": [
+          "Medidas de Tendência Central e de Dispersão.",
+          "Gráficos e Tabelas de Frequências de Pesquisas Estatísticas.",
+          "Conceitos de Taxa e Índice: resolução de situações-problema.",
+          "Conceitos de Taxa e Índice: investigação.",
+          "Planilhas financeiras: planejamento, execução e análise orçamentária e de renda."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO11) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico.",
+          "(EM13CO12) Produzir, analisar, gerir e compartilhar informações a partir de dados, utilizando princípios de ciência de dados.",
+          "(EM13CO21) Comunicar ideias complexas de forma clara por meio de objetos digitais como mapas conceituais, infográficos, hipertextos e outros.",
+          "(EM13CO17) Construir redes virtuais de interação e colaboração, favorecendo o desenvolvimento de projetos de forma segura, legal e ética.",
+          "(EM13CO23) Analisar criticamente as experiências em comunidades virtuais e as relações advindas da interação e comunicação com outras pessoas, bem como seus impactos na sociedade.",
+          "(EM13CO09) Identificar tecnologias digitais, sua presença e formas de uso, nas diferentes atividades no mundo do trabalho.",
+          "(EM13CO13) Analisar e utilizar as diferentes formas de representação e consulta a dados em formato digital para pesquisas científicas.",
+          "(EM13CO14) Avaliar a confiabilidade das informações encontradas em meio digital, investigando seus modos de construção e considerando a autoria, a estrutura e o propósito da mensagem.",
+          "(EM13CO19) Expor, argumentar e negociar propostas, produtos e serviços, utilizando diferentes mídias e ferramentas digitais.",
+          "(EM13CO20) Criar conteúdos, disponibilizando-os em ambientes virtuais para publicação e compartilhamento, avaliando a confiabilidade e as consequências da disseminação dessas informações.",
+          "(EM13CO01) Explorar e construir a solução de problemas por meio da reutilização de partes de soluções existentes."
+        ],
+        "possibilidades_abordagens": [
+          "Construção de modelos de simulação simples para avaliar consumo de energia de uma casa ao longo do tempo, da população, crescimento da população, valorização de criptomoedas.",
+          "Análise e previsão de comportamento de compra de clientes a partir de perfis de compras passadas.",
+          "Uso de objetos digitais para síntese e comunicação de resultados.",
+          "Uso de tecnologias digitais para manipulação de dados; exploração de planilhas eletrônicas; e construção e comparação de gráficos.",
+          "Construção de redes virtuais de interação e colaboração, utilizando plataformas digitais.",
+          "Trabalho em equipe para coleta, organização, análise e apresentação de dados.",
+          "Discussão sobre privacidade de dados, consentimento informado e a responsabilidade de disseminar informações de forma confiável e respeitosa, especialmente ao lidar com temas sensíveis.",
+          "Criação de objetos digitais como um infográfico ou um hipertexto que representa visualmente a decomposição do relatório.",
+          "Construção de um mapa conceitual digital que conecte as principais alegações do relatório com as evidências (ou falta delas).",
+          "Identificação de inadequações nos padrões apresentados pela mídia e criação de objetos digitais para representar esses dados de forma precisa e honesta.",
+          "Desenvolvimento de projeto de pesquisa estatística sobre um tema relevante do cotidiano.",
+          "Aplicação de ferramentas digitais, como planilhas digitais, no universo do trabalho.",
+          "Realização de pesquisas eficazes, em bases de dados digitais, criando e utilizando palavras-chave e fazendo uso de filtros em buscadores avançados para identificar a origem da informação.",
+          "Análise de bases de dados públicos.",
+          "Trabalho em planilhas digitais ou softwares de visualização para calcular taxas de natalidade, mortalidade, inflação, crescimento econômico e índices sociais.",
+          "Análise de informações encontradas em meios digitais, identificando aspectos relacionados à confiabilidade e origem dessa informação.",
+          "Criação de estratégias de venda, utilizando diferentes recursos tecnológicos, tais como produção de um vídeo promocional, construção de um site, cards para as redes sociais, e-mail, marketing, apresentação de slides, criação de storytelling para uma apresentação por videoconferência etc.",
+          "Produção de conteúdos, de diversas naturezas, para serem disseminados em ambientes virtuais, tais como podcasts e vídeos para canais em redes digitais de divulgação de vídeos, refletindo sobre seus alcances e como o teor da mensagem que é veiculada pode influenciar uma comunidade local ou até mesmo global.",
+          "Investigação de processos de cálculo: criação de um algoritmo que simula a aplicação de uma taxa de juros (como as de IR ou IPVA) sobre um valor ao longo do tempo.",
+          "Simulação e previsão de grandezas: multas, taxas e índices (como taxas de inflação ou crescimento populacional) são grandezas que variam ao longo do tempo.",
+          "Criação de modelos computacionais para simular e fazer previsões, avaliando sua evolução e projeção de cenários futuros.",
+          "Investigação e cálculo de taxas e índices socioeconômicos (IR, ICMS, IPTU, IPVA), a partir de dados reais da cidade ou região, organizando, analisando e gerenciando as informações em planilhas ou softwares digitais.",
+          "Produção de relatórios e gráficos digitais que apresentem argumentos e interpretações sobre os impactos dessas taxas, compartilhando os resultados e avaliando a confiabilidade dos dados utilizados.",
+          "Utilização de dados reais da cidade ou região, organizando e representando essas informações em formatos digitais.",
+          "Análise e consulta de diferentes fontes digitais de dados oficiais e confiáveis para fundamentar pesquisas científicas sobre taxas e índices, produzindo relatórios e gráficos que permitam argumentar sobre os impactos socioeconômicos das tributações na comunidade.",
+          "Avaliação da confiabilidade das informações digitais utilizadas na pesquisa, verificando autoria, estrutura e propósito das fontes, comparando dados oficiais com informações encontradas online para fundamentar análises e argumentos (Sites do Governo, IBGE, portais de transparência, dashboards públicos).",
+          "Exposição (a partir de argumentos) sobre os impactos dessas taxas na sociedade, negociando propostas ou soluções para situações hipotéticas e apresentando os resultados por meio de diferentes mídias digitais, como apresentações, vídeos ou infográficos (PowerPoint, Google Slides, Canva, Prezi).",
+          "Criação e análise de planilhas de orçamento familiar, reutilizando fórmulas prontas, como somas, médias e cálculos de juros simples e compostos, para planejar despesas e receitas, simulando cenários de tomada de decisão.",
+          "Utilização de simuladores digitais de cálculos financeiros e adaptação de suas soluções em novas situações, comparando formas de pagamento (à vista x parcelado) ou planejamento pequenas economias escolares e comunitárias.",
+          "Modelagem e simulação financeira: criação de modelos computacionais simples como ferramenta poderosa para a compreensão do planejamento, execução e análise orçamentária e de renda.",
+          "Construção de modelos que simulam o comportamento de juros simples e compostos ao longo do tempo.",
+          "Simulação de diferentes cenários de investimento ou endividamento e fazer previsões sobre o saldo futuro, a rentabilidade ou o custo total.",
+          "Análise e previsão de cenários através de planilhas eletrônicas ou programas mais elaborados, explorando como variáveis como taxa de juros, capital inicial, aportes mensais ou períodos de tempo afetam o resultado financeiro.",
+          "Visualização gráfica do crescimento exponencial dos juros compostos ou o comportamento linear dos juros simples.",
+          "Criação de planilhas digitais para controle de orçamento familiar ou simulação de juros simples e compostos, analisando e planejando receitas e despesas para fundamentar decisões financeiras, com atenção à precisão dos cálculos e interpretação dos resultados.",
+          "Produção de conteúdos digitais que apresentem essas análises financeiras (infográficos, relatórios ou vídeos) e disponibilização desses conteúdos em ambientes virtuais, avaliando a confiabilidade dos dados utilizados e refletindo sobre as consequências da disseminação de informações incorretas."
+        ]
+      },
+      "2 UNIDADE": {
+        "habilidades_area": [
+          "(EM13MAT102) Analisar tabelas, gráficos e amostras de pesquisas estatísticas apresentadas em relatórios divulgados por diferentes meios de comunicação, identificando, quando for o caso, inadequações que possam induzir a erros de interpretação, como escalas e amostras não apropriadas.",
+          "(EM13MAT310) Resolver e elaborar problemas de contagem envolvendo agrupamentos ordenáveis ou não de elementos, por meio dos princípios multiplicativo e aditivo, recorrendo a estratégias diversas, como o diagrama de árvore.",
+          "(EM13MAT505) Resolver problemas sobre ladrilhamento do plano, com ou sem apoio de aplicativos de geometria dinâmica, para conjecturar a respeito dos tipos ou composição de polígonos que podem ser utilizados em ladrilhamento, generalizando padrões observados."
+        ],
+        "habilidades_especificas": [
+          "(EM13MAT102PE02) Analisar informações de natureza científica e social obtidas da leitura de (amostras de pesquisas estatísticas) gráficos, infográficos e tabelas, prevendo tendências que podem induzir a erros.",
+          "(EM13MAT102PE03) Interpretar e utilizar tabelas e gráficos a partir dos dados neles contidos, construindo argumentos e/ou inferências e identificando possíveis inadequações que induzam ao erro de interpretação, como escalas e amostras não apropriadas.",
+          "(EM13MAT102PE04) Analisar, criticamente, amostras de pesquisas estatísticas apresentadas em relatórios divulgados por diferentes meios de comunicação.",
+          "(EM13MAT310PE26) Resolver e elaborar situações-problema de contagem, envolvendo agrupamentos que dependam da ordem dos elementos ou não (com ou sem repetição), por meio dos princípios multiplicativo e aditivo, bem como da Análise Combinatória, utilizando estratégias diversas.",
+          "(EM13MAT505PE44) Investigar e resolver situações-problemas sobre ladrilhamento do plano, com ou sem o uso de aplicativos da geometria dinâmica, para conjecturar em torno dos tipos ou composição de polígonos que podem ser utilizados em ladrilhamento, generalizando padrões observados.",
+          "(EM13MAT505PE45) Representar e interpretar graficamente a variação da área e do perímetro de um polígono regular quando os comprimentos de seus lados variam, analisando e classificando as funções envolvidas, com e/ou sem o uso de aplicativos da geometria dinâmica."
+        ],
+        "objetos_conhecimento": [
+          "Pesquisas Estatísticas: tabelas, gráficos e infográficos.",
+          "Tabelas e Gráficos: argumentos e/ou inferências, inadequações.",
+          "Amostras de Pesquisas Estatísticas.",
+          "Agrupamentos de elementos que dependam da ordem ou não (com repetição ou não). Princípio multiplicativo e aditivo. Análise Combinatória: permutação, arranjo e combinação.",
+          "Polígonos: tipos ou composições.",
+          "Polígonos Regulares: área e perímetro"
+        ],
+        "habilidades_computacao": [
+          "(EM13CO14) Avaliar a confiabilidade das informações encontradas em meio digital, investigando seus modos de construção e considerando a autoria, a estrutura e o propósito da mensagem.",
+          "(EM13CO21) Comunicar ideias complexas de forma clara por meio de objetos digitais como mapas conceituais, infográficos, hipertextos e outros.",
+          "(EM13CO01) Explorar e construir a solução de problemas por meio da reutilização de partes de soluções existentes.",
+          "(EM13CO02) Explorar e construir a solução de problemas por meio de refinamentos, utilizando diversos níveis de abstração desde a especificação até a implementação.",
+          "(EM13CO11) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico.",
+          "(EM13CO05) Identificar os limites da Computação para diferenciar o que pode ou não ser automatizado, buscando uma compreensão mais ampla dos limites dos processos mentais envolvidos na resolução de problemas.",
+          "(EM13CO08) Entender como mudanças na tecnologia afetam a segurança, incluindo novas maneiras de preservar sua privacidade e dados pessoais on-line, reportando suspeitas e buscando ajuda em situações de risco.",
+          "(EM13CO18) Planejar e gerenciar projetos integrados às áreas de conhecimento de forma colaborativa, solucionando problemas, usando diversos artefatos computacionais."
+        ],
+        "possibilidades_abordagens": [
+          "Análise de amostras de pesquisas estatísticas, gráficos, infográficos e tabelas, identificando tendências e possíveis distorções que possam induzir a erros, desenvolvendo interpretação crítica dos dados.",
+          "Avaliação da confiabilidade das informações digitais utilizadas, verificando autoria, estrutura e propósito das fontes (sites oficiais, portais de transparência, artigos científicos), comparando dados encontrados online com registros estatísticos oficiais para fundamentar conclusões.",
+          "Desenvolvimento de algoritmos (em linguagem natural ou fluxogramas) que detalham dados para calcular frequências; e permitam a construção de um tipo específico de gráfico, a identificação de tendências ou anomalias nos dados e o uso de tecnologias digitais como planilhas eletrônicas.",
+          "Análise de um conjunto de dados complexos, aplicando a abstração para simplificar a representação inicial.",
+          "Apresentação de gráficos com diferentes níveis de detalhe (abstração).",
+          "Desenvolvimento de um 'guia de bolso' ou um programa simples (mesmo que 'desplugado') que contenha os passos para verificar a confiabilidade de um gráfico de notícias.",
+          "Análise das informações encontradas em meio digital, a confiabilidade da informação, o quanto ela é atual, por quem ela foi produzida (instituição e/ou sujeito), qual a relação da mensagem com a visão deste(s) autor(es) e a originalidade do texto.",
+          "Criação de representações visuais mais sofisticadas e interativas, como infográficos, que podem integrar esses gráficos e tabelas, tornando a interpretação mais acessível e engajadora.",
+          "Apresentação das fórmulas de permutação, arranjo e combinação como 'partes de soluções existentes'.",
+          "Uso de planilhas eletrônicas para modelagem e reutilização: criação de fórmulas em células que representam cálculos combinatórios básicos.",
+          "Criação de modelos abstratos ou algoritmos (mesmo em linguagem natural ou fluxogramas) que descrevem o processo de contagem passo a passo.",
+          "Elaboração de situações-problema de contagem com diferentes níveis de clareza ou ambiguidades, e discussão sobre a precisão na formulação para que uma solução computacional possa ser aplicada.",
+          "Identificação e interpretação de senhas mais seguras, utilizando-se do princípio multiplicativo, focando no contexto digital (segurança cibernética, privacidade online).",
+          "Compreensão das novas tecnologias para garantir segurança (biometria, autenticação em 2 fatores etc.).",
+          "Simulação de processos de seleção e organização de elementos para visualizar e contar os diferentes agrupamentos possíveis.",
+          "Decomposição e reutilização de unidades de ladrilhamento: investigação dos tipos ou composição de polígonos que podem ser utilizados em ladrilhamento.",
+          "Reconhecimento de padrões e generalização para reuso de regras: identificação ou propriedades gerais.",
+          "Abstração para identificação de propriedades geométricas.",
+          "Utilização de aplicativos de geometria dinâmica como implementação de soluções. Generalização de padrões através de níveis de abstração.",
+          "Utilização de um software para determinar o polígono através das suas diagonais e ou denominar um polígono através do seu número de lados.",
+          "Criação de representações visuais claras e sequenciais das etapas e lógicas envolvidas na solução de problemas.",
+          "Elaboração de projetos que utilizem artefatos computacionais.",
+          "Decomposição e reutilização de unidades de ladrilhamento: Investigação dos tipos ou composição de polígonos que podem ser utilizados em ladrilhamento.",
+          "Utilização de tecnologias digitais para criar um modelo interativo onde um controle deslizante altera o lado do polígono e os gráficos de área e perímetro são atualizados em tempo real.",
+          "Criação de representações visuais claras e sequenciais das etapas e lógicas envolvidas na solução de problemas.",
+          "Elaboração de projetos que utilizem artefatos computacionais."
+        ]
+      },
+      "3 UNIDADE": {
+        "habilidades_area": [
+          "(EM13MAT309) Resolver e elaborar problemas que envolvem o cálculo de áreas totais e de volumes de prismas, pirâmides e corpos redondos em situações reais (como o cálculo do gasto de material para revestimento ou pinturas de objetos cujos formatos sejam composições dos sólidos estudados), com ou sem apoio de tecnologias digitais.",
+          "(EM13MAT304) Resolver e elaborar problemas com funções exponenciais nos quais seja necessário compreender e interpretar a variação das grandezas envolvidas, em contextos como o da Matemática Financeira, entre outros.",
+          "(EM13MAT305) Resolver e elaborar problemas com funções logarítmicas nos quais seja necessário compreender e interpretar a variação das grandezas envolvidas, em contextos como os de abalos sísmicos, pH, radioatividade, Matemática Financeira, entre outros.",
+          "(EM13MAT403) Analisar e estabelecer relações, com ou sem apoio de tecnologias digitais, entre as representações de funções exponencial e logarítmica expressas em tabelas e em plano cartesiano, para identificar as características fundamentais (domínio, imagem, crescimento) de cada função.",
+          "(EM13MAT308) Aplicar as relações métricas, incluindo as leis do seno e do cosseno ou as noções de congruência e semelhança, para resolver e elaborar problemas que envolvem triângulos, em variados contextos."
+        ],
+        "habilidades_especificas": [
+          "(EM13MAT309PE25) Resolver e elaborar situações-problema de diferentes contextos, envolvendo o cálculo de áreas totais e volumes de sólidos geométricos (prismas, pirâmides e corpos redondos) como, por exemplo, o gasto de material para revestir uma superfície ou para preencher o interior de uma caixa, com e/ou sem apoio de tecnologias digitais.",
+          "(EM13MAT304PE20) Resolver e elaborar situações-problema, envolvendo funções exponenciais, interpretando a variação das grandezas envolvidas em diversos contextos como, por exemplo, no estudo da Matemática Financeira, entre outros, com e/ou sem o uso de tecnologias digitais.",
+          "(EM13MAT305PE21) Resolver e elaborar situações-problema, envolvendo funções logarítmicas, interpretando a variação das grandezas em contextos diferentes como, por exemplo, o estudo da radioatividade, Matemática Financeira, entre outros, com e/ou sem o uso de tecnologias digitais.",
+          "(EM13MAT403PE35) Analisar e estabelecer relações, com e/ou sem o uso de tecnologias digitais, entre as representações de funções exponenciais e logarítmicas expressas em tabelas e em planos cartesianos para identificar as características fundamentais (domínio, imagem, crescimento ou decrescimento, raízes, entre outras) de cada função, destacando-as como funções inversas.",
+          "(EM13MAT308PE24a) Aplicar as relações métricas e as noções de congruência e semelhança para resolver e elaborar situações-problema que envolvam triângulos em variados contextos, com e/ou sem o uso de tecnologias digitais."
+        ],
+        "objetos_conhecimento": [
+          "Áreas e volumes de sólidos geométricos",
+          "Funções Exponenciais: variação de grandezas",
+          "Funções Logarítmicas: variação de grandezas",
+          "Funções Exponenciais e Logarítmicas: relações, representações e características.",
+          "Congruência e Semelhança de Triângulos. Relações métricas e Razões trigonométricas no triângulo retângulo."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO01) Explorar e construir a solução de problemas por meio da reutilização de partes de soluções existentes.",
+          "(EM13CO02) Explorar e construir a solução de problemas por meio de refinamentos, utilizando diversos níveis de abstração desde a especificação até a implementação.",
+          "(EM13CO11) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico.",
+          "(EM13CO18) Planejar e gerenciar projetos integrados às áreas de conhecimento de forma colaborativa, solucionando problemas, usando diversos artefatos computacionais."
+        ],
+        "possibilidades_abordagens": [
+          "Construção e exploração de algoritmos que recebam medidas e retornem áreas e volumes de diferentes sólidos geométricos.",
+          "Utilização de softwares de geometria dinâmica para simulação de sólidos, variando suas dimensões e observando o impacto no volume e na área.",
+          "Cálculo da área e volume no computador, para traduzir fórmulas matemáticas em algoritmos.",
+          "Construção de modelos digitais que simulem o cálculo do material necessário para revestir uma superfície ou preencher o interior de uma caixa.",
+          "Decomposição de problemas complexos.",
+          "Criação de modelos que permitam comparar custo de diferentes materiais para revestir uma superfície de um sólido ou avaliar a capacidade de diferentes formatos de caixas com o mesmo volume, ponderando fatores como o uso de recursos.",
+          "Utilização de diferentes ferramentas de modelagem e simulação computacional para analisar sistemas simples e fazer previsões.",
+          "Construção de um modelo computacional baseado em funções exponenciais que podem fazer previsões sobre o futuro comportamento de uma grandeza.",
+          "Previsões e cenários: construção de um modelo computacional baseado em funções exponenciais.",
+          "Uso de tecnologias digitais para resolver problemas envolvendo funções exponenciais.",
+          "Modelagem e simulação de fenômenos exponenciais em diversas áreas científicas e econômicas.",
+          "Desenvolvimento de projetos como uma ferramenta de investigação e análise científica.",
+          "Modelagem e Simulação de Fenômenos Exponenciais e Logarítmicos.",
+          "Criação de modelos computacionais para simular fenômenos como: o crescimento populacional, a valorização de investimentos com juros compostos ou o comportamento de criptomoedas.",
+          "Análise de relações e representações com apoio computacional, por meio de programação ou softwares de simulação, a fim de gerar dados para tabelas de funções exponenciais e logarítmicas e visualizar esses dados em gráficos cartesianos.",
+          "Apresentação de programa que tem um banco de dados com os casos de semelhança de triângulos para fazer um cruzamento de dados a partir dos comandos postos pelos alunos.",
+          "Refinamento de problemas reais com triângulos.",
+          "Utilização de softwares de geometria dinâmica para construção de modelos de triângulos.",
+          "Criação de representações visuais claras e sequenciais das etapas e lógicas envolvidas na solução de problemas.",
+          "Elaboração de projetos que utilizem artefatos computacionais."
+        ]
+      }
+    },
+    "3 ANO": {
+      "1 UNIDADE": {
+        "habilidades_area": [
+          "(EM13MAT303) Interpretar e comparar situações que envolvam juros simples com as que envolvem juros compostos, por meio de representações gráficas ou análise de planilhas, destacando o crescimento linear ou exponencial de cada caso.",
+          "(EM13MAT308) Aplicar as relações métricas, incluindo as leis do seno e do cosseno ou as noções de congruência e semelhança, para resolver e elaborar problemas que envolvem triângulos, em variados contextos.",
+          "(EM13MAT306) Resolver e elaborar problemas em contextos que envolvem fenômenos periódicos reais (ondas sonoras, fases da lua, movimentos cíclicos, entre outros) e comparar suas representações com as funções seno e cosseno, no plano cartesiano, com ou sem apoio de aplicativos de álgebra e geometria.",
+          "(EM13MAT105) Utilizar as noções de transformações isométricas (translação, reflexão, rotação e composições destas) e transformações homotéticas para construir figuras e analisar elementos da natureza e diferentes produções humanas (fractais, construções civis, obras de arte, entre outras)."
+        ],
+        "habilidades_especificas": [
+          "(EM13MAT303PE19) Interpretar e comparar situações-problema que envolvam os tipos de juros (simples e composto), utilizando como ferramentas de análise, planilhas e gráficos, enfatizando o comportamento linear e exponencial deles em cada caso, com e/ou sem o uso de tecnologias digitais.",
+          "(EM13MAT308PE24b) Aplicar as leis de seno e cosseno para resolver e elaborar situações-problema que envolvam triângulos em variados contextos, com e/ou sem o uso de tecnologias digitais.",
+          "(EM13MAT306PE22) Resolver e elaborar situações-problema, envolvendo as funções seno e cosseno, comparando com contextos diversos de fenômenos cíclicos (círculo trigonométrico) e periódicos como, por exemplo, o estudo de ondas sonoras, com e/ou sem uso de softwares de álgebra e geometria.",
+          "(EM13MAT105PE10) Identificar e interpretar as transformações isométricas (translação, reflexão, rotação e composições destas) para construir figuras, analisando elementos da natureza e diferentes produções humanas (fractais, construções civis, obras de arte, entre outras) com e/ou sem o uso de tecnologias digitais.",
+          "(EM13MAT105PE11) Aplicar as transformações homotéticas para construir e analisar figuras da natureza e diferentes produções humanas (fractais, construções civis, obras de arte, entre outras) com e/ou sem o uso de tecnologias digitais."
+        ],
+        "objetos_conhecimento": [
+          "Juros Simples e Compostos: planilhas e gráficos de funções afins e exponenciais",
+          "Leis do seno e cosseno",
+          "Funções seno e cosseno",
+          "Transformações Isométricas",
+          "Transformações Homotéticas"
+        ],
+        "habilidades_computacao": [
+          "(EM13CO11) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico.",
+          "(EM13CO12) Produzir, analisar, gerir e compartilhar informações a partir de dados, utilizando princípios de ciência de dados.",
+          "(EM13CO01) Explorar e construir a solução de problemas por meio da reutilização de partes de soluções existentes.",
+          "(EM13CO02) Explorar e construir a solução de problemas por meio de refinamentos, utilizando diversos níveis de abstração desde a especificação até a implementação.",
+          "(EM13CO18) Planejar e gerenciar projetos integrados às áreas de conhecimento de forma colaborativa, solucionando problemas, usando diversos artefatos computacionais."
+        ],
+        "possibilidades_abordagens": [
+          "Simulação de cenários financeiros: criação de modelos computacionais simples para simular e fazer previsões. Desenvolvimento de algoritmos ou uso de planilhas (que são uma forma de modelo computacional) para calcular como um capital inicial cresce ao longo do tempo, sob diferentes regimes de juros (simples ou composto). Análise do comportamento linear e exponencial dos juros utilizando gráficos.",
+          "Utilização de programas e/ou aplicativos para construção dos gráficos das funções exponenciais e afim, construídas por meio de situações-problema que envolvam os tipos de juros (simples e composto). Construção de gráficos para comparar visualmente o crescimento do capital em juros simples e/ou compostos.",
+          "Aplicação de Algoritmo para resolver triângulos com Lei dos Senos. Apresentação de um triângulo não retângulo com um lado e dois ângulos conhecidos. Criação de um pseudocódigo ou fluxograma para encontrar os lados restantes. Simulação computacional de triângulos. Utilização de softwares para criar um triângulo dinâmico onde os lados e ângulos podem ser alterados. Exploração de softwares, comparando os resultados calculados pelo programa e os obtidos manualmente. Planejamento de projetos para solução de problemas, usando artefatos computacionais.",
+          "Simulação de fenômenos periódicos reais. Criação de modelos computacionais simples para simular esses fenômenos.",
+          "Criação de modelos computacionais simples que simulem as transformações isométricas (translação, reflexão e rotação) e suas composições. Desenvolvimento de algoritmos que manipulem as coordenadas de pontos e figuras, aplicando essas transformações de forma programática. Análise da mudança de parâmetros (como ângulo de rotação, vetor de translação ou eixo de reflexão) e como isso afeta a figura transformada em tempo real. Elaboração de previsões sobre o resultado de uma sequência de transformações isométricas em uma figura.",
+          "Uso de tecnologias digitais para analisar simetrias, padrões e estruturas geométricas presentes. Criação de scripts que implementam as transformações isométricas ou geram padrões geométricos. Utilização de softwares de geometria dinâmica, editores gráficos ou ambientes de programação para criar figuras a partir de transformações isométricas (translação, reflexão, rotação) e suas composições, ou para gerar fractais. Discussão sobre o uso de uma tecnologia digital específica e suas vantagens (ou não) para analisar um fractal ou uma construção arquitetônica, comparando-a com métodos tradicionais."
+        ]
+      },
+      "2 UNIDADE": {
+        "habilidades_area": [
+          "(EM13MAT509) Investigar a deformação de ângulos e áreas provocada pelas diferentes projeções usadas em cartografia (como a cilíndrica e a cônica), com ou sem suporte de tecnologia digital.",
+          "(EM13MAT504) Investigar processos de obtenção da medida do volume de prismas, pirâmides, cilindros e cones, incluindo o princípio de Cavaliere, para a obtenção das fórmulas de cálculo da medida do volume dessas figuras.",
+          "(EM13MAT407) Interpretar e comparar conjuntos de dados estatísticos por meio de diferentes diagramas e gráficos (histograma, de caixa (box-plot), de ramos e folhas, entre outros), reconhecendo os mais eficientes para sua análise.",
+          "(EM13MAT106) Identificar situações da vida cotidiana nas quais seja necessário fazer escolhas levando-se em conta os riscos probabilísticos (usar este ou aquele método contraceptivo, optar por um tratamento médico em detrimento a outro etc.)."
+        ],
+        "habilidades_especificas": [
+          "(EM13MAT509PE48) Compreender e investigar a deformação de ângulos e áreas decorrentes de diferentes projeções usadas em cartografia ou em outros contextos (projeções ortogonal, cilíndrica e a cônica), com e/ou sem o uso de tecnologias digitais.",
+          "(EM13MAT504PE43) Investigar e compreender processos de obtenção da medida do volume de prismas, pirâmides, cilindros, cones e esferas, incluindo o princípio de Cavalieri, para a dedução das fórmulas de cálculo da medida do volume dessas figuras, com e/ou sem o uso de tecnologias digitais.",
+          "(EM13MAT407PE39) Interpretar e comparar conjuntos de dados estatísticos por meio de diferentes diagramas, tabelas e gráficos, como por exemplo, histogramas de caixa (box-plot), de ramos e folhas, entre outros, identificando os mais eficientes para a análise de uma determinada situação problema, com e/ou sem apoio de tecnologias digitais.",
+          "(EM13MAT106PE12) Identificar e interpretar situações do cotidiano, envolvendo riscos probabilísticos em que é necessário fazer escolhas como, por exemplo, usar este ou aquele método contraceptivo, optar por um tratamento médico em detrimento de outro, como nos demais campos de conhecimento."
+        ],
+        "objetos_conhecimento": [
+          "Ângulos e Áreas: projeções.",
+          "Volume dos Prismas, Pirâmides, Cilindros, Cones e Esferas. Princípio de Cavalieri.",
+          "Diagramas, Tabelas e Gráficos de pesquisas estatísticas.",
+          "Riscos Probabilísticos."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO11) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico.",
+          "(EM13CO11) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico.",
+          "(EM13CO21) Comunicar ideias complexas de forma clara por meio de objetos digitais como mapas conceituais, infográficos, hipertextos e outros.",
+          "(EM13CO08) Entender como mudanças na tecnologia afetam a segurança, incluindo novas maneiras de preservar sua privacidade e dados pessoais on-line, reportando suspeitas e buscando ajuda em situações de risco.",
+          "(EM13CO11) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico."
+        ],
+        "possibilidades_abordagens": [
+          "Criação de Modelos Computacionais para Projeções Geométricas. Simulação das deformações de ângulos e áreas resultantes de cada tipo de projeção.",
+          "Simulações e previsões baseadas em volume.",
+          "Criação de representações visuais mais sofisticadas e interativas (como infográficos) que podem integrar esses gráficos e tabelas, tornando a interpretação mais acessível e engajadora. Criação de objetos digitais, como um infográfico ou um hipertexto, que representem visualmente a decomposição do relatório.",
+          "Identificação e interpretação de situações de risco, focada no contexto digital (segurança cibernética, privacidade online). Uso de ferramentas para modelar situações e antecipar resultados, com foco na avaliação das consequências das escolhas em cenários de incerteza."
+        ]
+      },
+      "3 UNIDADE": {
+        "habilidades_area": [
+          "(EM13MAT311) Identificar e descrever o espaço amostral de eventos aleatórios, realizando contagem das possibilidades, para resolver e elaborar problemas que envolvem o cálculo da probabilidade.",
+          "(EM13MAT312) Resolver e elaborar problemas que envolvem o cálculo de probabilidade de eventos em experimentos aleatórios sucessivos.",
+          "(EM13MAT511) Reconhecer a existência de diferentes tipos de espaços amostrais, discretos ou não, e de eventos, equiprováveis ou não, e investigar implicações no cálculo de probabilidades.",
+          "(EM13MAT315) Investigar e registrar, por meio de um fluxograma, quando possível, um algoritmo que resolve um problema.",
+          "(EM13MAT405) Utilizar conceitos iniciais de uma linguagem de programação na implementação de algoritmos escritos em linguagem corrente e/ou matemática."
+        ],
+        "habilidades_especificas": [
+          "(EM13MAT311PE27) Identificar e descrever o espaço amostral de eventos aleatórios, realizando contagem das possibilidades para resolver e elaborar situações-problema que envolvam o cálculo da probabilidade.",
+          "(EM13MAT312PE28) Resolver e elaborar situações-problema que envolvam o cálculo de probabilidade (simples, da união, da interseção, condicional) de eventos em experimentos aleatórios sucessivos.",
+          "(EM13MAT511PE50) Reconhecer a existência de diferentes tipos de espaços amostrais, discretos ou não, e de eventos, equiprováveis ou não, e investigar implicações no cálculo de probabilidades.",
+          "(EM13MAT315PE31) Investigar e registrar, por meio de um fluxograma, se possível, um algoritmo que resolva uma situação-problema.",
+          "(EM13MAT405PE37) Utilizar conceitos ou noções iniciais de uma linguagem de programação na implementação de algoritmos escritos em língua materna e/ou na linguagem matemática, com e/ou sem o uso de tecnologias digitais."
+        ],
+        "objetos_conhecimento": [
+          "Probabilidade: espaço amostral e contagem.",
+          "Probabilidade: cálculos simples, da união, da interseção, condicional.",
+          "Probabilidade: espaços amostrais discretos ou não; eventos equiprováveis ou não.",
+          "Algoritmo e Fluxograma",
+          "Algoritmos de Programação"
+        ],
+        "habilidades_computacao": [
+          "(EM13CO14) Avaliar a confiabilidade das informações encontradas em meio digital, investigando seus modos de construção e considerando a autoria, a estrutura e o propósito da mensagem.",
+          "(EM13CO02) Explorar e construir a solução de problemas por meio de refinamentos, utilizando diversos níveis de abstração desde a especificação até a implementação.",
+          "(EM13CO02) Explorar e construir a solução de problemas por meio de refinamentos, utilizando diversos níveis de abstração desde a especificação até a implementação.",
+          "(EM13CO18) Planejar e gerenciar projetos integrados às áreas de conhecimento de forma colaborativa, solucionando problemas, usando diversos artefatos computacionais.",
+          "(EM13CO01) Explorar e construir a solução de problemas por meio da reutilização de partes de soluções existentes."
+        ],
+        "possibilidades_abordagens": [
+          "Realização de atividades para avaliar a confiabilidade das informações encontradas em meios digitais, investigando seus modos de construção e considerando a autoria, a estrutura e o propósito da mensagem. Avaliação sobre a origem da postagem de \"fake news\" por meio de busca dos locais originais de publicação.",
+          "Utilização de bibliotecas de código com linguagens de programação textuais para elaborar soluções colaborativamente.",
+          "Simulação de lançamentos de dados ou moedas (equiprováveis), mostrando como algoritmos simulam espaços amostrais discretos e eventos equiprováveis. Criação de um fluxograma ou pseudocódigo para simular o lançamento de um dado (1 a 6) ou moeda (cara/coroa). Investigação de algoritmos para simular amostras contínuas e analisar soluções.",
+          "Criação de representações visuais claras e sequenciais das etapas e lógicas envolvidas na solução de problemas. Elaboração de projetos que utilizem artefatos computacionais.",
+          "Exploração e reuso de soluções existentes por meio de projetos colaborativos, utilizando ferramentas para desenvolvimento conjunto de código."
+        ]
+      }
+    }
+  },
+  "deteccao_confiavel": true,
+  "gerado_em": "2026-08-04T12:58",
+  "arquivo_origem": "Matematica_Organizador-Curricular-Trimestral-da-FGB.pdf"
+}

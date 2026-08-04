@@ -1,0 +1,298 @@
+{
+  "disciplina": "Física",
+  "tem_computacao": true,
+  "conteudo": {
+    "1 ANO": {
+      "1 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CNT101) Analisar e representar, com ou sem o uso de dispositivos e de aplicativos digitais específicos, as transformações e conservações em sistemas que envolvam quantidade de matéria, de energia e de movimento para realizar previsões sobre seus comportamentos em situações cotidianas e em processos produtivos que priorizem o desenvolvimento sustentável, o uso consciente dos recursos naturais e a preservação da vida em todas as suas formas.",
+          "(EM13CNT204) Elaborar explicações, previsões e cálculos a respeito dos movimentos de objetos na Terra, no Sistema Solar e no Universo com base na análise das interações gravitacionais, com ou sem o uso de dispositivos e aplicativos digitais (como softwares de simulação e de realidade virtual, entre outros).",
+          "(EM13CNT301) Construir questões, elaborar hipóteses, previsões e estimativas, empregar instrumentos de medição e representar e interpretar modelos explicativos, dados e/ou resultados experimentais para construir, avaliar e justificar conclusões no enfrentamento de situações-problema sob uma perspectiva científica."
+        ],
+        "habilidades_especificas": [
+          "(EM13CNT101FIS01PE(a)) Analisar e representar, com ou sem o uso de dispositivos e de aplicativos digitais, as transformações, as conservações e as variações em sistemas que envolvam quantidade de matéria, de energia mecânica e de movimento, analisando seu caráter dimensional, vetorial e escalar, para realizar previsões sobre seus comportamentos com o uso de simuladores e/ou experimentos que abordem situações cotidianas e, em processos produtivos, que priorizem o desenvolvimento sustentável.",
+          "(EM13CNT204FIS08PE(a)) Elaborar explicações, previsões e cálculos a respeito dos movimentos de objetos na Terra (tais como lançamentos oblíquos e movimentos verticais), no Sistema Solar (avaliando as Leis de Kepler e da gravitação universal) e no Universo com base na análise das interações gravitacionais da mecânica e da relatividade, com ou sem o uso de dispositivos e aplicativos digitais (como softwares de simulação e de realidade virtual, entre outros), maquetes e/ou experimentos.",
+          "(EM13CNT301FIS11PE(a)) Delimitar um problema e suas variáveis (podendo envolver projetos), elaborando hipóteses, realizando experimentos, avaliando dados, validando ou não os pressupostos no enfrentamento das demandas que envolvam a temática Matéria e Energia sob a perspectiva científica."
+        ],
+        "objetos_conhecimento": [
+          "Grandezas Físicas e Sistema Internacional de Unidades, Notação Científica, Ordem de Grandeza e Algarismos significativos.",
+          "Cinemática (posição, tempo, velocidade média, unidades de medida, Movimento Retilíneo Uniforme, Movimento Retilíneo Uniformemente Variado, Gráficos S x t, V x t e a x t).",
+          "Vetores (Soma, Subtração, Decomposição e composição).",
+          "Movimento Vertical no Vácuo; composição de movimento, lançamento oblíquo e horizontal. Movimento circular.",
+          "Experimentos de queda livre para testar hipóteses e controlar variáveis, propondo conclusões, envolvendo Matéria e Energia."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO02) Explorar e construir a solução de problemas por meio de refinamentos, utilizando diversos níveis de abstração desde a especificação até a implementação.",
+          "(EM13CO11) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico.",
+          "(EM13CO01) Explorar e construir a solução de problemas por meio da reutilização de partes de soluções existentes.",
+          "(EM13CO13) Analisar e utilizar as diferentes formas de representação e consulta a dados em formato digital para pesquisas científicas."
+        ],
+        "possibilidades_abordagens": [
+          "Nos aplicativos de simulação, é possível propor refinamentos progressivos como iniciar pela conservação de energia em uma superfície idealizada, sem atrito e, em seguida, incorporar o atrito ao modelo, permitindo analisar seus efeitos sobre o sistema. Simulações em planilhas/PhET; criação de algoritmos simples para MRU/MRUV; coleta de dados com sensores do smartphone; uso de Python/Colab para gráficos.",
+          "Atividade 1: Aquisição de Dados com Sensor de Movimento (Smartphone). Usar apps gratuitos como Phyphox ou Sensor Kinetics para coletar dados de posição, velocidade e aceleração em tempo real. Os alunos poderão caminhar, correr, empurrar um carrinho com o phone e gerar seus próprios gráficos.",
+          "Atividade 2: Modelagem e Simulação com Planilhas. Usar Google Sheets ou Excel para inserir dados de um MRUV (ex.: t=0s, S=0m; t=1s, S=2m; t=2s, S=8m...) e plotar os gráficos automaticamente. Explorar a função de tendência linear e quadrática para encontrar a equação horária.",
+          "Propor que os estudantes utilizem aplicativos de simulação, como o Scratch ou o ModellusX, entre outras plataformas digitais, para resolver problemas envolvendo movimento vertical, movimento circular e lançamentos verticais e horizontais. A atividade deve possibilitar a análise dos vetores que influenciam a trajetória do objeto, favorecendo a compreensão conceitual e a visualização do fenômeno.",
+          "Os estudantes deverão utilizar o Scratch para criar uma simulação que represente o movimento de um objeto (como uma bola ou um carrinho) em um determinado contexto físico, explorando relações entre energia, movimento e variáveis envolvidas. Com isso, o projeto no Scratch pode simular o movimento em uma rampa, mostrando como energia cinética e potencial variam de acordo com os parâmetros escolhidos.",
+          "Projeto: Determinação da aceleração da gravidade 'g' com o uso de Vídeo-Análise. Filmar a queda livre de um objeto (bola, celular desligado em capa) contra um fundo com escala de medida (régua grande ou papel quadriculado). Usar um software livre de análise de vídeo, como Tracker, para marcar a posição em cada frame. Exportar os dados para uma planilha, plotar gráfico Sxt² e calcular a aceleração da gravidade. Reutilizar a metodologia de análise de movimento."
+        ]
+      },
+      "2 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CNT101) Analisar e representar, com ou sem o uso de dispositivos e de aplicativos digitais específicos, as transformações e conservações em sistemas que envolvam quantidade de matéria, de energia e de movimento para realizar previsões sobre seus comportamentos em situações cotidianas e em processos produtivos que priorizem o desenvolvimento sustentável, o uso consciente dos recursos naturais e a preservação da vida em todas as suas formas.",
+          "(EM13CNT306) Avaliar os riscos envolvidos em atividades cotidianas, aplicando conhecimentos das Ciências da Natureza, para justificar o uso de equipamentos e recursos, bem como comportamentos de segurança, visando à integridade física, individual e coletiva, e socioambiental, podendo fazer uso de dispositivos e aplicativos digitais que viabilizem a estruturação de simulações de tais riscos.",
+          "(EM13CNT302) Comunicar, para públicos variados, em diversos contextos, resultados de análises, pesquisas e/ou experimentos, elaborando e/ou interpretando textos, gráficos, tabelas, símbolos, códigos, sistemas de classificação e equações, por meio de diferentes linguagens, mídias, tecnologias digitais de informação e comunicação (TDIC), de modo a participar e/ou promover debates em torno de temas científicos e/ou tecnológicos de relevância sociocultural e ambiental."
+        ],
+        "habilidades_especificas": [
+          "(EM13CNT101FIS01PE(b)) Analisar e representar, com ou sem o uso de dispositivos e de aplicativos digitais, as transformações, as conservações e as variações em sistemas que envolvam quantidade de matéria, de energia mecânica e de movimento, analisando seu caráter dimensional, vetorial e escalar, para realizar previsões sobre seus comportamentos com o uso de simuladores e/ou experimentos que abordem situações cotidianas e, em processos produtivos, que priorizem o desenvolvimento sustentável.",
+          "(EM13CNT306FIS23PE(a)) Estudar o uso de equipamentos de segurança no trânsito, no lazer, no trabalho e em atividades domésticas com intuito de eliminar riscos e redução de danos em acidentes utilizando conhecimentos sobre Conservação da quantidade de movimento e de energia.",
+          "(EM13CNT302FIS14PE(a)) Socializar, em diversos contextos, como em mostras científicas, feiras de ciências, seminários, entre outros, resultados de análises, pesquisas e/ou experimentos, elaborando e/ou interpretando textos, gráficos, tabelas, símbolos, códigos, sistemas de classificação e equações, por meio de diferentes linguagens, mídias, tecnologias digitais de informação e comunicação (TDIC), em torno do tema Matéria e Energia, temática de relevância tecnológica, sociocultural e ambiental, observando-se a comunidade em torno da escola."
+        ],
+        "objetos_conhecimento": [
+          "Leis de Newton e suas aplicações. Trabalho de uma Força. Potência e Rendimento.",
+          "Energia: Cinética, Potencial Gravitacional, Elástica e Mecânica. Teorema do Trabalho e Energia Cinética. Impulso e Quantidade de movimento (Gráfico F x t).",
+          "Conservação de energia mecânica e colisões. (Socializando as medidas de segurança no cotidiano)"
+        ],
+        "habilidades_computacao": [
+          "(EM13CO001) Explorar e construir a solução de problemas por meio da reutilização de partes de soluções existentes.",
+          "(EM13CO002) Explorar e construir a solução de problemas por meio de refinamentos, utilizando diversos níveis de abstração desde a especificação até a implementação.",
+          "(EM13CO016) Desenvolver projetos com robótica, utilizando artefatos físicos ou simuladores.",
+          "(EM13CO02) Explorar e construir a solução de problemas por meio de refinamentos, utilizando diversos níveis de abstração desde a especificação até a implementação.",
+          "(EM13CO01) Explorar e construir a solução de problemas por meio da reutilização de partes de soluções existentes.",
+          "(EM13CO011) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico.",
+          "(EM13CO16) Desenvolver projetos com robótica, utilizando artefatos físicos ou simuladores.",
+          "(EM13CO018) Planejar e gerenciar projetos integrados às áreas de conhecimento de forma colaborativa, solucionando problemas, usando diversos artefatos computacionais."
+        ],
+        "possibilidades_abordagens": [
+          "Investigação de experimentos, por meio de simulações do PhET, as transformações, as conservações e as variações em sistemas que envolvam quantidade de matéria, de energia mecânica e de movimento. Um exemplo de refinamento que podemos utilizar em aplicativos é o de simular a conservação de energia em uma superfície sem atrito e, posteriormente, refinar a situação numa simulação com atrito. Por meio da aplicação prática em projetos de robótica, utilizando kits físicos (Arduino, micro:bit, Lego EV3) ou simuladores digitais (Tinkercad Circuits, PhET, Proteus).",
+          "Podemos utilizar em aplicativos que possam simular os distintos tipos de energia: Cinética, Potencial Gravitacional, Elástica e Mecânica em diversas situações.",
+          "Uso de Softwares, exemplos: APP SCRATCH, PHET COLORADO, ModellusX, Geogebra. Exploração de objetos de conhecimento como: gráficos, tabelas, símbolos, códigos, sistemas de classificação e equações, por meio da aplicação prática em projetos de robótica, utilizando kits físicos (Arduino, micro:bit, Lego EV3) ou simuladores digitais (Tinkercad Circuits, PhET, Proteus). Disponibilização e compartilhamento de informações usando o Google Drive, Google Classroom dentre outras plataformas digitais."
+        ]
+      },
+      "3 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CNT101) Analisar e representar, com ou sem o uso de dispositivos e de aplicativos digitais específicos, as transformações e conservações em sistemas que envolvam quantidade de matéria, de energia e de movimento para realizar previsões sobre seus comportamentos em situações cotidianas e em processos produtivos que priorizem o desenvolvimento sustentável, o uso consciente dos recursos naturais e a preservação da vida em todas as suas formas.",
+          "(EM13CNT305) Investigar e discutir o uso indevido de conhecimentos das Ciências da Natureza na justificativa de processos de discriminação, segregação e privação de direitos individuais e coletivos, em diferentes contextos sociais e históricos, para promover a equidade e o respeito à diversidade."
+        ],
+        "habilidades_especificas": [
+          "(EM13CNT101FIS01PE(c)) Analisar e representar, com ou sem o uso de dispositivos e de aplicativos digitais, as transformações, as conservações e as variações em sistemas que envolvam quantidade de matéria, de energia mecânica e de movimento, analisando seu caráter dimensional, vetorial e escalar, para realizar previsões sobre seus comportamentos com o uso de simuladores e/ou experimentos que abordam situações cotidianas e, em processos produtivos, que priorizem o desenvolvimento sustentável.",
+          "(EM13CNT305FIS20PE(a)) Investigar e discutir o uso indevido de conhecimentos sobre o tema Matéria e Energia na justificativa de processos de discriminação, segregação e privação de direitos individuais e coletivos, em diferentes contextos sociais e históricos, para promover a equidade e o respeito à diversidade."
+        ],
+        "objetos_conhecimento": [
+          "Hidrostática (pressão hidrostática, teorema de Stevin, Experimento de Torricelli e Pressão Atmosférica, Vasos Comunicantes, Teorema de Pascal, Prensa Hidráulica, Teorema de Arquimedes). Hidrodinâmica (vazão e princípio de Bernoulli).",
+          "Produção Científica para promover a disseminação de informações verídicas alinhadas aos saberes das ciências."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO16) Desenvolver projetos com robótica, utilizando artefatos físicos ou simuladores.",
+          "(EM13CO14) Avaliar a confiabilidade das informações encontradas em meio digital, investigando seus modos de construção e considerando a autoria, a estrutura e o propósito da mensagem.",
+          "(EM13CO25) Dialogar em ambientes virtuais com segurança e respeito às diferenças culturais e pessoais, reconhecendo e denunciando atitudes abusivas."
+        ],
+        "possibilidades_abordagens": [
+          "Uso de Software de programação como por exemplo: APP SCRATCH, PHET COLORADO, Geogebra, Arduino; no estudo da hidrostática.",
+          "Observa-se a confiabilidade das publicações nas redes sociais, tais como: TikTok, Instagram, etc., sobre os conhecimentos científicos inadequados, investigando, refletindo e realizando comentários para possíveis correções."
+        ]
+      }
+    },
+    "2 ANO": {
+      "1 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CNT102) Realizar previsões, avaliar intervenções e/ou construir protótipos de sistemas térmicos que visem à sustentabilidade, considerando sua composição e os efeitos das variáveis termodinâmicas sobre seu funcionamento, considerando também o uso de tecnologias digitais que auxiliem no cálculo de estimativas e no apoio à construção dos protótipos.",
+          "(EM13CNT301) Construir questões, elaborar hipóteses, previsões e estimativas, empregar instrumentos de medição e representar e interpretar modelos explicativos, dados e/ou resultados experimentais para construir, avaliar e justificar conclusões no enfrentamento de situações-problema sob uma perspectiva científica.",
+          "(EM13CNT203) Avaliar e prever efeitos de intervenções nos ecossistemas, e seus impactos nos seres vivos e no corpo humano, com base nos mecanismos de manutenção da vida, nos ciclos da matéria e nas transformações e transferências de energia, utilizando representações e simulações sobre tais fatores, com ou sem o uso de dispositivos e aplicativos digitais (como softwares de simulação e de realidade virtual, entre outros)."
+        ],
+        "habilidades_especificas": [
+          "(EM13CNT102FIS02PE(a)) Realizar previsões, avaliar intervenções e/ou construir protótipos de sistemas térmicos que visem discutir os conceitos de calor, temperatura, sensação térmica, equilíbrio térmico e transmissão de calor, observando sua composição e os efeitos das variáveis próprias, considerando o uso de tecnologias digitais e/ou sensores que auxiliem no cálculo de estimativas e no apoio à construção dos protótipos e/ou experimentos, visando aplicações cotidianas.",
+          "(EM13CNT301FIS12PE(b)) Elaborar e solucionar situações-problema e suas variáveis (podendo envolver projetos), propondo hipóteses, realizando experimentos, avaliando dados, validando ou não os pressupostos no enfrentamento das demandas que envolvam a temática Vida e Evolução sob a perspectiva científica.",
+          "(EM13CNT203FIS07PE(a)) Avaliar e prever efeitos de intervenções nos ciclos da matéria e nas transformações e transferências de energia, avaliando seus riscos, impactos e benefícios para a natureza, utilizando representações e simulações sobre tais fatores, com ou sem o uso de dispositivos e aplicativos digitais (como softwares de simulação e de realidade virtual, entre outros) e/ou experimentos."
+        ],
+        "objetos_conhecimento": [
+          "Calor, temperatura (escalas termométricas, escalas arbitrárias, variação de temperatura, sensação térmica). Dilatação e Contração Térmica de Sólidos e Líquidos, propagação de calor por contato (Lei de Fourier), convecção e irradiação). Calorimetria (capacidade térmica, calor sensível, calor latente, calorímetro, equilíbrio térmico), mudança de fase de agregação, curvas de resfriamento e aquecimento, diagrama de fases.",
+          "Metodologia da pesquisa científica. (Proporcionar situações problema para elaboração de experimentos, testar hipóteses e controlar variáveis, propondo conclusões envolvendo Vida e Evolução.)",
+          "Estudo dos gases. Variáveis Macroscópicas. Estado Termodinâmico. Transformações de estado. Trabalho de um gás. Quantidade de Calor em gases, conservação da energia de um gás e a 1ª Lei da Termodinâmica. Máquinas Térmicas, Frigoríficas e o Ciclo de Carnot. Processos reversíveis e a 2ª Lei da Termodinâmica (trocas energéticas em máquinas térmicas e entropia)."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO02) Explorar e construir a solução de problemas por meio de refinamentos, utilizando diversos níveis de abstração desde a especificação até a implementação.",
+          "(EM13CO16) Desenvolver projetos com robótica, utilizando artefatos físicos ou simuladores.",
+          "(EM13CO21) Comunicar ideias complexas de forma clara por meio de objetos digitais como mapas conceituais, infográficos, hipertextos e outros.",
+          "(EM13CO01) Explorar e construir a solução de problemas por meio da reutilização de partes de soluções existentes.",
+          "(EM13CO02) Explorar e construir a solução de problemas por meio de refinamentos, utilizando diversos níveis de abstração desde a especificação até a implementação.",
+          "(EM13CO12) Produzir, analisar, gerir e compartilhar informações a partir de dados, utilizando princípios de ciência de dados.",
+          "(EM13CO11) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico.",
+          "(EM13CO16) Desenvolver projetos com robótica, utilizando artefatos físicos ou simuladores.",
+          "(EM13CO21) Comunicar ideias complexas de forma clara por meio de objetos digitais como mapas conceituais, infográficos, hipertextos e outros."
+        ],
+        "possibilidades_abordagens": [
+          "Um exemplo de refinamento que podemos utilizar em aplicativos é, por exemplo, simular as trocas de calor sem levar em consideração as trocas de calor do recipiente e depois levar em consideração as trocas de calor com o recipiente. No uso de simulações, por meio de softwares ou simuladores online, e/ou projetos que envolvem artefatos físicos pertinentes ao objeto do conhecimento em questão. Uso de plataformas digitais (como canva, mindmeister e etc) para construção de mapas conceituais, infográficos, hipertextos, que irão ajudar a hierarquizar, classificar e associar ideias ao estudo da Termodinâmica.",
+          "Ao resolver um problema de Física realizamos vários passos que já foram utilizados na solução de outros problemas, podendo serem criados algoritmos de resolução. É possível construir soluções por meio de refinamentos, melhoramentos até a implementação. Com o uso de experimentos, envolvendo sensores e/ou arduíno na produção de dados, análise de diversas características como o tempo de aquecimento.",
+          "O uso de modelos computacionais simples que simulam e/ou registrem variações de temperatura em diversos ambientes utilizando o Arduino e linguagem de programação em bloco ou C. A aplicação de simulações, por meio de softwares ou simuladores online, e/ou projetos que envolvem artefatos físicos pertinentes ao objeto do conhecimento em questão. Uso das plataformas digitais (como canva, mindmeister e etc) para construção de mapas conceituais, infográficos, hipertextos, que irão ajudar a hierarquizar, classificar e associar ideias ao estudo da Termodinâmica."
+        ]
+      },
+      "2 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CNT302) Comunicar, para públicos variados, em diversos contextos, resultados de análises, pesquisas e/ou experimentos, elaborando e/ou interpretando textos, gráficos, tabelas, símbolos, códigos, sistemas de classificação e equações, por meio de diferentes linguagens, mídias, tecnologias digitais de informação e comunicação (TDIC), de modo a participar e/ou promover debates em torno de temas científicos e/ou tecnológicos de relevância sociocultural e ambiental.",
+          "(EM13CNT103) Utilizar o conhecimento sobre as radiações e suas origens para avaliar as potencialidades e os riscos de sua aplicação em equipamentos de uso cotidiano, na saúde, no ambiente, na indústria, na agricultura e na geração de energia elétrica.",
+          "(EM13CNT307) Analisar as propriedades dos materiais para avaliar a adequação de seu uso em diferentes aplicações (industriais, cotidianas, arquitetônicas ou tecnológicas) e/ ou propor soluções seguras e sustentáveis considerando seu contexto local e cotidiano."
+        ],
+        "habilidades_especificas": [
+          "(EM13CNT302FIS15PE(b)) Socializar, em diversos contextos, como em mostras científicas, feiras de ciências, seminários, entre outros, resultados de análises, pesquisas e/ou experimentos, elaborando e/ou interpretando textos, gráficos, tabelas, símbolos, códigos, sistemas de classificação e equações, por meio de diferentes linguagens, mídias, tecnologias digitais de informação e comunicação (TDIC), em torno do tema Vida e Evolução, temática de relevância tecnológica, sociocultural e ambiental, observando-se a comunidade em torno da escola.",
+          "(EM13CNT103FIS03PE(a)) Mobilizar o conhecimento sobre Óptica Geométrica, ondas eletromagnéticas (tal como a luz visível) e as ondas mecânicas (tal como as ondas sonoras), aplicadas às suas formas de geração, de transmissão, de manifestação na natureza e interação com meios materiais e no vácuo - para avaliar, com ou sem o uso de experimentos, as potencialidades e os riscos de seu emprego em equipamentos de uso cotidiano - e das formas de proteção, na saúde, no ambiente, na indústria, na agricultura e na geração de energia elétrica.",
+          "(EM13CNT307FIS24PE(a)) Analisar as propriedades de ondas para avaliar a adequação de seu uso em diferentes aplicações (industriais, cotidianas, arquitetônicas e tecnológicas) e/ ou propor soluções seguras e sustentáveis, considerando seu contexto local e cotidiano."
+        ],
+        "objetos_conhecimento": [
+          "Termometria, Calorimetria, Gases e Leis da Termodinâmica (Construção de materiais de divulgação e utilizá-las em olimpíadas do conhecimento e eventos de divulgação científica regional, nacional e internacional, exercitando o protagonismo juvenil)",
+          "Ondulatória (tipos de ondas, elementos de uma onda, trem de ondas, velocidade de uma onda, velocidade de uma onda numa corda, fenômenos da ondulatória (interferência, reflexão, refração, difração, polarização, ressonância), ondas estacionárias, efeitos fisiológicos do som, tubos sonoros em ressonância, efeito doppler).",
+          "Ondas Eletromagnéticas e Mecânicas (propagação de ondas eletromagnéticas, potência de uma frente de ondas, nível sonoro e escala decibel e possíveis barreiras de inibição de potência)."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO011) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico.",
+          "(EM13CO016) Desenvolver projetos com robótica, utilizando artefatos físicos ou simuladores.",
+          "(EM13CO018) Planejar e gerenciar projetos integrados às áreas de conhecimento de forma colaborativa, solucionando problemas, usando diversos artefatos computacionais.",
+          "(EM13CO14) Avaliar a confiabilidade das informações encontradas em meio digital, investigando seus modos de construção e considerando a autoria, a estrutura e o propósito da mensagem.",
+          "(EM13CO18) Planejar e gerenciar projetos integrados às áreas de conhecimento de forma colaborativa, solucionando problemas, usando diversos artefatos computacionais."
+        ],
+        "possibilidades_abordagens": [
+          "É possível utilizar modelos computacionais simples que simulam e/ou registram variações de temperatura em diversos ambientes, utilizando o Arduino e linguagem de programação em bloco ou C. No uso de simulações, por meio de softwares ou simuladores online, e/ou projetos que envolvem artefatos físicos pertinentes ao objeto do conhecimento em questão.",
+          "É possível oferecer diversos conteúdos disponibilizados na internet para que os estudantes avaliem a veracidade das informações.",
+          "Disponibilização e compartilhamento de informações usando o Google Drive, Google Classroom dentre outras plataformas digitais."
+        ]
+      },
+      "3 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CNT103) Utilizar o conhecimento sobre as radiações e suas origens para avaliar as potencialidades e os riscos de sua aplicação em equipamentos de uso cotidiano, na saúde, no ambiente, na indústria, na agricultura e na geração de energia elétrica.",
+          "(EM13CNT303) Interpretar textos de divulgação científica que tratem de temáticas das Ciências da Natureza, disponíveis em diferentes mídias, considerando a apresentação dos dados, tanto na forma de textos como em equações, gráficos e/ou tabelas, a consistência dos argumentos e a coerência das conclusões, visando construir estratégias de seleção de fontes confiáveis de informações.",
+          "(EM13CNT305) Investigar e discutir o uso indevido de conhecimentos das Ciências da Natureza na justificativa de processos de discriminação, segregação e privação de direitos individuais e coletivos, em diferentes contextos sociais e históricos, para promover a equidade e o respeito à diversidade."
+        ],
+        "habilidades_especificas": [
+          "(EM13CNT103FIS03PE(b)) Mobilizar o conhecimento sobre Óptica Geométrica, ondas eletromagnéticas (tal como a luz visível) e as ondas mecânicas (tal como as ondas sonoras), aplicadas às suas formas de geração, de transmissão, de manifestação na natureza e interação com meios materiais e no vácuo - para avaliar, com ou sem o uso de experimentos, as potencialidades e os riscos de seu emprego em equipamentos de uso cotidiano - e das formas de proteção, na saúde, no ambiente, na indústria, na agricultura e na geração de energia elétrica.",
+          "(EM13CNT303FIS18PE(b)) Interpretar textos de divulgação científica que tratam da temática Vida e Evolução, disponíveis em diferentes mídias, considerando a apresentação dos dados, tanto na forma de texto como em equações, gráficos e/ou tabelas, a consistência dos argumentos e a coerência das conclusões buscando validar as fontes seguras de informações.",
+          "(EM13CNT305FIS21PE(b)) Investigar e discutir o uso indevido de conhecimentos sobre o tema Vida e Evolução na justificativa de processos de discriminação, segregação e privação de direitos individuais e coletivos, em diferentes contextos sociais e históricos, para promover a equidade e o respeito à diversidade."
+        ],
+        "objetos_conhecimento": [
+          "Óptica Geométrica (Luz, fontes de luz), meios ópticos, princípios da propagação da luz, fenômenos ópticos (reflexão, refração e absorção), espelhos planos, espelhos esféricos, lentes, a visão humana. Radiações Ionizantes. Disfunções da visão e instrumentos ópticos.",
+          "Produção Científica para promover a disseminação de informações verídicas alinhadas aos saberes das ciências, no que se refere a óptica geométrica e radiação, utilizando representação de dados em tabelas, gráficos, infográficos e ilustrações, com ênfase na saúde.",
+          "Óptica Geométrica e radiação (Combater a disseminação de informações inverídicas e validar conhecimento científico, com ênfase em diferentes contextos sociais e históricos no tema Vida e Evolução.)"
+        ],
+        "habilidades_computacao": [
+          "(EM13CO16) Desenvolvimento de projetos com robótica, utilizando artefatos físicos ou simuladores.",
+          "(EM13CO21) Comunicar ideias complexas de forma clara por meio de objetos digitais como mapas conceituais, infográficos, hipertextos e outros.",
+          "(EM13CO22) Produzir e publicar conteúdo como textos, imagens, áudios, vídeos e suas associações, bem como ferramentas para sua integração, organização e apresentação, utilizando diferentes mídias digitais."
+        ],
+        "possibilidades_abordagens": [
+          "No uso de simulações, por meio de softwares ou simuladores online, e/ou projetos que envolvem artefatos físicos pertinentes ao objeto do conhecimento em questão é possível mobilizar conhecimentos sobre óptica geométrica, ondas eletromagnéticas e ondas mecânicas aplicadas às suas formas de geração. Utilização das plataformas digitais (como canva, mindmeister e etc.) para construção de mapas conceituais, infográficos, hipertextos que irão ajudar a hierarquizar, classificar e associar ideias ao estudo da Óptica Geométrica.",
+          "É possível a utilização de ferramentas tecnológicas para auxiliar na produção e divulgação de conteúdos científicos, a fim de contribuir na disseminação de informações científicas no tocante à óptica geométrica e à radiação."
+        ]
+      }
+    },
+    "3 ANO": {
+      "1 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CNT107) Realizar previsões qualitativas e quantitativas sobre o funcionamento de geradores, motores elétricos e seus componentes, bobinas, transformadores, pilhas, baterias e dispositivos eletrônicos, com base na análise dos processos de transformação e condução de energia envolvidos – com ou sem o uso de dispositivos e aplicativos digitais –, para propor ações que visem a sustentabilidade.",
+          "(EM13CNT301) Construir questões, elaborar hipóteses, previsões e estimativas, empregar instrumentos de medição e representar e interpretar modelos explicativos, dados e/ou resultados experimentais para construir, avaliar e justificar conclusões no enfrentamento de situações-problema sob uma perspectiva científica.",
+          "(EM13CNT308) Investigar e analisar o funcionamento de equipamentos elétricos e/ou eletrônicos e sistemas de automação para compreender as tecnologias contemporâneas e avaliar seus impactos sociais, culturais e ambientais."
+        ],
+        "habilidades_especificas": [
+          "(EM13CNT107FIS05PE(a)) Realizar previsões qualitativas e quantitativas sobre fenômenos da eletrostática, eletrodinâmica e do eletromagnetismo, tais como, campos elétrico e magnético, conservação das cargas elétricas, lei da atração e repulsão, processos de eletrização, potência elétrica, resistências, tensão, corrente elétrica, capacitância, o funcionamento e aplicações de geradores e receptores elétricos e seus componentes (como bobinas e indutores), utilizando a simbologia de cada um no funcionamento de transformadores e dispositivos eletrônicos (como sensores), com base na análise dos processos de transformação, condução, consumo, armazenamento e eficiência da energia elétrica – com ou sem o uso de dispositivos e aplicativos digitais e/ou experimentos –, para propor ações que visem a sustentabilidade.",
+          "(EM13CNT301FIS13PE(c)) Delimitar um problema e suas variáveis (podendo envolver projetos), elaborando hipóteses, realizando experimentos, avaliando dados, validando ou não os pressupostos no enfrentamento das demandas que envolvam a temática Terra e Universo sob a perspectiva científica.",
+          "(EM13CNT308FIS25PE(a)) Conhecer e/ou utilizar equipamentos eletroeletrônicos desenvolvendo conceitos sensoriais para compreender as tecnologias contemporâneas aplicadas a coletas e armazenamento de dados, avaliar resultados experimentais e seus impactos sociais, culturais, ambientais e possíveis inovações tecnológicas."
+        ],
+        "objetos_conhecimento": [
+          "Eletrostática: Carga elétrica, Eletrização, Força eletrostática, Campo elétrico, Potencial elétrico, Energia potencial elétrica.",
+          "Eletrodinâmica: Corrente, tensão, resistência elétrica e Leis de Ohm.",
+          "Produção científica que envolva Eletrostática e Eletrodinâmica com a utilização de equipamentos de medidas elétricas como multímetro, para realizar experimentos, elaborar hipóteses, avaliar dados, validando ou não os pressupostos no enfrentamento das demandas que envolvam a temática Terra e Universo.",
+          "Funcionamento de equipamentos e componentes elétricos e eletrônicos, tais como: multímetro, capacímetro, fusíveis, resistores, fontes de tensão e etc."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO16) Desenvolver projetos com robótica, utilizando artefatos físicos ou simuladores",
+          "(EM13CO12) Produzir, analisar, gerir e compartilhar informações a partir de dados, utilizando princípios de ciência de dados.",
+          "(EM13CO18) Planejar e gerenciar projetos integrados às áreas de conhecimento de forma colaborativa, solucionando problemas, usando diversos artefatos computacionais.",
+          "(EM13CO09) Identificar tecnologias digitais, sua presença e formas de uso, nas diferentes atividades no mundo do trabalho."
+        ],
+        "possibilidades_abordagens": [
+          "Por meio da aplicação prática em projetos de robótica, utilizando kits físicos (Arduino, micro:bit, Lego EV3) ou simuladores digitais (Tinkercad Circuits, PhET, Proteus). Manter o controle de tensão e entender a conexão com a resistência é essencial para não queimar os componentes eletrônicos. Entender se os sensores de toque ou proximidade funcionam a partir de princípios da eletrostática e do campo elétrico. Conectar os conceitos físicos (carga, eletrização, força e campo elétrico) ao funcionamento de sensores capacitivos e os conceitos de Eletrodinâmica (corrente, tensão, resistência e Leis de Ohm) ao funcionamento de circuitos de controle de motores e LEDs.",
+          "Em um trabalho em grupo será realizado os registros dos valores de corrente, tensão e resistência obtidos através da montagem de circuitos simples (pilha, resistores, LEDs) para medir tensão e corrente. A partir daí, os estudantes construirão hipóteses referente às leis de Ohm. Após as análises, os estudantes poderão utilizar planilhas eletrônicas (Excel, Google Sheets) para organização de tabelas, gráficos e infográficos. Disponibilização e compartilhamento de informações usando o Google Drive, Google Classroom dentre outras plataformas digitais.",
+          "Numa atividade prática com circuitos, podem ser explorados equipamentos eletroeletrônicos, como por exemplo, multímetro e suas funções, com a finalidade de aferição de medidas, como tensão, corrente e resistência, para discutir sua importância e assegurar o seu uso de forma apropriada no mundo de trabalho."
+        ]
+      },
+      "2 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CNT107) Realizar previsões qualitativas e quantitativas sobre o funcionamento de geradores, motores elétricos e seus componentes, bobinas, transformadores, pilhas, baterias e dispositivos eletrônicos, com base na análise dos processos de transformação e condução de energia envolvidos – com ou sem o uso de dispositivos e aplicativos digitais –, para propor ações que visem a sustentabilidade.",
+          "(EM13CNT106) Avaliar, com ou sem o uso de dispositivos e aplicativos digitais, tecnologias e possíveis soluções para as demandas que envolvem a geração, o transporte, a distribuição e o consumo de energia elétrica, considerando a disponibilidade de recursos, a eficiência energética, a relação custo/benefício, as características geográficas e ambientais, a produção de resíduos e os impactos socioambientais e culturais.",
+          "(EM13CNT309) Analisar questões socioambientais, políticas e econômicas relativas à dependência do mundo atual em relação aos recursos não renováveis e discutir a necessidade de introdução de alternativas e novas tecnologias energéticas e de materiais, comparando diferentes tipos de motores e processos de produção de novos materiais.",
+          "(EM13CNT310) Investigar e analisar os efeitos de programas de infraestrutura e demais serviços básicos (saneamento, energia elétrica, transporte, telecomunicações, cobertura vacinal, atendimento primário à saúde e produção de alimentos, entre outros) e identificar necessidades locais e/ou regionais em relação a esses serviços, a fim de avaliar e/ou promover ações que contribuam para a melhoria na qualidade de vida e nas condições de saúde da população."
+        ],
+        "habilidades_especificas": [
+          "(EM13CNT107FIS05PE(b)) Realizar previsões qualitativas e quantitativas sobre fenômenos da eletrostática, eletrodinâmica e do eletromagnetismo, tais como, campos elétrico e magnético, conservação das cargas elétricas, lei da atração e repulsão, processos de eletrização, potência elétrica, resistências, tensão, corrente elétrica, capacitância, o funcionamento e aplicações de geradores e receptores elétricos e seus componentes (como bobinas e indutores), utilizando a simbologia de cada um no funcionamento de transformadores e dispositivos eletrônicos (como sensores), com base na análise dos processos de transformação, condução, consumo, armazenamento e eficiência da energia elétrica – com ou sem o uso de dispositivos e aplicativos digitais e/ou experimentos –, para propor ações que visem a sustentabilidade.",
+          "(EM13CNT106FIS04PE(a)) Avaliar, com ou sem o uso de dispositivos, aplicativos digitais e/ou experimentos, tecnologias e possíveis soluções para as demandas que envolvem as diferentes transformações, o transporte, a distribuição e o consumo de energia elétrica, considerando a disponibilidade de recursos e o tempo de renovação, a eficiência energética, a relação custo/benefício, as características geográficas e ambientais, a produção de resíduos e os impactos socioambientais e culturais.",
+          "(EM13CNT309FIS26PE(a)) Analisar questões socioambientais relativas ao consumo da sociedade atual em relação às matrizes energéticas e recursos renováveis e não renováveis, discutindo a necessidade de introdução de fontes alternativas e uso de novas tecnologias e materiais, comparando diferentes tipos de motores, receptores e transformadores nos processos de produção/captação da energia elétrica.",
+          "(EM13CNT310FIS27PE(a)) Investigar e analisar os efeitos de programas de infraestrutura (distribuição e armazenamento de energia elétrica, transporte e telecomunicações) e identificar as necessidades locais e/ou regionais em relação a esses serviços, a fim de avaliar e/ou promover ações que contribuam para a melhoria na qualidade de vida da população de forma sustentável."
+        ],
+        "objetos_conhecimento": [
+          "Circuito Elétrico (componentes do circuito elétrico básico) corrente elétrica, condutores e isolantes, potência, energia elétrica e cálculo de consumo. Dispositivos de segurança (chave e/ou interruptor, fusível e disjuntor). Resistores, Lei de Ohm, Efeito Joule associações (série, paralelo e mistas). Capacitores e associação de capacitores, geradores e associações (série e paralelo). Receptores elétricos.",
+          "Magnetismo: pólos magnéticos, imãs, propriedades magnéticas dos materiais, linhas de força, campo magnético uniforme.",
+          "Eletromagnetismo: campo magnético gerado por corrente elétrica, força magnética gerada por um campo magnético, uso de transformadores e indutores.",
+          "Circuito Elétrico (rendimento, comparação entre tensão elétrica contínua e alternada, comparação entre redes de 110V e 220V, cálculo de consumo de energia elétrica e custo), avaliando as contribuições de Tesla para as novas tecnologias e transformação de outras modalidades de energia em energia elétrica.",
+          "Matrizes energéticas aplicada à geradores (usinas termoelétricas, usina hidroelétrica, células fotovoltaicas, coletores eólicos, usinas nucleares).",
+          "Matrizes Energéticas e seus impactos ambientais e sociais."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO09) Identificar tecnologias digitais, sua presença e formas de uso, nas diferentes atividades no mundo do trabalho.",
+          "(EM13CO11) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico.",
+          "(EM13CO15) Analisar a interação entre usuários e artefatos computacionais, abordando aspectos da experiência do usuário e promovendo reflexão sobre a qualidade do uso dos artefatos nas esferas do trabalho, do lazer e do estudo.",
+          "(EM13CO18) Planejar e gerenciar projetos integrados às áreas de conhecimento de forma colaborativa, solucionando problemas, usando diversos artefatos computacionais.",
+          "(EM13CO21) Comunicar ideias complexas de forma clara por meio de objetos digitais como mapas conceituais, infográficos, hipertextos e outros."
+        ],
+        "possibilidades_abordagens": [
+          "Projeto \"Simulando o Consumo de Energia Residencial\" utilizando o Tinkercad Circuits, orientando-os a modelar um circuito elétrico simples com dispositivos de segurança, como fusível e disjuntor, de forma a compreender sua função na proteção contra sobrecargas. Em seguida, os alunos podem calcular e prever o consumo mensal de diferentes aparelhos elétricos do cotidiano (como lâmpadas, chuveiro e geladeira), relacionando potência, tempo de uso e custo da energia elétrica. A partir dessa análise, os grupos deverão propor um plano de otimização que busque reduzir o gasto em kWh e o valor da conta de luz, aproximando a aprendizagem dos conceitos de Física à realidade doméstica e ao mundo do trabalho, além de estimular práticas de consumo consciente e sustentável.",
+          "Simulação e Modelagem de Rendimento: Os alunos utilizarão o simulador Kit de Construção de Circuitos (CA e CC) do PhET para montar dois modelos de circuitos: um em 110V e outro em 220V, alimentando a mesma carga (resistor/lâmpada) para gerar a mesma potência útil. Eles deverão explorar e manipular as variáveis (tensão, corrente, resistência) para comparar a corrente elétrica em cada cenário. Análise da Experiência do Usuário (Usabilidade): Os estudantes deverão avaliar o design e a interface do PhET (artefato computacional); e depois refletirão sobre como a representação visual (fio, elétrons, voltímetro) facilita ou dificulta a compreensão da diferença entre 110V e 220V, sugerindo melhorias na usabilidade do simulador para auxiliar o aprendizado de Física.",
+          "Disponibilização e compartilhamento de informações usando o Google Drive, Google Classroom dentre outras plataformas digitais.",
+          "Criação de Infográfico Interativo: O aluno deve investigar os impactos socioambientais da matriz energética e do transporte intermodal (conteúdo central). A interface será um software de design gráfico (Ex: Canva, Google Drawings, ou Figma) para criar um infográfico digital que ilustra as cadeias de impacto."
+        ]
+      },
+      "3 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CNT201) Analisar e discutir modelos, teorias e leis propostos em diferentes épocas e culturas para comparar distintas explicações sobre o surgimento e a evolução da Vida, da Terra e do Universo com as teorias científicas aceitas atualmente.",
+          "(EM13CNT302) Comunicar, para públicos variados, em diversos contextos, resultados de análises, pesquisas e/ou experimentos, elaborando e/ou interpretando textos, gráficos, tabelas, símbolos, códigos, sistemas de classificação e equações, por meio de diferentes linguagens, mídias, tecnologias digitais de informação e comunicação (TDIC), de modo a participar e/ou promover debates em torno de temas científicos e/ou tecnológicos de relevância sociocultural e ambiental.",
+          "(EM13CNT205) Interpretar resultados e realizar previsões sobre atividades experimentais, fenômenos naturais e processos tecnológicos, com base nas noções de probabilidade e incerteza, reconhecendo os limites explicativos das ciências.",
+          "(EM13CNT209) Analisar a evolução estelar associando-a aos modelos de origem e distribuição dos elementos químicos no Universo, compreendendo suas relações com as condições necessárias ao surgimento de sistemas solares e planetários, suas estruturas e composições e as possibilidades de existência de vida, utilizando representações e simulações, com ou sem o uso de dispositivos e aplicativos digitais (como softwares de simulação e de realidade virtual, entre outros).",
+          "(EM13CNT303) Interpretar textos de divulgação científica que tratem de temáticas das Ciências da Natureza, disponíveis em diferentes mídias, considerando a apresentação dos dados, tanto na forma de textos como em equações, gráficos e/ou tabelas, a consistência dos argumentos e a coerência das conclusões, visando construir estratégias de seleção de fontes confiáveis de informações.",
+          "(EM13CNT305) Investigar e discutir o uso indevido de conhecimentos das Ciências da Natureza na justificativa de processos de discriminação, segregação e privação de direitos individuais e coletivos, em diferentes contextos sociais e históricos, para promover a equidade e o respeito à diversidade."
+        ],
+        "habilidades_especificas": [
+          "(EM13CNT201FIS06PE(a)) Discutir modelos, teorias e leis propostos em diferentes épocas e culturas para comparar distintas explicações sobre o surgimento e a evolução da Terra e do Universo com as teorias científicas aceitas atualmente, valorizando as diversas contribuições repassadas através das diferentes gerações para a preservação do conhecimento.",
+          "(EM13CNT302FIS16PE(c)) Socializar, em diversos contextos, como em mostras científicas, feiras de ciências, seminários, entre outros, resultados de análises, pesquisas e/ou experimentos, elaborando e/ou interpretando textos, gráficos, tabelas, símbolos, códigos, sistemas de classificação e equações, por meio de diferentes linguagens, mídias, tecnologias digitais de informação e comunicação (TDICs), em torno do tema Terra e Universo, temática de relevância tecnológica, sociocultural e ambiental, observando-se a comunidade em torno da escola.",
+          "(EM13CNT205FIS09PE(b)) Coletar e interpretar resultados/dados e realizar previsões sobre atividades experimentais, fenômenos naturais e processos tecnológicos, com base nas noções de probabilidade e incerteza, reconhecendo os limites explicativos das ciências e explorando possibilidades de novas teorias.",
+          "(EM13CNT209FIS10PE(a)) Analisar a evolução estelar associando-a aos modelos de origem e distribuição da matéria e energia no Universo, compreendendo suas relações com as condições necessárias ao surgimento de Sistemas Solares e planetários, suas estruturas e composições, utilizando representações e simulações, entendendo sobre possíveis formas de adquirir compostos sintéticos e suas aplicabilidades, com ou sem o uso de dispositivos e aplicativos digitais (como softwares de simulação e de realidade virtual, entre outros).",
+          "(EM13CNT303FIS17PE(c)) Interpretar textos de divulgação científica que tratam da temática Terra e Universo, disponíveis em diferentes mídias, considerando a apresentação dos dados, tanto na forma de texto como em equações, gráficos e/ou tabelas, a consistência dos argumentos e a coerência das conclusões buscando validar as fontes seguras de informações.",
+          "(EM13CNT305FIS22PE(c)) Investigar e discutir o uso indevido de conhecimentos sobre o tema Terra e Universo na justificativa de processos de discriminação, segregação e privação de direitos individuais e coletivos, em diferentes contextos sociais e históricos, para promover a equidade e o respeito à diversidade."
+        ],
+        "objetos_conhecimento": [
+          "Teoria do Big Bang (origem e expansão do Universo, acelerador de partículas e composição da matéria subatômica). RELATIVIDADE RESTRITA: Introdução à Teoria da Relatividade Restrita; Postulados da Relatividade Restrita; Dilatação Temporal.",
+          "Relatividade Restrita e Física Quântica (Socializar, em diversos contextos, como em mostras científicas, feiras de ciências, seminários entre outros, resultados de análises, pesquisas e/ou experimentos, elaborando e/ou interpretando textos, gráficos, tabelas, símbolos, códigos, sistemas de classificação e equação por meio de diferentes linguagens, mídias, tecnologias digitais de informação e comunicação (TDICs), em torno no tema Terra e Universo, temática de relevância tecnológica, sociocultural e ambiental, observando-se a comunidade em torno da escola.)",
+          "Física Moderna: Origens da Mecânica Quântica; Radiação Térmica; Corpo Negro; Quantização da Energia (Hipótese de Planck); Efeito Fotoelétrico; Natureza Ondulatória da Matéria; Dualidade Onda Partícula; Princípio da Incerteza.",
+          "Astronomia (nascimento, evolução e morte de estrelas, origem dos elementos químicos, teoria dos buracos negros).",
+          "Produção da pesquisa científica voltado para Astronomia e Física Moderna com representação de dados em tabelas, gráficos, infográficos e ilustrações, usando ou não softwares educativos com o intuito de facilitar o entendimento de assuntos ligados à Terra e Universo.",
+          "Investigação Científica relacionada a Astronomia e Física Moderna com o objetivo de combater a disseminação de informações inverídicas, integrando diferentes linhas de pesquisa com ênfase no tema Terra e Universo."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO14) Avaliar a confiabilidade das informações encontradas em meio digital, investigando seus modos de construção e considerando a autoria, a estrutura e o propósito da mensagem.",
+          "(EM13CO21) Comunicar ideias complexas de forma clara por meio de objetos digitais como mapas conceituais, infográficos, hipertextos e outros.",
+          "(EM13CO22) Produzir e publicar conteúdo como textos, imagens, áudios, vídeos e suas associações, bem como ferramentas para sua integração, organização e apresentação, utilizando diferentes mídias digitais.",
+          "(EM13CO20) Criar conteúdos, disponibilizando-os em ambientes virtuais para publicação e compartilhamento, avaliando a confiabilidade e as consequências da disseminação dessas informações.",
+          "(EM13CO19) Expor, argumentar e negociar propostas, produtos e serviços, utilizando diferentes mídias e ferramentas digitais.",
+          "(EM13CO21) Comunicar ideias complexas de forma clara por meio de objetos digitais como mapas conceituais, infográficos, hipertextos e outros.",
+          "(EM13CO14) Avaliar a confiabilidade das informações encontradas em meio digital, investigando seus modos de construção e considerando a autoria, a estrutura e o propósito da mensagem."
+        ],
+        "possibilidades_abordagens": [
+          "Apresenta-se duas situações: um vídeo de divulgação científica confiável (como da ESA, NASA ou CERN) sobre o Big Bang e o LHC, e outro vídeo de rede social com informações distorcidas ou sensacionalistas (ex.: 'O LHC pode destruir a Terra', ou 'a Relatividade de Einstein já foi refutada').",
+          "Os alunos, em grupos, escolhem um subtema (ex.: 'Dilatação temporal e GPS', 'Dualidade onda-partícula', 'Aplicações da Física Quântica na medicina') e produzem materiais digitais para socializar o conteúdo: Mapas conceituais interativos (CmapTools, MindMeister). Infográficos (Canva, Piktochart). Vídeos curtos ou podcasts (CapCut, Audacity, Anchor). Hipertextos com links para fontes seguras e multimídias integradas. É possível a utilização de ferramentas tecnológicas para auxiliar na produção e divulgação de conteúdos científicos, a fim de contribuir na disseminação de informações científicas no tocante à Relatividade Restrita e Física Quântica.",
+          "Divisão da turma em grupos, cada um com um subtema (ex.: 'Efeito Fotoelétrico e Energia Solar', 'Princípio da Incerteza e Limites da Medição', 'Hipótese de Planck e o Corpo Negro'). Criação de produtos digitais para socializar o conhecimento: Infográfico (Canva, Piktochart). Podcast ou vídeo explicativo curto (Audacity, CapCut, YouTube). Postagem em blog/ambiente virtual da escola. Slides interativos com hyperlinks e QR codes para referências confiáveis.",
+          "Pesquisa orientada: os alunos serão divididos em grupos para estudar os diferentes tópicos (ciclo de vida das estrelas, nucleossíntese estelar, buracos negros e horizontes de eventos). O objetivo é que cada grupo organize e publique o resultado da sua pesquisa na Feira Digital chamada 'Universo em Debate', utilizando plataformas online como Google Sites, Padlet e Moodle para a exposição final.",
+          "Apresenta-se o papel da pesquisa científica na Astronomia e na Física Moderna, destacando o uso de dados e representações visuais para comunicar descobertas. Cada grupo escolhe um tema (ex.: Big Bang, buracos negros, radiação cósmica de fundo, dualidade onda-partícula, teoria da relatividade restrita). Depois eles realizam pesquisas em fontes confiáveis. Os alunos serão estimulados a transformarem suas representações em produtos digitais (infográficos interativos, hipertextos com links, mapas conceituais digitais no Cmap ou MindMeister).",
+          "Apresenta-se duas situações: um vídeo de divulgação científica confiável (como da ESA, NASA ou CERN) sobre o Big Bang e o LHC, e outro vídeo de rede social com informações distorcidas ou sensacionalistas (ex.: 'O LHC pode destruir a Terra', ou 'a Relatividade de Einstein já foi refutada')."
+        ]
+      }
+    }
+  },
+  "deteccao_confiavel": true,
+  "gerado_em": "2026-08-04T12:26",
+  "arquivo_origem": "Fisica_Organizador-Curricular-Trimestral-da-FGB.pdf"
+}

@@ -1,0 +1,295 @@
+{
+  "disciplina": "Filosofia",
+  "tem_computacao": true,
+  "conteudo": {
+    "1 ANO": {
+      "1 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CHS103) Elaborar hipóteses, selecionar evidências e compor argumentos relativos a processos políticos, econômicos, sociais, ambientais, culturais e epistemológicos, com base na sistematização de dados e informações de diversas naturezas (expressões artísticas, textos filosóficos e sociológicos, documentos históricos e geográficos, gráficos, mapas, tabelas, tradições orais, entre outros).",
+          "(EM13CHS101) Identificar, analisar e comparar diferentes fontes e narrativas expressas em diversas linguagens, com vistas à compreensão de ideias filosóficas e de processos e eventos históricos, geográficos, políticos, econômicos, sociais, ambientais e culturais."
+        ],
+        "habilidades_especificas": [
+          "(EM13CHS103FI02PEa) Compreender e articular conhecimentos filosóficos de diferentes linguagens, estruturas/conteúdos e modos discursivos, associando-os às possíveis soluções para situações-problema da sociedade contemporânea.",
+          "(EM13CHS101FI01PEa) Analisar de modo crítico, textos escritos e imagens de diferentes estruturas, fazendo articulação com as correntes filosóficas e considerando suas relações com o contexto sócio-político, econômico e religioso contemporâneo."
+        ],
+        "objetos_conhecimento": [
+          "Filosofia: origem, contexto histórico e conceitos;",
+          "Pensamento Mítico e suas principais expressões na antiguidade grega;",
+          "Diferenças - Filosofia, senso comum e conhecimento científico;",
+          "Os Pré-Socráticos e o lógos.",
+          "Os conceitos de Pólis, Ágora e Paideia",
+          "Sócrates, Sofistas, Platão e Aristóteles.",
+          "Correntes Helenísticas: Cinismo, Estoicismo, Epicurismo e Ceticismo."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO12) Produzir, analisar, gerir e compartilhar informações a partir de dados, utilizando princípios de ciência de dados.",
+          "(EM13CO21) Comunicar ideias complexas de forma clara por meio de objetos digitais como mapas conceituais, infográficos, hipertextos e outros.",
+          "(EM13CO14) Avaliar a confiabilidade das informações encontradas em meio digital, investigando seus modos de construção e considerando a autoria, a estrutura e o propósito da mensagem."
+        ],
+        "possibilidades_abordagens": [
+          "Mapeamento de expressões míticas oriundas de diferentes culturas e analisar padrões comuns entre essas expressões. Posteriormente, apresentação da Filosofia como uma nova forma de buscar resposta à indagação sobre a origem, natureza, finalidade das coisas e do mundo, marcada pela primazia da racionalidade.",
+          "Uso de recursos de programação textual; Utilização de recursos visuais para comparar as ideias trabalhadas. Montagem de mapas mentais, infográficos, linhas do tempo em ferramentas digitais para comparar as ideias de Platão versus Aristóteles.",
+          "Reflexão sobre como a busca por conceitos, definições, ideias claras, objetivas e coerentes com a realidade (verdadeiras) na filosofia, se assemelha à busca por padrões e modelos na ciência de dados."
+        ]
+      },
+      "2 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CHS101) Identificar, analisar e comparar diferentes fontes e narrativas expressas em diversas linguagens, com vistas à compreensão de ideias filosóficas e de processos e eventos históricos, geográficos, políticos, econômicos, sociais, ambientais e culturais.",
+          "(EM13CHS601) Identificar e analisar as demandas e os protagonismos políticos, sociais e culturais dos povos indígenas e das populações afrodescendentes (incluindo as quilombolas) no Brasil contemporâneo considerando a história das Américas e o contexto de exclusão e inclusão precária desses grupos na ordem social e econômica atual, promovendo ações para a redução das desigualdades étnico-raciais no país.",
+          "(EM13CHS602) Identificar e caracterizar a presença do paternalismo, do autoritarismo e do populismo na política, na sociedade e nas culturas brasileira e latino-americana, em períodos ditatoriais e democráticos, relacionando-os com as formas de organização e de articulação das sociedades em defesa da autonomia, da liberdade, do diálogo e da promoção da democracia, da cidadania e dos direitos humanos na sociedade atual."
+        ],
+        "habilidades_especificas": [
+          "(EM13CHS101FI01PEb) Analisar de modo crítico, textos escritos e imagens de diferentes estruturas, fazendo articulação com as correntes filosóficas e considerando suas relações com o contexto sócio-político, econômico e religioso contemporâneo.",
+          "(EM13CHS601FI10PEa) Reconhecer a importância do papel da cultura na formação de valores e suas implicações nos processos sociais como norteadores da dinâmica de inclusão/exclusão social.",
+          "(EM13CHS602FI11PEa) Compreender, criticamente, o conceito de cidadania e de suas implicações fundamentais com as relações de poder, tanto de regimes políticos democráticos como ditatoriais."
+        ],
+        "objetos_conhecimento": [
+          "Patrística grega e latina: Agostinho de Hipona, livre-arbítrio e predestinação.",
+          "Boécio: o começo da Idade Média.",
+          "A Filosofia Islâmica (Averróis e Avicena) e Judaica (Maimônides) e sua influência no pensamento filosófico medieval.",
+          "Escolástica: Tomás de Aquino - A questão dos universais: nominalismo e realismo.",
+          "Temas filosóficos da Idade Média: Razão e Fé;",
+          "Transição de paradigma social, político e epistemológico do medievo à modernidade."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO23) Analisar criticamente as experiências em comunidades virtuais e as relações advindas da interação e comunicação com outras pessoas, bem como seus impactos na sociedade.",
+          "(EM13CO25) Dialogar em ambientes virtuais com segurança e respeito às diferenças culturais e pessoais, reconhecendo e denunciando atitudes abusivas.",
+          "(EM13CO14) Avaliar a confiabilidade das informações encontradas em meio digital, investigando seus modos de construção e considerando a autoria, a estrutura e o propósito da mensagem."
+        ],
+        "possibilidades_abordagens": [
+          "Apresentação de exemplos, por meio de recursos digitais, de informações desencontradas, reforçando a necessidade de fazer-se leituras críticas.",
+          "Reflexão sobre o fato de que autores de diferentes tradições (judeu e islâmicos), se dedicaram a um objetivo comum, e contribuíram significativamente para a Ciência. Criação de fóruns de discussão online, utilizando ferramentas como whatsapp, telegram, discord, para possibilitar o encontro de diferentes ideias, religiões, pensamentos políticos, etc, trabalhando habilidades para que haja debates de maneira respeitosa.",
+          "Apropriação dos conceitos de nominalismo e realismo a fim de refletir sobre o que seria real e o que seria virtual ou só um nome; apresentação e discussão do filme \"O nome da Rosa\". Discussão sobre como o princípio do raciocínio em relação às questões gerais e situações conflituosas pode ser levado para a solução de outros problemas, inclusive, computacionais."
+        ]
+      },
+      "3 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CHS603) Analisar a formação de diferentes países, povos e nações e de suas experiências políticas e de exercício da cidadania, aplicando conceitos políticos básicos (Estado, poder, formas, sistemas e regimes de governo, soberania etc.).",
+          "(EM13CHS602) Identificar e caracterizar a presença do paternalismo, do autoritarismo e do populismo na política, na sociedade e nas culturas brasileira e latino-americana, em períodos ditatoriais e democráticos, relacionando-os com as formas de organização e de articulação das sociedades em defesa da autonomia, da liberdade, do diálogo e da promoção da democracia, da cidadania e dos direitos humanos na sociedade atual.",
+          "(EM13CHS502) Analisar situações da vida cotidiana, estilos de vida, valores, condutas etc., desnaturalizando e problematizando formas de desigualdade, preconceito, intolerância e discriminação, e identificar ações que promovam os Direitos Humanos, a solidariedade e o respeito às diferenças e às liberdades individuais."
+        ],
+        "habilidades_especificas": [
+          "(EM13CHS603FI12PE) Compreender, de modo crítico, a relação entre cidadania, democracia, poder político e suas implicações nos processos que legitimam os sistemas de organização política, tendo em vista a promoção do Estado Democrático de Direito.",
+          "(EM13CHS602FI11PEb) Compreender criticamente o conceito de cidadania e suas implicações fundamentais com as relações de poder, tanto de regimes políticos democráticos como ditatoriais.",
+          "(EM13CHS502FI09PEa) Problematizar, de modo reflexivo, a construção das dimensões éticas do sujeito na contemporaneidade, tendo em vista a promoção dos Direitos Humanos."
+        ],
+        "objetos_conhecimento": [
+          "Política: organização da vida coletiva;",
+          "Estado: sistemas de Governo e finalidades da vida política.",
+          "Cidadania, Democracia e Liberdade.",
+          "Ética, moral e valores;",
+          "Ética e política;",
+          "Relações Étnico-Raciais;",
+          "Gênero e Diversidade."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO08) Entender como mudanças na tecnologia afetam a segurança, incluindo novas maneiras de preservar sua privacidade e dados pessoais on-line, reportando suspeitas e buscando ajuda em situações de risco.",
+          "(EM13CO25) Dialogar em ambientes virtuais com segurança e respeito às diferenças culturais e pessoais, reconhecendo e denunciando atitudes abusivas.",
+          "(EM13CO17) Construir redes virtuais de interação e colaboração, favorecendo o desenvolvimento de projetos de forma segura, legal e ética."
+        ],
+        "possibilidades_abordagens": [
+          "Análise da relação entre cidadania, privacidade e tecnologia, observando que a tecnologia pode ser usada para fins políticos não republicanos. Utilização de debates ou postagens políticas, fazendo a checagem dos fatos por meio das ferramentas digitais.",
+          "Reflexões sobre como os objetos de conhecimento 'cidadania, democracia e liberdade', em ambientes virtuais, podem ser influenciados pela lógica do algoritmo, deixando as palavras privadas de sentido, prevalecendo atitudes oportunistas. Discussão sobre Liberdade de expressão e responsabilização nas relações virtuais.",
+          "Utilização da fala de especialistas (psicólogos, filósofos, entre outros), que estejam refletindo a relação entre ética e tecnologia, a fim de compreender os seus desdobramentos; Discussão acerca de como reportagens podem reforçar estereótipos sociais."
+        ]
+      }
+    },
+    "2 ANO": {
+      "1 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CHS101) Identificar, analisar e comparar diferentes fontes e narrativas expressas em diversas linguagens, com vistas à compreensão de ideias filosóficas e de processos e eventos históricos, geográficos, políticos, econômicos, sociais, ambientais e culturais.",
+          "(EM13CHS202) Analisar e avaliar os impactos das tecnologias na estruturação e nas dinâmicas de grupos, povos e sociedades contemporâneos (fluxos populacionais, financeiros, de mercadorias, de informações, de valores éticos e culturais etc.), bem como suas interferências nas decisões políticas, sociais, ambientais, econômicas e culturais.",
+          "(EM13CHS404) Identificar e discutir os múltiplos aspectos do trabalho em diferentes circunstâncias e contextos históricos e/ou geográficos e seus efeitos sobre as gerações, em especial, os jovens, levando em consideração, na atualidade, as transformações técnicas, tecnológicas e infiormações."
+        ],
+        "habilidades_especificas": [
+          "(EM13CHS101FI01PEc) Analisar de modo crítico, textos escritos e imagens de diferentes estruturas, fazendo articulação com as correntes filosóficas e considerando suas relações com o contexto sócio-político, econômico e religioso contemporâneo.",
+          "(EM13CHS202FI03PEa) Identificar/analisar, criticamente, através de leituras de textos e debates, as principais mudanças nos discursos e práticas políticas e socioculturais em decorrência das repercussões da ciência e tecnologia no mundo contemporâneo.",
+          "(EM13CHS404FI07PE) Compreender através de análise crítica a importância da ciência e da tecnologia e seus impactos na nova organização do mundo do trabalho na atualidade."
+        ],
+        "objetos_conhecimento": [
+          "Lógica clássica (Aristóteles)",
+          "As Leis da Lógica",
+          "Silogismo",
+          "Lógica Informal: falácias",
+          "Introdução à Lógica simbólica",
+          "Regras de inferência",
+          "O método científico: Francis Bacon e René Descartes",
+          "A revolução científica e seus representantes"
+        ],
+        "habilidades_computacao": [
+          "(EM13CO19) Expor, argumentar e negociar propostas, produtos e serviços, utilizando diferentes mídias e ferramentas digitais.",
+          "(EM13CO13) Analisar e utilizar as diferentes formas de representação e consulta a dados em formato digital para pesquisas científicas.",
+          "(EM13CO13) Analisar e utilizar as diferentes formas de representação e consulta a dados em formato digital para pesquisas científicas."
+        ],
+        "possibilidades_abordagens": [
+          "Exemplos a partir de recursos argumentativos – formais, informais (falácias) –, e refletindo sobre o uso destes em ambientes virtuais. Análise de debates em plataformas digitais a partir da estrutura de silogismo, identificando argumentos inválidos e falácias. Projeção e discussão com os estudantes de filmes (Ex: \"Eu Robô\"), entre outros que discutam os paradoxos do ciberespaço.",
+          "Apresentação de exemplos a partir de recursos argumentativos – formais, informais (falácias) –, refletindo sobre o uso destes em ambientes virtuais; análise de debates em plataformas digitais a partir da estrutura de silogismo, identificando argumentos inválidos e falácias. Leitura, interpretação e construção de gráficos, assim como uso de Diagramas de Venn e tabelas-verdade.",
+          "Elaboração de uma planilha comparando a metodologia utilizada por temáticas científicas e pseudocientíficas. Produção de conteúdo multimídia sobre a revolução científica."
+        ]
+      },
+      "2 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CHS101) Identificar, analisar e comparar diferentes fontes e narrativas expressas em diversas linguagens, com vistas à compreensão de ideias filosóficas e de processos e eventos históricos, geográficos, políticos, econômicos, sociais, ambientais e culturais.",
+          "(EM13CHS306) Contextualizar, comparar e avaliar os impactos de diferentes modelos socioeconômicos no uso dos recursos naturais e na promoção da sustentabilidade econômica e socioambiental do planeta (como a adoção dos sistemas da agrobiodiversidade e agroflorestal por diferentes comunidades, entre outros.",
+          "(EM13CHS501) Analisar os fundamentos da ética em diferentes culturas, tempos e espaços, identificando processos que contribuem para a formação de sujeitos éticos que valorizem a liberdade, a cooperação, a autonomia, o empreendedorismo, a convivência democrática e a solidariedade."
+        ],
+        "habilidades_especificas": [
+          "(EM13CHS101FI01PEd) Analisar de modo crítico, textos escritos e imagens de diferentes estruturas, fazendo articulação com as correntes filosóficas e considerando suas relações com o contexto sócio-político, econômico e religioso contemporâneo.",
+          "(EM13CHS306FI06PE) Identificar os textos filosóficos sobre a importância no papel da ciência e da tecnologia nos diferentes processos econômicos e sua influência no mundo contemporâneo.",
+          "(EM13CHS501FI08PEa) Analisar os conceitos de Diversidade, Identidade e Alteridade identificando suas relações com elementos constitutivos do campo ético, tais como Liberdade, Autonomia e Responsabilidade, tendo como referências as correntes filosóficas da Idade Moderna e Contemporânea."
+        ],
+        "objetos_conhecimento": [
+          "A ideia de modernidade",
+          "Teorias do conhecimento: Racionalismo (Descartes), empirismo (Hume e Locke)",
+          "Kant: criticismo",
+          "Hegel e Schelling: idealismo",
+          "Ciência e ideologia (Marx e Engels)",
+          "Realismo Político: Maquiavel",
+          "Iluminismo",
+          "Liberalismo",
+          "Contratualismo"
+        ],
+        "habilidades_computacao": [
+          "(EM13CO10) Conhecer os fundamentos da Inteligência Artificial, comparando-a com a inteligência humana, analisando suas potencialidades, riscos e limites.",
+          "(EM13CO09) Identificar tecnologias digitais, sua presença e formas de uso, nas diferentes atividades no mundo do trabalho.",
+          "(EM13CO23) Analisar criticamente as experiências em comunidades virtuais e as relações advindas da interação e comunicação com outras pessoas, bem como seus impactos na sociedade."
+        ],
+        "possibilidades_abordagens": [
+          "Reflexão sobre a relação entre o desenvolvimento de software e o racionalismo/empirismo, focando nos paradigmas que guiam a criação de sistemas e na forma como o conhecimento sobre eles é adquirido e validado; partir do conceito de inteligência e propor o desenvolvimento de uma tabela comparativa entre a inteligência humana e a inteligência artificial.",
+          "Demonstração da abrangência do uso da tecnologia, sobretudo no mundo do trabalho, enfatizando a necessidade de letramento digital.",
+          "Discussão e atividade sobre a necessidade da tolerância e da liberdade em ambientes e comunidades virtuais. Análise das dinâmicas de influência em redes sociais: métodos, abordagens e finalidades."
+        ]
+      },
+      "3 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CHS601) Identificar e analisar as demandas e os protagonismos políticos, sociais e culturais dos povos indígenas e das populações afrodescendentes (incluindo as quilombolas) no Brasil contemporâneo considerando a história das Américas e o contexto de exclusão e inclusão precária desses grupos na ordem social e econômica atual, promovendo ações para a redução das desigualdades étnico-raciais no país.",
+          "(EM13CHS501) Analisar os fundamentos da ética em diferentes culturas, tempos e espaços, identificando processos que contribuem para a formação de sujeitos éticos que valorizem a liberdade, a cooperação, a autonomia, o empreendedorismo, a convivência democrática e a solidariedade.",
+          "(EM13CHS103) Elaborar hipóteses, selecionar evidências e compor argumentos relativos a processos políticos, econômicos, sociais, ambientais, culturais e epistemológicos, com base na sistematização de dados e informações de diversas naturezas (expressões artísticas, textos filosóficos e sociológicos, documentos históricos e geográficos, gráficos, mapas, tabelas, tradições orais, entre outros)."
+        ],
+        "habilidades_especificas": [
+          "(EM13CHS601FI10PEb) Reconhecer a importância do papel da cultura na formação de valores e suas implicações nos processos sociais como norteadores da dinâmica de inclusão/exclusão social.",
+          "(EM13CHS501FI08PEb) Analisar os conceitos de diversidade, identidade e alteridade, identificando suas relações com elementos constitutivos do campo ético, tais como liberdade, autonomia e responsabilidade, tendo como referência as correntes.",
+          "(EM13CHS103FI02PEb) Compreender e articular conhecimentos filosóficos de diferentes linguagens, estruturas/conteúdos e modos discursivos, associando-os às possíveis soluções para situações-problema da sociedade contemporânea."
+        ],
+        "objetos_conhecimento": [
+          "Natureza e Cultura: a emergência do mundo humano",
+          "Os sentidos da cultura",
+          "Antropologia filosófica: as dimensões relacionais do ser humano",
+          "Relação dos Povos tradicionais com seu Ethos",
+          "Ética e moral",
+          "Dever e liberdade",
+          "Ética do justo meio",
+          "Axiologia e deontologia",
+          "Ética no mundo digital",
+          "Filosofia da linguagem",
+          "O que é linguagem",
+          "Tipos de linguagem",
+          "Funções da linguagem",
+          "Ética do discurso"
+        ],
+        "habilidades_computacao": [
+          "(EM13CO22) Produzir e publicar conteúdo como textos, imagens, áudios, vídeos e suas associações, bem como ferramentas para sua integração, organização e apresentação, utilizando diferentes mídias digitais.",
+          "(EM13CO20) Criar conteúdos, disponibilizando-os em ambientes virtuais para publicação e compartilhamento, avaliando a confiabilidade e as consequências da disseminação dessas informações.",
+          "(EM13CO26) Aplicar os conceitos e pressupostos do direito digital em sua conduta e experiências com o cotidiano da cultura digital, bem como na produção e uso de artefatos computacionais."
+        ],
+        "possibilidades_abordagens": [
+          "Reflexão a partir de questões sobre como a cultura e a tecnologia interagem com a natureza, alterando o ambiente ao influenciar comportamentos e criar novas realidades, como a dependência digital, que afeta a segurança e o bem-estar individual e social.",
+          "Análise das possíveis implicações morais, judiciais e bioéticas do desenvolvimento científico, por meio de um júri simulado. Mapeamento de dilemas éticos no meio digital, visando debates em sala.",
+          "Atividade discursiva e avaliativa sobre a linguagem da tecnologia em comparação com a linguagem cotidiana. Apresentação de diferentes \"Termos de Uso\" e \"Políticas de Privacidade\" de aplicativos populares. Em grupos, pedir aos estudantes para identificarem o que as empresas coletam e como usam esses dados; discussão sobre como os algoritmos influenciam hábitos e condicionam comportamentos."
+        ]
+      }
+    },
+    "3 ANO": {
+      "1 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CHS103) Elaborar hipóteses, selecionar evidências e compor argumentos relativos a processos políticos, econômicos, sociais, ambientais, culturais e epistemológicos, com base na sistematização de dados e informações de diversas naturezas (expressões artísticas, textos filosóficos e sociológicos, documentos históricos e geográficos, gráficos, mapas, tabelas, tradições orais, entre outros).",
+          "(EM13CHS303) Debater e avaliar o papel da indústria cultural e das culturas de massa no estímulo ao consumismo, seus impactos econômicos e socioambientais, com vistas à percepção crítica das necessidades criadas pelo consumo e à adoção de hábitos sustentáveis."
+        ],
+        "habilidades_especificas": [
+          "(EM13CHS103FI02PEc) Compreender e articular conhecimentos filosóficos de diferentes linguagens, estruturas/conteúdos e modos discursivos, associando-os às possíveis soluções para situações-problema da sociedade contemporânea.",
+          "(EM13CHS303FI05PE) Compreender o conceito de cultura, analisando de modo filosófico o papel da Indústria Cultural, identificando as suas principais repercussões éticas, políticas, ideológicas e estéticas na sociedade contemporânea."
+        ],
+        "objetos_conhecimento": [
+          "Filosofia analítica: origem, contexto e expoentes",
+          "Ludwig Wittgenstein: teoria da figuração e virada linguística",
+          "Pragmatismo e neopragmatismo",
+          "Edmund Husserl: fenomenologia",
+          "Questões, autores e principais conceitos da pós-modernidade",
+          "Conceito e história do termo estética (Alexander Baumgarten)",
+          "A estética transcendental de Kant",
+          "Perspectivas estéticas e culturais na contemporaneidade e no Brasil (Ariano Suassuna, Benedito Nunes, Ângelo Monteiro entre outros)",
+          "\"O mundo da arte\" de Arthur Danto; O que é arte? (Michel Duchamp vs Roger Scruton)"
+        ],
+        "habilidades_computacao": [
+          "(EM13CO18) Planejar e gerenciar projetos integrados às áreas de conhecimento de forma colaborativa, solucionando problemas, usando diversos artefatos computacionais.",
+          "(EM13CO14) Avaliar a confiabilidade das informações encontradas em meio digital, investigando seus modos de construção e considerando a autoria, a estrutura e o propósito da mensagem.",
+          "(EM13CO22) Produzir e publicar conteúdo como textos, imagens, áudios, vídeos e suas associações, bem como ferramentas para sua integração, organização e apresentação, utilizando diferentes mídias digitais."
+        ],
+        "possibilidades_abordagens": [
+          "Discussão acerca de como a filosofia analítica pode aprimorar o planejamento colaborativo e a solução de problemas ao promover clareza na linguagem e no pensamento, facilitando a comunicação entre diferentes áreas de conhecimento e a identificação de pressupostos.",
+          "Exploração do conceito de pragmatismo em vista da compreensão das tecnologias, na medida em que tal corrente valoriza a ação e a prática como critérios para a validação dos conhecimentos, incluindo as inovações tecnológicas.",
+          "Discussão acerca de como os conceitos pós-modernos podem servir como uma poderosa ferramenta para analisar fenômenos do mundo digital.",
+          "Criações/produções artísticas, visuais, textuais, plásticas, musicais, dentre outras expressões, utilizando-se de tecnologias e ferramentas digitais."
+        ]
+      },
+      "2 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CHS101) Identificar, analisar e comparar diferentes fontes e narrativas expressas em diversas linguagens, com vistas à compreensão de ideias filosóficas e de processos e eventos históricos, geográficos, políticos, econômicos, sociais, ambientais e culturais.",
+          "(EM13CHS301) Problematizar hábitos e práticas individuais e coletivos de produção, reaproveitamento e descarte de resíduos em metrópoles, áreas urbanas e rurais, e comunidades com diferentes características socioeconômicas, e elaborar e/ou selecionar propostas de ação que promovam a sustentabilidade socioambiental, o combate à poluição sistêmica e o consumo responsável."
+        ],
+        "habilidades_especificas": [
+          "(EM13CHS101FI01PEe) Analisar de modo crítico, textos escritos e imagens de diferentes estruturas, fazendo articulação com as correntes filosóficas e considerando suas relações com o contexto sócio-político, econômico e religioso contemporâneo.",
+          "(EM13CHS301FI04PE) Analisar criticamente os principais valores da sociedade de consumo e seus impactos na política, sociedade e economia do mundo contemporâneo."
+        ],
+        "objetos_conhecimento": [
+          "Arthur Schopenhauer: o mundo como vontade e representação.",
+          "Kierkegaard: razão e fé.",
+          "Nietzsche: o critério da vida.",
+          "Existencialismo: Heidegger, Sartre, Simone de Beauvoir; Camus e o sentido da vida.",
+          "Correntes Econômicas: Capitalismo e Socialismo."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO24) Identificar e reconhecer como as redes sociais e artefatos computacionais em geral interferem na saúde física e mental de seus usuários.",
+          "(EM13CO15) Analisar a interação entre usuários e artefatos computacionais, abordando aspectos da experiência do usuário e promovendo reflexão sobre a qualidade do uso dos artefatos nas esferas do trabalho, do lazer e do estudo."
+        ],
+        "possibilidades_abordagens": [
+          "Atividades em que os alunos se dividem em grupos para debater a própria existência e suas angústias frente às novas tecnologias.",
+          "Atividades em que os alunos se dividem em grupos para debater a própria existência e suas angústias frente às novas tecnologias; utilização de recursos de multimídia, tais como filmes e séries ('O Estrangeiro', 'Black Mirror', 'Death, Love and Robots').",
+          "Estudo de caso sobre a condição social na comunidade em que os estudantes estão inseridos, analisando facilidades e/ou dificuldade de acesso às ferramentas digitais."
+        ]
+      },
+      "3 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CHS501) Analisar os fundamentos da ética em diferentes culturas, tempos e espaços, identificando processos que contribuem para a formação de sujeitos éticos que valorizem a liberdade, a cooperação, a autonomia, o empreendedorismo, a convivência democrática e a solidariedade.",
+          "(EM13CHS502) Analisar situações da vida cotidiana, estilos de vida, valores, condutas etc., desnaturalizando e problematizando formas de desigualdade, preconceito, intolerância e discriminação, e identificar ações que promovam os Direitos Humanos, a solidariedade e o respeito às diferenças e às liberdades individuais.",
+          "(EM13CHS202) Analisar e avaliar os impactos das tecnologias na estruturação e nas dinâmicas de grupos, povos e sociedades contemporâneos (fluxos populacionais, financeiros, de mercadorias, de informações, de valores éticos e culturais etc.), bem como suas interferências nas decisões políticas, sociais, ambientais, econômicas e culturais."
+        ],
+        "habilidades_especificas": [
+          "(EM13CHS501FI08PEc) Analisar os conceitos de Diversidade, Identidade e Alteridade identificando suas relações com elementos constitutivos do campo ético, tais como Liberdade, Autonomia e Responsabilidade, tendo como referências as correntes filosóficas da Idade Moderna e Contemporânea.",
+          "(EM13CHS502FI09PEb) Problematizar, de modo reflexivo, a construção das dimensões éticas do sujeito na contemporaneidade, tendo em vista a promoção dos Direitos Humanos.",
+          "(EM13CHS202FI03PEb) Identificar e analisar criticamente, através de leituras de textos e debates, as principais mudanças nos discursos e práticas políticas e socioculturais em decorrência das repercussões da ciência e tecnologia no mundo contemporâneo."
+        ],
+        "objetos_conhecimento": [
+          "Dilemas Éticos: ambientais, políticos, tecnológicos, bioéticos",
+          "Habermas: ação comunicativa.",
+          "Ética da alteridade: Emmanuel Lévinas, Martin Buber; Hans Jonas e a Ética da Responsabilidade; John Rawls e a Justiça como Equidade.",
+          "Impactos da Inteligência Artificial."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO25) Dialogar em ambientes virtuais com segurança e respeito às diferenças culturais e pessoais, reconhecendo e denunciando atitudes abusivas.",
+          "(EM13CO23) Analisar criticamente as experiências em comunidades virtuais e as relações advindas da interação e comunicação com outras pessoas, bem como seus impactos na sociedade.",
+          "(EM13CO10) Conhecer os fundamentos da Inteligência Artificial, comparando-a com a inteligência humana, analisando suas potencialidades, riscos e limites."
+        ],
+        "possibilidades_abordagens": [
+          "Recorte de reportagens sobre dilemas éticos, ambientais e políticos discutindo sobre como esses dilemas repercutem em ambientes virtuais.",
+          "Reflexão a partir de recursos disponíveis sobre a fragmentação social, que pode resultar de algoritmos que criam \"bolhas\" de informação, ressaltando a importância da alteridade, da relação \"eu-tu\" e da responsabilidade, a fim de superar o individualismo exacerbado, assim como promover a comunicação e o respeito mútuo no ambiente digital.",
+          "Reflexão sobre os aspectos positivos e negativos da tecnologia, procurando exemplos dos impactos do seu uso e dependência acrítica da inteligência artificial.",
+          "Discussão sobre temas atuais envolvendo tecnologia, gênero e colonialismo como meio de combate à discriminação no âmbito digital."
+        ]
+      }
+    }
+  },
+  "deteccao_confiavel": true,
+  "gerado_em": "2026-08-04T12:20",
+  "arquivo_origem": "Filosofia_Organizador-Curricular-Trimestral-da-FGB.pdf"
+}

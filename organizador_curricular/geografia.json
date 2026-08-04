@@ -1,0 +1,281 @@
+{
+  "disciplina": "Geografia",
+  "tem_computacao": true,
+  "conteudo": {
+    "1 ANO": {
+      "1 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CHS101) Identificar, analisar e comparar diferentes fontes e narrativas expressas em diversas linguagens, com vistas à compreensão de ideias filosóficas e de processos e eventos históricos, geográficos, políticos, econômicos, sociais, ambientais e culturais.",
+          "(EM13CHS103) Elaborar hipóteses, Selecionar evidências e compor argumentos relativos a processos políticos, econômicos, sociais, ambientais, culturais e epistemológicos, com base na sistematização de dados e informações de diversas naturezas (expressões artísticas, Textos filosóficos e sociológicos, Documentos históricos e geográficos, gráficos, mapas, tabelas, tradições orais, entre outros)."
+        ],
+        "habilidades_especificas": [
+          "(EM13CHS101GE01PE) Interpretar o processo de construção do espaço geográfico através da análise de sua formação histórica e configuração atual, avaliando de forma crítica as semelhanças e disparidades constituídas entre estes espaços.",
+          "(EM13CHS103GE02PE) Distinguir análises sobre o espaço por meio de conceitos geográficos fundamentais que compreendem as estruturas territoriais e regionais, subsidiando o diagnóstico das paisagens naturais e humanizadas, promovendo a reflexão e a constituição de argumentações científicas próprias da Geografia."
+        ],
+        "objetos_conhecimento": [
+          "Introdução à ciência geográfica: Origem; Evolução e objeto de estudo; Correntes do pensamento Geográfico",
+          "A Geografia e sua presença no cotidiano",
+          "Os Conceitos Geográficos e suas relações sociais, ambientais e culturais: Espaço; Território; Região; Paisagem; Lugar.",
+          "Os Princípios Geográficos e suas releituras",
+          "A Geografia e as novas perspectivas epistemológicas: Geografias anticoloniais/decoloniais/contracolonial; Geografias Negras; Geografias dos povos originários e tradicionais; Geografia e a discussão de gênero."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO19) Expor, argumentar e negociar propostas, produtos e serviços utilizando diferentes mídias e ferramentas digitais.",
+          "(EM13CO09) Identificar tecnologias digitais, sua presença e formas de uso, nas diferentes atividades no mundo do trabalho.",
+          "(EM13CO19) Expor, argumentar e negociar propostas, produtos e serviços utilizando diferentes mídias e ferramentas digitais.",
+          "(EM13CO22) Produzir e publicar conteúdo como textos, imagens, áudios, vídeos e suas associações, bem como ferramentas para sua integração, organização e apresentação, utilizando diferentes mídias digitais."
+        ],
+        "possibilidades_abordagens": [
+          "Utilização de diversos recursos tecnológicos e digitais disponíveis para pesquisas e apresentação de resultados relativos à construção de conhecimentos sobre a origem da Geografia, evolução e dos objetos de estudos, bem como da contextualização destes conhecimentos no dia a dia ao longo do período de estudos.",
+          "Utilização de ferramentas tais como: Google Maps, Waze, Google Earth e outros para análise espaço-temporal, correlacionando com o cotidiano e o trabalho em diferentes contextos.",
+          "Utilização de diversos recursos tecnológicos e digitais disponíveis para pesquisas e apresentação de resultados relativos à construção de conhecimentos sobre a origem da Geografia, evolução e dos objetos de estudos, bem como da contextualização destes conhecimentos no dia a dia ao longo do período de estudos. Utilização de Canva, produção de documentário.",
+          "Construção de conteúdo multimídia com utilização de ferramentas diversas que possibilitem dar visibilidade, ampliar a compreensão e produzir conhecimentos acerca dos objetos de conhecimento propostos."
+        ]
+      },
+      "2 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CHS106) Utilizar as linguagens cartográfica, gráfica e iconográfica, diferentes gêneros textuais e tecnologias digitais de informação e comunicação de forma crítica, significativa, reflexiva e ética nas diversas práticas sociais, incluindo as escolares, para se comunicar, acessar e difundir informações, produzir conhecimentos, resolver problemas e exercer protagonismo e autoria na vida pessoal e coletiva.",
+          "(COMPETÊNCIA ESPECÍFICA 3) Analisar e avaliar criticamente as relações de diferentes grupos, povos e sociedades com a natureza (produção, distribuição e consumo) e seus impactos econômicos e socioambientais, com vistas à proposição de alternativas que respeitem e promovam a consciência, a ética socioambiental e o consumo responsável em âmbito local, regional, nacional e global.",
+          "(EM13CHS106) Utilizar as linguagens cartográfica, gráfica e iconográfica, diferentes gêneros textuais e tecnologias digitais de informação e comunicação de forma crítica, significativa, reflexiva e ética nas diversas práticas sociais, incluindo as escolares, para se comunicar, acessar e difundir informações, produzir conhecimentos, resolver problemas e exercer protagonismo e autoria na vida pessoal e coletiva."
+        ],
+        "habilidades_especificas": [
+          "(EM13CHS106GE05PE) Analisar os fatores que influenciaram na criação e no desenvolvimento cartográfico, entendendo os processos que envolvem a elaboração dos mapas e demais representações do espaço, bem como a linguagem cartográfica, relacionando estes aspectos a constituição do conhecimento humano e sua adaptação aos fenômenos ambientais, naturais e sociais.",
+          "(EM13CHS300GE11PE - a) Analisar o processo de formação e consolidação da estrutura da Terra, identificando os resultados visíveis e não visíveis dessas transformações naturais e antrópicas, interpretando as mútuas influências entre as suas camadas físico-naturais e as sociedades humanas, os impactos socioeconômicos e ambientais ocorridos no planeta Terra e uma reflexão-ação sobre a cidadania planetária.",
+          "(EM13CHS106GE17PE) Compreender a cartografia e a linguagem cartográfica utilizando seus elementos e símbolos para compreensão do espaço geográfico e das interações humanas com os fenômenos socioambientais."
+        ],
+        "objetos_conhecimento": [
+          "A Cartografia e as representações do espaço: História e desenvolvimento; Orientação e localização; Escalas e projeções cartográficas; Tipos e elementos dos mapas; Tecnologias associadas e aplicadas à Cartografia e no cotidiano; Cartografia social.",
+          "O Planeta Terra: Formação e evolução da Terra; A Terra e seus Movimentos; Consequências dos movimentos da Terra.",
+          "O Planeta Terra e sua relação com a Cartografia: Coordenadas geográficas; Fusos Horários.",
+          "Litosfera e Estudos sobre os solos do mundo, do Brasil e de Pernambuco: Estrutura interna e externa da Terra; Movimentos tectônicos, tipos de rochas e origem do relevo; Formações do relevo continental e submarino; Formação, composição e classificação dos solos; Utilização dos solos; Desgastes e degradação dos solos; Os solos e o cotidiano.",
+          "Atmosfera e estudos sobre tempo e clima do mundo, do Brasil e de Pernambuco: Formação da atmosfera e sua importância para o planeta; Diferença entre tempo e clima; Classificações climáticas globais e locais; Estudo dos impactos do clima sobre as regiões e no cotidiano; Mudanças climáticas, emergência climática e aquecimento global.",
+          "A Cartografia e as representações do espaço: Mapas Temáticos; Climogramas; Escalas geográficas"
+        ],
+        "habilidades_computacao": [
+          "(EM13CO07) Compreender as diferentes tecnologias, bem como equipamentos, protocolos e serviços envolvidos no funcionamento de redes de computadores, identificando suas possibilidades de escala e confiabilidade.",
+          "(EM13CO12) Produzir, analisar, gerir e compartilhar informações a partir de dados, utilizando princípios de ciência de dados.",
+          "(EM13CO11) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico.",
+          "(EM13CO10) Conhecer os fundamentos da Inteligência Artificial, comparando-a com a inteligência humana, analisando suas potencialidades, riscos e limites.",
+          "(EM13CO07) Compreender as diferentes tecnologias, bem como equipamentos, protocolos e serviços envolvidos no funcionamento de redes de computadores, identificando suas possibilidades de escala e confiabilidade.",
+          "(EM13021) Comunicar ideias complexas de forma clara por meio de objetos digitais como mapas conceituais, infográficos, hipertextos e outros."
+        ],
+        "possibilidades_abordagens": [
+          "Dada a Cartografia enquanto linguagem e tecnologia, é possível utilizar mapas digitais para compreensão e análise espacial, como forma de promoção da compreensão do espaço vivido e de espaços em diferentes escalas. Um exemplo é a utilização do Google Earth. Promoção da compreensão da Cartografia por meio da utilização e coleta de dados de Sistemas de Informações Geográficas (SIGs).",
+          "Dada a importância das tecnologias para compreender a dinâmica espacial, propõe-se que utilize-se mapas interativos que possam demonstrar as mudanças espaciais ocorridas no Planeta Terra. Um exemplo é a utilização do Google Earth, explorando os recursos: viagem no tempo, visualização 3D, dados geoespaciais e imagens de satélite. Outra opção também é o aplicativo Solar Walk Free que permite explorar a Terra e o Sistema solar em 3D, bem como o Stellarium. Sugere-se a utilização de dados e informações presentes no site do painel global, Google Maps, IBGEeduca. Dadas as habilidades e os objetos de conhecimento em questão, sugere-se a utilização de aplicativos como o Aivo AI que tem a finalidade de fazer a conversão de textos em vídeos, por meio de recursos de geração de voz e imagens. Outro exemplo é o PixVerse utilizado para transformar fotos, textos e vídeos em conteúdo animado e com efeitos, de forma simples e rápida. Sugere-se também uma abordagem com a utilização de sites dos principais órgãos e empresas nacionais e/ou internacionais que trabalham com o monitoramento das condições climáticas e meteorológicas, como Instituto Nacional de Pesquisas Espaciais (INPE), Agência Pernambucana de Águas e Clima (APAC), Instituto Nacional de Meteorologia (INMET), APOLLO11, WEATHEAR PUPPY APP, assim como o clima radar e WINDY Meteored.",
+          "Dada a Cartografia enquanto linguagem e tecnologia, é possível utilizar mapas digitais para compreensão e análise espacial, como forma de promoção da compreensão do espaço vivido e de espaços em diferentes escalas. Um exemplo é a utilização do Google Earth e também dos mapas interativos presentes no site do IBGE. Transformação de dados em representações visuais compreensíveis facilitando análise espacial e a tomada de decisões integrando mapas, gráficos e textos interativos por meio de Canva, Google Earth, Google My Maps e Mapchart."
+        ]
+      },
+      "3 UNIDADE": {
+        "habilidades_area": [
+          "(COMPETÊNCIA ESPECÍFICA 3) Analisar e avaliar criticamente as relações de diferentes grupos, povos e sociedades com a natureza (produção, distribuição e consumo) e seus impactos econômicos e socioambientais, com vistas à proposição de alternativas que respeitem e promovam a consciência, a ética socioambiental e o consumo responsável em âmbito local, regional, nacional e global.",
+          "(EM13CHS206) Analisar a ocupação humana e a produção do espaço em diferentes tempos, aplicando os princípios de localização, distribuição, ordem, extensão, conexão, arranjos, casualidade, entre outros que contribuem para o raciocínio geográfico.",
+          "(EM13CHS106) Utilizar as linguagens cartográfica, gráfica e iconográfica, diferentes gêneros textuais e tecnologias digitais de informação e comunicação de forma crítica, significativa, reflexiva e ética nas diversas práticas sociais, incluindo as escolares, para se comunicar, acessar e difundir informações, produzir conhecimentos, resolver problemas e exercer protagonismo e autoria na vida pessoal e coletiva."
+        ],
+        "habilidades_especificas": [
+          "(EM13CHS300GE11PE - b) Analisar o processo de formação e consolidação da estrutura da Terra, identificando os resultados visíveis e não visíveis dessas transformações naturais e antrópicas, interpretando as mútuas influências entre as suas camadas físico-naturais e as sociedades humanas, os impactos socioeconômicos e ambientais ocorridos no planeta Terra e uma reflexão-ação sobre a cidadania planetária.",
+          "(EM13CHS206GE10PE) Reconhecer diferentes fontes e linguagens geográficas, baseando-se em arcabouços teóricos e metodológicos, considerando que os princípios de localização, distribuição, ordem, extensão, conexão, arranjos, casualidade, analogia e atividade constituem importantes ferramentas de reflexão e análise, fundamentando as formas de registrar, analisar e discutir os conhecimentos geográficos.",
+          "(EM13CHS106GE19PE) Identificar na cartografia e na linguagem cartográfica informações para construção de raciocínio geográfico e crítico acerca das diferentes temáticas geográficas e escalas considerando a ocorrência dos fenômenos socioambientais em seus contextos e espacialidades."
+        ],
+        "objetos_conhecimento": [
+          "Planeta Terra - Hidrosfera e estudo das águas do mundo, do Brasil e de Pernambuco: Águas subterrâneas; águas oceânicas, Bacias hidrográficas; Utilização e problemas ambientais relacionados à água.",
+          "Biosfera e os estudos sobre os biomas do mundo, do Brasil e de Pernambuco: Diferença entre biomas e ecossistemas; Identificação dos biomas terrestres e aquáticos: brasileiros, nordestinos e pernambucanos; Problemas ambientais e redução de impactos negativos nos biomas.",
+          "Geografia e estudos da diversidade do mundo, do Brasil e de Pernambuco: Problemas socioambientais e seus impactos cotidianos; A interculturalidade e as relações sociais nos lugares e espaços geográficos; Racismo ambiental; A Geografia e a inclusão social e digital.",
+          "A Cartografia e as representações do espaço: Mapas Temáticos; Cartogramas; Escalas."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO11) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico.",
+          "(EM13CO01) Explorar e construir a solução de problemas por meio da reutilização de partes de soluções existentes.",
+          "(EM13CO11) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico.",
+          "(EM13CO07) Compreender as diferentes tecnologias, bem como equipamentos, protocolos e serviços envolvidos no funcionamento de redes de computadores, identificando suas possibilidades de escala e confiabilidade.",
+          "(EM13021) Comunicar ideias complexas de forma clara por meio de objetos digitais como mapas conceituais, infográficos, hipertextos e outros."
+        ],
+        "possibilidades_abordagens": [
+          "Dada a importância das tecnologias para compreender a dinâmica espacial, propõe-se que utilize-se mapas interativos que possam demonstrar as mudanças espaciais ocorridas no planeta Terra. Um exemplo é a utilização do Google Earth, explorando os recursos: viagem no tempo, visualização 3D, dados geoespaciais e imagens de satélite. Outra opção também é o site Mapbiomas, Agência Nacional de Águas (ANA) e outros.",
+          "Utilização do aplicativo WordWall para produção e/ou curadoria de jogos que sejam interativos acerca dos temas de pesquisa abordados, como também o kahoot, Blooket, Quizizz, Mentimeter e Fórmula Geo para gamificação.",
+          "Dada a dimensão da pesquisa para o estudo da Geografia e diversidades em diferentes escalas, entende-se que o Canva pode ser utilizado como criador de pesquisa gratuita, bem como o Google Forms e na produção de enquetes do Google Planilha. Para tanto, os temas de pesquisa precisam ser abordados para coleta de dados e tratamento deles para construção e/ou ressignificação de informações realizadas com a pesquisa bibliográfica. Essa forma de pesquisa interativa, utilizando os aplicativos pressupõem uma aprendizagem ativa dos estudantes, permeada pela autonomia discente e mediação docente.",
+          "Dada a Cartografia enquanto linguagem e tecnologia, é possível utilizar mapas digitais para compreensão e análise espacial como forma de promoção da compreensão do espaço vivido e de espaços em diferentes escalas. Um exemplo é a utilização do Google Earth. Transformação de dados em representações visuais compreensíveis facilitando análise espacial e a tomada de decisões integrando mapas, gráficos e textos interativos por meio de Canva, Google Earth, Google My Maps, Mapchart."
+        ]
+      }
+    },
+    "2 ANO": {
+      "1 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CHS104) Analisar objetos e vestígios da cultura material e imaterial de modo a identificar conhecimentos, valores, crenças e práticas que caracterizam a identidade e a diversidade cultural de diferentes sociedades inseridas no tempo e no espaço.",
+          "(EM13CHS402) Analisar e comparar indicadores de emprego, trabalho e renda em diferentes espaços, escalas e tempos, associando-os a processos de estratificação e desigualdade socioeconômica.",
+          "(EM13CHS106) Utilizar as linguagens cartográfica, gráfica e iconográfica, diferentes gêneros textuais e tecnologias digitais de informação e comunicação de forma crítica, significativa, reflexiva e ética nas diversas práticas sociais, incluindo as escolares, para se comunicar, acessar e difundir informações, produzir conhecimentos, resolver problemas e exercer protagonismo e autoria na vida pessoal e coletiva."
+        ],
+        "habilidades_especificas": [
+          "(EM13CHS104GE03PE) Analisar o processo de formação da diversidade étnico-racial da população mundial, através da consolidação dos lugares e do pertencimento, reconhecendo a importância do pluralismo cultural na formação de povos e nações.",
+          "(EM13CHS402GE15PE) Analisar índices sociais, fornecidos por fontes (nacionalmente e internacionalmente) reconhecidas e fidedignas, relativos à população economicamente ativa e inativa, investigando as diferenças dessas informações entre as diversas camadas da sociedade e analisando os motivos das variações dessas informações no tempo e no espaço.",
+          "(EM13CHS106GE20PE) Interpretar informações geoespaciais a partir da cartografia e da linguagem cartográfica utilizando mapas e diferentes instrumentos cartográficos como meio para entendimento das transformações socioespaciais e humanas ao longo do tempo."
+        ],
+        "objetos_conhecimento": [
+          "Teorias sobre a formação da população mundial",
+          "A diversidade cultural e política dos povos e nações: Das Américas; Da África; Da Europa; Da Ásia; Da Oceania.",
+          "A população mundial: Teorias demográficas e suas discussões; Estrutura da população mundial: indicadores demográficos; Pirâmides etárias; Índice Gini; IDH.",
+          "A Cartografia e as representações do espaço: Mapas temáticos; Histogramas; Fluxogramas; Infográficos."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO17) Construir redes virtuais de interação e colaboração, favorecendo o desenvolvimento de projetos de forma segura, legal e ética.",
+          "(EM13CO20) Criar conteúdos, disponibilizados-os em ambientes virtuais para publicação e compartilhamento, avaliando a confiabilidade e as consequências da disseminação dessas informações.",
+          "(EM13CO07) Compreender as diferentes tecnologias, bem como equipamentos, protocolos e serviços envolvidos no funcionamento de redes de computadores, identificando suas possibilidades de escala e confiabilidade.",
+          "(EM13CO21) Comunicar ideias complexas de forma clara por meio de objetos digitais como mapas conceituais, infográficos, hipertextos e outros."
+        ],
+        "possibilidades_abordagens": [
+          "Sugestão de organização de portfólios e arquivos para armazenar material pesquisados sobre a Geografia e sua evolução, e publicação nas redes sociais da turma, da escola.",
+          "Criação de textos escritos e imagéticos com conceitos e explicação das pesquisas sobre os conceitos geográficos e diferenciação entre as categorias estudadas. Outro exemplo é a identificação e construção de gráficos e planilhas digitais com dados demográficos sobre população, expectativa de vida, escolaridade e renda, a partir de informações disponibilizadas em plataformas oficiais como o IBGE. Com de realização de pesquisas no site do IBGE sobre dados demográficos dos municípios, por faixa etária e sexo, para construção da pirâmide etária local, bem como da análise e interpretação de projeções em comparação a outras pirâmides regionais e nacionais.",
+          "Observação dos protocolos de comunicação garantindo fidedignidade das informações encontradas nas pesquisas acerca do tema cartografia e suas variantes estudados ao longo do período. Outro exemplo é a produção de mapas temáticos, fluxograma, histograma e infográfico fazendo interação de dados estatísticos e geográficos utilizando software ou plataformas digitais para interpretar informações geoespaciais e sociais a partir de representações gráficas digitais, comparando diferentes regiões e contextos, um exemplo é o site Population Pyramid Net. Podendo fazer também a utilização de ferramentas digitais como: Google My Maps, Canva, para elaborar materiais interativos, mapas on-line colaborativos, painéis visuais ou dashboards com representações visuais do espaço. Transformação de dados em representações visuais compreensíveis facilitando a análise espacial e a tomada de decisões, integrando mapas, gráficos e textos interativos por meio de Canva, Google Earth, Google My Maps, Mapchart."
+        ]
+      },
+      "2 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CHS201) Analisar e caracterizar as dinâmicas das populações, das mercadorias e do capital nos diversos continentes, com destaque para a mobilidade e a fixação de pessoas, grupos humanos e povos, em função de eventos naturais, políticos, econômicos, sociais, religiosos e culturais, de modo a compreender e posicionar-se criticamente em relação a esses processos e as possíveis relações entre eles.",
+          "(EM13CHS606) Analisar as características socioeconômicas da sociedade brasileira – com base na análise de documentos (dados, tabelas, mapas etc.) de diferentes fontes – e propor medidas para enfrentar os problemas identificados e construir uma sociedade mais próspera, justa e inclusiva, que valorize o protagonismo de seus cidadãos e promova o autoconhecimento, a autoestima, a autoconfiança e a empatia.",
+          "(EM13CHS105) Identificar, contextualizar e criticar tipologias evolutivas (populações nômades e sedentárias, entre outras) e oposições dicotômicas (cidade/campo, cultura/natureza, civilizados/bárbaros, razão/emoção, material/virtual etc.), explicitando suas ambiguidades.",
+          "(EM13CHS106) Utilizar as linguagens cartográfica, gráfica e iconográfica, diferentes gêneros textuais e tecnologias digitais de informação e comunicação de forma crítica, significativa, reflexiva e ética nas diversas práticas sociais, incluindo as escolares, para se comunicar, acessar e difundir informações, produzir conhecimentos, resolver problemas e exercer protagonismo e autoria na vida pessoal e coletiva."
+        ],
+        "habilidades_especificas": [
+          "(EM13CHS201GE06PE) Entender os fluxos migratórios e financeiros no Brasil e no mundo, considerando sua relação com os fatores socioeconômicos, naturais e culturais, analisando o papel do Estado, dos organismos internacionais e da sociedade civil.",
+          "(EM13CHS606GE18PE) Relacionar os índices demográficos com aspectos populacionais de caráter econômico, social, político e cultural do Brasil e suas regiões, identificando as disparidades entre as classes sociais, avaliando, ao mesmo tempo, medidas que promovam maior equidade, justiça social e valorização da diversidade da sociedade brasileira.",
+          "(EM13CHS105GE04PE) Avaliar as relações entre o processo de crescimento das cidades e os impactos no campo, ponderando sobre suas origens, dicotomias e impactos na contemporaneidade, considerando os processos que envolvem campo e cidade em suas complexidades.",
+          "(EM13CHS106GE21PE - nova habilidade) Interpretar diferentes cenários, conceitos e temas por meio da cartografia e da linguagem cartográfica de modo a compreender por meio de mapas e diferentes instrumentos da cartografia as relações humanas, sua aplicabilidade, complexidade e as transformações socioespaciais."
+        ],
+        "objetos_conhecimento": [
+          "Transformações do espaço da população: As desigualdades sociais em seus contextos; Movimentos Migratórios; A questão dos refugiados, deslocados internos e apátridas; Consequências dos movimentos migratórios; A questão ambiental e as transformações socioespaciais e populacionais.",
+          "Estrutura da população brasileira e de Pernambuco: Indicadores demográficos; Pirâmides etárias; Desenvolvimento humano; Desigualdades sociais.",
+          "Urbanização Mundial, do Brasil e de Pernambuco: O processo de urbanização e seus contextos; Origem das cidades; Hierarquia urbana e redes urbanas; Características das cidades e suas relações sociais, econômicas, culturais e ambientais; Planejamento urbano e desigualdade socioespacial.",
+          "A Cartografia e as representações do espaço: Mapas Temáticos; Histogramas; Fluxogramas; Infográficos."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO10) Conhecer os fundamentos da Inteligência Artificial, comparando-a com a inteligência humana, analisando suas potencialidades, riscos e limites.",
+          "(EM13CO19) Expor, argumentar e negociar propostas, produtos e serviços utilizando diferentes mídias e ferramentas digitais.",
+          "(EM13CO10) Conhecer os fundamentos da Inteligência Artificial, comparando-a com a inteligência humana, analisando suas potencialidades, riscos e limites.",
+          "(EM13CO11) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico.",
+          "(EM13CO07) Compreender as diferentes tecnologias, bem como equipamentos, protocolos e serviços envolvidos no funcionamento de redes de computadores, identificando suas possibilidades de escala e confiabilidade.",
+          "(EM13CO21) Comunicar ideias complexas de forma clara por meio de objetos digitais como mapas conceituais, infográficos, hipertextos e outros."
+        ],
+        "possibilidades_abordagens": [
+          "Utilização da IA como ferramenta para realização de tarefas de pesquisa e construção de textos com a utilização do App Gemini sobre os movimentos migratórios, suas causas e consequências e compará-los nos mais diversos espaços pelo mundo.",
+          "Utilização de diversos recursos tecnológicos e digitais disponíveis para apresentação de trabalhos relativos aos indicadores demográficos, desenvolvimento humano e as desigualdades sociais observados nas pesquisas e estudos ao longo do período de estudos. Utilização da IA como ferramenta para realização de tarefas de pesquisa e construção de textos com a utilização do App Gemini sobre os movimentos migratórios, suas causas e consequências e compará-los nos mais diversos espaços pelo mundo.",
+          "Uso de ferramentas computacionais para analisar a construção dos espaços geográficos e o adensamento populacional, suas causas e consequências, utilizando mapeamento e entrevista para construção de materiais educativos sobre segregação socioespacial, gentrificação, dentre outros.",
+          "Identificação e utilização de tecnologias computacionais e digitais que contribuam para leitura e interpretação dos vários tipos de mapas. Um exemplo é a utilização do site Flight radar 24, que permite a visualização dos mapas como plano de fundo de voos em tempo real, a partir da visualização do espaço aéreo mundial. Transformação de dados em representações visuais compreensíveis facilitando análise espacial e a tomada de decisões integrando mapas, gráficos e textos interativos por meio de Canva, Google Earth, Google My Maps, Mapchart."
+        ]
+      },
+      "3 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CHS603) Analisar a formação de diferentes países, povos e nações e de suas experiências políticas e de exercício da cidadania, aplicando conceitos políticos básicos (Estado, poder, formas, sistemas e regimes de governo, soberania etc.).",
+          "(EM13CHS303) Debater e avaliar o papel da indústria cultural e das culturas de massa no estímulo ao consumismo, seus impactos econômicos e socioambientais, com vistas à percepção crítica das necessidades criadas pelo consumo e à adoção de hábitos sustentáveis.",
+          "(EM13CHS106) Utilizar as linguagens cartográfica, gráfica e iconográfica, diferentes gêneros textuais e tecnologias digitais de informação e comunicação de forma crítica, significativa, reflexiva e ética nas diversas práticas sociais, incluindo as escolares, para se comunicar, acessar e difundir informações, produzir conhecimentos, resolver problemas e exercer protagonismo e autoria na vida pessoal e coletiva."
+        ],
+        "habilidades_especificas": [
+          "(EM13CHS603GE17PE) Identificar, historicamente e geograficamente, os diferentes sistemas de governo e suas associações com o processo democrático, analisando as relações de poder e as reorganizações estruturais dos territórios, como resultado de conflitos ou de acordos pacíficos no espaço mundial.",
+          "(EM13CHS303GE13PE) Entender o processo de transformação dos bens consumidos, as características das produções e o papel desses agentes transformadores na construção do consumo, considerando os princípios da responsabilidade socioambiental.",
+          "(EM13CHS106GE22PE) Compreender por meio da leitura e interpretação com base na cartografia e na linguagem cartográfica, as dinâmicas sociais e históricas relacionadas a humanidade e as transformações socioambientais e espaciais."
+        ],
+        "objetos_conhecimento": [
+          "Capitalismo e Socialismo: Desenvolvimento do capitalismo e suas fases; O socialismo e seus contextos, Socialismo X Comunismo; O Pós Guerra Fria; A Nova Ordem Mundial; O capitalismo e os impactos socioambientais contemporâneos.",
+          "Setores da Economia: Indústrias Histórico; Tipos e regionalização; Desindustrialização; Industrialização brasileira; Relações com a sociedade e com o consumo.",
+          "A Cartografia e as representações do espaço: Mapas temáticos; Anamorfoses; Histogramas; Fluxogramas; Infográficos."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO14) Avaliar a confiabilidade das informações encontradas em meio digital, investigando seus modos de construção e considerando a autoria, a estrutura e o propósito da mensagem.",
+          "(EM13CO07) Compreender as diferentes tecnologias, bem como equipamentos, protocolos e serviços envolvidos no funcionamento de redes de computadores, identificando suas possibilidades, suas possibilidades de escala e confiabilidade.",
+          "(EM13CO09) Identificar tecnologias digitais, sua presença e formas de uso, nas diferentes atividades no mundo do trabalho.",
+          "(EM13CO07) Compreender as diferentes tecnologias, bem como equipamentos, protocolos e serviços envolvidos no funcionamento de redes de computadores, identificando suas possibilidades de escala e confiabilidade."
+        ],
+        "possibilidades_abordagens": [
+          "Utilização de ferramentas computacionais e digitais para realização de pesquisas sobre o Capitalismo, Socialismo, o mundo pós guerra e a nova ordem mundial e os problemas socioambientais contemporâneos.",
+          "Realização de pesquisas utilizando ferramentas computacionais e digitais para análise e interpretação pesquisar sobre os processos de industrialização, suas características, histórico, tipos de indústrias, os impactos socioambientais, causas e consequências.",
+          "Dadas as estruturas da anamorfose, do infográfico, do fluxograma e histograma propõe-se trabalhar as questões relativas a elementos da cartografia representados nos mapas, considerando suas características e possibilidades de compreensão dos fenômenos, identificando e utilizando tecnologias computacionais e digitais que contribuam para leitura e interpretação dos vários tipos de mapas."
+        ]
+      }
+    },
+    "3 ANO": {
+      "1 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CHS205) Analisar a produção de diferentes Territorialidades em suas dimensões culturais, econômicas, ambientais, políticas e sociais, no Brasil e no mundo contemporâneo, com destaque para as culturas juvenis.",
+          "(EM13CHS202) Analisar e avaliar os impactos das tecnologias na estruturação e nas dinâmicas de grupos, povos e sociedades contemporâneos (fluxos populacionais, financeiros, de mercadorias, de informações, de valores éticos e culturais etc.), bem como suas interferências nas decisões políticas, sociais, ambientais, econômicas e culturais.",
+          "(EM13CHS106) Utilizar as linguagens cartográfica, gráfica e iconográfica, diferentes gêneros textuais e tecnologias digitais de informação e comunicação de forma crítica, significativa, reflexiva e ética nas diversas práticas sociais, incluindo as escolares, para se comunicar, acessar e difundir informações, produzir conhecimentos, resolver problemas e exercer protagonismo e autoria na vida pessoal e coletiva."
+        ],
+        "habilidades_especificas": [
+          "(EM13CHS205GE09PE) Analisar as particularidades produtivas entre os países e seus acordos, no mundo globalizado, dando destaque a produção local, suas interligações com o mundo e a inserção dos jovens trabalhadores nesse cenário.",
+          "(EM13CHS202GE07PE) Avaliar as diferentes fases e avanços do meio técnico-científico-informacional, analisando sua influência no modo de vida e na organização espacial dos diferentes grupos humanos.",
+          "(EM13CHS106GE23PE) Identificar instrumentos cartográficos que ajudem a interpretar o cenário espacial em âmbito global, considerando dispositivos digitais e tecnologias contemporâneas para compreender e divulgar informações com base em fatos e pesquisas científicas atestadas e comprovadas pela comunidade científica."
+        ],
+        "objetos_conhecimento": [
+          "Economia Global e mundos do Trabalho: Características e histórico; Globalização - Características, conceitos, contextos; Blocos Econômicos; Comércio, economias locais e mundo do trabalho na era global.",
+          "Os avanços tecnológicos e a economia mundial: Fontes de energia; Tecnologias sustentáveis; Redes sociais; Empreendedorismo e empreendedorismo social; Iniciativas populares de associativismo e cooperativismo socioambiental.",
+          "A Cartografia e as representações do espaço: Mapas Temáticos Anamorfoses; Histogramas; Fluxogramas; Infográficos; Tabelas e gráficos."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO09) Identificar tecnologias digitais, sua presença e formas de uso, nas diferentes atividades no mundo do trabalho.",
+          "(EM13CO10) Conhecer os fundamentos da Inteligência Artificial, comparando-a com a inteligência humana, analisando suas potencialidades, riscos e limites.",
+          "(EM13CO10) Conhecer os fundamentos da Inteligência Artificial, comparando-a com a inteligência humana, analisando suas potencialidades, riscos e limites.",
+          "(EM13CO13) Analisar e utilizar as diferentes formas de representação e consulta a dados em formato digital para pesquisas científicas."
+        ],
+        "possibilidades_abordagens": [
+          "Elaboração de folhetos informativos, gibis temáticos, gráficos e diagramas utilizando aplicativo de edição de imagem e de tabela eletrônica (exemplo Canva, PowerPoint, Google slide, Google planilha), e elaboração de mapas mentais interativos, com o uso do Padlet, e do Mentimeter, possibilitando explicitar sobre seus conhecimentos acerca do impacto da globalização no mundo do trabalho. Sugere-se utilizar o Google Docs para produzir um conteúdo coletivo acerca da relação da Inteligência artificial no mundo do trabalho e perante a Globalização. Para tanto é preciso que sejam realizadas pesquisas acerca do impacto da IA nas profissões e no mundo do trabalho contemporâneo.",
+          "Propõe-se a utilização de sites de verificação de notícias falsas como o Portal de checagem de fake news do Conselho Nacional de Justiça (CNJ), para conferir informações acerca das temáticas propostas. Outro exemplo é a realização de Pesquisa em sites e redes sociais sobre experiências concretas de utilização de fontes de energias renováveis e seus impactos, tecnologias sustentáveis e de empreendedorismo social, bem como, sobre as ferramentas digitais utilizadas neste processo.",
+          "Utilização de diferentes ferramentas e recursos tecnológicos, como Vídeos, Podcasts, Canva, etc., para apresentação de material e resultados das pesquisas, levando em consideração a discussão sobre a ética na produção do conhecimento científico, na citação de fontes e sua veracidade."
+        ]
+      },
+      "2 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CHS401) Identificar e analisar as relações entre sujeitos, grupos, classes sociais e sociedades com culturas distintas diante das transformações técnicas, tecnológicas e informacionais e das novas formas de trabalho ao longo do tempo, em diferentes espaços (urbanos e rurais) e contextos.",
+          "(EM13CHS203) Comparar os significados de território, fronteiras e vazio (espacial, temporal e cultural) em diferentes sociedades, contextualizando e relativizando visões dualistas (civilização/barbárie, nomadismo/sedentarismo, esclarecimento/obscurantismo, cidade/campo, entre outras).",
+          "(EM13CHS302) Analisar e avaliar criticamente os impactos econômicos e socioambientais de cadeias produtivas ligadas à exploração de recursos naturais e às atividades agropecuárias em diferentes ambientes e escalas de análise, considerando o modo de vida das populações locais – entre elas as indígenas, quilombolas e demais comunidades tradicionais –, suas práticas agroextrativistas e o compromisso com a sustentabilidade.",
+          "(EM13CHS106) Utilizar as linguagens cartográfica, gráfica e iconográfica, diferentes gêneros textuais e tecnologias digitais de informação e comunicação de forma crítica, significativa, reflexiva e ética nas diversas práticas sociais, incluindo as escolares, para se comunicar, acessar e difundir informações, produzir conhecimentos, resolver problemas e exercer protagonismo e autoria na vida pessoal e coletiva."
+        ],
+        "habilidades_especificas": [
+          "(EM13CHS401GE14PE) Reconhecer o papel das inovações tecnológicas, da comunicação, da locomoção e das redes informacionais no modo de vida rural e urbano, avaliando as relações entre os diversos grupos sociais e o seu acesso às novas tecnologias.",
+          "(EM13CHS203GE08PE) Entender a constituição dos territórios urbanos e rurais, suas diferenciações e as relações de poder que se consolidam dentro destes espaços, ressaltando a apreciação de áreas, por vezes, consideradas antagônicas.",
+          "(EM13CHS302GE12PE) Analisar os principais problemas ambientais, decorrentes das transformações na dinâmica da natureza, realizadas pelo trabalho humano no campo, considerando os diferentes modos de vida das populações e sua relação com a sustentabilidade.",
+          "(EM13CHS106GE24PE) Construir mapas e instrumentos cartográficos que permitam a compreensão e leitura socioespacial de diferentes temáticas geográficas, fenômenos socioambientais e humanos e debates socioespaciais."
+        ],
+        "objetos_conhecimento": [
+          "Sociedade e Espaço geográfico do mundo, do Brasil e de Pernambuco: O setor de serviços; O terceiro setor; Impactos da terceirização e da 'uberização' da economia; Os tipos de transportes e sua evolução; Comunicações e suas tecnologias; Inclusão e exclusão digital.",
+          "Atividades econômicas no campo e suas relações com a cidade no mundo, no Brasil e em Pernambuco: Agricultura e sistemas agrícolas; Pecuária; Agronegócio; Produção agroecológica e Agricultura familiar; Questão agrária; A questão indígena e dos povos tradicionais; As diferentes relações entre as áreas urbanas e rurais; Desertos alimentares; Geografia da fome.",
+          "A Cartografia e as representações do espaço: Mapas temáticos; Histogramas; Fluxogramas; Infográficos; Tabelas e gráficos."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO18) Planejar e gerenciar projetos integrados às áreas de conhecimento de forma colaborativa, solucionando problemas, usando diversos artefatos computacionais.",
+          "(EM13CO23) Analisar criticamente as experiências em comunidades virtuais e as relações advindas da interação e comunicação com outras pessoas, bem como seus impactos na sociedade.",
+          "(EM13CO19) Expor, argumentar e negociar propostas, produtos e serviços utilizando diferentes mídias e ferramentas digitais.",
+          "(EM13CO11) Criar e explorar modelos computacionais simples para simular e fazer previsões, identificando sua importância no desenvolvimento científico.",
+          "(EM13CO07) Compreender as diferentes tecnologias, bem como equipamentos, protocolos e serviços envolvidos no funcionamento de redes de computadores, identificando suas possibilidades de escala e confiabilidade."
+        ],
+        "possibilidades_abordagens": [
+          "Utilização de ferramentas computacionais, para construir drives para armazenamento de projetos, textos imagéticos e escritos, vídeos e Podcast sobre as tecnologias e o processo de inclusão digital e divulgação nas redes sociais. Trabalho com as ferramentas computacionais e digitais para pesquisar e debater sobre as atividades econômicas, os modais de transportes e sua importância para a economia, as tecnologias e os meios de comunicação e o processo de inclusão e exclusão digital.",
+          "Utilização de recursos tecnológicos para pesquisas sobre agropecuária, as relações entre as áreas urbanas e rurais e as questões agrárias.",
+          "Sugere-se o uso de materiais concretos recicláveis para construção de protótipos e maquetes que promovam o trabalho coletivo e a reflexão discente acerca dos objetos de conhecimento deste trimestre.",
+          "Dada a Cartografia enquanto linguagem e tecnologia, é possível utilizar mapas digitais para compreensão e análise espacial, como forma de promoção da compreensão do espaço vivido e de espaços em diferentes escalas. Um exemplo é a utilização do Google Earth."
+        ]
+      },
+      "3 UNIDADE": {
+        "habilidades_area": [
+          "(EM13CHS403) Caracterizar e analisar os impactos das transformações tecnológicas nas relações sociais e de trabalho próprias da contemporaneidade, promovendo ações voltadas à superação das desigualdades sociais, da opressão e da violação dos Direitos Humanos.",
+          "(EM13CHS106) Utilizar as linguagens cartográfica, gráfica e iconográfica, diferentes gêneros textuais e tecnologias digitais de informação e comunicação de forma crítica, significativa, reflexiva e ética nas diversas práticas sociais, incluindo as escolares, para se comunicar, acessar e difundir informações, produzir conhecimentos, resolver problemas e exercer protagonismo e autoria na vida pessoal e coletiva."
+        ],
+        "habilidades_especificas": [
+          "(EM13CHS403GE16PE) Identificar o desenvolvimento das mudanças nas relações sociais e no processo de produção no mundo do trabalho, tanto no campo, quanto na cidade, ocorridas pelos avanços tecnológicos informacionais que criaram e/ou aprofundaram situações de desigualdade e conflitos sociais.",
+          "(EM13CHS106GE25PE) Produzir, Identificar e interpretar dados por meio de mapas e instrumentos cartográficos utilizando as tecnologias digitais e fomentando a criação de espaços de construção coletiva de produtos e conhecimento geocartográficos para o entendimento do cotidiano."
+        ],
+        "objetos_conhecimento": [
+          "Tecnologias e mundo do trabalho urbano e rural: IDH e migração; desemprego estrutural e conjuntural.",
+          "A Cartografia e as representações do espaço: Mapas temáticos; Fluxogramas; Infográficos; Tabelas e gráficos."
+        ],
+        "habilidades_computacao": [
+          "(EM13CO09) Identificar tecnologias digitais, sua presença e formas de uso, nas diferentes atividades no mundo do trabalho.",
+          "(EM13CO07) Compreender as diferentes tecnologias, bem como equipamentos, protocolos e serviços envolvidos no funcionamento de redes de computadores, identificando suas possibilidades de escala e confiabilidade."
+        ],
+        "possibilidades_abordagens": [
+          "Promoção com os estudantes a construção de mapas mentais utilizando o Canva, para que possam explicitar sobre o seu conhecimento acerca do impacto da globalização no mundo do trabalho.",
+          "Dada a Cartografia enquanto linguagem e tecnologia, é possível utilizar mapas digitais para compreensão e análise espacial, como forma de promoção da compreensão do espaço vivido e de espaços em diferentes escalas. Um exemplo é a utilização do Google Earth."
+        ]
+      }
+    }
+  },
+  "deteccao_confiavel": true,
+  "gerado_em": "2026-08-04T15:47",
+  "arquivo_origem": "Geografia-Organizador-Curricular-Trimestral-da-FGB_.pdf"
+}
